@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<!--____________________Tab Creation____________________-->
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>Bast_Achievements</defName>
+							<label>Bastyon</label>
+						</AchievementsExpanded.AchievementTabDef>
+
+						<AchievementsExpanded.AchievementDef Name="Bast_AchievementParent" Abstract="true">					
+							<bgtexPath>Achievements/Bast_AchievementBackground</bgtexPath>
+							<tab>Bast_Achievements</tab>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Tame a Bahlrin____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Bahlrin_Tame</defName>
+							<label>"Finally Found Something Worse Than Me"</label>
+							<description>Tame the horrifying Bahlrin</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Bahlrin</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Bahlrin_Tame</texPath>
+							<points>75</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Tame a Blazing Felidae____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Blazing_Felidae_Tame</defName>
+							<label>Why Would You Ever Touch It?!</label>
+							<description>Tame a Blazing Felidae</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Blazing_Felidae</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Blazing_Felidae_Tame</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Kill 200 Bahlrins____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Bahlrin_Swarm</defName>
+							<label>"One Rule. Stay in the light!"</label>
+							<description>Kill 200 Bahlrins</description>
+
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>Bast_Bahlrin</kindDef>
+								<count>200</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Bahlrin_Swarm</texPath>
+							<points>150</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Tame a Scire____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Scire_Tame</defName>
+							<label>Their Antlers Shimmer in the Moonlight</label>
+							<description>Tame the Magejstic Scire</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Scire</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Scire_Tame</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Tame a pair of Bastyons____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Bastyon_Tame</defName>
+							<label>What a Lovely Shade of Green</label>
+							<description>Tame a pair of Bastyons</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Bastyon</key>
+										<value>2</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Bastyon_Tame</texPath>
+							<points>40</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Tame several Alluvium____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Alluvium_Tame</defName>
+							<label>Living Provisions?</label>
+							<description>Tame several Alluvium</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Alluvium</key>
+										<value>13</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Alluvium_Tame</texPath>
+							<points>40</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Collect Alluvium Jelly____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_AlluviumJelly_Collect</defName>
+							<label>Mmmm... Tasty!</label>
+							<description>Barter or Slaughter for 333 Alluvium Jelly</description>
+
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>Bast_Alluvium_Jelly</def>
+								<count>333</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_AlluviumJelly_Collect</texPath>
+							<points>13</points>
+						</AchievementsExpanded.AchievementDef>
+                        
+                    </value>    
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

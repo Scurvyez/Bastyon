@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--____________________Alluvium Specific Body-parts____________________-->
+
+	<BodyPartDef>
+		<defName>Bast_Nucleus</defName>
+		<label>nucleus</label>
+		<hitPoints>100</hitPoints>
+		<bleedRate>15</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>SightSource</li>
+			<li>EatingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_Nucleoplasm</defName>
+		<label>nucleoplasm</label>
+		<hitPoints>10</hitPoints>
+		<bleedRate>2</bleedRate>
+		<skinCovered>true</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<!--____________________Bahlrin Specific Body-parts____________________-->
+
+	<BodyPartDef>
+		<defName>Bast_VibrationReceptor</defName>
+		<label>resonance gland</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>30</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>true</skinCovered>
+		<socketed>false</socketed>
+		<beautyRelated>false</beautyRelated>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+    
+	<BodyPartDef>
+		<defName>Bast_Wing</defName>
+		<label>wing</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<socketed>true</socketed>
+		<alive>true</alive>
+		<bleedRate>0.10</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!--____________________Gnomaclu Specific Body-parts____________________-->
+
+	<BodyPartDef>
+		<defName>Bast_BigEye</defName>
+		<label>eyeball?</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>30</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>true</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<socketed>true</socketed>
+		<beautyRelated>false</beautyRelated>
+		<hitChanceFactors>
+			<li>
+				<key>Blunt</key>
+				<value>0</value>
+			</li>
+		</hitChanceFactors>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+</Defs>

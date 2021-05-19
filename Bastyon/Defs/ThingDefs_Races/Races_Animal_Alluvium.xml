@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseInsect">
+    <defName>Bast_Alluvium</defName>
+    <label>alluvium</label>
+    <description>As a near weightless clump of semi-solidified pink and purple goo, Alluvium are similar to ancient Earth-dwelling amphibians. They move slow and have practically no armor making them an easy target for humans and beasts alike.\n\nInside their gelatinous bodies you will find a soft, sticky-sweet jelly with a taste to match it's delicious hue!</description>
+    <statBases>
+      <MoveSpeed>3.4</MoveSpeed>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <MarketValue>150</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <body>Bast_LimblessGelatinous</body>
+      <baseHungerRate>0.05</baseHungerRate>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.7</baseHealthScale>
+      <gestationPeriodDays>9</gestationPeriodDays>
+      <wildness>0.03</wildness>
+      <trainability>None</trainability>
+      <manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.03</manhunterOnDamageChance>
+      <lifeExpectancy>9</lifeExpectancy>
+      <wildBiomes>
+        <IceSheet>0.001</IceSheet>
+				<SeaIce>0.001</SeaIce>
+        <ColdBog>0.02</ColdBog>
+        <Desert>0.20</Desert>
+        <BorealForest>0.15</BorealForest>
+        <Tundra>0.05</Tundra>
+				<TemperateForest>0.25</TemperateForest>
+				<TemperateSwamp>0.20</TemperateSwamp>
+				<TropicalRainforest>0.15</TropicalRainforest>
+				<TropicalSwamp>0.20</TropicalSwamp>
+				<AridShrubland>0.20</AridShrubland>
+			</wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>1.5</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>2.5</minAge>
+          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+          <soundDeath>Pawn_Spelopede_Death</soundDeath>
+          <soundCall>Pawn_Spelopede_Call</soundCall>
+          <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+			  <Bast_AlluviumFlesh>10</Bast_AlluviumFlesh>
+		</butcherProducts>
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Bast_Alluvium</defName>
+    <label>alluvium</label>
+    <race>Bast_Alluvium</race>
+    <combatPower>25</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.05</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Alluvium/Bast_Alluvium</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Alluvium/Bast_Dessicated_Alluvium</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Alluvium/Bast_Alluvium</texPath>
+          <drawSize>1.55</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Alluvium/Bast_Dessicated_Alluvium</texPath>
+          <drawSize>1.55</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Alluvium/Bast_Alluvium</texPath>
+          <drawSize>2.33</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.5, 0.37)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Alluvium/Bast_Dessicated_Alluvium</texPath>
+          <drawSize>2.33</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>
