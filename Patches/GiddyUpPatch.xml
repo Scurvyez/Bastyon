@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!--____________________Scire Offset____________________-->
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+		<operations>
+		<li Class="PatchOperationAddModExtension">
+			<xpath>/Defs/ThingDef[defName = "Bast_Scire"]</xpath> 
+			<value>
+				<li Class="GiddyUpCore.DrawingOffsetPatch">
+					<northOffsetCSV>0,0,-0.5</northOffsetCSV>
+					<southOffsetCSV>0,0,0.1</southOffsetCSV>	
+					<eastOffsetCSV>-0.3,0,0</eastOffsetCSV>	
+					<westOffsetCSV>0.3,0,0</westOffsetCSV>	
+				</li>
+			</value>
+		</li>
+        </operations>
+
+	</Operation>
+
+    <!--____________________Bastyon Offset____________________-->
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+		<operations>
+		<li Class="PatchOperationAddModExtension">
+			<xpath>/Defs/ThingDef[defName = "Bast_Bastyon"]</xpath> 
+			<value>
+				<li Class="GiddyUpCore.DrawingOffsetPatch">
+					<northOffsetCSV>0,0,-0.5</northOffsetCSV>
+					<southOffsetCSV>0,0,0.1</southOffsetCSV>	
+					<eastOffsetCSV>-0.2,0,0</eastOffsetCSV>	
+					<westOffsetCSV>0.2,0,0</westOffsetCSV>	
+				</li>
+			</value>
+		</li>
+        </operations>
+
+	</Operation>
+
+    <!--____________________Blazing Felidae Offset____________________-->
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+		<operations>
+		<li Class="PatchOperationAddModExtension">
+			<xpath>/Defs/ThingDef[defName = "Bast_Blazing_Felidae"]</xpath> 
+			<value>
+				<li Class="GiddyUpCore.DrawingOffsetPatch">
+					<northOffsetCSV>0,0,-0.3</northOffsetCSV>
+					<southOffsetCSV>0,0,-0.3</southOffsetCSV>	
+					<eastOffsetCSV>0.1,0,0</eastOffsetCSV>	
+					<westOffsetCSV>-0.1,0,0</westOffsetCSV>	
+				</li>
+			</value>
+		</li>
+        </operations>
+
+	</Operation>
+
+    <!--____________________Bahlrin Offset____________________-->
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+		<operations>
+		<li Class="PatchOperationAddModExtension">
+			<xpath>/Defs/ThingDef[defName = "Bast_Bahlrin"]</xpath> 
+			<value>
+				<li Class="GiddyUpCore.DrawingOffsetPatch">
+					<northOffsetCSV>0,0,-0.5</northOffsetCSV>
+					<southOffsetCSV>0,0,-0.2</southOffsetCSV>	
+					<eastOffsetCSV>0.2,0,0</eastOffsetCSV>	
+					<westOffsetCSV>-0.2,0,0</westOffsetCSV>	
+				</li>
+			</value>
+		</li>
+        </operations>
+
+	</Operation>
+
+    <!--____________________Scire Overlays____________________-->
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "Bast_Scire" and not (comps)]</xpath>
+                <value>
+                    <comps></comps>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+        <li Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Bast_Scire"]/comps</xpath>
+            <value>
+                <li Class="GiddyUpCore.CompProperties_Overlay">
+                    <overlayFront>
+                        <graphicDataMale>
+                            <texPath>Things/Pawn/Animal/Overlays/Bast_ScireMale_overlay_south</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>4.0</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataMale>
+                        <offsetMale>(0,1,0,0)</offsetMale>
+                    </overlayFront>
+                    <overlaySide>
+                        <graphicDataMale>
+                            <texPath>Things/Pawn/Animal/Overlays/Bast_ScireMale_overlay_east</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>4.0</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataMale>
+                        <offsetMale>(0,1,0,0)</offsetMale>
+                    </overlaySide>
+                </li>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+        <li Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Bast_Scire"]/comps</xpath>
+            <value>
+                <li Class="GiddyUpCore.CompProperties_Overlay">
+                    <overlayFront>
+                        <graphicDataFemale>
+                            <texPath>Things/Pawn/Animal/Overlays/Bast_ScireFemale_overlay_south</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>3.0</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataFemale>
+                        <offsetMale>(0,1,0,0)</offsetMale>
+                    </overlayFront>
+                    <overlaySide>
+                        <graphicDataFemale>
+                            <texPath>Things/Pawn/Animal/Overlays/Bast_ScireFemale_overlay_east</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>3.0</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataFemale>
+                        <offsetMale>(0,1,0,0)</offsetMale>
+                    </overlaySide>
+                </li>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+
+    <!--____________________Bastyon Overlays____________________-->
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "Bast_Bastyon" and not (comps)]</xpath>
+                <value>
+                    <comps></comps>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+        <li Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Bast_Bastyon"]/comps</xpath>
+            <value>
+                <li Class="GiddyUpCore.CompProperties_Overlay">
+                    <overlayFront>
+                        <graphicDataDefault>
+                            <texPath>Things/Pawn/Animal/Overlays/Bast_Bastyon_overlay_south</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>3.1</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataDefault>
+                        <offsetMale>(0,1,0,0)</offsetMale>
+                    </overlayFront>
+                    <overlaySide>
+                        <graphicDataDefault>
+                            <texPath>Things/Pawn/Animal/Overlays/Bast_Bastyon_overlay_east</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>3.1</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataDefault>
+                        <offsetMale>(0,1,0,0)</offsetMale>
+                    </overlaySide>
+                </li>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+
+    <!--____________________Blazing Felidae Overlays____________________-->
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "Bast_Blazing_Felidae" and not (comps)]</xpath>
+                <value>
+                    <comps></comps>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+        <li Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Bast_Blazing_Felidae"]/comps</xpath>
+            <value>
+                <li Class="GiddyUpCore.CompProperties_Overlay">
+                    <overlayFront>
+                        <graphicDataDefault>
+                            <texPath>Things/Pawn/Animal/Overlays/Bast_Blazing_Felidae_overlay_south</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>3.1</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataDefault>
+                        <offsetDefault>(0,1,0,0)</offsetDefault>
+                    </overlayFront>
+                    <overlaySide>
+                        <graphicDataDefault>
+                            <texPath>Things/Pawn/Animal/Overlays/Bast_Blazing_Felidae_overlay_east</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>3.1</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataDefault>
+                        <offsetDefault>(0,1,0,0)</offsetDefault>
+                    </overlaySide>
+                </li>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+
+    <!--____________________Bahlrin Overlays____________________-->
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "Bast_Bahlrin" and not (comps)]</xpath>
+                <value>
+                    <comps></comps>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+        <li Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Bast_Bahlrin"]/comps</xpath>
+            <value>
+                <li Class="GiddyUpCore.CompProperties_Overlay">
+                    <overlayFront>
+                        <graphicDataDefault>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>3.5</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataDefault>
+
+                        <allVariants>
+                            <li>
+                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin_overlay_south</texPath>
+                            </li>
+                            <li>
+                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin2_overlay_south</texPath>
+                            </li>
+                            <li>
+                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin3_overlay_south</texPath>
+                            </li>
+                            <li>
+                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin4_overlay_south</texPath>
+                            </li>
+                        </allVariants>
+
+                        <offsetDefault>(0,1,0,0)</offsetDefault>
+                    </overlayFront>
+                    <overlayBack>
+                        <graphicDataDefault>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>3.5</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataDefault>
+
+                        <allVariants>
+                            <li>
+                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin_overlay_north</texPath>
+                            </li>
+                            <li>
+                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin2_overlay_north</texPath>
+                            </li>
+                            <li>
+                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin3_overlay_north</texPath>
+                            </li>
+                            <li>
+                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin4_overlay_north</texPath>
+                            </li>
+                        </allVariants>
+                        
+                        <offsetDefault>(0,1,0,0)</offsetDefault>
+                    </overlayBack>
+                </li>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+
+    <!--____________________Bahlrin Stats____________________-->
+
+    <Operation Class="PatchOperationAddModExtension">
+	    <xpath>/Defs/ThingDef[ defName = "Bast_Bahlrin"]</xpath> 
+	    <value>
+		    <li Class="GiddyUpCore.CustomStatsPatch">
+                <speedModifier>2.0</speedModifier>
+			    <armorModifier>10.0</armorModifier>
+			    <useMetalArmor>true</useMetalArmor>
+		    </li>
+	    </value>
+    </Operation>
+
+</Patch>

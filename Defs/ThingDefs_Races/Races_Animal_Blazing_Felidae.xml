@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BigCatThingBase">
+    <defName>Bast_Blazing_Felidae</defName>
+    <label>blazing felidae</label>
+    <description>An animal of unknown origin, certainly not of Earth. With razor-like claws and the ears of a bat, they make perfect companions for the aspiring colony.\n\nBe wary though! These creatures are timid and unsure of this world. What secrets do these stellar beasts pocess...</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>700</ComfyTemperatureMax>
+      <MarketValue>475</MarketValue>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<Flammability>0</Flammability>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.3</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.3</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <wildBiomes>
+        <IceSheet>0.00</IceSheet>
+				<SeaIce>0.00</SeaIce>
+        <ColdBog>0.001</ColdBog>
+        <Desert>0.10</Desert>
+        <BorealForest>0.002</BorealForest>
+        <Tundra>0.00</Tundra>
+				<TemperateForest>0.05</TemperateForest>
+				<TemperateSwamp>0.01</TemperateSwamp>
+				<TropicalRainforest>0.01</TropicalRainforest>
+				<TropicalSwamp>0.01</TropicalSwamp>
+				<AridShrubland>0.10</AridShrubland>
+			</wildBiomes>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <herdAnimal>false</herdAnimal>
+      <trainability>Advanced</trainability>
+      <petness>1</petness>
+      <nameOnTameChance>1</nameOnTameChance>
+      <nuzzleMtbHours>18</nuzzleMtbHours>
+      <predator>true</predator>
+      <maxPreyBodySize>1.2</maxPreyBodySize>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0.19</baseHungerRate>
+      <baseHealthScale>2.5</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <meatLabel>bastyonblazing felidae meat</meatLabel>
+      <leatherDef>Leather_Blazing_Felidae</leatherDef>
+      <wildness>0.85</wildness>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
+      <gestationPeriodDays>26</gestationPeriodDays>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges Inherit="false">
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>2.8</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>4.5</minAge>
+          <soundWounded>Pawn_Cougar_Injured</soundWounded>
+          <soundDeath>Pawn_Cougar_Death</soundDeath>
+          <soundAngry>Pawn_Cougar_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+    </race>
+    <tradeTags>
+      <li>AnimalRare</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigCatKindBase">
+    <defName>Bast_Blazing_Felidae</defName>
+    <label>blazing felidae</label>
+    <race>Bast_Blazing_Felidae</race>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+    <combatPower>195</combatPower>
+    <wildGroupSize>
+			<min>1</min>
+			<max>2</max>
+		</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Blazing_Felidae/Bast_Blazing_Felidae</texPath>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Blazing_Felidae/Bast_Dessicated_Blazing_Felidae</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Blazing_Felidae/Bast_Blazing_Felidae</texPath>
+          <drawSize>2.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Blazing_Felidae/Bast_Dessicated_Blazing_Felidae</texPath>
+          <drawSize>2.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Blazing_Felidae/Bast_Blazing_Felidae</texPath>
+          <drawSize>3.1</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Blazing_Felidae/Bast_Dessicated_Blazing_Felidae</texPath>
+          <drawSize>3.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>
