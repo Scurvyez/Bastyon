@@ -51,7 +51,7 @@
             <StuffPower_Armor_Blunt>.42</StuffPower_Armor_Blunt>
             <StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
-            <Flammability>0.00</Flammability>
+            <Flammability>0.30</Flammability>
         </statBases>
         <burnableByRecipe>true</burnableByRecipe>
         <healthAffectsPrice>true</healthAffectsPrice>
@@ -128,6 +128,36 @@
             </categories>
             <color>(0,150,252)</color>
             <commonality>0.075</commonality>
+        </stuffProps>
+    </ThingDef>
+
+    <!--____________________Ethereal Lion Fur____________________-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Ethereal_Lion</defName>
+        <label>ethereal lion fur</label>
+        <description>With a lightly darkened greenish color, the fur of an Ethereal Lion will offer your colonists proper cold-weather protection for harsh, windy biomes.</description>
+        <graphicData>
+            <color>(94,141,125)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.8</MarketValue>
+            <StuffPower_Armor_Sharp>1.30</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.50</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>95</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(94,141,125)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>1.45</Beauty>
+            </statFactors>
         </stuffProps>
     </ThingDef>
 

@@ -115,7 +115,7 @@
 		<ecoSystemWeight>.70</ecoSystemWeight>
 		<wildGroupSize>
 			<min>1</min>
-			<max>9</max>
+			<max>20</max>
 		</wildGroupSize>
 
 		<alternateGraphicChance>0.20</alternateGraphicChance>
