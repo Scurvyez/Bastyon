@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--____________________Grand Animal Sculpture____________________-->
+
+  <ThingDef ParentName="SculptureBase">
+    <defName>SculptureGrand</defName>
+    <label>grand sculpture</label>
+    <description>A huge sculpture sized to dominate a room.</description>
+    <castEdgeShadows>true</castEdgeShadows>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/Art/SculptureGrand</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(2,2)</size>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Beauty>400</Beauty>
+      <Mass>28</Mass>
+      <WorkToMake>105000</WorkToMake>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>400</costStuffCount>
+  </ThingDef>
+
+</Defs>

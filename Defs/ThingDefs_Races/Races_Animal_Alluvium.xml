@@ -6,7 +6,7 @@
     <label>alluvium</label>
     <description>As a near weightless clump of semi-solidified pink and purple goo, Alluvium are similar to ancient Earth-dwelling amphibians. They move slow and have practically no armor making them an easy target for humans and beasts alike.\n\nInside their gelatinous bodies you will find a soft, sticky-sweet jelly with a taste to match it's delicious hue!</description>
     <statBases>
-      <MoveSpeed>3.4</MoveSpeed>
+      <MoveSpeed>2.25</MoveSpeed>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <MarketValue>150</MarketValue>
       <LeatherAmount>0</LeatherAmount>

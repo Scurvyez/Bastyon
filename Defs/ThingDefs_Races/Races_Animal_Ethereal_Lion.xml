@@ -4,7 +4,7 @@
   <ThingDef ParentName="BigCatThingBase">
     <defName>Bast_Ethereal_Lion</defName>
     <label>ethereal lion</label>
-    <description>Larger than typical Earth-bound lions, ethereal lions pack a much bigger punch when threatened.\n\n</description>
+    <description>Larger than typical Earth-bound lions, ethereal lions pack a much bigger punch when threatened. When not found in packs protecting their young, ethereal lions make outstanding additions to colonies all across the rim.\n\nTheir hides yield excellent cold weather protection.</description>
     <statBases>
       <MoveSpeed>4.9</MoveSpeed>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
