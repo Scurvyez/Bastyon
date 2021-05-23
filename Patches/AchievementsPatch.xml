@@ -156,6 +156,22 @@
 							<texPath>Achievements/Bast_Achievement_AlluviumJelly_Collect</texPath>
 							<points>13</points>
 						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Farm 500 Chemfuel from Chem Tegus and Tame 6____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Chemfuel_Collect</defName>
+							<label>Hot! Hot! Hot! Hoottt!!!</label>
+							<description>Farm 500 Chemfuel</description>
+
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>Chemfuel</def>
+								<count>500</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Chemfuel_Collect</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
                         
                     </value>    
 				</li>
