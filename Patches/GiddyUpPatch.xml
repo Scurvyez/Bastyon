@@ -277,53 +277,33 @@
             <value>
                 <li Class="GiddyUpCore.CompProperties_Overlay">
                     <overlayFront>
-                        <graphicDataDefault>
-                            <graphicClass>Graphic_Single</graphicClass>
-                            <drawSize>3.5</drawSize>
-                            <drawRotated>false</drawRotated>
-                            <shaderType>MetaOverlay</shaderType>
-                        </graphicDataDefault>
-
-                        <allVariants>
-                            <li>
-                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin_overlay_south</texPath>
-                            </li>
-                            <li>
-                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin2_overlay_south</texPath>
-                            </li>
-                            <li>
-                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin3_overlay_south</texPath>
-                            </li>
-                            <li>
-                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin4_overlay_south</texPath>
-                            </li>
-                        </allVariants>
-
+                            <graphicDataDefault>
+                                <graphicClass>Graphic_Single</graphicClass>
+                                <drawSize>3.5</drawSize>
+                                <drawRotated>false</drawRotated>
+                                <shaderType>MetaOverlay</shaderType>
+                            </graphicDataDefault>
+                            <allVariants>
+                                <li><texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin_overlay_south</texPath></li>
+                                <li><texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin2_overlay_south</texPath></li>
+                                <li><texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin3_overlay_south</texPath></li>
+                                <li><texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin4_overlay_south</texPath></li>
+                            </allVariants>
                         <offsetDefault>(0,1,0,0)</offsetDefault>
                     </overlayFront>
                     <overlayBack>
-                        <graphicDataDefault>
-                            <graphicClass>Graphic_Single</graphicClass>
-                            <drawSize>3.5</drawSize>
-                            <drawRotated>false</drawRotated>
-                            <shaderType>MetaOverlay</shaderType>
-                        </graphicDataDefault>
-
-                        <allVariants>
-                            <li>
-                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin_overlay_north</texPath>
-                            </li>
-                            <li>
-                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin2_overlay_north</texPath>
-                            </li>
-                            <li>
-                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin3_overlay_north</texPath>
-                            </li>
-                            <li>
-                                <texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin4_overlay_north</texPath>
-                            </li>
-                        </allVariants>
-                        
+                            <graphicDataDefault>
+                                <graphicClass>Graphic_Single</graphicClass>
+                                <drawSize>3.5</drawSize>
+                                <drawRotated>false</drawRotated>
+                                <shaderType>MetaOverlay</shaderType>
+                            </graphicDataDefault>
+                            <allVariants>
+                                <li><texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin_overlay_north</texPath></li>
+                                <li><texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin2_overlay_north</texPath></li>
+                                <li><texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin3_overlay_north</texPath></li>
+                                <li><texPath>Things/Pawn/Animal/Overlays/Bast_Bahlrin4_overlay_north</texPath></li>
+                            </allVariants>
                         <offsetDefault>(0,1,0,0)</offsetDefault>
                     </overlayBack>
                 </li>

@@ -51,7 +51,7 @@
             <StuffPower_Armor_Blunt>.42</StuffPower_Armor_Blunt>
             <StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
-            <Flammability>0.00</Flammability>
+            <Flammability>0.30</Flammability>
         </statBases>
         <burnableByRecipe>true</burnableByRecipe>
         <healthAffectsPrice>true</healthAffectsPrice>
@@ -95,6 +95,41 @@
         </stuffProps>
     </ThingDef>
 
+    <!--____________________Chem Tegu Leather____________________-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Chem_Tegu</defName>
+        <label>chem tegu leather</label>
+        <description>As a genetically enhanced variant of the common black and white tegu, the chem tegu's leather bears all the same similarities. With one exception, it is strangley fire-resistant. As such, it makes for rather decent warm climate clothing.</description>
+        <graphicData>
+            <color>(92,50,31)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>8.0</MarketValue>
+            <StuffPower_Armor_Sharp>.20</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>.08</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>.65</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+            <DeteriorationRate>1.25</DeteriorationRate>
+            <Flammability>0.05</Flammability>
+            <MaxHitPoints>125</MaxHitPoints>
+            <Mass>0.03</Mass>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>35</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Beauty>0.4</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(92,50,31)</color>
+            <commonality>0.025</commonality>
+        </stuffProps>
+    </ThingDef>
+
     <!--____________________Scire Leather____________________-->
 
     <ThingDef ParentName="LeatherBase">
@@ -128,6 +163,36 @@
             </categories>
             <color>(0,150,252)</color>
             <commonality>0.075</commonality>
+        </stuffProps>
+    </ThingDef>
+
+    <!--____________________Ethereal Lion Fur____________________-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Ethereal_Lion</defName>
+        <label>ethereal lion fur</label>
+        <description>With a lightly darkened greenish color, the fur of an Ethereal Lion will offer your colonists proper cold-weather protection for harsh, windy biomes.</description>
+        <graphicData>
+            <color>(94,141,125)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.8</MarketValue>
+            <StuffPower_Armor_Sharp>1.30</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.50</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>95</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(94,141,125)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>1.45</Beauty>
+            </statFactors>
         </stuffProps>
     </ThingDef>
 

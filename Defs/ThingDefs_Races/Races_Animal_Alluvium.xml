@@ -6,13 +6,26 @@
     <label>alluvium</label>
     <description>As a near weightless clump of semi-solidified pink and purple goo, Alluvium are similar to ancient Earth-dwelling amphibians. They move slow and have practically no armor making them an easy target for humans and beasts alike.\n\nInside their gelatinous bodies you will find a soft, sticky-sweet jelly with a taste to match it's delicious hue!</description>
     <statBases>
-      <MoveSpeed>3.4</MoveSpeed>
+      <MoveSpeed>2.25</MoveSpeed>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <MarketValue>150</MarketValue>
       <LeatherAmount>0</LeatherAmount>
-      <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
     </statBases>
+    <tools>
+			<li>
+				<label>Bast_Nucleoplasm</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>0.01</power>
+				<cooldownTime>10</cooldownTime>
+				<linkedBodyPartsGroup>Bast_Body</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>false</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.01</chanceFactor>
+			</li>
+		</tools>
     <race>
       <body>Bast_LimblessGelatinous</body>
       <baseHungerRate>0.05</baseHungerRate>
@@ -21,8 +34,8 @@
       <gestationPeriodDays>9</gestationPeriodDays>
       <wildness>0.03</wildness>
       <trainability>None</trainability>
-      <manhunterOnTameFailChance>0.03</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.03</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.00</manhunterOnDamageChance>
       <lifeExpectancy>9</lifeExpectancy>
       <wildBiomes>
         <IceSheet>0.001</IceSheet>
@@ -71,9 +84,9 @@
     <defName>Bast_Alluvium</defName>
     <label>alluvium</label>
     <race>Bast_Alluvium</race>
-    <combatPower>25</combatPower>
+    <combatPower>10</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
-    <ecoSystemWeight>0.05</ecoSystemWeight>
+    <ecoSystemWeight>0.01</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>

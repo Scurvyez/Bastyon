@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Scire</defName>
     <label>scire</label>
     <description>Scires are deer-like creatures dwelling primarily in temerpate regions. While female scires appear unalarming and rather mundane their male counterparts are equipped with massive antlers encasing a precious glowing blue center gemstone.\n\nAlthough not of this realm, they seem to have no trouble navigating this world. They are the protectors of the forest.</description>
