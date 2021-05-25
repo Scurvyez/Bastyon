@@ -156,7 +156,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bast_Ethereal_Lion/Bast_Dessicated_Ethereal_Lion</texPath>
+          <texPath>Things/Pawn/Animal/Bast_Bastyon/Bast_Dessicated_Ethereal_Lion</texPath>
           <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -170,7 +170,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bast_Ethereal_Lion/Bast_Dessicated_Ethereal_Lion</texPath>
+          <texPath>Things/Pawn/Animal/Bast_Bastyon/Bast_Dessicated_Ethereal_Lion</texPath>
           <drawSize>2.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -184,7 +184,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bast_Ethereal_Lion/Bast_Dessicated_Ethereal_Lion</texPath>
+          <texPath>Things/Pawn/Animal/Bast_Bastyon/Bast_Dessicated_Ethereal_Lion</texPath>
           <drawSize>3.1</drawSize>
         </dessicatedBodyGraphicData>
       </li>

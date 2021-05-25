@@ -10,6 +10,7 @@
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <MarketValue>150</MarketValue>
       <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>0</MeatAmount>
       <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
     </statBases>

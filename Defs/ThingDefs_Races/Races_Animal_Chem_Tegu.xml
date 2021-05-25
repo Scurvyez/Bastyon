@@ -128,7 +128,7 @@
                     <drawSize>1.0</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Dessicated_Bast_Chem_Tegu</texPath>
+                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Bast_Dessicated_Chem_Tegu</texPath>
                     <drawSize>1.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -138,7 +138,7 @@
                     <drawSize>1.5</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Dessicated_Bast_Chem_Tegu</texPath>
+                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Bast_Dessicated_Chem_Tegu</texPath>
                     <drawSize>1.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -152,7 +152,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Dessicated_Bast_Chem_Tegu</texPath>
+                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Bast_Dessicated_Chem_Tegu</texPath>
                     <drawSize>2.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>

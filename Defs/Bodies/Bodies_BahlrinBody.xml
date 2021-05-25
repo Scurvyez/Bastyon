@@ -56,7 +56,6 @@
 				</li>
 				<li>
 					<def>Liver</def>
-					<customLabel>first liver</customLabel>
 					<coverage>0.01</coverage>
 					<depth>Inside</depth>
 				</li>

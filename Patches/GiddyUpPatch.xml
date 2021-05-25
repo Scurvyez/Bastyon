@@ -81,6 +81,26 @@
 
 	</Operation>
 
+    <!--____________________Ethereal Lion Offset____________________-->
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+		<operations>
+		<li Class="PatchOperationAddModExtension">
+			<xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion"]</xpath> 
+			<value>
+				<li Class="GiddyUpCore.DrawingOffsetPatch">
+					<northOffsetCSV>0,0,-0.5</northOffsetCSV>
+					<southOffsetCSV>0,0,-0.3</southOffsetCSV>	
+					<eastOffsetCSV>0.2,-0.1,0</eastOffsetCSV>	
+					<westOffsetCSV>-0.2,-0.1,0</westOffsetCSV>	
+				</li>
+			</value>
+		</li>
+        </operations>
+
+	</Operation>
+
     <!--____________________Scire Overlays____________________-->
 
 	<Operation Class="PatchOperationSequence">
@@ -249,6 +269,43 @@
                         </graphicDataDefault>
                         <offsetDefault>(0,1,0,0)</offsetDefault>
                     </overlaySide>
+                </li>
+            </value>
+        </li>
+        </operations>
+    </Operation>
+
+    <!--____________________Ethereal Lion Overlays____________________-->
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion" and not (comps)]</xpath>
+                <value>
+                    <comps></comps>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+        <li Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion"]/comps</xpath>
+            <value>
+                <li Class="GiddyUpCore.CompProperties_Overlay">
+                    <overlayFront>
+                        <graphicDataDefault>
+                            <texPath>Things/Pawn/Animal/Overlays/Bast_Ethereal_Lion_overlay_south</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>3.1</drawSize>
+                            <drawRotated>false</drawRotated>
+                            <shaderType>MetaOverlay</shaderType>
+                        </graphicDataDefault>
+                        <offsetDefault>(0,1,0,0)</offsetDefault>
+                    </overlayFront>
                 </li>
             </value>
         </li>
