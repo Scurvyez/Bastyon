@@ -1,0 +1,8 @@
+c:\GAMES\Rimworld\Mods\Bastyon\Source\Bastyon\bin\Debug\Bastyon.dll
+c:\GAMES\Rimworld\Mods\Bastyon\Source\Bastyon\bin\Debug\Bastyon.pdb
+c:\GAMES\Rimworld\Mods\Bastyon\Source\Bastyon\bin\Debug\0Harmony.dll
+c:\GAMES\Rimworld\Mods\Bastyon\Source\Bastyon\obj\Debug\Bastyon.csprojAssemblyReference.cache
+c:\GAMES\Rimworld\Mods\Bastyon\Source\Bastyon\obj\Debug\Bastyon.csproj.CoreCompileInputs.cache
+c:\GAMES\Rimworld\Mods\Bastyon\Source\Bastyon\obj\Debug\Bastyon.csproj.CopyComplete
+c:\GAMES\Rimworld\Mods\Bastyon\Source\Bastyon\obj\Debug\Bastyon.dll
+c:\GAMES\Rimworld\Mods\Bastyon\Assemblies\Bastyon.dll
