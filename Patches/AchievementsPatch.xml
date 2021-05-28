@@ -125,7 +125,7 @@
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Alluvium_Tame</defName>
-							<label>Living Provisions?</label>
+							<label>Transparent Provisions?</label>
 							<description>Tame several Alluvium</description>
 
 							<tracker Class="AchievementsExpanded.KindDefTracker">
@@ -139,6 +139,26 @@
 
 							<texPath>Achievements/Bast_Achievement_Alluvium_Tame</texPath>
 							<points>40</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Tame Two Ceratoks____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Ceratok_Tame</defName>
+							<label>Double the Trouble</label>
+							<description>Tame Two Ceratok</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Ceratok</key>
+										<value>2</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Ceratok_Tame</texPath>
+							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
 						<!--____________________Collect Alluvium Jelly____________________-->

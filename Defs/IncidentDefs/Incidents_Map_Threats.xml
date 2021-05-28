@@ -8,15 +8,15 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>Bastyon.IncidentWorker_RaidCustom</workerClass>
-		<baseChance>4</baseChance>
+		<baseChance>.02</baseChance>
 		<category>ThreatBig</category>
 		<tale>Raid</tale>
-		<earliestDay>0</earliestDay>
-		<minRefireDays>0</minRefireDays>
+		<earliestDay>60</earliestDay>
+		<minRefireDays>35</minRefireDays>
 		<modExtensions>
 			<li Class="Bastyon.RaidOptions">
 				<raidFaction>Bast_Monsters</raidFaction>
-				<raidPointsMultiplier>5</raidPointsMultiplier>
+				<raidPointsMultiplier>1.5</raidPointsMultiplier>
 				<!--<fixedRaidPoints>9999</fixedRaidPoints>-->
 				
 				<pawnGroup>
@@ -37,21 +37,22 @@
 				
 				<!-- if you want to restrict this raid by wealth, tech level or unlocked tech project
 				<minimumPlayerWealth>3000</minimumPlayerWealth>
-				<minimumPlayerTechLevel>Neolithic</minimumPlayerTechLevel>
+				<minimumPlayerTechLevel>Industrial</minimumPlayerTechLevel>
 				<requiredResearchProjectsUnlocked>
 					<li>Smithing</li>
 				</requiredResearchProjectsUnlocked>
-				--> 
+				-->
+				<minimumPlayerTechLevel>Industrial</minimumPlayerTechLevel>
 				<raidStrategy>ImmediateAttack</raidStrategy>
 				<raidArrival>EdgeWalkInGroups</raidArrival>
 				<disableLordRaid>true</disableLordRaid>
-				<repeatAfterTicks>600~3000</repeatAfterTicks>
-				<maxRepeatCount>10</maxRepeatCount>
+				<repeatAfterTicks>850~3000</repeatAfterTicks>
+				<maxRepeatCount>5</maxRepeatCount>
 				<allowedHourRange>18~5</allowedHourRange>
 				
 				<letterDef>ThreatBig</letterDef>
 				<letterTitle>Raid: Bahlrin Swarm</letterTitle>
-				<letterText>Bahlrin raid.</letterText>
+				<letterText>Bahlrin wave.</letterText>
 			</li>
 		</modExtensions>
 	</IncidentDef>

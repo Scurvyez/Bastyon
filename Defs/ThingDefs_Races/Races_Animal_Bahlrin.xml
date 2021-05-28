@@ -6,8 +6,8 @@
 		<label>bahlrin</label>
 		<description>Bahlrin are extremely aggresive predators seldom seen in the wild. They are ravenous beasts with an appetite for rotting corpses and living flesh all the same.\n\nIf you manage to tame one keep it close! You'll not find many battle mounts of such strength and speed!</description>
 		<statBases>
-			<MoveSpeed>5.6</MoveSpeed>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<MoveSpeed>3.5</MoveSpeed>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
 			<MarketValue>320</MarketValue>
 		</statBases>
 		<tools>
@@ -16,10 +16,10 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>16</power>
-				<cooldownTime>2</cooldownTime>
+				<power>11</power>
+				<cooldownTime>4</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.35</chanceFactor>
+				<chanceFactor>0.25</chanceFactor>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
@@ -34,8 +34,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>22</power>
-				<cooldownTime>2</cooldownTime>
+				<power>15</power>
+				<cooldownTime>3.2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
@@ -59,13 +59,13 @@
 			<thinkTreeConstant>Bast_MonsterConstant</thinkTreeConstant>
 			<body>Bast_BahlrinBody</body>
 			<baseBodySize>1.0</baseBodySize>
-			<baseHealthScale>3.5</baseHealthScale>
+			<baseHealthScale>0.35</baseHealthScale>
 			<baseHungerRate>0.70</baseHungerRate>
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<predator>true</predator>
 			<maxPreyBodySize>3</maxPreyBodySize>
 			<wildness>0.99</wildness>
-			<trainability>Advanced</trainability>
+			<trainability>None</trainability>
 			<manhunterOnTameFailChance>0.65</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<litterSizeCurve>
@@ -115,12 +115,12 @@
 		<defName>Bast_Bahlrin</defName>
 		<label>bahlrin</label>
 		<race>Bast_Bahlrin</race>
-		<combatPower>150</combatPower>
+		<combatPower>75</combatPower>
 		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>.70</ecoSystemWeight>
 		<wildGroupSize>
 			<min>1</min>
-			<max>20</max>
+			<max>5</max>
 		</wildGroupSize>
 
 		<alternateGraphicChance>0.20</alternateGraphicChance>

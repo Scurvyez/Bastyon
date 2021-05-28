@@ -196,4 +196,38 @@
         </stuffProps>
     </ThingDef>
 
+    <!--____________________Ceratok Leather____________________-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Ceratok</defName>
+        <label>ceratok leather</label>
+        <description>Ceratok leather is extremely resiliant towards blunt damage. It is by no means a beautiful textile, but it will get the job done when your colony needs protection.</description>
+        <graphicData>
+            <color>(146,128,99)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5.1</MarketValue>
+            <StuffPower_Armor_Sharp>1.00</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.60</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>.12</StuffPower_Armor_Heat>
+            <DeteriorationRate>1.25</DeteriorationRate>
+            <Flammability>.25</Flammability>
+            <MaxHitPoints>340</MaxHitPoints>
+            <Mass>0.04</Mass>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>75</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Beauty>0.4</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(146,128,99)</color>
+            <commonality>0.025</commonality>
+        </stuffProps>
+    </ThingDef>
+
 </Defs>  

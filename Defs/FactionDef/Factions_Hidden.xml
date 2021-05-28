@@ -35,7 +35,7 @@
     <autoFlee>false</autoFlee>
     <canUseAvoidGrid>false</canUseAvoidGrid>
     <techLevel>Ultra</techLevel>
-    <earliestRaidDays>45</earliestRaidDays>
+    <earliestRaidDays>85</earliestRaidDays>
     <permanentEnemy>true</permanentEnemy>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
     <maxPawnCostPerTotalPointsCurve>

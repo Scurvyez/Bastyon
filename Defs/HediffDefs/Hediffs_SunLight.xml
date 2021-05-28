@@ -30,7 +30,7 @@
 				<hediffSeverity>0.1</hediffSeverity>
 				<tickInterval>360</tickInterval>
 				<fireSpawnChance>0.3</fireSpawnChance>
-				<fireSize>0.2~0.5</fireSize>
+				<fireSize>0.1~0.3</fireSize>
 			</li>
 		</modExtensions>
     </HediffDef>

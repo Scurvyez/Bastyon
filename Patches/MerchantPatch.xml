@@ -28,4 +28,13 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Bast_CeratokHorn</thingDef>
+			</li>
+		</value>
+	</Operation>
+
 </Patch>
