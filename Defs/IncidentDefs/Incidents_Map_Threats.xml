@@ -8,10 +8,10 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>Bastyon.IncidentWorker_RaidCustom</workerClass>
-		<baseChance>.02</baseChance>
+		<baseChance>.01</baseChance>
 		<category>ThreatBig</category>
 		<tale>Raid</tale>
-		<earliestDay>60</earliestDay>
+		<earliestDay>70</earliestDay>
 		<minRefireDays>35</minRefireDays>
 		<modExtensions>
 			<li Class="Bastyon.RaidOptions">
@@ -36,13 +36,14 @@
 				<!--<minimumPawnCount>5</minimumPawnCount>--> 
 				
 				<!-- if you want to restrict this raid by wealth, tech level or unlocked tech project
-				<minimumPlayerWealth>3000</minimumPlayerWealth>
+				<minimumPlayerWealth>70000</minimumPlayerWealth>
 				<minimumPlayerTechLevel>Industrial</minimumPlayerTechLevel>
 				<requiredResearchProjectsUnlocked>
 					<li>Smithing</li>
-				</requiredResearchProjectsUnlocked>
-				-->
+				</requiredResearchProjectsUnlocked> -->
+				
 				<minimumPlayerTechLevel>Industrial</minimumPlayerTechLevel>
+				<minimumPlayerWealth>70000</minimumPlayerWealth>
 				<raidStrategy>ImmediateAttack</raidStrategy>
 				<raidArrival>EdgeWalkInGroups</raidArrival>
 				<disableLordRaid>true</disableLordRaid>

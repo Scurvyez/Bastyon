@@ -6,7 +6,7 @@
 		<label>bahlrin</label>
 		<description>Bahlrin are extremely aggresive predators seldom seen in the wild. They are ravenous beasts with an appetite for rotting corpses and living flesh all the same.\n\nIf you manage to tame one keep it close! You'll not find many battle mounts of such strength and speed!</description>
 		<statBases>
-			<MoveSpeed>3.5</MoveSpeed>
+			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
 			<MarketValue>320</MarketValue>
 		</statBases>
@@ -16,15 +16,15 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>11</power>
+				<power>23</power>
 				<cooldownTime>4</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.25</chanceFactor>
+				<chanceFactor>0.20</chanceFactor>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>12</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -58,15 +58,15 @@
 			<thinkTreeMain>Bast_Bahlrin</thinkTreeMain>
 			<thinkTreeConstant>Bast_MonsterConstant</thinkTreeConstant>
 			<body>Bast_BahlrinBody</body>
-			<baseBodySize>1.0</baseBodySize>
-			<baseHealthScale>0.35</baseHealthScale>
-			<baseHungerRate>0.70</baseHungerRate>
+			<baseBodySize>1.3</baseBodySize>
+			<baseHealthScale>0.65</baseHealthScale>
+			<baseHungerRate>1.80</baseHungerRate>
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<predator>true</predator>
 			<maxPreyBodySize>3</maxPreyBodySize>
 			<wildness>0.99</wildness>
 			<trainability>None</trainability>
-			<manhunterOnTameFailChance>0.65</manhunterOnTameFailChance>
+			<manhunterOnTameFailChance>0.75</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
 			<litterSizeCurve>
 				<points>
