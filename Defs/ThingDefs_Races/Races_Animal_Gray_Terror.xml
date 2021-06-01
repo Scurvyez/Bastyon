@@ -4,18 +4,17 @@
 	<ThingDef ParentName="BaseInsect">
 		<defName>Bast_Gray_Terror</defName>
 		<label>gray terror</label>
-		<description>Someone once thought that creating supersized spiders for synthread-web production was a good idea. Their home planet is now reduced to a Marble World; a world completely purged by atomic fire.\n\nFeralisks attack by throwing spider webs at their prey. These huge webs stun anyone they touch, allowing the Feralisk to close in and finish the kill with their fearsome venom laced fangs.</description>
+		<description>Gray terrors are gigantic arachnids. Their hides are like steel and will rebuke most blunt attacks, a well placed, and well sharpened, blade however will render thesee creatures helpless.\n\nThese hulking, grotesgue abominations began appearing all over the Rim shortly after one crazed scientist decided to transport one back to his lab... nobody knows the fate of the scientist.</description>
 		<statBases>
-			<MoveSpeed>5.5</MoveSpeed>
-			<ComfyTemperatureMin>-12</ComfyTemperatureMin>
-			<MarketValue>425</MarketValue>
-			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+			<MoveSpeed>3.7</MoveSpeed>
+			<ComfyTemperatureMin>15</ComfyTemperatureMin>
+			<MarketValue>475</MarketValue>
+			<ArmorRating_Blunt>1.50</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>
-				<label>left front leg</label>
+				<label>left front metatarsus</label>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -24,7 +23,7 @@
 				<linkedBodyPartsGroup>LegAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
-				<label>right front leg</label>
+				<label>right front metatarsus</label>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -91,7 +90,7 @@
 					<li>(3, 0.7)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>12</lifeExpectancy>
+			<lifeExpectancy>80</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -99,11 +98,11 @@
 				</li>
 				<li>
 					<def>AnimalJuvenile</def>
-					<minAge>0.35</minAge>
+					<minAge>2.50</minAge>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>2.00</minAge>
+					<minAge>4.21</minAge>
 					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
 					<soundDeath>Pawn_BigInsect_Death</soundDeath>
 					<soundCall>Pawn_BigInsect_Call</soundCall>
@@ -114,6 +113,9 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+		<butcherProducts>
+			  <Steel>25</Steel>
+		</butcherProducts>
 		<tradeTags>
 			<li>ExoticAnimal</li>
 		</tradeTags>
@@ -127,17 +129,17 @@
 		<ecoSystemWeight>0.6</ecoSystemWeight>
 		<wildGroupSize>
 			<min>1</min>
-			<max>5</max>
+			<max>3</max>
 		</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Gray_Terror</texPath>
-					<drawSize>0.7</drawSize>
+					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Dessicated_Gray_Terror</texPath>
-					<drawSize>0.7</drawSize>
+					<drawSize>0.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
@@ -153,11 +155,11 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Gray_Terror</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>3.3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Dessicated_Gray_Terror</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>3.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

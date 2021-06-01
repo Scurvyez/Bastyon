@@ -230,4 +230,37 @@
         </stuffProps>
     </ThingDef>
 
+    <!--____________________Soul Eater Leather____________________-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Soul_Eater</defName>
+        <label>soul eater leather</label>
+        <description>Whereas most animal hides share the hur of the creatures skin, that of a soul eater retains the color of the souls ravaged by the once-living beast.</description>
+        <graphicData>
+            <color>(227,234,93)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>8.0</MarketValue>
+            <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.40</StuffPower_Armor_Blunt>
+            <DeteriorationRate>1.25</DeteriorationRate>
+            <Flammability>.25</Flammability>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>0.018</Mass>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>35</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Beauty>0.4</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(227,234,93)</color>
+            <commonality>0.025</commonality>
+        </stuffProps>
+    </ThingDef>
+
 </Defs>  

@@ -103,6 +103,26 @@
 
 	</Operation>
 
+    <!--____________________Soul Eater Offset____________________-->
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+		<operations>
+		<li Class="PatchOperationAddModExtension">
+			<xpath>/Defs/ThingDef[defName = "Bast_Soul_Eater"]</xpath> 
+			<value>
+				<li Class="GiddyUpCore.DrawingOffsetPatch">
+					<northOffsetCSV>0,0,-0.5</northOffsetCSV>
+					<southOffsetCSV>0,0,-0.2</southOffsetCSV>	
+					<eastOffsetCSV>-0.2,0,-0.2</eastOffsetCSV>	
+					<westOffsetCSV>0.2,0,-0.2</westOffsetCSV>	
+				</li>
+			</value>
+		</li>
+        </operations>
+
+	</Operation>
+
     <!--____________________ANIMAL OVERLAYS____________________-->
 
     <!--____________________Scire Overlays____________________-->
