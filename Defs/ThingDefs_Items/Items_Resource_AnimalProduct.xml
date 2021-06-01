@@ -32,4 +32,25 @@
         </thingCategories>
     </ThingDef>
 
+    <!--____________________Gray Terror Eggs____________________-->
+
+    <ThingDef ParentName="EggFertBase">
+    <defName>Bast_Gray_Terror_EggFertilized</defName>
+    <label>gray terror egg (fert.)</label>
+    <description>A fertilized gray terror egg. If all goes well (not sure why you would want it to), it should hatch into a baby gray terror. It can be eaten raw and isn't much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <color>(120,120,120)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>30.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>Bast_Gray_Terror</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
 </Defs>
