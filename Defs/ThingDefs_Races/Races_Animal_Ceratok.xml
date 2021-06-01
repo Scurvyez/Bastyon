@@ -113,7 +113,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bast_Ceratok/Dessicated_Rhino</texPath>
+          <texPath>Things/Pawn/Animal/Rhino/Dessicated_Rhino</texPath>
           <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -127,7 +127,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bast_Ceratok/Dessicated_Rhino</texPath>
+          <texPath>Things/Pawn/Animal/Rhino/Dessicated_Rhino</texPath>
           <drawSize>2.25</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -141,7 +141,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bast_Ceratok/Dessicated_Rhino</texPath>
+          <texPath>Things/Pawn/Animal/Rhino/Dessicated_Rhino</texPath>
           <drawSize>3.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>

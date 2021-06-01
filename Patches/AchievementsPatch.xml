@@ -25,26 +25,6 @@
 							<tab>Bast_Achievements</tab>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame a Bahlrin____________________-->
-
-						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
-							<defName>Bast_Achievement_Bahlrin_Tame</defName>
-							<label>"Finally Found Something Worse Than Me"</label>
-							<description>Tame the horrifying Bahlrin</description>
-
-							<tracker Class="AchievementsExpanded.KindDefTracker">
-								<kindDefs>
-									<li>
-										<key>Bast_Bahlrin</key>
-										<value>1</value>
-									</li>
-								</kindDefs>
-							</tracker>
-
-							<texPath>Achievements/Bast_Achievement_Bahlrin_Tame</texPath>
-							<points>75</points>
-						</AchievementsExpanded.AchievementDef>
-
 						<!--____________________Tame a Blazing Felidae____________________-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
@@ -161,6 +141,46 @@
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
+						<!--____________________Tame a Soul Eater____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Soul_Eater_Tame</defName>
+							<label>Spooky Little Furball</label>
+							<description>Tame a Soul Eater</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Soul_Eater</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Soul_Eater_Tame</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Tame 3 Chem Tegus____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Chem_Tegu_Tame</defName>
+							<label>Keep an Eye on These Guys</label>
+							<description>Tame 3 Chem Tegus</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Chem_Tegu</key>
+										<value>3</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Chem_Tegu_Tame</texPath>
+							<points>30</points>
+						</AchievementsExpanded.AchievementDef>
+
 						<!--____________________Collect Alluvium Jelly____________________-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
@@ -177,11 +197,11 @@
 							<points>13</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Farm 500 Chemfuel from Chem Tegus and Tame 6____________________-->
+						<!--____________________Farm 500 Chemfuel____________________-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Chemfuel_Collect</defName>
-							<label>Hot! Hot! Hot! Hoottt!!!</label>
+							<label>Hot! Hot! Hot!</label>
 							<description>Farm 500 Chemfuel</description>
 
 							<tracker Class="AchievementsExpanded.ItemTracker">
@@ -191,6 +211,22 @@
 
 							<texPath>Achievements/Bast_Achievement_Chemfuel_Collect</texPath>
 							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--____________________Kill 25 Gray Terrors____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Gray_Terror_Kill</defName>
+							<label>Man, I hate spiders!</label>
+							<description>Kill 25 Gray Terrors</description>
+
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>Bast_Gray_Terror</kindDef>
+								<count>25</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Gray_Terror_Kill</texPath>
+							<points>50</points>
 						</AchievementsExpanded.AchievementDef>
                         
                     </value>    
