@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Bast_Bahlrin</defName>
 		<label>bahlrin</label>
-		<description>Bahlrin are extremely aggresive predators seldom seen in the wild. They are ravenous beasts with an appetite for rotting corpses and living flesh all the same.\n\nIf you manage to tame one keep it close! You'll not find many battle mounts of such strength and speed!</description>
+		<description>Bahlrin are extremely aggressive predators seldom seen in the wild. They are ravenous beasts with an appetite for rotting corpses and living flesh all the same.\n\nThese creatures are capable of attacking in waves during the night, when their appetite is most ferocious. They fear the light of day though, as it does massive amounts of damage.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
@@ -43,8 +43,8 @@
 		</tools>
 		<race>
 			<wildBiomes>
-				<IceSheet>0.0001</IceSheet>
-				<SeaIce>0.001</SeaIce>
+				<IceSheet>0.00</IceSheet>
+				<SeaIce>0.00</SeaIce>
 				<ColdBog>0.01</ColdBog>
 				<Desert>0.01</Desert>
 				<BorealForest>0.01</BorealForest>

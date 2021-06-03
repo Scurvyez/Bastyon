@@ -25,6 +25,26 @@
 							<tab>Bast_Achievements</tab>
 						</AchievementsExpanded.AchievementDef>
 
+						<!--____________________Tame a Bahlrin____________________-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Bahlrin_Tame</defName>
+							<label>Don't Get Too Close to it...</label>
+							<description>Tame the fearsome Bahlrin</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Bahlrin</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Bahlrin_Tame</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
 						<!--____________________Tame a Blazing Felidae____________________-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">

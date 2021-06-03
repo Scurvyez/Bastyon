@@ -49,7 +49,7 @@
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggCountRange>
 					<min>1</min>
-					<max>4</max>
+					<max>8</max>
 				</eggCountRange>
 			</li>
 		</comps>

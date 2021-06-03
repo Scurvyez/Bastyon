@@ -4,7 +4,7 @@
   <ThingDef ParentName="BigCatThingBase">
     <defName>Bast_Bastyon</defName>
     <label>bastyon</label>
-    <description>An animal of unknown origin, certainly not of Earth. With razor-like claws and the ears of a bat, they make perfect companions for the aspiring colony.\n\nBe wary though! These creatures are timid and unsure of this world. What secrets do these stellar beasts pocess...</description>
+    <description>An animal of unknown origin, certainly not of Earth. With razor-like claws and the ears of a bat, they make perfect companions for the aspiring colony.\n\nBe wary though! These creatures are timid and unsure of this world. What secrets do these stellar beasts possess...</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>

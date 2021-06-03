@@ -32,7 +32,7 @@
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_GnomacluMeat</defName>
 		<label>weird rubbery meat</label>
-		<description>Raw meat from a recetly slain Gnomaclu. The texture is similar to aged rubber.\n\nIt will fullfil hunger, if it's all you've got...</description>
+		<description>Raw meat from a recently slain Gnomaclu. The texture is similar to aged rubber.\n\nIt will fullfill hunger, if it's all you've got...</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Bast_GnomacluMeat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -58,7 +58,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>0.01</Mass>
-			<MarketValue>5</MarketValue>
+			<MarketValue>2.3</MarketValue>
 		</statBases>
 		<ingestible>
 			<specialThoughtDirect>AteRawFood</specialThoughtDirect>

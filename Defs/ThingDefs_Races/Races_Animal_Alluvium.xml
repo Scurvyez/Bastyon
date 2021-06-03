@@ -30,6 +30,7 @@
     <race>
       <body>Bast_LimblessGelatinous</body>
       <baseHungerRate>0.05</baseHungerRate>
+      <foodType>OmnivoreAnimal</foodType>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.7</baseHealthScale>
       <gestationPeriodDays>9</gestationPeriodDays>
@@ -39,8 +40,8 @@
 			<manhunterOnDamageChance>0.00</manhunterOnDamageChance>
       <lifeExpectancy>9</lifeExpectancy>
       <wildBiomes>
-        <IceSheet>0.001</IceSheet>
-				<SeaIce>0.001</SeaIce>
+        <IceSheet>0.00</IceSheet>
+				<SeaIce>0.00</SeaIce>
         <ColdBog>0.02</ColdBog>
         <Desert>0.20</Desert>
         <BorealForest>0.15</BorealForest>
@@ -75,6 +76,7 @@
     </race>
     <butcherProducts>
 			  <Bast_AlluviumFlesh>10</Bast_AlluviumFlesh>
+        <Bast_Alluvium_Jelly>20</Bast_Alluvium_Jelly>
 		</butcherProducts>
     <tradeTags>
       <li>AnimalInsect</li>
@@ -87,7 +89,7 @@
     <race>Bast_Alluvium</race>
     <combatPower>10</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
-    <ecoSystemWeight>0.01</ecoSystemWeight>
+    <ecoSystemWeight>0.03</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
