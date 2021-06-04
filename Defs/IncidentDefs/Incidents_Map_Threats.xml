@@ -11,7 +11,7 @@
 		<baseChance>.01</baseChance>
 		<category>ThreatBig</category>
 		<tale>Raid</tale>
-		<earliestDay>70</earliestDay>
+		<earliestDay>0</earliestDay>
 		<minRefireDays>35</minRefireDays>
 		<modExtensions>
 			<li Class="Bastyon.RaidOptions">
@@ -43,7 +43,7 @@
 				</requiredResearchProjectsUnlocked> -->
 				
 				<minimumPlayerTechLevel>Industrial</minimumPlayerTechLevel>
-				<minimumPlayerWealth>70000</minimumPlayerWealth>
+				<minimumPlayerWealth>40000</minimumPlayerWealth>
 				<raidStrategy>ImmediateAttack</raidStrategy>
 				<raidArrival>EdgeWalkInGroups</raidArrival>
 				<disableLordRaid>true</disableLordRaid>
