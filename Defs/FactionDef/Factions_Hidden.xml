@@ -34,8 +34,8 @@
     <hidden>true</hidden>
     <autoFlee>false</autoFlee>
     <canUseAvoidGrid>false</canUseAvoidGrid>
-    <techLevel>Ultra</techLevel>
-    <earliestRaidDays>85</earliestRaidDays>
+    <techLevel>Industrial</techLevel>
+    <earliestRaidDays>70</earliestRaidDays>
     <permanentEnemy>true</permanentEnemy>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
     <maxPawnCostPerTotalPointsCurve>
@@ -51,36 +51,7 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <Mech_Centipede>10</Mech_Centipede>
-          <Mech_Lancer>10</Mech_Lancer>
-          <Mech_Scyther>10</Mech_Scyther>
-          <Mech_Pikeman>10</Mech_Pikeman>
-        </options>
-      </li>
-      <li>
-        <!-- Ranged only -->
-        <kindDef>Combat</kindDef>
-        <commonality>80</commonality>
-        <options>
-          <Mech_Centipede>10</Mech_Centipede>
-          <Mech_Lancer>10</Mech_Lancer>
-          <Mech_Pikeman>10</Mech_Pikeman>
-        </options>
-      </li>
-      <li>
-        <!-- Melee only-->
-        <kindDef>Combat</kindDef>
-        <commonality>70</commonality>
-        <options>
-          <Mech_Scyther>10</Mech_Scyther>
-        </options>
-      </li>
-      <li>
-        <!-- Centipede only -->
-        <kindDef>Combat</kindDef>
-        <commonality>30</commonality>
-        <options>
-          <Mech_Centipede>10</Mech_Centipede>
+          <Bast_Bahlrin>10</Bast_Bahlrin>
         </options>
       </li>
     </pawnGroupMakers>
