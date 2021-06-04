@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Gnomaclu</defName>
     <label>gnomaclu</label>
-    <description>Resembling floating billard balls with what would appear to be an eye in the center, Gnomaclus often travel in packs and feast on low hanging or standing vegetation. They are very weak creatures and a sinlge well-placed shot to the upper most portion of their shperical form will most certainly guarantee death.</description>
+    <description>Resembling floating billiard balls with what would appear to be an eye in the center, Gnomaclus often travel in packs and feast on low hanging or standing vegetation. They are very weak creatures and a single well-placed shot to the upper most portion of their spherical form will most certainly guarantee death.</description>
     <statBases>
       <MoveSpeed>2.5</MoveSpeed>
       <MarketValue>35</MarketValue>

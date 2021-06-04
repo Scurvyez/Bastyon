@@ -4,7 +4,7 @@
   <ThingDef ParentName="BigCatThingBase">
     <defName>Bast_Blazing_Felidae</defName>
     <label>blazing felidae</label>
-    <description>An animal of unknown origin, certainly not of Earth. With razor-like claws and the ears of a bat, they make perfect companions for the aspiring colony.\n\nBe wary though! These creatures are timid and unsure of this world. What secrets do these stellar beasts pocess...</description>
+    <description>Shrouded in eternal flame, blazing felidae can survive in the most brutally warm environments. Riding one of these sizzling mounts into battle while screaming at your enemies will surely strike fear into your enemies!</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
@@ -82,9 +82,9 @@
       <wildBiomes>
         <IceSheet>0.00</IceSheet>
 				<SeaIce>0.00</SeaIce>
-        <ColdBog>0.001</ColdBog>
+        <ColdBog>0.00</ColdBog>
         <Desert>0.10</Desert>
-        <BorealForest>0.002</BorealForest>
+        <BorealForest>0.01</BorealForest>
         <Tundra>0.00</Tundra>
 				<TemperateForest>0.05</TemperateForest>
 				<TemperateSwamp>0.01</TemperateSwamp>
@@ -110,7 +110,7 @@
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
       <gestationPeriodDays>26</gestationPeriodDays>
-      <lifeExpectancy>10</lifeExpectancy>
+      <lifeExpectancy>15</lifeExpectancy>
       <lifeStageAges Inherit="false">
         <li>
           <def>AnimalBaby</def>

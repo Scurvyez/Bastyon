@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseInsect">
 		<defName>Bast_Gray_Terror</defName>
 		<label>gray terror</label>
-		<description>Gray terrors are gigantic arachnids. Their hides are like steel and will rebuke most blunt attacks, a well placed, and well sharpened, blade however will render thesee creatures helpless.\n\nThese hulking, grotesgue abominations began appearing all over the Rim shortly after one crazed scientist decided to transport one back to his lab... nobody knows the fate of the scientist.</description>
+		<description>Gray terrors are gigantic arachnids. Their hides are like steel and will rebuke most blunt attacks, a well placed, and well sharpened, blade however will render these creatures helpless.\n\nThese hulking, grotesque abominations began appearing all over the Rim shortly after one crazed scientist decided to transport a small one back to his lab... nobody knows the fate of the scientist.</description>
 		<statBases>
 			<MoveSpeed>3.7</MoveSpeed>
 			<ComfyTemperatureMin>15</ComfyTemperatureMin>
@@ -59,8 +59,8 @@
 				<SeaIce>0.00</SeaIce>
                 <ColdBog>0.02</ColdBog>
                 <Desert>0.10</Desert>
-                <BorealForest>0.05</BorealForest>
-                <Tundra>0.12</Tundra>
+                <BorealForest>0.01</BorealForest>
+                <Tundra>0.01</Tundra>
 				<TemperateForest>0.07</TemperateForest>
 				<TemperateSwamp>0.15</TemperateSwamp>
 				<TropicalRainforest>0.15</TropicalRainforest>

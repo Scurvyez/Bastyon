@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Scire</defName>
     <label>scire</label>
-    <description>Scires are deer-like creatures dwelling primarily in temerpate regions. While female scires appear unalarming and rather mundane their male counterparts are equipped with massive antlers encasing a precious glowing blue center gemstone.\n\nAlthough not of this realm, they seem to have no trouble navigating this world. They are the protectors of the forest.</description>
+    <description>Scires are deer-like creatures dwelling primarily in temperate regions. While female scires appear unalarming and rather mundane their male counterparts are equipped with massive antlers encasing a precious glowing blue center gemstone.\n\nAlthough not of this realm, they seem to have no trouble navigating this world. They are the protectors of the forest.</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -58,15 +58,15 @@
         <IceSheet>0.15</IceSheet>
 				<SeaIce>0.30</SeaIce>
         <ColdBog>0.04</ColdBog>
-        <Desert>0.06</Desert>
+        <Desert>0.00</Desert>
         <BorealForest>0.30</BorealForest>
         <Tundra>0.30</Tundra>
 				<TemperateForest>0.10</TemperateForest>
 				<TemperateSwamp>0.06</TemperateSwamp>
 				<TropicalRainforest>0.06</TropicalRainforest>
 				<TropicalSwamp>0.06</TropicalSwamp>
-				<AridShrubland>0.01</AridShrubland>
-        <ExtremeDesert>0.01</ExtremeDesert>
+				<AridShrubland>0.00</AridShrubland>
+        <ExtremeDesert>0.00</ExtremeDesert>
 			</wildBiomes>
       <body>QuadrupedAnimalWithHooves</body>
       <herdAnimal>true</herdAnimal>
