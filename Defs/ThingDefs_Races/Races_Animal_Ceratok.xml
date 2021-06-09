@@ -108,6 +108,7 @@
       <li>AnimalFighter</li>
     </tradeTags>
   </ThingDef>
+  
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Bast_Ceratok</defName>
     <label>ceratok</label>

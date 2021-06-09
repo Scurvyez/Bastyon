@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
   
   <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
     <equipmentType>Primary</equipmentType>
@@ -58,6 +57,42 @@
     <thingSetMakerTags>
       <li>AnimalPart</li>
     </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="MechSerumBase">
+    <defName>Bast_Eternal_Flame_Core</defName>
+    <label>eternal flame core</label>
+    <description>Once the driving life-force of a majestic male scire, this eternal flame core no longer carries the searing heat of an entire sun within.\n\nHowever... what once carried life offers the chance for another. This core holds the power of resurrection and with it, hope, for a soul who's last breath was not so long ago.\n\nTake care! For the cost of a life may be high.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/Bast_Eternal_Flame_Core</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>1700</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>inject eternal flame core</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SingleCorpse</compClass>
+        <fleshCorpsesOnly>true</fleshCorpsesOnly>
+        <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
+      </li>
+      <li>
+        <compClass>CompTargetEffect_Resurrect</compClass>
+      </li>
+    </comps>
   </ThingDef>
 
 </Defs>

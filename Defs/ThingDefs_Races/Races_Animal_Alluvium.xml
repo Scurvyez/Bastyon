@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BaseInsect">
+  <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Alluvium</defName>
     <label>alluvium</label>
     <description>As a near weightless clump of semi-solidified pink and purple goo, Alluvium are similar to ancient Earth-dwelling amphibians. They move slow and have practically no armor making them an easy target for humans and beasts alike.\n\nInside their gelatinous bodies you will find a soft, sticky-sweet jelly with a taste to match it's delicious hue!</description>
@@ -14,6 +14,19 @@
       <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
     </statBases>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
+        <reproductionIntervalDays>8</reproductionIntervalDays>
+        <customString>Duplicating in: </customString>
+      </li>
+      <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>Bast_Alluvium_Jelly</resourceDef>
+				<gatheringIntervalDays>2</gatheringIntervalDays>
+				<resourceAmount>20</resourceAmount>
+        <customResourceString>alluvium jelly</customResourceString>
+        <isRandom>false</isRandom>
+			</li>
+    </comps>
     <tools>
 			<li>
 				<label>Bast_Nucleoplasm</label>
@@ -28,17 +41,21 @@
 			</li>
 		</tools>
     <race>
+      <herdAnimal>true</herdAnimal>
       <body>Bast_LimblessGelatinous</body>
       <baseHungerRate>0.05</baseHungerRate>
       <foodType>OmnivoreAnimal</foodType>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.7</baseHealthScale>
-      <gestationPeriodDays>9</gestationPeriodDays>
       <wildness>0.03</wildness>
       <trainability>None</trainability>
       <manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.00</manhunterOnDamageChance>
+      <canBePredatorPrey>true</canBePredatorPrey>
       <lifeExpectancy>9</lifeExpectancy>
+      <hasGenders>false</hasGenders>
+      <mateMtbHours>1000</mateMtbHours>
+			<gestationPeriodDays>1000</gestationPeriodDays>
       <wildBiomes>
         <IceSheet>0.00</IceSheet>
 				<SeaIce>0.00</SeaIce>
@@ -54,20 +71,20 @@
 			</wildBiomes>
       <lifeStageAges>
         <li>
-          <def>EusocialInsectLarva</def>
+          <def>AnimalBaby</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>EusocialInsectJuvenile</def>
-          <minAge>1.5</minAge>
+          <def>AnimalJuvenile</def>
+          <minAge>.25</minAge>
         </li>
         <li>
-          <def>EusocialInsectAdult</def>
-          <minAge>2.5</minAge>
-          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
-          <soundDeath>Pawn_Spelopede_Death</soundDeath>
-          <soundCall>Pawn_Spelopede_Call</soundCall>
-          <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+          <def>AnimalAdult</def>
+          <minAge>.50</minAge>
+          <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+          <soundDeath>Pawn_Rodent_Wounded</soundDeath>
+          <soundCall>Pawn_Rodent_Call</soundCall>
+          <soundAngry>Pawn_Rodent_Angry</soundAngry>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -76,10 +93,9 @@
     </race>
     <butcherProducts>
 			  <Bast_AlluviumFlesh>10</Bast_AlluviumFlesh>
-        <Bast_Alluvium_Jelly>20</Bast_Alluvium_Jelly>
 		</butcherProducts>
     <tradeTags>
-      <li>AnimalInsect</li>
+      <li>AnimalUncommon</li>
     </tradeTags>
   </ThingDef>
 
@@ -115,10 +131,6 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Bast_Alluvium/Bast_Alluvium</texPath>
           <drawSize>2.33</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.5, 0.37)</volume>
-            <offset>(0,0,-0.15)</offset>
-          </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Bast_Alluvium/Bast_Dessicated_Alluvium</texPath>

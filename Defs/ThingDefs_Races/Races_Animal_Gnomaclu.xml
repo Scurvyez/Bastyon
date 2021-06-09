@@ -88,6 +88,10 @@
     <tradeTags>
       <li>AnimalCommon</li>
     </tradeTags>
+    <comps>		
+      <li Class="AnimalBehaviours.CompProperties_Floating">
+      </li>
+    </comps>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">

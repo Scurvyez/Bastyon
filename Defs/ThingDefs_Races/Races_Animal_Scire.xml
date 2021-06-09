@@ -8,8 +8,17 @@
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
-      <MarketValue>300</MarketValue>
+      <MarketValue>350</MarketValue>
     </statBases>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
+        <hediffsToRemove>
+          <li>Animal_Plague</li>
+          <li>Animal_Flu</li>
+        </hediffsToRemove>
+        <tickInterval>2000</tickInterval>
+      </li>
+    </comps>
     <tools>
       <li>
         <label>left hoof</label>
@@ -55,16 +64,16 @@
     </tools>
     <race>
       <wildBiomes>
-        <IceSheet>0.15</IceSheet>
-				<SeaIce>0.30</SeaIce>
-        <ColdBog>0.04</ColdBog>
+        <IceSheet>0.01</IceSheet>
+				<SeaIce>0.01</SeaIce>
+        <ColdBog>0.00</ColdBog>
         <Desert>0.00</Desert>
-        <BorealForest>0.30</BorealForest>
-        <Tundra>0.30</Tundra>
-				<TemperateForest>0.10</TemperateForest>
-				<TemperateSwamp>0.06</TemperateSwamp>
-				<TropicalRainforest>0.06</TropicalRainforest>
-				<TropicalSwamp>0.06</TropicalSwamp>
+        <BorealForest>0.02</BorealForest>
+        <Tundra>0.02</Tundra>
+				<TemperateForest>0.01</TemperateForest>
+				<TemperateSwamp>0.00</TemperateSwamp>
+				<TropicalRainforest>0.00</TropicalRainforest>
+				<TropicalSwamp>0.00</TropicalSwamp>
 				<AridShrubland>0.00</AridShrubland>
         <ExtremeDesert>0.00</ExtremeDesert>
 			</wildBiomes>
@@ -72,8 +81,8 @@
       <herdAnimal>true</herdAnimal>
       <trainability>Advanced</trainability>
       <nameOnTameChance>1</nameOnTameChance>
-      <petness>1</petness>
-      <nuzzleMtbHours>3</nuzzleMtbHours>
+      <petness>.01</petness>
+      <nuzzleMtbHours>13</nuzzleMtbHours>
       <predator>false</predator>
       <maxPreyBodySize>1.0</maxPreyBodySize>
       <baseBodySize>1.0</baseBodySize>
@@ -113,8 +122,11 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
+    <butcherProducts>
+			  <Bast_Eternal_Flame_Core>1</Bast_Eternal_Flame_Core>
+		</butcherProducts>
     <tradeTags>
-      <li>AnimalCommon</li>
+      <li>AnimalExotic</li>
     </tradeTags>
   </ThingDef>
 
@@ -123,7 +135,7 @@
     <label>scire</label>
     <labelPlural>scire</labelPlural>
     <race>Bast_Scire</race>
-    <combatPower>60</combatPower>
+    <combatPower>210</combatPower>
     <ecoSystemWeight>0.35</ecoSystemWeight>
     <wildGroupSize>
 			<min>2</min>

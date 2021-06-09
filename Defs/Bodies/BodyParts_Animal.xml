@@ -86,12 +86,13 @@
 		</tags>
 	</BodyPartDef>
 
-	<!--____________________Spider Specific Body-parts____________________-->
+	<!--____________________Spider / Insect Specific Body-parts____________________-->
 
 	<BodyPartDef>
 		<defName>Bast_Thorax</defName>
 		<label>thorax</label>
 		<hitPoints>60</hitPoints>
+		<bleedRate>5</bleedRate>
 		<frostbiteVulnerability>0.8</frostbiteVulnerability>
 		<skinCovered>false</skinCovered>
 	</BodyPartDef>
@@ -105,6 +106,37 @@
 		<tags>
 			<li>EatingSource</li>
 		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_SmallInsectLeg</defName>
+		<label>small leg</label>
+		<hitPoints>5</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_Abdomen</defName>
+		<label>abdomen</label>
+		<hitPoints>25</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>true</skinCovered>
+
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_Antennae</defName>
+		<label>antennae</label>
+		<hitPoints>5</hitPoints>
+		<bleedRate>1</bleedRate>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
 	</BodyPartDef>
 
 </Defs>

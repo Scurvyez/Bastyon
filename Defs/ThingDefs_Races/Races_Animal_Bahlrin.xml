@@ -108,6 +108,9 @@
 		</tradeTags>
 		<comps>
 			<li Class="Bastyon.CompProperties_VulnerableToSunlight"></li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>Bast_Monsters</factionToReturnTo>			
+			</li>
 		</comps>
 	</ThingDef>
 

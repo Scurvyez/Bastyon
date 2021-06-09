@@ -14,6 +14,13 @@
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<Flammability>0</Flammability>
     </statBases>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_PassiveRegenerator">
+        <radius>5</radius>
+        <needsToBeTamed>true</needsToBeTamed>
+        <tickInterval>120</tickInterval>	
+      </li>
+    </comps>
     <tools>
       <li>
         <label>left claw</label>

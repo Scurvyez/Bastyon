@@ -110,7 +110,7 @@
 					<xpath>/Defs/ThingDef[defName="Bast_Scire"]/race/wildBiomes</xpath>
 					<value>
 
-						<AB_MycoticJungle>0.10</AB_MycoticJungle>
+						<AB_MycoticJungle>0.01</AB_MycoticJungle>
 
 					</value>
 				</li>
