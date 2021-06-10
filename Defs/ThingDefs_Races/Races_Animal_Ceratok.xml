@@ -4,12 +4,69 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Ceratok</defName>
     <label>ceratok</label>
-    <description>Ceratok are extremely docile herbivores, unless provoked. Once enraged they will use the massive frontal duel horns protruding just below their eyes to inflict massive amounts of damage. Ceratok make wondrous caravan animals as well as colony guards.</description>
+    <description>Ceratok are extremely docile herbivores, unless provoked. Once enraged they will use the massive frontal duel horns protruding just below their eyes to inflict massive amounts of damage.n\n\They will occasionally dig in the ground for stone and they make wondrous caravan animals as well as colony guards.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
       <MarketValue>700</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
     </statBases>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+        <customThingToDig>			
+          <li>ChunkSandstone</li>
+          <li>ChunkGranite</li>
+          <li>ChunkLimestone</li>
+          <li>ChunkSlate</li>
+          <li>ChunkMarble</li>
+          <li>ChunkSandstone</li>
+          <li>ChunkGranite</li>
+          <li>ChunkLimestone</li>
+          <li>ChunkSlate</li>
+          <li>ChunkMarble</li>
+          <li>ChunkSandstone</li>
+          <li>ChunkGranite</li>
+          <li>ChunkLimestone</li>
+          <li>ChunkSlate</li>
+          <li>ChunkMarble</li>
+          <li>ChunkSandstone</li>
+          <li>ChunkGranite</li>
+          <li>ChunkLimestone</li>
+          <li>ChunkSlate</li>
+          <li>ChunkMarble</li>
+          <li>ChunkSandstone</li>
+          <li>ChunkGranite</li>
+          <li>ChunkLimestone</li>
+          <li>ChunkSlate</li>		
+        </customThingToDig>
+        <customAmountToDig>				
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+        </customAmountToDig>
+        <ticksToDig>40000</ticksToDig>
+      </li>
+    </comps>
     <tools>
       <li>
         <label>horn</label>
@@ -107,6 +164,12 @@
       <li>AnimalUncommon</li>
       <li>AnimalFighter</li>
     </tradeTags>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_CeratokArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">

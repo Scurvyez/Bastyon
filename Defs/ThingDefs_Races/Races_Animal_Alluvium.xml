@@ -97,6 +97,12 @@
     <tradeTags>
       <li>AnimalUncommon</li>
     </tradeTags>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_AlluviumArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">

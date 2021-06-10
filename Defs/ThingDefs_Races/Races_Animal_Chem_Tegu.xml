@@ -114,6 +114,12 @@
             <li>AnimalUncommon</li>
             <li>AnimalFighter</li>
         </tradeTags>
+        <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_ChemTeguArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
     </ThingDef>
   
     <PawnKindDef ParentName="AnimalKindBase">

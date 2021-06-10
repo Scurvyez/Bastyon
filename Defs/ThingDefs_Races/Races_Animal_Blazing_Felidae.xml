@@ -4,7 +4,7 @@
   <ThingDef ParentName="BigCatThingBase">
     <defName>Bast_Blazing_Felidae</defName>
     <label>blazing felidae</label>
-    <description>Shrouded in eternal flame, blazing felidae can survive in the most brutally warm environments. Riding one of these sizzling mounts into battle while screaming at your enemies will surely strike fear into your enemies!</description>
+    <description>Shrouded in eternal flame, blazing felidae can survive in the most brutally warm environments. Riding one of these sizzling mounts into battle while screaming at your enemies will surely strike fear into your enemies!n\n\Blazing felidae are immune to flame damage and laugh in the face of fire.</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
@@ -12,6 +12,7 @@
       <MarketValue>475</MarketValue>
       <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Heat>100</ArmorRating_Heat>
 			<Flammability>0</Flammability>
     </statBases>
     <tools>
@@ -133,6 +134,12 @@
       <li>AnimalRare</li>
       <li>AnimalFighter</li>
     </tradeTags>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_BlazingFelidaeArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="BigCatKindBase">

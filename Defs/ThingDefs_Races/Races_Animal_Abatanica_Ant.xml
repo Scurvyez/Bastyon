@@ -10,6 +10,7 @@
             <ComfyTemperatureMin>10</ComfyTemperatureMin>
             <ComfyTemperatureMax>120</ComfyTemperatureMax>
             <MarketValue>275</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
             <ArmorRating_Heat>1</ArmorRating_Heat>
             <Flammability>0</Flammability>
         </statBases>
@@ -67,7 +68,6 @@
             <fleshType>Insectoid</fleshType>
             <bloodDef>Filth_BloodInsect</bloodDef>
             <useMeatFrom>Megaspider</useMeatFrom>
-            <leatherDef>Leather_Chitin</leatherDef>
             <litterSizeCurve>
                 <points>
                     <li>(0.99, 0)</li>
@@ -76,6 +76,19 @@
                 </points>
             </litterSizeCurve>
             <lifeExpectancy>14</lifeExpectancy>
+            <wildBiomes>
+                <IceSheet>0.00</IceSheet>
+				<SeaIce>0.00</SeaIce>
+                <ColdBog>0.00</ColdBog>
+                <Desert>0.10</Desert>
+                <BorealForest>0.01</BorealForest>
+                <Tundra>0.00</Tundra>
+				<TemperateForest>0.02</TemperateForest>
+				<TemperateSwamp>0.02</TemperateSwamp>
+				<TropicalRainforest>0.02</TropicalRainforest>
+				<TropicalSwamp>0.10</TropicalSwamp>
+				<AridShrubland>0.10</AridShrubland>
+			</wildBiomes>
             <lifeStageAges Inherit="false">
                 <li>
                     <def>AnimalBaby</def>
@@ -101,6 +114,12 @@
         <tradeTags>
             <li>AnimalUncommon</li>
         </tradeTags>
+        <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_AbatanicaAntArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">
@@ -113,10 +132,10 @@
         <canArriveManhunter>false</canArriveManhunter>
         <wildGroupSize>
             <min>3</min>
-            <max>7</max>
+            <max>20</max>
         </wildGroupSize>
-        <labelMale>drones</labelMale>
-        <labelFemale>queens</labelFemale>
+        <labelMale>drone</labelMale>
+        <labelFemale>queen</labelFemale>
         <lifeStages>
 
             <!-- Child -->

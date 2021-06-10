@@ -6,12 +6,17 @@
     <label>gnomaclu</label>
     <description>Resembling floating billiard balls with what would appear to be an eye in the center, Gnomaclus often travel in packs and feast on low hanging or standing vegetation. They are very weak creatures and a single well-placed shot to the upper most portion of their spherical form will most certainly guarantee death.</description>
     <statBases>
-      <MoveSpeed>2.5</MoveSpeed>
+      <MoveSpeed>3.1</MoveSpeed>
       <MarketValue>35</MarketValue>
       <ComfyTemperatureMin>-23</ComfyTemperatureMin>
       <ComfyTemperatureMax>32</ComfyTemperatureMax>
       <MeatAmount>0</MeatAmount>
     </statBases>
+    <comps>		
+      <li Class="AnimalBehaviours.CompProperties_Floating">
+      
+      </li>
+    </comps>
     <tools>
 			<li>
 				<label>head</label>
@@ -88,10 +93,12 @@
     <tradeTags>
       <li>AnimalCommon</li>
     </tradeTags>
-    <comps>		
-      <li Class="AnimalBehaviours.CompProperties_Floating">
-      </li>
-    </comps>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_GnomacluArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">

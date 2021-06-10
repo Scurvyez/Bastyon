@@ -119,6 +119,12 @@
 		<tradeTags>
 			<li>ExoticAnimal</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_GrayTerrorArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">

@@ -4,7 +4,7 @@
     <ThingDef ParentName="BigCatThingBase">
         <defName>Bast_Soul_Eater</defName>
         <label>soul eater</label>
-        <description>A half-dead astral dog not of this plane of existence. Soul Eaters are terrifyingly beautiful and pack quite a punch in battle.\n\nThey proudly display the souls of their most recent kills upon robust gilded wings.</description>
+        <description>A half-dead astral dog not of this plane of existence. Soul Eaters are terrifyingly beautiful and pack quite a punch in battle.\n\nThey proudly display the souls of their most recent kills upon robust gilded wings and they do not experience pain as other living creatures do.</description>
         <statBases>
             <MoveSpeed>5.5</MoveSpeed>
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -14,6 +14,12 @@
 			<ArmorRating_Sharp>1.40</ArmorRating_Sharp>
 			<Flammability>0.02</Flammability>
         </statBases>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>Bast_NoPain</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+        </comps>
         <tools>
             <li>
                 <label>left talon</label>
@@ -132,6 +138,12 @@
         <tradeTags>
             <li>AnimalExotic</li>
         </tradeTags>
+        <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_SoulEaterArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
     </ThingDef>
 
     <PawnKindDef ParentName="BigCatKindBase">

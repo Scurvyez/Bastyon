@@ -112,6 +112,12 @@
 				<factionToReturnTo>Bast_Monsters</factionToReturnTo>			
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_BahlrinArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

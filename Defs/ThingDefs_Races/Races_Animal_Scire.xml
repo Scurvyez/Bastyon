@@ -18,6 +18,11 @@
         </hediffsToRemove>
         <tickInterval>2000</tickInterval>
       </li>
+      <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+        <resourceDef>Bast_Eternal_Flame_Core</resourceDef>
+        <resourceAmount>1</resourceAmount>
+        <dropChance>1.0</dropChance>
+      </li>
     </comps>
     <tools>
       <li>
@@ -122,12 +127,15 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
-    <butcherProducts>
-			  <Bast_Eternal_Flame_Core>1</Bast_Eternal_Flame_Core>
-		</butcherProducts>
     <tradeTags>
       <li>AnimalExotic</li>
     </tradeTags>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_ScireArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
