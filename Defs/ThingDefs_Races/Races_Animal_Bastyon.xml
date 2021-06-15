@@ -21,6 +21,25 @@
         <tickInterval>120</tickInterval>	
       </li>
     </comps>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>.85</accuracyMedium>
+				<accuracyLong>.75</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bast_BastyonPlasmaStream</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>3</minRange>
+				<range>15</range>
+				<soundCast>Bast_BastyonPlasmaStream</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>terrestrial plasma</label>
+				<commonality>1</commonality>
+			</li>
+		</verbs>
     <tools>
       <li>
         <label>left claw</label>
