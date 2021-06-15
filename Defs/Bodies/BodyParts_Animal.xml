@@ -91,8 +91,8 @@
 	<BodyPartDef>
 		<defName>Bast_Thorax</defName>
 		<label>thorax</label>
-		<hitPoints>60</hitPoints>
-		<bleedRate>5</bleedRate>
+		<hitPoints>80</hitPoints>
+		<bleedRate>.25</bleedRate>
 		<frostbiteVulnerability>0.8</frostbiteVulnerability>
 		<skinCovered>false</skinCovered>
 	</BodyPartDef>
@@ -111,7 +111,7 @@
 	<BodyPartDef>
 		<defName>Bast_SmallInsectLeg</defName>
 		<label>small leg</label>
-		<hitPoints>5</hitPoints>
+		<hitPoints>20</hitPoints>
 		<frostbiteVulnerability>0.1</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
@@ -123,8 +123,8 @@
 	<BodyPartDef>
 		<defName>Bast_Abdomen</defName>
 		<label>abdomen</label>
-		<hitPoints>25</hitPoints>
-		<bleedRate>5</bleedRate>
+		<hitPoints>50</hitPoints>
+		<bleedRate>.1</bleedRate>
 		<skinCovered>true</skinCovered>
 
 	</BodyPartDef>

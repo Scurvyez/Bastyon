@@ -98,7 +98,7 @@
 					<coverage>0.02</coverage>
 					<height>Middle</height>
 					<groups>
-						<li>LegAttackTool</li>
+						<li>FrontLeftLeg</li>
 					</groups>
 				</li>
 				<li>
@@ -107,7 +107,7 @@
 					<coverage>0.02</coverage>
 					<height>Middle</height>
 					<groups>
-						<li>LegAttackTool</li>
+						<li>FrontRightLeg</li>
 					</groups>
 				</li>
 				<li>
@@ -124,13 +124,13 @@
 				</li>
                 <li>
 					<def>Bast_SmallInsectLeg</def>
-					<customLabel>left second leg</customLabel>
+					<customLabel>left third leg</customLabel>
 					<coverage>0.02</coverage>
 					<height>Middle</height>
 				</li>
 				<li>
 					<def>Bast_SmallInsectLeg</def>
-					<customLabel>right second leg</customLabel>
+					<customLabel>right third leg</customLabel>
 					<coverage>0.02</coverage>
 					<height>Middle</height>
 				</li>

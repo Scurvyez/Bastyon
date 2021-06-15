@@ -15,6 +15,25 @@
       <ArmorRating_Heat>100</ArmorRating_Heat>
 			<Flammability>0</Flammability>
     </statBases>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>.85</accuracyMedium>
+				<accuracyLong>.75</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bast_FireStream</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>3</minRange>
+				<range>15</range>
+				<soundCast>Bast_FireStream</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>blazing fire</label>
+				<commonality>1</commonality>
+			</li>
+		</verbs>
     <tools>
       <li>
         <label>left claw</label>

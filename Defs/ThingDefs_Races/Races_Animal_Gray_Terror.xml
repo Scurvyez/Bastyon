@@ -20,7 +20,7 @@
 				</capacities>
 				<power>13</power>
 				<cooldownTime>1.4</cooldownTime>
-				<linkedBodyPartsGroup>LegAttackTool</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>right front metatarsus</label>
@@ -29,7 +29,7 @@
 				</capacities>
 				<power>13</power>
 				<cooldownTime>1.4</cooldownTime>
-				<linkedBodyPartsGroup>LegAttackTool</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>head</label>
@@ -74,7 +74,6 @@
 			<baseBodySize>1.50</baseBodySize>
 			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>1.2</baseHealthScale>
-			<leatherDef>Leather_Chitin</leatherDef>
 			<bloodDef>Filth_BloodInsect</bloodDef>
             <useMeatFrom>Megaspider</useMeatFrom>
 			<foodType>OmnivoreAnimal, AnimalProduct</foodType>

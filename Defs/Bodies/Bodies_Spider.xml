@@ -103,7 +103,7 @@
 					<coverage>0.06</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>LegAttackTool</li>
+						<li>FrontLeftLeg</li>
 					</groups>
 				</li>
 				<li>
@@ -112,7 +112,7 @@
 					<coverage>0.06</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>LegAttackTool</li>
+						<li>FrontRightLeg</li>
 					</groups>
 				</li>
 				<li>
