@@ -177,8 +177,11 @@
     <label>ceratok</label>
     <race>Bast_Ceratok</race>
     <combatPower>320</combatPower>
-    <ecoSystemWeight>1.5</ecoSystemWeight>
-    <wildGroupSize>1~4</wildGroupSize>
+    <ecoSystemWeight>0.4</ecoSystemWeight>
+    <wildGroupSize>
+      <min>3</min>
+      <max>6</max>
+    </wildGroupSize>
     <lifeStages>
       <li>
         <bodyGraphicData>

@@ -130,7 +130,11 @@
     <race>Bast_Alluvium</race>
     <combatPower>10</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
-    <ecoSystemWeight>0.03</ecoSystemWeight>
+    <ecoSystemWeight>0.02</ecoSystemWeight>
+    <wildGroupSize>
+      <min>2</min>
+      <max>10</max>
+    </wildGroupSize>
     <lifeStages>
       <li>
         <bodyGraphicData>

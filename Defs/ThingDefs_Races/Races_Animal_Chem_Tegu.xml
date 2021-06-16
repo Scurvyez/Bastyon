@@ -127,8 +127,11 @@
         <label>chem tegu</label>
         <race>Bast_Chem_Tegu</race>
         <combatPower>80</combatPower>
-        <ecoSystemWeight>1.1</ecoSystemWeight>
-        <wildGroupSize>3~6</wildGroupSize>
+        <ecoSystemWeight>0.5</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>4</max>
+        </wildGroupSize>
         <lifeStages>
             <li>
                 <bodyGraphicData>

@@ -150,10 +150,10 @@
 		<race>Bast_Gray_Terror</race>
 		<label>gray terror</label>
 		<combatPower>180</combatPower>
-		<ecoSystemWeight>0.6</ecoSystemWeight>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>
 			<min>1</min>
-			<max>3</max>
+			<max>4</max>
 		</wildGroupSize>
 		<lifeStages>
 			<li>

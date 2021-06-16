@@ -127,7 +127,7 @@
         <label>abatanica ant</label>
         <labelPlural>abatanica ants</labelPlural>
         <race>Bast_Abatanica_Ant</race>
-        <ecoSystemWeight>0.3</ecoSystemWeight>
+        <ecoSystemWeight>0.1</ecoSystemWeight>
         <combatPower>80</combatPower>
         <canArriveManhunter>false</canArriveManhunter>
         <wildGroupSize>

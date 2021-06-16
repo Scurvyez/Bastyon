@@ -163,10 +163,10 @@
     <labelPlural>scire</labelPlural>
     <race>Bast_Scire</race>
     <combatPower>210</combatPower>
-    <ecoSystemWeight>0.35</ecoSystemWeight>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
     <wildGroupSize>
-			<min>2</min>
-			<max>8</max>
+			<min>1</min>
+			<max>6</max>
 		</wildGroupSize>
     <labelMale>stag</labelMale>
     <labelFemale>hind</labelFemale>

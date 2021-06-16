@@ -150,11 +150,11 @@
         <defName>Bast_Soul_Eater</defName>
         <label>soul eater</label>
         <race>Bast_Soul_Eater</race>
-        <ecoSystemWeight>0.35</ecoSystemWeight>
+        <ecoSystemWeight>0.66</ecoSystemWeight>
         <combatPower>270</combatPower>
         <wildGroupSize>
 			<min>1</min>
-			<max>1</max>
+			<max>2</max>
 	    </wildGroupSize>
         <lifeStages>
             <li>
