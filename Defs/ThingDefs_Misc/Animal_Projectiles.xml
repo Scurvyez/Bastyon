@@ -18,6 +18,40 @@
 		</projectile>
 	</ThingDef>
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_Web</defName>
+		<label>spider web</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_Web</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>15</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_AlluviumGoo</defName>
+		<label>goo</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_AlluviumGoo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<speed>8</speed>
+		</projectile>
+	</ThingDef>
+
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Bast_FireStream</defName>
 		<label> blazing fire</label>

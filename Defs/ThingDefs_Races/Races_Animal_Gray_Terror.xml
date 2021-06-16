@@ -53,6 +53,25 @@
 				</eggCountRange>
 			</li>
 		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>.85</accuracyMedium>
+				<accuracyLong>.75</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bast_Web</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<burstShotCount>2</burstShotCount>
+				<minRange>1</minRange>
+				<range>15</range>
+				<soundCast>Bast_Throw</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>spider web</label>
+				<commonality>.5</commonality>
+			</li>
+		</verbs>
 		<race>
 			<wildBiomes>
                 <IceSheet>0.00</IceSheet>

@@ -27,6 +27,25 @@
         <isRandom>false</isRandom>
 			</li>
     </comps>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>.95</accuracyShort>
+				<accuracyMedium>.85</accuracyMedium>
+				<accuracyLong>.75</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bast_AlluviumGoo</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<burstShotCount>3</burstShotCount>
+				<minRange>1</minRange>
+				<range>12</range>
+				<soundCast>Bast_Throw</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>alluvium goo</label>
+				<commonality>1</commonality>
+			</li>
+		</verbs>
     <tools>
 			<li>
 				<label>Bast_Nucleoplasm</label>
