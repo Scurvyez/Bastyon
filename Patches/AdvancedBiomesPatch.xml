@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Abatanica_Ant"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.10</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.01</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Alluvium"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.10</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.02</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Bahlrin"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.05</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Bastyon"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.02</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Blazing_Felidae"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.10</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Ceratok"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.15</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Chem_Tegu"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.01</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.10</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Ethereal_Lion"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.02</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Gnomaclu"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.05</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.08</Wasteland>
+						<Wetland>0.01</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Gray_Terror"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.01</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.03</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Scire"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.07</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Soul_Eater"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.10</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
