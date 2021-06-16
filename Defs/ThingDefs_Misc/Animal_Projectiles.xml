@@ -2,23 +2,19 @@
 <Defs>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>Bast_IncendiaryMote</defName>
-		<label>fireball</label>
+		<defName>Bast_ScireFireBall</defName>
+		<label>fire spit</label>
+		
 		<graphicData>
-			<texPath>Things/Projectiles/Bast_Fireball</texPath>
+			<texPath>Things/Projectiles/Bast_ScireFireBall</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
 		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
-			<speed>40</speed>
+			<flyOverhead>false</flyOverhead>
 			<damageDef>Flame</damageDef>
-			<damageAmountBase>15</damageAmountBase>
-			<explosionRadius>1.0</explosionRadius>
-			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-			<ai_IsIncendiary>true</ai_IsIncendiary>
-			<soundExplode>Interact_Ignite</soundExplode>
+			<damageAmountBase>1.25</damageAmountBase>
+			<speed>16</speed>
 		</projectile>
 	</ThingDef>
 

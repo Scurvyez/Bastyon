@@ -24,6 +24,25 @@
         <dropChance>1.0</dropChance>
       </li>
     </comps>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bast_ScireFireBall</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<burstShotCount>3</burstShotCount>
+				<minRange>2</minRange>
+				<range>15</range>
+				<soundCast>Bast_ScireFireBall</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>eternal fire</label>
+				<commonality>.75</commonality>
+			</li>
+		</verbs>
     <tools>
       <li>
         <label>left hoof</label>
