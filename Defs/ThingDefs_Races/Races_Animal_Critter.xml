@@ -19,19 +19,19 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <accuracyTouch>1</accuracyTouch>
-                <accuracyShort>.95</accuracyShort>
-                <accuracyMedium>.85</accuracyMedium>
-                <accuracyLong>.75</accuracyLong>
+                <accuracyShort>.90</accuracyShort>
+                <accuracyMedium>.80</accuracyMedium>
+                <accuracyLong>.65</accuracyLong>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bast_CritterSpike</defaultProjectile>
-                <warmupTime>1.25</warmupTime>
-                <burstShotCount>3</burstShotCount>
+                <warmupTime>1.75</warmupTime>
+                <burstShotCount>2</burstShotCount>
                 <minRange>3</minRange>
-                <range>14</range>
+                <range>10</range>
                 <soundCast>Bast_Throw</soundCast>
                 <muzzleFlashScale>0</muzzleFlashScale>
                 <label>critter spike</label>
-                <commonality>1</commonality>
+                <commonality>.90</commonality>
             </li>
         </verbs>
         <comps>
@@ -61,19 +61,18 @@
         </tools> -->
         <race>
             <herdAnimal>true</herdAnimal>
-            <body>Bast_LimblessGelatinous</body>
+            <body>Bast_Critter</body>
             <baseHungerRate>1.2</baseHungerRate>
             <foodType>OmnivoreAnimal, CarnivoreAnimal</foodType>
             <baseBodySize>0.65</baseBodySize>
             <baseHealthScale>1.5</baseHealthScale>
+            <bloodDef>Filth_CritterBlood</bloodDef>
             <wildness>1.00</wildness>
             <trainability>None</trainability>
             <manhunterOnDamageChance>0.99</manhunterOnDamageChance>
             <canBePredatorPrey>false</canBePredatorPrey>
             <lifeExpectancy>5</lifeExpectancy>
             <hasGenders>false</hasGenders>
-            <mateMtbHours>1000</mateMtbHours>
-            <gestationPeriodDays>1000</gestationPeriodDays>
             <predator>true</predator>
 			<maxPreyBodySize>2.5</maxPreyBodySize>
             <wildBiomes>

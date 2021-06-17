@@ -74,7 +74,7 @@
     <thingCategories>
       <li>Items</li>
     </thingCategories>
-    <tradeability>Sellable</tradeability>
+    <tradeability>None</tradeability>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>

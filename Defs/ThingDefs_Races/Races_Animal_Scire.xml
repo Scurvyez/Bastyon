@@ -112,6 +112,7 @@
       <baseBodySize>1.0</baseBodySize>
       <baseHungerRate>0.19</baseHungerRate>
       <baseHealthScale>1.8</baseHealthScale>
+      <bloodDef>Filth_CritterBlood</bloodDef>
       <foodType>VegetarianRoughAnimal</foodType>
       <meatLabel>scire shank</meatLabel>
       <leatherDef>Leather_Scire</leatherDef>

@@ -66,6 +66,8 @@
       <foodType>OmnivoreAnimal</foodType>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.7</baseHealthScale>
+      <fleshType>Alluvium</fleshType>
+      <bloodDef>Filth_AlluviumBlood</bloodDef>
       <wildness>0.03</wildness>
       <trainability>None</trainability>
       <manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
