@@ -61,9 +61,8 @@
             <baseBodySize>0.25</baseBodySize>
             <baseHealthScale>1.75</baseHealthScale>
             <baseHungerRate>1.5</baseHungerRate>
-            <wildness>0.7</wildness>
+            <wildness>1.0</wildness>
             <manhunterOnDamageChance>0.99</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
             <trainability>None</trainability>
             <fleshType>Insectoid</fleshType>
             <bloodDef>Filth_BloodInsect</bloodDef>

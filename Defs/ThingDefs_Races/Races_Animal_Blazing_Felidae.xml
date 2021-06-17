@@ -115,7 +115,7 @@
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <herdAnimal>false</herdAnimal>
       <trainability>Advanced</trainability>
-      <petness>1</petness>
+      <petness>0.2</petness>
       <nameOnTameChance>1</nameOnTameChance>
       <nuzzleMtbHours>18</nuzzleMtbHours>
       <predator>true</predator>

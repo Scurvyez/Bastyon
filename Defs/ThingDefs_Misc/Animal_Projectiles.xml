@@ -52,6 +52,23 @@
 		</projectile>
 	</ThingDef>
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_CritterSpike</defName>
+		<label>critter spike</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_CritterSpike</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Cut</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Bast_FireStream</defName>
 		<label> blazing fire</label>

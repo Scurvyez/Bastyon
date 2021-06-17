@@ -35,18 +35,6 @@
                 </li>
 
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/ThingDef[defName = "Bast_Blazing_Felidae"]</xpath>
-                    <value>
-                        <li Class="GiddyUpCore.DrawingOffsetPatch">
-                            <northOffsetCSV>0,0,-0.3</northOffsetCSV>
-                            <southOffsetCSV>0,0,-0.3</southOffsetCSV>
-                            <eastOffsetCSV>0.1,0,0</eastOffsetCSV>
-                            <westOffsetCSV>-0.1,0,0</westOffsetCSV>
-                        </li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ceratok"]</xpath>
                     <value>
                         <li Class="GiddyUpCore.DrawingOffsetPatch">
@@ -181,41 +169,6 @@
                 </li>
 
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName = "Bast_Blazing_Felidae" and not (comps)]</xpath>
-                    <value>
-                        <comps></comps>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName = "Bast_Blazing_Felidae"]/comps</xpath>
-                    <value>
-                        <li Class="GiddyUpCore.CompProperties_Overlay">
-                            <overlayFront>
-                                <graphicDataDefault>
-                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Blazing_Felidae_overlay_south</texPath>
-                                    <graphicClass>Graphic_Single</graphicClass>
-                                    <drawSize>3.1</drawSize>
-                                    <drawRotated>false</drawRotated>
-                                    <shaderType>MetaOverlay</shaderType>
-                                </graphicDataDefault>
-                                <offsetDefault>(0,1,0,0)</offsetDefault>
-                            </overlayFront>
-                            <overlaySide>
-                                <graphicDataDefault>
-                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Blazing_Felidae_overlay_east</texPath>
-                                    <graphicClass>Graphic_Single</graphicClass>
-                                    <drawSize>3.1</drawSize>
-                                    <drawRotated>false</drawRotated>
-                                    <shaderType>MetaOverlay</shaderType>
-                                </graphicDataDefault>
-                                <offsetDefault>(0,1,0,0)</offsetDefault>
-                            </overlaySide>
-                        </li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ceratok" and not (comps)]</xpath>
                     <value>
                         <comps></comps>
@@ -271,11 +224,11 @@
                         <li Class="GiddyUpCore.FactionRestrictionsPatch">
                             <mountChance>30</mountChance>
                             <!-- wild animals are the animals that can spawn in the wild -->
-                            <wildAnimalWeight>100</wildAnimalWeight>                            <!--Weights can have any integer value, and the relative fraction to the other weight will determine the change a type of animal spawns-->
-                            <nonWildAnimalWeight>0</nonWildAnimalWeight>                            <!-- setting this to 0 ensures no default domestic animals are spawned -->
+                            <wildAnimalWeight>100</wildAnimalWeight> <!--Weights can have any integer value, and the relative fraction to the other weight will determine the change a type of animal spawns-->
+                            <nonWildAnimalWeight>0</nonWildAnimalWeight> <!-- setting this to 0 ensures no default domestic animals are spawned -->
                             <!-- nonWild animals are the animals that cannot spawn in the wild, examples are Thrumbo's, farm animals etc.  -->
-                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Blazing_Felidae,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>                            <!--Use a csv with animal DefNames-->
-                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>                            <!-- only making this empty will imply no restrictions at all, so make sure domesticAnimalWeight is 0 if you don't want any domestic animals-->
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV> <!--Use a csv with animal DefNames-->
+                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV> <!-- only making this empty will imply no restrictions at all, so make sure domesticAnimalWeight is 0 if you don't want any domestic animals-->
                         </li>
                     </value>
                 </li>
@@ -287,7 +240,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Blazing_Felidae,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -300,7 +253,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Blazing_Felidae,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -313,7 +266,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Blazing_Felidae,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -326,7 +279,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Blazing_Felidae,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -339,7 +292,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Blazing_Felidae,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -352,7 +305,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Blazing_Felidae,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -365,11 +318,12 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Blazing_Felidae,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
                 </li>
+
             </operations>
         </match>
     </Operation>
