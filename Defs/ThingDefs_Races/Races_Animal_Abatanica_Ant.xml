@@ -6,7 +6,7 @@
         <label>abatanica ant</label>
         <description>Although not necessarily aggresive by default, abatanica ants are resource hungry almost all day. They will eat through rocks and minerals alike.\n\nOver millions of years of evolution their stomachs have taken to the hard and cold stone often found scattered in mountains and hills across rimworlds. In addition to their primary diet of granite, slate, limestone, and other rock variants, they will occasionally feast on unrefined resouces like jade, gold, and plasteel.\n\nIf you happen to come across these insects, keep a close eye on your valuables.</description>
         <statBases>
-            <MoveSpeed>1.5</MoveSpeed>
+            <MoveSpeed>3.8</MoveSpeed>
             <ComfyTemperatureMin>10</ComfyTemperatureMin>
             <ComfyTemperatureMax>120</ComfyTemperatureMax>
             <MarketValue>275</MarketValue>
@@ -41,6 +41,20 @@
                 <!-- <percentageOfDestruction>0.5</percentageOfDestruction> --> <!-- turn on if fullyDestroyThing is false -->
                 <needsWater>false</needsWater>
             </li>
+            <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+                <resourceDef>Steel</resourceDef>
+                <resourceAmount>5</resourceAmount>
+                <dropChance>0.50</dropChance>			
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
+                <defOfBuilding>Bast_AbatanicaAntColonyMound</defOfBuilding>
+                <ticksToBuild>4000</ticksToBuild>
+                <maxBuildingsPerMap>2</maxBuildingsPerMap>
+                <acceptedTerrains>
+                    <li>Soil</li>
+                    <li>RichSoil</li>
+                </acceptedTerrains>
+            </li>
         </comps>
         <tools>
             <li>
@@ -58,11 +72,12 @@
             <predator>false</predator>
             <body>Bast_Ant</body>
             <maxPreyBodySize>0.5</maxPreyBodySize>
-            <baseBodySize>0.25</baseBodySize>
+            <baseBodySize>0.10</baseBodySize>
             <baseHealthScale>2.2</baseHealthScale>
             <baseHungerRate>1.5</baseHungerRate>
             <wildness>1.0</wildness>
             <manhunterOnDamageChance>0.99</manhunterOnDamageChance>
+            <deathActionWorkerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</deathActionWorkerClass>
             <trainability>None</trainability>
             <fleshType>Insectoid</fleshType>
             <bloodDef>Filth_BloodInsect</bloodDef>
@@ -130,7 +145,7 @@
         <combatPower>80</combatPower>
         <canArriveManhunter>false</canArriveManhunter>
         <wildGroupSize>
-            <min>10</min>
+            <min>15</min>
             <max>40</max>
         </wildGroupSize>
         <labelMale>drone</labelMale>
@@ -142,7 +157,7 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Male</texPath>
-                    <drawSize>0.25</drawSize>
+                    <drawSize>0.30</drawSize>
                     <shadowData>
                         <volume>(0.1, 0.1, 0.1)</volume>
                         <offset>(0,0,0)</offset>
@@ -150,7 +165,7 @@
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Female</texPath>
-                    <drawSize>0.25</drawSize>
+                    <drawSize>0.30</drawSize>
                     <shadowData>
                         <volume>(0.1, 0.1, 0.1)</volume>
                         <offset>(0,0,0)</offset>
@@ -158,11 +173,11 @@
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
-                    <drawSize>0.25</drawSize>
+                    <drawSize>0.30</drawSize>
                 </dessicatedBodyGraphicData>
                 <femaleDessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
-                    <drawSize>0.25</drawSize>
+                    <drawSize>0.30</drawSize>
                 </femaleDessicatedBodyGraphicData>
             </li>
 
@@ -171,7 +186,7 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Male</texPath>
-                    <drawSize>0.7</drawSize>
+                    <drawSize>0.50</drawSize>
                     <shadowData>
                         <volume>(0.3, 0.3, 0.3)</volume>
                         <offset>(0,0,0)</offset>
@@ -179,7 +194,7 @@
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Female</texPath>
-                    <drawSize>0.8</drawSize>
+                    <drawSize>0.60</drawSize>
                     <shadowData>
                         <volume>(0.3, 0.3, 0.3)</volume>
                         <offset>(0,0,0)</offset>
@@ -187,11 +202,11 @@
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
-                    <drawSize>0.7</drawSize>
+                    <drawSize>0.50</drawSize>
                 </dessicatedBodyGraphicData>
                 <femaleDessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
-                    <drawSize>0.8</drawSize>
+                    <drawSize>0.60</drawSize>
                 </femaleDessicatedBodyGraphicData>
             </li>
 
@@ -200,7 +215,7 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Adult_Male</texPath>
-                    <drawSize>1.0</drawSize>
+                    <drawSize>0.80</drawSize>
                     <shadowData>
                         <volume>(0.5, 0.5, 0.5)</volume>
                         <offset>(0,0,0)</offset>
@@ -208,7 +223,7 @@
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Adult_Female</texPath>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>0.92</drawSize>
                     <shadowData>
                         <volume>(0.8, 0.8, 0.8)</volume>
                         <offset>(0,0,0)</offset>
@@ -216,11 +231,11 @@
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
-                    <drawSize>1.0</drawSize>
+                    <drawSize>0.80</drawSize>
                 </dessicatedBodyGraphicData>
                 <femaleDessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>0.92</drawSize>
                 </femaleDessicatedBodyGraphicData>
             </li>
         </lifeStages>

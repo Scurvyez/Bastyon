@@ -21,7 +21,7 @@
       <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
         <resourceDef>Bast_Eternal_Flame_Core</resourceDef>
         <resourceAmount>1</resourceAmount>
-        <dropChance>1.0</dropChance>
+        <dropChance>0.10</dropChance>
       </li>
     </comps>
     <verbs>
@@ -117,6 +117,7 @@
       <meatLabel>scire shank</meatLabel>
       <leatherDef>Leather_Scire</leatherDef>
       <wildness>0.50</wildness>
+      <deathActionWorkerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</deathActionWorkerClass>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
       <gestationPeriodDays>24</gestationPeriodDays>

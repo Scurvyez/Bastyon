@@ -26,6 +26,16 @@
         <customResourceString>alluvium jelly</customResourceString>
         <isRandom>false</isRandom>
 			</li>
+      <li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
+        <defOfBuilding>Bast_VibrantGelatinousMass</defOfBuilding>
+        <ticksToBuild>360000</ticksToBuild>
+        <maxBuildingsPerMap>2</maxBuildingsPerMap>
+        <acceptedTerrains>
+          <li>Mud</li>
+          <li>Soil</li>
+          <li>RichSoil</li>
+        </acceptedTerrains>
+      </li>
     </comps>
     <verbs>
 			<li>
