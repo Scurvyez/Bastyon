@@ -46,19 +46,18 @@
 				</eggCountRange>
 			</li>
 		</comps>
-        <!-- <tools>
+        <tools>
             <li>
-                <label>Bast_Nucleoplasm</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>0.01</power>
-                <cooldownTime>10</cooldownTime>
-                <linkedBodyPartsGroup>Bast_Body</linkedBodyPartsGroup>
-                <ensureLinkedBodyPartsGroupAlwaysUsable>false</ensureLinkedBodyPartsGroupAlwaysUsable>
-                <chanceFactor>0.01</chanceFactor>
-            </li>
-        </tools> -->
+				<label>jagged teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>4</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.30</chanceFactor>
+			</li>
+        </tools>
         <race>
             <herdAnimal>true</herdAnimal>
             <body>Bast_Critter</body>

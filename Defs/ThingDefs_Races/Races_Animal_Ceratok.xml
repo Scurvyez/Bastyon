@@ -124,7 +124,7 @@
       <body>QuadrupedAnimalWithHoovesAndHorn</body>
       <baseHungerRate>1.5</baseHungerRate>
       <baseBodySize>3.5</baseBodySize>
-      <baseHealthScale>3.5</baseHealthScale>
+      <baseHealthScale>5.1</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Ceratok</leatherDef>
       <wildness>0.50</wildness>

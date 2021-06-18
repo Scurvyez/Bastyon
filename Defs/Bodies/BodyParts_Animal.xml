@@ -139,4 +139,65 @@
 		<skinCovered>false</skinCovered>
 	</BodyPartDef>
 
+	<!--____________________Snipping Snail Specific Body-parts____________________-->
+	
+	<BodyPartDef>
+		<defName>Bast_GastropodShell</defName>
+		<label>hardy gastropod shell</label>
+		<hitPoints>100</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>			
+
+	<BodyPartDef>
+		<defName>Bast_SnailBody</defName>
+		<label>snail body</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_SnailEyeStalk</defName>
+		<label>eyestalk</label>
+		<hitPoints>12</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+
+		<alive>true</alive>
+		<tags>
+			<li>ManipulationLimbCore</li>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_BladedLeftLeg</defName>
+		<label>left bladed leg</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_BladedRightLeg</defName>
+		<label>right bladed leg</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
 </Defs>

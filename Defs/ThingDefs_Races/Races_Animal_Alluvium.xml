@@ -65,7 +65,7 @@
       <baseHungerRate>0.05</baseHungerRate>
       <foodType>OmnivoreAnimal</foodType>
       <baseBodySize>1.0</baseBodySize>
-      <baseHealthScale>1.7</baseHealthScale>
+      <baseHealthScale>3.2</baseHealthScale>
       <fleshType>Alluvium</fleshType>
       <bloodDef>Filth_AlluviumBlood</bloodDef>
       <wildness>0.03</wildness>

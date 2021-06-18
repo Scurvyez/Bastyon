@@ -102,7 +102,29 @@
 				</li>
 
                 <li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="Bast_Gnomaclu"]/race/wildBiomes</xpath>
+					<xpath>/Defs/ThingDef[defName="Bast_Sunburst_Gnomaclu"]/race/wildBiomes</xpath>
+					<value>
+
+						<AB_MycoticJungle>0.05</AB_MycoticJungle>
+						<AB_OcularForest>0.11</AB_OcularForest>
+						<AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Midnight_Gnomaclu"]/race/wildBiomes</xpath>
+					<value>
+
+						<AB_MycoticJungle>0.05</AB_MycoticJungle>
+						<AB_OcularForest>0.11</AB_OcularForest>
+						<AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Hazey_Gnomaclu"]/race/wildBiomes</xpath>
 					<value>
 
 						<AB_MycoticJungle>0.05</AB_MycoticJungle>

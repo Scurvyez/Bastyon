@@ -114,7 +114,7 @@
 			</wildBiomes>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <herdAnimal>false</herdAnimal>
-      <trainability>Advanced</trainability>
+      <trainability>None</trainability>
       <petness>0.2</petness>
       <nameOnTameChance>1</nameOnTameChance>
       <nuzzleMtbHours>18</nuzzleMtbHours>
