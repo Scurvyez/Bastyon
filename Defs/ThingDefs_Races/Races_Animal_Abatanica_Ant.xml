@@ -48,7 +48,7 @@
             </li>
             <li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
                 <defOfBuilding>Bast_AbatanicaAntColonyMound</defOfBuilding>
-                <ticksToBuild>4000</ticksToBuild>
+                <ticksToBuild>420000</ticksToBuild>
                 <maxBuildingsPerMap>2</maxBuildingsPerMap>
                 <acceptedTerrains>
                     <li>Soil</li>

@@ -99,6 +99,8 @@
 			<trainability>None</trainability>
 			<hasGenders>false</hasGenders>
 			<lifeExpectancy>4</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      		<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
 			<mateMtbHours>100</mateMtbHours>
 			<gestationPeriodDays>12</gestationPeriodDays>
 			<lifeStageAges>

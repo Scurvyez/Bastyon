@@ -175,6 +175,17 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Snipping_Snail"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.12</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
 			</operations>
 		</match>
 	</Operation>

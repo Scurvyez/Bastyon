@@ -105,7 +105,7 @@
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-			  <Bast_GnomacluMeat>10</Bast_GnomacluMeat>
+			  <Bast_SunburstGnomacluMeat>10</Bast_SunburstGnomacluMeat>
 		</butcherProducts>
     <tradeTags>
       <li>AnimalCommon</li>

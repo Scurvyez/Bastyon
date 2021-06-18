@@ -14,7 +14,25 @@
 		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
 		<value>
 			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>Bast_GnomacluMeat</thingDef>
+				<thingDef>Bast_SunburstGnomacluMeat</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Bast_MignightGnomacluMeat</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Bast_HazeyGnomacluMeat</thingDef>
 			</li>
 		</value>
 	</Operation>

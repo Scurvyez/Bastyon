@@ -64,7 +64,7 @@
 
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>Bast_AbatanicaAntColonyMound</defName>
-    <label>vibrant gelatinous mass</label>
+    <label>colony mound</label>
     <description>A coagulated mass of soil, insect carcasses, mud, and fortitude! These ugly mounds are home to entire colonies of abatanica ants, an insect that feasts on precious materials and stone.</description>
     <thingClass>Hive</thingClass>
     <graphicData>
@@ -101,7 +101,7 @@
         <maxSpawnedPawnsPoints>150</maxSpawnedPawnsPoints>
       </li>
       <li Class="CompProperties_SelfhealHitpoints">
-        <ticksPerHeal>420000</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
+        <ticksPerHeal>4000</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
       </li>
       <li Class="CompProperties_SpawnerHives" />
       <li Class="CompProperties_Maintainable">

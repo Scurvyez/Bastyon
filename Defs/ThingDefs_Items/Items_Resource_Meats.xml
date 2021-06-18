@@ -27,14 +27,54 @@
 		</thingCategories>
 	</ThingDef>
 
-	<!--____________________Gnomaclu____________________-->
+	<!--____________________Sunburst Gnomaclu____________________-->
 
 	<ThingDef ParentName="Bast_RawMeatBase">
-		<defName>Bast_GnomacluMeat</defName>
+		<defName>Bast_SunburstGnomacluMeat</defName>
 		<label>weird rubbery meat</label>
 		<description>Raw meat from a recently slain Gnomaclu. The texture is similar to aged rubber.\n\nIt will fullfill hunger, if it's all you've got...</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Bast_GnomacluMeat</texPath>
+			<texPath>Things/Item/Resource/Bast_SunburstGnomacluMeat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<MarketValue>2</MarketValue>
+			<Flammability>0.00</Flammability>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+	</ThingDef>
+
+	<!--____________________Midnight Gnomaclu____________________-->
+
+	<ThingDef ParentName="Bast_RawMeatBase">
+		<defName>Bast_MignightGnomacluMeat</defName>
+		<label>weird rubbery meat</label>
+		<description>Raw meat from a recently slain Gnomaclu. The texture is similar to aged rubber.\n\nIt will fullfill hunger, if it's all you've got...</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Bast_MidnightGnomacluMeat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<MarketValue>2</MarketValue>
+			<Flammability>0.00</Flammability>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+	</ThingDef>
+
+	<!--____________________Hazey Gnomaclu____________________-->
+
+	<ThingDef ParentName="Bast_RawMeatBase">
+		<defName>Bast_HazeyGnomacluMeat</defName>
+		<label>weird rubbery meat</label>
+		<description>Raw meat from a recently slain Gnomaclu. The texture is similar to aged rubber.\n\nIt will fullfill hunger, if it's all you've got...</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Bast_HazeyGnomacluMeat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
