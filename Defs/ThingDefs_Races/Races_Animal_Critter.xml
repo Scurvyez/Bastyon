@@ -106,10 +106,25 @@
         </tradeTags>
         <modExtensions>
                 <li Class="AnimalBehaviours.AnimalStatExtension">
+                    <statToAdd>
+                        <li>Bast_SecondaryRole</li>
+                        <li>Bast_PrimaryRole</li>
+                        <li>Bast_RangedAttacks</li>					
+                    </statToAdd>
+                    <statValues>
+                        <li>Bast_EggLayer</li>
+                        <li>Bast_DamageRangedSharp</li>
+                        <li>Bast_Yes</li>					
+                    </statValues>
+                    <statDescriptions>
+                        <li>Bast_EggLayerDesc</li>
+                        <li>Bast_DamageRangedSharpDesc</li>
+                        <li>Bast_Ranged</li>
+                    </statDescriptions>
                     <showImageInInfoCard>true</showImageInInfoCard>
                     <ImageToShowInInfoCard>Art/Bast_CritterArt</ImageToShowInInfoCard>
                 </li>
-            </modExtensions>
+        </modExtensions>
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">
