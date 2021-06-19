@@ -35,6 +35,11 @@
             </li>
         </verbs>
         <comps>
+            <li Class="AnimalBehaviours.CompProperties_Untameable">
+                <message>Bast_CritterNotTameable</message>
+				<sendMessage>true</sendMessage>
+				<goesManhunter>true</goesManhunter>
+            </li>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>Bast_Critter_EggUnfertilized</eggUnfertilizedDef>
                 <eggFertilizedDef>Bast_Critter_EggFertilized</eggFertilizedDef>
@@ -64,7 +69,7 @@
             <baseHungerRate>1.2</baseHungerRate>
             <foodType>OmnivoreAnimal, CarnivoreAnimal</foodType>
             <baseBodySize>0.65</baseBodySize>
-            <baseHealthScale>1.5</baseHealthScale>
+            <baseHealthScale>0.5</baseHealthScale>
             <bloodDef>Filth_CritterBlood</bloodDef>
             <wildness>1.00</wildness>
             <trainability>None</trainability>

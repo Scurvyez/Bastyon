@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-    <!-- All Animal Stats -->
+    <!-- Misc -->
+
+    <Bast_CritterNotTameable>Critters live for the kill. It's all they know. You'll die before you tame one.</Bast_CritterNotTameable>
+    <Bast_BahlrinNotTameable>Bahlrins exist soley to rip you limb from limb. Taming them is impossible. You're more likely to be shot in the same eye 3 times in one gunfight.</Bast_BahlrinNotTameable>
+
+    <!-- Animal Products -->
+
+    <Bast_Alluvium_Jelly>Alluvium Jelly Production</Bast_Alluvium_Jelly>
+    <Chemfuel>Chemfuel Production</Chemfuel>
+    
+    <!-- Animal Stats -->
 	
 	<Bast_PrimaryRole>Primary Role</Bast_PrimaryRole>
 	<Bast_SecondaryRole>Secondary Role</Bast_SecondaryRole>
@@ -11,7 +21,7 @@
 	<Bast_NoRanged>This animal doesn't have ranged attacks. To order for it to attack, it needs to be trained in Guard and Attack, then it needs to be assigned to follow a master when drafted and/or working. The "release" button on the master's commands bar will make the animal attack in melee.</Bast_NoRanged>
 	<Bast_Ranged>This animal uses ranged attacks, and will only use melee attacks if the enemy gets into melee range. To order it to attack, it needs to be trained in Guard and Attack, then it needs to be assigned to follow a master when drafted and/or working. The "release" button on the master's commands bar will make the animal search for appropiate cover and use its ranged attack.</Bast_Ranged>
 
-    <!-- All Roles -->
+    <!-- Roles -->
 
     <Bast_Floater>Floater</Bast_Floater>
     <Bast_Boomer>Boomer</Bast_Boomer>
@@ -25,7 +35,7 @@
     <Bast_DamageRangedFlame>Flame Ranged Attacker</Bast_DamageRangedFlame>
     <Bast_DamageRangedPlasma>Plasma Ranged Attacker</Bast_DamageRangedPlasma>
 
-    <!-- All Role Descriptions -->
+    <!-- Role Descriptions -->
 	
 	<Bast_FloaterDesc>This animal floats above the ground, ignoring all movement penalties.</Bast_FloaterDesc>
     <Bast_BoomerDesc>This animal explodes on death.</Bast_BoomerDesc>

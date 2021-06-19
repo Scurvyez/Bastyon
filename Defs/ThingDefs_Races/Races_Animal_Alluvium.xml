@@ -23,7 +23,7 @@
 				<resourceDef>Bast_Alluvium_Jelly</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
 				<resourceAmount>20</resourceAmount>
-        <customResourceString>alluvium jelly</customResourceString>
+        <customResourceString>Bast_Alluvium_Jelly</customResourceString>
         <isRandom>false</isRandom>
 			</li>
       <li Class="AnimalBehaviours.CompProperties_BuildPeriodically">

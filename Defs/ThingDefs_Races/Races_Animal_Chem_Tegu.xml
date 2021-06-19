@@ -15,7 +15,7 @@
                 <resourceDef>Chemfuel</resourceDef>
                 <gatheringIntervalDays>1</gatheringIntervalDays>
                 <resourceAmount>15</resourceAmount>
-                <customResourceString>chemfuel</customResourceString>
+                <customResourceString>Chemfuel</customResourceString>
                 <isRandom>false</isRandom>
             </li>
         </comps>

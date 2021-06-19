@@ -39,7 +39,7 @@
   Compatible with Giddy-Up Battle Mounts!
   Compatible with Vanilla Achievements Expanded
 
-  &lt;size=22&gt;Credit&lt;/size&gt;
+  &lt;size=22&gt;Credits&lt;/size&gt;
   Gray Terror and Soul Eater Textures donated by Kasmex
   All other textures made by me, Steve! o.O
   Critter suggested by Thomus
@@ -48,13 +48,14 @@
 
 
   See the workshop page and the wiki for more. :)
-  View the full changelog on Github as well. 
+  View the full changelog on Github as well.
   </description>
 
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
     <li>brrainz.harmony</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
     <li>vanillaexpanded.achievements</li>
     <li>roolo.giddyupcore</li>
   </loadAfter>

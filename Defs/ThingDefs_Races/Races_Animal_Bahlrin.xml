@@ -107,10 +107,12 @@
 			<li>AnimalFighter</li>
 		</tradeTags>
 		<comps>
-			<li Class="Bastyon.CompProperties_VulnerableToSunlight"></li>
 			<li Class="AnimalBehaviours.CompProperties_Untameable">
-				<factionToReturnTo>Bast_Monsters</factionToReturnTo>			
-			</li>
+                <message>Bast_BahlrinNotTameable</message>
+				<sendMessage>true</sendMessage>
+				<goesManhunter>true</goesManhunter>
+            </li>
+			<li Class="Bastyon.CompProperties_VulnerableToSunlight"></li>
 		</comps>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
