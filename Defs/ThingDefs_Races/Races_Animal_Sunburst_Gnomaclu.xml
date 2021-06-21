@@ -60,6 +60,7 @@
 				<TropicalRainforest>0.30</TropicalRainforest>
 				<TropicalSwamp>0.35</TropicalSwamp>
 				<AridShrubland>0.10</AridShrubland>
+        <ExtremeDesert>0.02</ExtremeDesert>
 			</wildBiomes>
       <body>Bast_LimblessHovering</body>
       <herdAnimal>true</herdAnimal>

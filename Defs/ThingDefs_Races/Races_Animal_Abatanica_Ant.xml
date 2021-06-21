@@ -102,6 +102,7 @@
 				<TropicalRainforest>0.02</TropicalRainforest>
 				<TropicalSwamp>0.10</TropicalSwamp>
 				<AridShrubland>0.10</AridShrubland>
+                <ExtremeDesert>0.02</ExtremeDesert>
 			</wildBiomes>
             <lifeStageAges Inherit="false">
                 <li>
@@ -130,6 +131,15 @@
         </tradeTags>
         <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>Bast_PrimaryRole</li>			
+                </statToAdd>
+                <statValues>
+                    <li>Bast_WeirdEater</li>	
+                </statValues>
+                <statDescriptions>
+                    <li>Bast_WeirdEaterDesc</li>
+                </statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
 				<ImageToShowInInfoCard>Art/Bast_AbatanicaAntArt</ImageToShowInInfoCard>
 			</li>

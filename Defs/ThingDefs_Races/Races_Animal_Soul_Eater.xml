@@ -84,6 +84,25 @@
                 <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
+        <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>.85</accuracyMedium>
+				<accuracyLong>.75</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bast_BlisteringWind</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>1</minRange>
+				<range>8</range>
+				<soundCast>Bast_SnippingSnailAcid</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>blistering wind</label>
+				<commonality>1</commonality>
+			</li>
+		</verbs>
         <race>
         <wildBiomes>
             <IceSheet>0.00</IceSheet>

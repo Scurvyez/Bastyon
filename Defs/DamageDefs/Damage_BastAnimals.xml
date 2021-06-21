@@ -19,4 +19,18 @@
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>
 
+	<DamageDef>
+		<defName>Bast_BlisteringWindExtinguish</defName>
+		<label>blistering wind</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been permanently extinguished.</deathMessage>
+		<hediff>Frostbite</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<overkillPctToDestroyPart>0~0.4</overkillPctToDestroyPart>
+		<harmsHealth>true</harmsHealth>
+		<isRanged>true</isRanged>
+	</DamageDef>
+
 </Defs>

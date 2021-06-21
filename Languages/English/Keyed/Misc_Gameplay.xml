@@ -27,6 +27,7 @@
     <Bast_Boomer>Boomer</Bast_Boomer>
     <Bast_Farm>Farm Animal</Bast_Farm>
     <Bast_EggLayer>Egg Layer</Bast_EggLayer>
+    <Bast_WeirdEater>Weird Eater<Bast_WeirdEater>
 	<Bast_LivingFireExtinguisher>Living Fire Extinguisher</Bast_LivingFireExtinguisher>
 	<Bast_LivingEMPBlast>Living EMP Blast</Bast_LivingEMPBlast>
     <Bast_LivingSmokeScreen>Living Smoke Screen</Bast_LivingSmokeScreen>
@@ -41,10 +42,11 @@
     <Bast_BoomerDesc>This animal explodes on death.</Bast_BoomerDesc>
     <Bast_FarmDesc>This is a farm animal.</Bast_FarmDesc>
     <Bast_EggLayerDesc>This animal will periodically lay eggs.</Bast_EggLayerDesc>
+    <Bast_WeirdEaterDesc>This animal eats a very strange variety of foods.<Bast_WeirdEaterDesc>
 	<Bast_LivingFireExtinguisherDesc>When damaged via ranged attacks this animal will burst, emitting a supersonic puff of air extinguishing all flames nearby.</Bast_LivingFireExtinguisherDesc>
 	<Bast_LivingEMPBlastDesc>When damaged via ranged attacks this animal will burst, emitting a large EMP blast.</Bast_LivingEMPBlastDesc>
     <Bast_LivingSmokeScreenDesc>When damaged via ranged attacks this animal will burst, engulfing the surrounding area in thick smoke.</Bast_LivingSmokeScreenDesc>
-	<Bast_DamageRangedSharpDesc>This animal will use ranged attacks which inflict cutting damage.</Bast_DamageRangedSharpDesc>
+    <Bast_DamageRangedSharpDesc>This animal will use ranged attacks which inflict cutting damage.</Bast_DamageRangedSharpDesc>
 	<Bast_DamageRangedAcidDesc>This animal will use highly corrosive ranged attacks to inflict lasting acidic damage.</Bast_DamageRangedAcidDesc>
     <Bast_DamageRangedFlameDesc>This animal will spew blazing flames towards its target, most likely lighting anything in between on fire.</Bast_DamageRangedFlameDesc>
     <Bast_DamageRangedPlasmaDesc>This animal will shell out devastating plasma-based ranged attacks which carry the heat of an entire sun.</Bast_DamageRangedPlasmaDesc>

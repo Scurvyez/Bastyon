@@ -4,7 +4,7 @@
   <ThingDef ParentName="BigCatThingBase">
     <defName>Bast_Blazing_Felidae</defName>
     <label>blazing felidae</label>
-    <description>Shrouded in eternal flame, blazing felidae can survive in the most brutally warm environments. Riding one of these sizzling mounts into battle while screaming at your enemies will surely strike fear into your enemies!n\n\Blazing felidae are immune to flame damage and laugh in the face of fire.</description>
+    <description>Shrouded in eternal flame, blazing felidae can survive in the most brutally warm environments. Riding one of these sizzling mounts into battle while screaming at your enemies will surely strike fear into your enemies!\n\nBlazing felidae are immune to flame damage and laugh in the face of fire.</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>-5</ComfyTemperatureMin>
@@ -12,7 +12,7 @@
       <MarketValue>475</MarketValue>
       <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-      <ArmorRating_Heat>100</ArmorRating_Heat>
+      <ArmorRating_Heat>200</ArmorRating_Heat>
 			<Flammability>0</Flammability>
     </statBases>
     <verbs>
@@ -27,7 +27,7 @@
 				<warmupTime>5</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>3</minRange>
-				<range>15</range>
+				<range>8</range>
 				<soundCast>Bast_FireStream</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>blazing fire</label>
@@ -110,7 +110,8 @@
 				<TemperateSwamp>0.01</TemperateSwamp>
 				<TropicalRainforest>0.01</TropicalRainforest>
 				<TropicalSwamp>0.01</TropicalSwamp>
-				<AridShrubland>0.10</AridShrubland>
+				<AridShrubland>0.05</AridShrubland>
+        <ExtremeDesert>0.05</ExtremeDesert>
 			</wildBiomes>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <herdAnimal>false</herdAnimal>

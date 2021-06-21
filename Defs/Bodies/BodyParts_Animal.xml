@@ -200,4 +200,30 @@
 		</tags>
 	</BodyPartDef>
 
+	<!--____________________Elemental Specific Parts____________________-->
+
+	<BodyPartDef>
+		<defName>Bast_SavrogMainBody</defName>
+		<label>ardent shroud</label>
+		<hitPoints>350</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Bast_FieryFist</defName>
+		<label>smoldering fist</label>
+		<hitPoints>30</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
 </Defs>
