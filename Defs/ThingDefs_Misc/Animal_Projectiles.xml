@@ -76,7 +76,7 @@
 		<graphicData>
 			<texPath>Things/Projectiles/Bast_SnippingSnailAcid</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
@@ -91,21 +91,22 @@
 		<label>blistering wind</label>
 		
 		<graphicData>
-			<texPath>Things/Projectiles/Bast_SnippingSnailAcid</texPath>
+			<texPath>Things/Projectiles/Bast_BlisteringWind</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>2.5</drawSize>
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bast_BlisteringWindExtinguish</damageDef>
-			<damageAmountBase>2.5</damageAmountBase>
-			<speed>14</speed>
+			<damageAmountBase>3.2</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>	
+			<speed>22</speed>
 		</projectile>
 	</ThingDef>
 
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Bast_FireStream</defName>
-		<label> blazing fire</label>
+		<label>blazing fire</label>
 		<thingClass>VFECore.FlamethrowProjectile</thingClass>
 		<graphicData>
 			<texPath>Things/Projectiles/Proj_FireStream</texPath>
@@ -173,7 +174,7 @@
 			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<drawOffscreen>true</drawOffscreen>
-		<lifeTimeDuration>12</lifeTimeDuration>
+		<lifeTimeDuration>8</lifeTimeDuration>
 		<widthScaleFactor>0.50</widthScaleFactor>
 		<heightScaleFactor>1</heightScaleFactor>
 		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
@@ -184,11 +185,11 @@
 		<dealsDamageOnce>true</dealsDamageOnce>
 		<minDistanceToAffect>2</minDistanceToAffect>
 		<projectile>
-			<damageDef>Flame</damageDef>		
+			<damageDef>Burn</damageDef>		
 			<flyOverhead>false</flyOverhead>
-			<damageAmountBase>10</damageAmountBase>
-			<stoppingPower>1.5</stoppingPower>		
-			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<damageAmountBase>5</damageAmountBase>
+			<stoppingPower>1.2</stoppingPower>		
+			<ai_IsIncendiary>false</ai_IsIncendiary>
 			<speed>20</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>

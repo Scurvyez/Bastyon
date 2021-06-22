@@ -9,7 +9,7 @@
             <MoveSpeed>5.5</MoveSpeed>
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <ComfyTemperatureMax>50</ComfyTemperatureMax>
-            <MarketValue>275</MarketValue>
+            <MarketValue>575</MarketValue>
             <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.40</ArmorRating_Sharp>
 			<Flammability>0.02</Flammability>
@@ -94,10 +94,10 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_BlisteringWind</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<minRange>1</minRange>
-				<range>8</range>
-				<soundCast>Bast_SnippingSnailAcid</soundCast>
+				<burstShotCount>5</burstShotCount>
+				<minRange>2</minRange>
+				<range>12</range>
+				<soundCast>Bast_BlisteringWind</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>blistering wind</label>
 				<commonality>1</commonality>

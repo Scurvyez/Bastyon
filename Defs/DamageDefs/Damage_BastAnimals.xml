@@ -26,8 +26,14 @@
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been permanently extinguished.</deathMessage>
 		<hediff>Frostbite</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>Hypothermia</hediff>
+				<severityPerDamageDealt>0.05</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<impactSoundType>Slice</impactSoundType>
+		<impactSoundType>Tornado</impactSoundType>
 		<overkillPctToDestroyPart>0~0.4</overkillPctToDestroyPart>
 		<harmsHealth>true</harmsHealth>
 		<isRanged>true</isRanged>

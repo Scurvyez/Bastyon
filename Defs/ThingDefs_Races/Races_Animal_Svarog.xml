@@ -6,15 +6,15 @@
         <label>svarog</label>
         <description>A once glorious being of ethereal power, svarogs are the result of centuries of genetic experimentation mixed with forgotten folklore.\n\nHumans, driven by their insatiable lust for the perfect form of life, once attempted to create a lifeform in the image of a god. The result? A tormented soul trapped in a metaphysical form of flame and ash.\n\nSvarogs are elusive and secretive creatures and are seldom seen throughout the rim. In their creators failures they now cling to the only thing they've ever know. Fire.\n\nVolcanoes, magma, extremely hot and barren environments are their only remaining sanctuary.</description>
         <statBases>
-            <MoveSpeed>3.1</MoveSpeed>
-            <MarketValue>2100</MarketValue>
+            <MoveSpeed>2.5</MoveSpeed>
+            <MarketValue>1250</MarketValue>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <ComfyTemperatureMax>1000</ComfyTemperatureMax>
             <MeatAmount>0</MeatAmount>
             <Flammability>0.0</Flammability>
-            <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+            <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
 			<ArmorRating_Heat>200</ArmorRating_Heat>
-			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
         </statBases>
         <verbs>
 			<li>
@@ -26,8 +26,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_SvarogFireStream</defaultProjectile>
 				<warmupTime>3</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<minRange>4</minRange>
+				<burstShotCount>5</burstShotCount>
+				<minRange>2</minRange>
 				<range>12</range>
 				<soundCast>Bast_SvarogFireStream</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
@@ -39,10 +39,6 @@
             <li Class="AnimalBehaviours.CompProperties_Floating">
             
             </li>
-            <li Class="AnimalBehaviours.CompProperties_InitialHediff">
-				<hediffname>Bast_NoPain</hediffname>
-				<hediffseverity>1</hediffseverity>
-			</li>
         </comps>
         <tools>
 
