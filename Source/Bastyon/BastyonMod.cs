@@ -21,7 +21,7 @@ namespace Bastyon
         {
             Listing_Standard settingsWindowTop = new Listing_Standard();
             settingsWindowTop.Begin(inRect);
-            settingsWindowTop.Label("Enabled bastyon animals", -1, null);
+            settingsWindowTop.Label("Enabled bastyon test animals", -1, null);
             settingsWindowTop.End();
             if (bastyonAnimalValues == null)
             {
