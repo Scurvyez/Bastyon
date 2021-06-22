@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj": {}
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
         "projectName": "Bastyon",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
         "packagesPath": "C:\\Users\\Instakrill-BK\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\obj\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -19,20 +19,20 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net40"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net40": {
+          "net472": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net40": {
+        "net472": {
           "dependencies": {
             "AchievementsExpanded": {
               "target": "Package",
@@ -40,7 +40,7 @@
             },
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[1.2.2900, )"
+              "version": "[1.2.2905, )"
             },
             "Lib.Harmony": {
               "target": "Package",
