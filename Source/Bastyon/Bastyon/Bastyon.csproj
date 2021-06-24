@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="1SettingsHelper">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\Instakrill-BK\Documents\repos\SettingsHelper\Assemblies\1SettingsHelper.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +49,7 @@
     <Compile Include="BastDefRemover.cs" />
     <Compile Include="BastyonMod.cs" />
     <Compile Include="BastyonModSettings.cs" />
+    <Compile Include="DefUtil.cs" />
     <Compile Include="CompVulnerableToSunlight.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="IncidentWorker_RaidCustom.cs" />

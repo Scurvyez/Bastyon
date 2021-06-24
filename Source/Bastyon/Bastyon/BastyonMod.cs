@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using RimWorld;
+using SettingsHelper;
 using UnityEngine;
 
 namespace Bastyon
@@ -16,29 +17,36 @@ namespace Bastyon
             modSettings = GetSettings<BastyonModSettings>();
             HarmonyPatches.CallHarmonyPatches();
         }
-
+        /* Settings window */
         public override void DoSettingsWindowContents(Rect inRect)
         {
-            Listing_Standard settingsWindowTop = new Listing_Standard();
-            settingsWindowTop.Begin(inRect);
-            settingsWindowTop.Label("Enabled bastyon animals", -1, null);
-            settingsWindowTop.End();
+            
+            Listing_Standard settingsWindowHeaderAnimals = new Listing_Standard();
+            Listing_Standard settingsWindowMidAnimals = new Listing_Standard();
+
+
+            settingsWindowHeaderAnimals.Begin(inRect);
+            settingsWindowHeaderAnimals.Label("Enabled bastyon animals", -1, null);
+            settingsWindowHeaderAnimals.GapLine();
+            settingsWindowHeaderAnimals.End();
             if (bastyonAnimalValues == null)
             {
                 bastyonAnimalValues = new bool[allBastyonAnimals.Count];
                 for (int i = 0; i < allBastyonAnimals.Count; i++)
                 {
                     bastyonAnimalValues[i] = !modSettings.disabledBastyonAnimals.Contains(allBastyonAnimals[i].defName);
+                                
                 }
             }
-            Listing_Standard settingsWindowBottom = new Listing_Standard();
+            
             Rect bottomRect = new Rect(inRect.position + new Vector2(0f, 20f), inRect.size - new Vector2(0f, 20f));
             Rect viewRect = new Rect(0f, 0f, bottomRect.width - 20f, modSettings.disabledBastyonAnimals.Count * 8f);
-            settingsWindowBottom.BeginScrollView(bottomRect, ref scrollPosition, ref viewRect);
+            settingsWindowMidAnimals.BeginScrollView(bottomRect, ref scrollPosition, ref viewRect);
             for (int i = 0; i < allBastyonAnimals.Count; i++)
             {
                 Log.Message(allBastyonAnimals[i].defName);
-                Rect checkboxRect = settingsWindowBottom.GetRect(Text.LineHeight);
+                Rect checkboxRect = settingsWindowMidAnimals.GetRect(Text.LineHeight);
+                settingsWindowMidAnimals.Gap();
                 if (Mouse.IsOver(checkboxRect))
                 {
                     Widgets.DrawHighlight(checkboxRect);
