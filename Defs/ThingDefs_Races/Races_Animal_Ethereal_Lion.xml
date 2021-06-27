@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--==================== Ethereal Lion ThingDef ====================-->
+
   <ThingDef ParentName="BigCatThingBase">
     <defName>Bast_Ethereal_Lion</defName>
     <label>ethereal lion</label>
@@ -145,6 +147,8 @@
 			</li>
 		</modExtensions>
   </ThingDef>
+
+  <!--==================== Ethereal Lion PawnKindDef ====================-->
 
   <PawnKindDef ParentName="BigCatKindBase">
     <defName>Bast_Ethereal_Lion</defName>

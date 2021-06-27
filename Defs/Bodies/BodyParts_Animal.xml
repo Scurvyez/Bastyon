@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--____________________Alluvium Specific Body-parts____________________-->
+	<!--==================== Alluvium Specific Bodyparts ====================-->
 
 	<BodyPartDef>
 		<defName>Bast_Nucleus</defName>
@@ -32,7 +32,7 @@
 		</tags>
 	</BodyPartDef>
 
-	<!--____________________Bahlrin Specific Body-parts____________________-->
+	<!--==================== Bahlrin Specific Bodyparts ====================-->
 
 	<BodyPartDef>
 		<defName>Bast_VibrationReceptor</defName>
@@ -63,7 +63,7 @@
 		</tags>
 	</BodyPartDef>
 
-	<!--____________________Gnomaclu Specific Body-parts____________________-->
+	<!--==================== Gnomaclu Specific Bodyparts ====================-->
 
 	<BodyPartDef>
 		<defName>Bast_BigEye</defName>
@@ -86,7 +86,7 @@
 		</tags>
 	</BodyPartDef>
 
-	<!--____________________Spider / Insect Specific Body-parts____________________-->
+	<!--==================== Insect / Spider Specific Bodyparts ====================-->
 
 	<BodyPartDef>
 		<defName>Bast_Thorax</defName>
@@ -139,7 +139,7 @@
 		<skinCovered>false</skinCovered>
 	</BodyPartDef>
 
-	<!--____________________Snipping Snail Specific Body-parts____________________-->
+	<!--==================== Snipping Snail Specific Bodyparts ====================-->
 	
 	<BodyPartDef>
 		<defName>Bast_GastropodShell</defName>
@@ -200,22 +200,59 @@
 		</tags>
 	</BodyPartDef>
 
-	<!--____________________Elemental Specific Parts____________________-->
+	<!--==================== Elemental Specific Bodyparts ====================-->
 
 	<BodyPartDef>
 		<defName>Bast_SavrogMainBody</defName>
 		<label>ardent shroud</label>
-		<hitPoints>350</hitPoints>
+		<hitPoints>400</hitPoints>
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<skinCovered>true</skinCovered>
 		<tags>
 			<li>MovingLimbCore</li>
 		</tags>
 	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_LightningElementalMainBody</defName>
+		<label>electrified shroud</label>
+		<hitPoints>400</hitPoints>
+		<frostbiteVulnerability>0.02</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_ImmortalCore</defName>
+		<label>immortal core</label>
+		<hitPoints>175</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
 	
 	<BodyPartDef>
-		<defName>Bast_FieryFist</defName>
+		<defName>Bast_SmolderingFist</defName>
 		<label>smoldering fist</label>
+		<hitPoints>30</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_GalvanizedFist</defName>
+		<label>galvanized fist</label>
 		<hitPoints>30</hitPoints>
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>

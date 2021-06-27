@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--____________________Alluvium____________________-->
+    <!--==================== Alluvium Body ====================-->
 
     <BodyDef>
 		<defName>Bast_LimblessGelatinous</defName>
@@ -32,5 +32,5 @@
 			</parts>
 		</corePart>
 	</BodyDef>
-
+	
 </Defs>

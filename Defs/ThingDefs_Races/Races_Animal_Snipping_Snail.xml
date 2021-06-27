@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--==================== Snipping Snail ThingDef ====================-->
+
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Bast_Snipping_Snail</defName>									
 		<label>snipping snail</label>
@@ -128,7 +130,15 @@
 		<tradeTags>
 			<li>AnimalCommon</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_SnippingSnailArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
+	<!--==================== Snipping Snail PawnKindDef ====================-->
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Bast_Snipping_Snail</defName>

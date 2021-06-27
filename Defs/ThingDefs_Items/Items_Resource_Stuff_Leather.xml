@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--____________________Bahlrin Leather____________________-->
+    <!--==================== Bahlrin Leather ====================-->
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Bahlrin</defName>
@@ -36,7 +36,7 @@
         </stuffProps>
     </ThingDef>
 
-    <!--____________________Bastyon Fur____________________-->
+    <!--==================== Bastyon Fur ====================-->
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Bastyon</defName>
@@ -66,7 +66,7 @@
         </stuffProps>
     </ThingDef>
 
-    <!--____________________Blazing Felidae Fur____________________-->
+    <!--==================== Blazing Felidae Fur ====================-->
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Blazing_Felidae</defName>
@@ -95,7 +95,7 @@
         </stuffProps>
     </ThingDef>
 
-    <!--____________________Chem Tegu Leather____________________-->
+    <!--==================== Chem Tegu Leather ====================-->
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Chem_Tegu</defName>
@@ -130,7 +130,7 @@
         </stuffProps>
     </ThingDef>
 
-    <!--____________________Scire Leather____________________-->
+    <!--==================== Scire Leather ====================-->
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Scire</defName>
@@ -166,7 +166,7 @@
         </stuffProps>
     </ThingDef>
 
-    <!--____________________Ethereal Lion Fur____________________-->
+    <!--==================== Ethereal Lion Fur ====================-->
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Ethereal_Lion</defName>
@@ -196,7 +196,7 @@
         </stuffProps>
     </ThingDef>
 
-    <!--____________________Ceratok Leather____________________-->
+    <!--==================== Ceratok Leather ====================-->
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Ceratok</defName>
@@ -230,7 +230,7 @@
         </stuffProps>
     </ThingDef>
 
-    <!--____________________Soul Eater Leather____________________-->
+    <!--==================== Soul Eater Leather ====================-->
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Soul_Eater</defName>

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--==================== Scire Fireball Ranged Attack Verb ====================-->
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bast_ScireFireBall</defName>
-		<label>fire spit</label>
+		<label>fireball</label>
 		
 		<graphicData>
 			<texPath>Things/Projectiles/Bast_ScireFireBall</texPath>
@@ -17,6 +19,8 @@
 			<speed>16</speed>
 		</projectile>
 	</ThingDef>
+
+	<!--==================== Spider Web Ranged Attack Verb ====================-->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bast_Web</defName>
@@ -35,6 +39,8 @@
 		</projectile>
 	</ThingDef>
 
+	<!--==================== Alluvium Goo Ranged Attack Verb ====================-->
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bast_AlluviumGoo</defName>
 		<label>goo</label>
@@ -52,6 +58,8 @@
 		</projectile>
 	</ThingDef>
 
+	<!--==================== Critter Spike Ranged Attack Verb ====================-->
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bast_CritterSpike</defName>
 		<label>critter spike</label>
@@ -65,9 +73,11 @@
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Cut</damageDef>
 			<damageAmountBase>5</damageAmountBase>
-			<speed>20</speed>
+			<speed>21</speed>
 		</projectile>
 	</ThingDef>
+
+	<!--==================== Snipping Snail Acid Ranged Attack Verb ====================-->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bast_SnippingSnailAcid</defName>
@@ -86,6 +96,8 @@
 		</projectile>
 	</ThingDef>
 
+	<!--==================== Blistering Wind Ranged Attack Verb ====================-->
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bast_BlisteringWind</defName>
 		<label>blistering wind</label>
@@ -103,6 +115,28 @@
 			<speed>22</speed>
 		</projectile>
 	</ThingDef>
+
+	<!--==================== Lightning Ranged Attack Verb ====================-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_LightningBolt</defName>
+		<label>lightning bolt</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_LightningBolt</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>4.75</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bast_Electric</damageDef>
+			<damageAmountBase>2.0</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>35</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--==================== Fire Stream Ranged Attack Verb ====================-->
 
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Bast_FireStream</defName>
@@ -134,6 +168,8 @@
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
 
+	<!--==================== Savrog Fire Stream Ranged Attack Verb ====================-->
+
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Bast_SvarogFireStream</defName>
 		<label> blazing fire</label>
@@ -163,6 +199,8 @@
 			<speed>20</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
+
+	<!--==================== Bastyon Plasma Stream Ranged Attack Verb ====================-->
 
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Bast_BastyonPlasmaStream</defName>

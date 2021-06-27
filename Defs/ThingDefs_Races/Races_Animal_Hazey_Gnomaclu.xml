@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--==================== Hazey Gnomaclu ThingDef ====================-->
+
   <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Hazey_Gnomaclu</defName>
     <label>hazey gnomaclu</label>
@@ -116,6 +118,8 @@
 			</li>
 		</modExtensions>
   </ThingDef>
+
+  <!--==================== Hazey Gnomaclu PawnKindDef ====================-->
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Bast_Hazey_Gnomaclu</defName>

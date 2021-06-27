@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--==================== Blazing Felidae ThingDef ====================-->
+
   <ThingDef ParentName="BigCatThingBase">
     <defName>Bast_Blazing_Felidae</defName>
     <label>blazing felidae</label>
@@ -24,7 +26,7 @@
 				<accuracyLong>.75</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_FireStream</defaultProjectile>
-				<warmupTime>5</warmupTime>
+				<warmupTime>7</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>3</minRange>
 				<range>8</range>
@@ -161,6 +163,8 @@
 			</li>
 		</modExtensions>
   </ThingDef>
+
+  <!--==================== Blazing Felidae PawnKindDef ====================-->
 
   <PawnKindDef ParentName="BigCatKindBase">
     <defName>Bast_Blazing_Felidae</defName>

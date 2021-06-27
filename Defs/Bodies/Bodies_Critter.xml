@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<!--==================== Critter Body ====================-->
+
 	<BodyDef>
 		<defName>Bast_Critter</defName>
 		<label>critter</label>
@@ -132,4 +135,5 @@
 			</parts>
 		</corePart>
 	</BodyDef>
+	
 </Defs>

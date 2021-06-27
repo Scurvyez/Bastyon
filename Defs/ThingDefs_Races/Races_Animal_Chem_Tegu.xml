@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!--==================== Chem Tegu ThingDef ====================-->
+
     <ThingDef ParentName="AnimalThingBase">
         <defName>Bast_Chem_Tegu</defName>
         <label>chem tegu</label>
@@ -121,6 +123,8 @@
 			</li>
 		</modExtensions>
     </ThingDef>
+
+    <!--==================== Chem Tegu PawnKindDef ====================-->
   
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>Bast_Chem_Tegu</defName>

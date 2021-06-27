@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!--==================== Sunlight Vulnerability Hediff ====================-->
+
     <HediffDef>
         <defName>Bast_SunLightDamage</defName>
         <label>Sunlight damage</label>
         <labelNoun>Sunlight damage</labelNoun>
-        <description>placeholder</description>
+        <description>This creature has an extreme weakness to sunlight and will burn under a stars radiant visage.</description>
         <hediffClass>Bastyon.Hediff_SunLightDamage</hediffClass>
         <stages>
             <li>

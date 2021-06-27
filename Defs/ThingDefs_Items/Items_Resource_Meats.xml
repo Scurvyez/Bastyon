@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--____________________Bases____________________-->
+	<!--==================== Meat Base ====================-->
 
 	<ThingDef Name="Bast_RawMeatBase" Abstract="True" ParentName="OrganicProductBase">
 		<label>Base meat properties</label>
@@ -27,7 +27,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<!--____________________Sunburst Gnomaclu____________________-->
+	<!--==================== Sunburst Gnomaclu Meat ====================-->
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_SunburstGnomacluMeat</defName>
@@ -47,7 +47,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<!--____________________Midnight Gnomaclu____________________-->
+	<!--==================== Mignight Gnomaclu Meat ====================-->
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_MignightGnomacluMeat</defName>
@@ -67,7 +67,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<!--____________________Hazey Gnomaclu____________________-->
+	<!--==================== Hazey Gnomaclu Meat ====================-->
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_HazeyGnomacluMeat</defName>
@@ -87,7 +87,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<!--____________________Alluvium____________________-->
+	<!--==================== Alluvium Flesh ====================-->
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_AlluviumFlesh</defName>

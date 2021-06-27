@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!--==================== Soul Eater ThingDef ====================-->
+
     <ThingDef ParentName="BigCatThingBase">
         <defName>Bast_Soul_Eater</defName>
         <label>soul eater</label>
@@ -94,7 +96,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_BlisteringWind</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
-				<burstShotCount>5</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 				<minRange>2</minRange>
 				<range>12</range>
 				<soundCast>Bast_BlisteringWind</soundCast>
@@ -164,6 +166,8 @@
 			</li>
 		</modExtensions>
     </ThingDef>
+
+    <!--==================== Soul Eater PawnKindDef ====================-->
 
     <PawnKindDef ParentName="BigCatKindBase">
         <defName>Bast_Soul_Eater</defName>

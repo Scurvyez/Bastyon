@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+  <!--==================== Resource Base ====================-->
   
   <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
     <equipmentType>Primary</equipmentType>
@@ -10,6 +12,8 @@
       </li>
     </comps>
   </ThingDef>
+
+  <!--==================== Ceratok Horn ====================-->
 
   <ThingDef ParentName="ResourceVerbBase">
     <defName>Bast_CeratokHorn</defName>
@@ -58,6 +62,8 @@
       <li>AnimalPart</li>
     </thingSetMakerTags>
   </ThingDef>
+
+  <!--==================== Eternal Flame Core ====================-->
 
   <ThingDef ParentName="MechSerumBase">
     <defName>Bast_Eternal_Flame_Core</defName>

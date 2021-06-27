@@ -13,7 +13,7 @@
 					<xpath>/Defs</xpath>
 					<value>
 
-						<!--____________________Tab Creation____________________-->
+						<!--==================== Bastyon Tab Creation ====================-->
 
 						<AchievementsExpanded.AchievementTabDef>
 							<defName>Bast_Achievements</defName>
@@ -25,7 +25,7 @@
 							<tab>Bast_Achievements</tab>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame a Bahlrin____________________-->
+						<!--==================== Tame a Bahlrin ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Bahlrin_Tame</defName>
@@ -45,7 +45,7 @@
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame a Blazing Felidae____________________-->
+						<!--==================== Tame a Blazing Felidae ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Blazing_Felidae_Tame</defName>
@@ -65,7 +65,7 @@
 							<points>50</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Kill 200 Bahlrins____________________-->
+						<!--==================== Kill 200 Bahlrins ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Bahlrin_Swarm</defName>
@@ -81,7 +81,7 @@
 							<points>150</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame a Scire____________________-->
+						<!--==================== Tame a Scire ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Scire_Tame</defName>
@@ -101,7 +101,7 @@
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame a pair of Bastyons____________________-->
+						<!--==================== Tame a pair of Bastyons ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Bastyon_Tame</defName>
@@ -121,7 +121,7 @@
 							<points>40</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame several Alluvium____________________-->
+						<!--==================== Tame several Alluvium ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Alluvium_Tame</defName>
@@ -141,7 +141,7 @@
 							<points>40</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame Two Ceratoks____________________-->
+						<!--==================== Tame two Ceratoks ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Ceratok_Tame</defName>
@@ -161,7 +161,7 @@
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame a Soul Eater____________________-->
+						<!--==================== Tame a Soul Eater ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Soul_Eater_Tame</defName>
@@ -181,7 +181,7 @@
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame 3 Chem Tegus____________________-->
+						<!--==================== Tame three Chem Tegus ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Chem_Tegu_Tame</defName>
@@ -201,7 +201,7 @@
 							<points>30</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Tame an Ethereal Lion____________________-->
+						<!--==================== Tame an Ethereal Lion ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Ethereal_Lion_Tame</defName>
@@ -221,7 +221,7 @@
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Collect Alluvium Jelly____________________-->
+						<!--==================== Collect Alluvium Jelly ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_AlluviumJelly_Collect</defName>
@@ -237,7 +237,7 @@
 							<points>13</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Farm 500 Chemfuel____________________-->
+						<!--==================== Farm 500 Chemfuel ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Chemfuel_Collect</defName>
@@ -253,7 +253,7 @@
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--____________________Kill 25 Gray Terrors____________________-->
+						<!--==================== Kill 25 Gray Terrors ====================-->
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Gray_Terror_Kill</defName>

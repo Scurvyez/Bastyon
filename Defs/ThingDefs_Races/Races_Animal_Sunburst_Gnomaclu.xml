@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--==================== Sunburst Gnomaclu ThingDef ====================-->
+
   <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Sunburst_Gnomaclu</defName>
     <label>sunburst gnomaclu</label>
@@ -118,6 +120,8 @@
 			</li>
 		</modExtensions>
   </ThingDef>
+
+  <!--==================== Sunburst Gnomaclu PawnKindDef ====================-->
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Bast_Sunburst_Gnomaclu</defName>

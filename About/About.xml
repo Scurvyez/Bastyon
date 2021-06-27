@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
   <name>Bastyon</name>
@@ -24,31 +24,31 @@
 	</modDependencies>
 
   <description>
-  Discord: Steve o.O#1151
-  steam: Scurvyez
+Discord: Steve o.O#1151
+steam: Scurvyez
 
 
-  &lt;size=22&gt;Attributes&lt;/size&gt;
-  New and exotic creatures!
-  Achievements!
-  Vibrant new textiles!
+&lt;size=22&gt;Attributes&lt;/size&gt;
+New and exotic creatures!
+Achievements!
+Vibrant new textiles!
 
-  &lt;size=22&gt;Compatibility&lt;/size&gt;
-  Compatible with Alpha Biomes
-  Compatible with Advanced Biomes
-  Compatible with Giddy-Up Battle Mounts!
-  Compatible with Vanilla Achievements Expanded
+&lt;size=22&gt;Compatibility&lt;/size&gt;
+Compatible with Alpha Biomes
+Compatible with Advanced Biomes
+Compatible with Giddy-Up Battle Mounts!
+Compatible with Vanilla Achievements Expanded
 
-  &lt;size=22&gt;Credits&lt;/size&gt;
-  Gray Terror and Soul Eater Textures donated by Kasmex
-  All other textures made by me, Steve! o.O
-  Critter suggested by Thomus
-  99% of c# by Taranchuk
-  Mod Settings menu by Carnagion
+&lt;size=22&gt;Credits&lt;/size&gt;
+Gray Terror and Soul Eater Textures donated by Kasmex
+All other textures made by me, Steve! o.O
+Critter suggested by Thomus
+99% of c# by Taranchuk
+Mod Settings menu by Carnagion
 
 
-  See the workshop page and the wiki for more. :)
-  View the full changelog on Github as well.
+See the workshop page and the wiki for more. :)
+View the full changelog on Github as well.
   </description>
 
   <loadAfter>

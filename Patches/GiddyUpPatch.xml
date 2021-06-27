@@ -10,6 +10,8 @@
         <match Class="PatchOperationSequence">
 			<operations>
 
+                <!--==================== Scire Offsets ====================-->
+
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Scire"]</xpath>
                     <value>
@@ -21,6 +23,8 @@
                         </li>
                     </value>
                 </li>
+
+                <!--==================== Bastyon Offsets ====================-->
 
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Bastyon"]</xpath>
@@ -34,6 +38,8 @@
                     </value>
                 </li>
 
+                <!--==================== Ceratok Offsets ====================-->
+
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ceratok"]</xpath>
                     <value>
@@ -45,6 +51,8 @@
                         </li>
                     </value>
                 </li>
+
+                <!--==================== Ethereal Lion Offsets ====================-->
 
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion"]</xpath>
@@ -58,6 +66,8 @@
                     </value>
                 </li>
 
+                <!--==================== Soul Eater Offsets ====================-->
+
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Soul_Eater"]</xpath>
                     <value>
@@ -69,6 +79,8 @@
                         </li>
                     </value>
                 </li>
+
+                <!--==================== Scire Overlays ====================-->
 
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "Bast_Scire" and not (comps)]</xpath>
@@ -133,6 +145,8 @@
                     </value>
                 </li>
 
+                <!--==================== Bastyon Overlays ====================-->
+
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "Bast_Bastyon" and not (comps)]</xpath>
                     <value>
@@ -168,6 +182,8 @@
                     </value>
                 </li>
 
+                <!--==================== Ceratok Overlays ====================-->
+
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ceratok" and not (comps)]</xpath>
                     <value>
@@ -192,6 +208,8 @@
                         </li>
                     </value>
                 </li>
+
+                <!--==================== Ethereal Lion Overlays ====================-->
 
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion" and not (comps)]</xpath>
@@ -218,6 +236,8 @@
                     </value>
                 </li>
 
+                <!--==================== OutlanderCivil Mount Restrictions ====================-->
+
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "OutlanderCivil"]</xpath>
                     <value>
@@ -233,6 +253,8 @@
                     </value>
                 </li>
 
+                <!--==================== OutlanderRough Mount Restrictions ====================-->
+
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "OutlanderRough"]</xpath>
                     <value>
@@ -245,6 +267,8 @@
                         </li>
                     </value>
                 </li>
+
+                <!--==================== TribeCivil Mount Restrictions ====================-->
 
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "TribeCivil"]</xpath>
@@ -259,6 +283,8 @@
                     </value>
                 </li>
 
+                <!--==================== TribeRough Mount Restrictions ====================-->
+
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "TribeRough"]</xpath>
                     <value>
@@ -271,6 +297,8 @@
                         </li>
                     </value>
                 </li>
+
+                <!--==================== TribeSavage Mount Restrictions ====================-->
 
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "TribeSavage"]</xpath>
@@ -285,6 +313,8 @@
                     </value>
                 </li>
 
+                <!--==================== Pirate Mount Restrictions ====================-->
+
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "Pirate"]</xpath>
                     <value>
@@ -298,6 +328,8 @@
                     </value>
                 </li>
 
+                <!--==================== PlayerColony Mount Restrictions ====================-->
+
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "PlayerColony"]</xpath>
                     <value>
@@ -310,6 +342,8 @@
                         </li>
                     </value>
                 </li>
+
+                <!--==================== PlayerTribe Mount Restrictions ====================-->
 
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "PlayerTribe"]</xpath>

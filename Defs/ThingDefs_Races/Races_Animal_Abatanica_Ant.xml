@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!--==================== Abatanica Ant ThingDef ====================-->
+
     <ThingDef ParentName="AnimalThingBase">
         <defName>Bast_Abatanica_Ant</defName>
         <label>abatanica ant</label>
@@ -146,6 +148,8 @@
 		</modExtensions>
     </ThingDef>
 
+    <!--==================== Abatanica Ant PawnKindDef ====================-->
+
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>Bast_Abatanica_Ant</defName>
         <label>abatanica ant</label>
@@ -168,18 +172,10 @@
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Male</texPath>
                     <drawSize>0.30</drawSize>
-                    <shadowData>
-                        <volume>(0.1, 0.1, 0.1)</volume>
-                        <offset>(0,0,0)</offset>
-                    </shadowData>
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Female</texPath>
                     <drawSize>0.30</drawSize>
-                    <shadowData>
-                        <volume>(0.1, 0.1, 0.1)</volume>
-                        <offset>(0,0,0)</offset>
-                    </shadowData>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
@@ -197,18 +193,10 @@
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Male</texPath>
                     <drawSize>0.50</drawSize>
-                    <shadowData>
-                        <volume>(0.3, 0.3, 0.3)</volume>
-                        <offset>(0,0,0)</offset>
-                    </shadowData>
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Female</texPath>
                     <drawSize>0.60</drawSize>
-                    <shadowData>
-                        <volume>(0.3, 0.3, 0.3)</volume>
-                        <offset>(0,0,0)</offset>
-                    </shadowData>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
@@ -226,18 +214,10 @@
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Adult_Male</texPath>
                     <drawSize>0.80</drawSize>
-                    <shadowData>
-                        <volume>(0.5, 0.5, 0.5)</volume>
-                        <offset>(0,0,0)</offset>
-                    </shadowData>
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Adult_Female</texPath>
                     <drawSize>0.92</drawSize>
-                    <shadowData>
-                        <volume>(0.8, 0.8, 0.8)</volume>
-                        <offset>(0,0,0)</offset>
-                    </shadowData>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>

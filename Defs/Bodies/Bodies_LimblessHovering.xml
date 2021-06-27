@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--____________________Gnomaclu____________________-->
+    <!--==================== Gnomaclu Body ====================-->
 
     <BodyDef>
 		<defName>Bast_LimblessHovering</defName>
@@ -56,5 +56,5 @@
 			</parts>
 		</corePart>
 	</BodyDef>
-
+	
 </Defs>

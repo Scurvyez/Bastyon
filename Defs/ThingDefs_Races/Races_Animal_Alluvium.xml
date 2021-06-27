@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--==================== Alluvium ThingDef ====================-->
+
   <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Alluvium</defName>
     <label>alluvium</label>
@@ -48,9 +50,9 @@
 				<defaultProjectile>Bast_AlluviumGoo</defaultProjectile>
 				<warmupTime>1.25</warmupTime>
 				<burstShotCount>3</burstShotCount>
-				<minRange>1</minRange>
+				<minRange>2</minRange>
 				<range>12</range>
-				<soundCast>Bast_Throw</soundCast>
+				<soundCast>Bast_AlluviumGoo</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>alluvium goo</label>
 				<commonality>1</commonality>
@@ -113,7 +115,7 @@
           <def>AnimalAdult</def>
           <minAge>.50</minAge>
           <soundWounded>Pawn_Rodent_Wounded</soundWounded>
-          <soundDeath>Pawn_Rodent_Wounded</soundDeath>
+          <soundDeath>Pawn_Rodent_Death</soundDeath>
           <soundCall>Pawn_Rodent_Call</soundCall>
           <soundAngry>Pawn_Rodent_Angry</soundAngry>
         </li>
@@ -135,6 +137,8 @@
 			</li>
 		</modExtensions>
   </ThingDef>
+
+  <!--==================== Alluvium PawnKindDef ====================-->
 
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Bast_Alluvium</defName>

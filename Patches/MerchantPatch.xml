@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!--==================== Alluvium Jelly Trading ====================-->
+
     <Operation Class="PatchOperationAdd">
 		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
 		<value>
@@ -9,6 +11,8 @@
 			</li>
 		</value>
 	</Operation>
+
+	<!--==================== Sunburst Gnomaclu Meat Trading ====================-->
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
@@ -19,6 +23,8 @@
 		</value>
 	</Operation>
 
+	<!--==================== Midnight Gnomaclu Meat Trading ====================-->
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
 		<value>
@@ -27,6 +33,8 @@
 			</li>
 		</value>
 	</Operation>
+
+	<!--==================== Hazey Gnomaclu Meat Trading ====================-->
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
@@ -37,6 +45,8 @@
 		</value>
 	</Operation>
 
+	<!--==================== Alluvium Flesh Trading ====================-->
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
 		<value>
@@ -45,6 +55,8 @@
 			</li>
 		</value>
 	</Operation>
+
+	<!--==================== Ceratok Horn Trading ====================-->
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>

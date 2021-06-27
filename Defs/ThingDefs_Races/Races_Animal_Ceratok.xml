@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--==================== Ceratok ThingDef ====================-->
+
   <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Ceratok</defName>
     <label>ceratok</label>
@@ -171,6 +173,8 @@
 			</li>
 		</modExtensions>
   </ThingDef>
+
+  <!--==================== Ceratok PawnKindDef ====================-->
   
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Bast_Ceratok</defName>

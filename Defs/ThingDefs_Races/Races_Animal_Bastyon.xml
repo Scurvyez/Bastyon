@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--==================== Bastyon ThingDef ====================-->
+
   <ThingDef ParentName="BigCatThingBase">
     <defName>Bast_Bastyon</defName>
     <label>bastyon</label>
@@ -30,10 +32,10 @@
 				<accuracyLong>.75</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_BastyonPlasmaStream</defaultProjectile>
-				<warmupTime>5</warmupTime>
-				<burstShotCount>1</burstShotCount>
+				<warmupTime>8</warmupTime>
+				<burstShotCount>2</burstShotCount>
 				<minRange>3</minRange>
-				<range>15</range>
+				<range>12</range>
 				<soundCast>Bast_BastyonPlasmaStream</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>terrestrial plasma</label>
@@ -166,6 +168,8 @@
 			</li>
 		</modExtensions>
   </ThingDef>
+
+  <!--==================== Bastyon PawnKindDef ====================-->
 
   <PawnKindDef ParentName="BigCatKindBase">
     <defName>Bast_Bastyon</defName>

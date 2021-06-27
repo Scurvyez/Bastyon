@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--____________________ Svarog ____________________-->
+    <!--==================== Svarog Body ====================-->
 
     <BodyDef>
 		<defName>Bast_SvarogBody</defName>
@@ -12,25 +12,24 @@
 			<depth>Outside</depth>
 			<parts>
 				<li>
-					<def>Heart</def>
+					<def>Bast_ImmortalCore</def>
 					<coverage>0.05</coverage>
 					<depth>Inside</depth>
-                    <customLabel>core</customLabel>
 				</li>
                 <li>
-					<def>Bast_FieryFist</def>
+					<def>Bast_SmolderingFist</def>
 					<customLabel>left smoldering fist</customLabel>
 					<groups>
-						<li>Arms</li>
+						<li>Hands</li>
 					</groups>
 					<coverage>0.25</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
-					<def>Bast_FieryFist</def>
+					<def>Bast_SmolderingFist</def>
 					<customLabel>left smoldering fist</customLabel>
 					<groups>
-						<li>Arms</li>
+						<li>Hands</li>
 					</groups>
 					<coverage>0.25</coverage>
 					<height>Bottom</height>
@@ -39,4 +38,41 @@
 		</corePart>
 	</BodyDef>
 
+	<!--==================== Lightning Elemental Body ====================-->
+
+	<BodyDef>
+		<defName>Bast_LightningElementalBody</defName>
+		<label>lightning elemental</label>
+		<corePart>
+			<def>Bast_LightningElementalMainBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Bast_ImmortalCore</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+                <li>
+					<def>Bast_GalvanizedFist</def>
+					<customLabel>left galvanized fist</customLabel>
+					<groups>
+						<li>Hands</li>
+					</groups>
+					<coverage>0.25</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>Bast_GalvanizedFist</def>
+					<customLabel>left galvanized fist</customLabel>
+					<groups>
+						<li>Hands</li>
+					</groups>
+					<coverage>0.25</coverage>
+					<height>Bottom</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	
 </Defs>

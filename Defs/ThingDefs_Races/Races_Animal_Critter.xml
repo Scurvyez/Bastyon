@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!--==================== Critter ThingDef ====================-->
+
     <ThingDef ParentName="AnimalThingBase">
         <defName>Bast_Critter</defName>
         <label>critter</label>
@@ -28,7 +30,7 @@
                 <burstShotCount>2</burstShotCount>
                 <minRange>3</minRange>
                 <range>10</range>
-                <soundCast>Bast_Throw</soundCast>
+                <soundCast>Bast_CritterSpike</soundCast>
                 <muzzleFlashScale>0</muzzleFlashScale>
                 <label>critter spike</label>
                 <commonality>.90</commonality>
@@ -131,6 +133,8 @@
             </li>
         </modExtensions>
     </ThingDef>
+
+    <!--==================== Critter PawnKindDef ====================-->
 
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>Bast_Critter</defName>
