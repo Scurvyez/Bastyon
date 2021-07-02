@@ -10,7 +10,7 @@ namespace Bastyon
 {
     public static class DefUtil
     {
-        public static List<PawnKindDef> AllAnimalDefsNames(string filterDef)
+        public static List<PawnKindDef> AllAnimalDefs(string filterDef)
         {
 
             return (from currentDef in DefDatabase<PawnKindDef>.AllDefs

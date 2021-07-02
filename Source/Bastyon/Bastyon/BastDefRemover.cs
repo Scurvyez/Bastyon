@@ -11,7 +11,7 @@ namespace Bastyon
     {
         public static bool Prefix_GenerateImpliedDefs_PreResolve()
         {
-            BastyonMod.allBastyonAnimals = DefUtil.AllAnimalDefsNames("Bast_");
+            BastyonMod.allBastyonAnimals = DefUtil.AllAnimalDefs("Bast_");
           
             DefDatabase<PawnKindDef>.AllDefsListForReading.RemoveAll(pawnKindDef => BastyonMod.modSettings.disabledBastyonAnimals.Contains(pawnKindDef.defName));
             return true;
