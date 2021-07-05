@@ -19,7 +19,6 @@
       <li Class="AnimalBehaviours.CompProperties_Floating">
       
       </li>
-
       <li Class="CompProperties_Explosive">
         <explosiveRadius>6.0</explosiveRadius>
         <explosiveDamageType>Smoke</explosiveDamageType>
@@ -27,6 +26,7 @@
         <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
         <postExplosionSpawnChance>1</postExplosionSpawnChance>
         <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
         <wickTicks>10</wickTicks>
         <startWickOnDamageTaken>
           <li>Bullet</li>

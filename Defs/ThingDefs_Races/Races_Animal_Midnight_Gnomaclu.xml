@@ -19,11 +19,11 @@
       <li Class="AnimalBehaviours.CompProperties_Floating">
       
       </li>
-
       <li Class="CompProperties_Explosive">
         <explosiveRadius>5.0</explosiveRadius>
         <explosiveDamageType>EMP</explosiveDamageType>
         <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
         <wickTicks>10</wickTicks>
         <startWickOnDamageTaken>
           <li>Bullet</li>

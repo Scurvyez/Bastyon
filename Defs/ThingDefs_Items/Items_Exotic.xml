@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--==================== Resource Base ====================-->
-  
-  <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
-    <equipmentType>Primary</equipmentType>
-    <techLevel>Neolithic</techLevel>
-    <comps>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-    </comps>
-  </ThingDef>
-
   <!--==================== Ceratok Horn ====================-->
 
   <ThingDef ParentName="ResourceVerbBase">
@@ -50,6 +38,7 @@
         </capacities>
         <power>9</power>
         <cooldownTime>2</cooldownTime>
+        <chanceFactor>0.5</chanceFactor>
       </li>
     </tools>
     <thingCategories>

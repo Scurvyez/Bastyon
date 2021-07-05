@@ -37,10 +37,12 @@
 				<commonality>1</commonality>
 			</li>
 		</verbs>
-        <comps>		
+        <comps>
             <li Class="AnimalBehaviours.CompProperties_Floating">
             
             </li>
+            <li Class="AnimalBehaviours.CompProperties_LightSustenance">
+	        </li>
         </comps>
         <tools>
             <li>
@@ -100,7 +102,6 @@
         <fleshType>Svarog</fleshType>
         <bloodDef>Filth_SvarogBlood</bloodDef>
         <baseHungerRate>0.05</baseHungerRate>
-        <foodType>OmnivoreAnimal</foodType>
         <wildness>0.99</wildness>
         <canBePredatorPrey>false</canBePredatorPrey>
         <trainability>None</trainability>
