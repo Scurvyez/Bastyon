@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
-    <!--____________________Alluvium Jelly____________________-->
-=======
-<<<<<<< HEAD
-    <!--____________________Alluvium Jelly____________________-->
-=======
     <!--==================== Alluvium Jelly ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
 
     <ThingDef ParentName="OrganicProductBase">
         <defName>Bast_Alluvium_Jelly</defName>
@@ -40,15 +32,7 @@
         </thingCategories>
     </ThingDef>
 
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
-    <!--____________________Gray Terror Eggs____________________-->
-=======
-<<<<<<< HEAD
-    <!--____________________Gray Terror Eggs____________________-->
-=======
     <!--==================== Gray Terror Eggs (Unfert) ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
 
     <ThingDef ParentName="EggUnfertBase">
       <defName>Bast_Gray_Terror_EggUnfertilized</defName>
@@ -63,14 +47,8 @@
         <MarketValue>5.0</MarketValue>
       </statBases>
     </ThingDef>
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
-=======
-<<<<<<< HEAD
-=======
 
     <!--==================== Gray Terror Eggs (Fert) ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
     
     <ThingDef ParentName="EggFertBase">
       <defName>Bast_Gray_Terror_EggFertilized</defName>
@@ -91,15 +69,7 @@
       </comps>
     </ThingDef>
 
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
-    <!--____________________Critter Eggs____________________-->
-=======
-<<<<<<< HEAD
-    <!--____________________Critter Eggs____________________-->
-=======
     <!--==================== Critter Eggs (Unfert) ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
 
     <ThingDef ParentName="EggUnfertBase">
       <defName>Bast_Critter_EggUnfertilized</defName>
@@ -114,14 +84,8 @@
         <MarketValue>5.0</MarketValue>
       </statBases>
     </ThingDef>
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
-=======
-<<<<<<< HEAD
-=======
 
     <!--==================== Critter Eggs (Fert) ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_AnimalProduct.xml
     
     <ThingDef ParentName="EggFertBase">
       <defName>Bast_Critter_EggFertilized</defName>

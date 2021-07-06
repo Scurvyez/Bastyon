@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD
-	<!--____________________Bases____________________-->
-=======
 	<!--==================== Meat Base ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<ThingDef Name="Bast_RawMeatBase" Abstract="True" ParentName="OrganicProductBase">
 		<label>Base meat properties</label>
@@ -31,11 +27,7 @@
 		</thingCategories>
 	</ThingDef>
 
-<<<<<<< HEAD
-	<!--____________________Sunburst Gnomaclu____________________-->
-=======
 	<!--==================== Sunburst Gnomaclu Meat ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_SunburstGnomacluMeat</defName>
@@ -55,11 +47,7 @@
 		</ingestible>
 	</ThingDef>
 
-<<<<<<< HEAD
-	<!--____________________Midnight Gnomaclu____________________-->
-=======
 	<!--==================== Mignight Gnomaclu Meat ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_MignightGnomacluMeat</defName>
@@ -79,11 +67,7 @@
 		</ingestible>
 	</ThingDef>
 
-<<<<<<< HEAD
-	<!--____________________Hazey Gnomaclu____________________-->
-=======
 	<!--==================== Hazey Gnomaclu Meat ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_HazeyGnomacluMeat</defName>
@@ -103,11 +87,7 @@
 		</ingestible>
 	</ThingDef>
 
-<<<<<<< HEAD
-	<!--____________________Alluvium____________________-->
-=======
 	<!--==================== Alluvium Flesh ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_AlluviumFlesh</defName>

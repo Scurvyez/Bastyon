@@ -10,14 +10,8 @@
         <match Class="PatchOperationSequence">
 			<operations>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Scire Offsets ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Scire"]</xpath>
                     <value>
@@ -30,14 +24,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Bastyon Offsets ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Bastyon"]</xpath>
                     <value>
@@ -50,14 +38,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Ceratok Offsets ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ceratok"]</xpath>
                     <value>
@@ -70,14 +52,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Ethereal Lion Offsets ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion"]</xpath>
                     <value>
@@ -90,14 +66,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Soul Eater Offsets ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName = "Bast_Soul_Eater"]</xpath>
                     <value>
@@ -110,14 +80,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Scire Overlays ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "Bast_Scire" and not (comps)]</xpath>
                     <value>
@@ -181,14 +145,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Bastyon Overlays ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "Bast_Bastyon" and not (comps)]</xpath>
                     <value>
@@ -224,14 +182,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Ceratok Overlays ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ceratok" and not (comps)]</xpath>
                     <value>
@@ -257,14 +209,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Ethereal Lion Overlays ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion" and not (comps)]</xpath>
                     <value>
@@ -290,14 +236,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== OutlanderCivil Mount Restrictions ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "OutlanderCivil"]</xpath>
                     <value>
@@ -313,14 +253,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== OutlanderRough Mount Restrictions ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "OutlanderRough"]</xpath>
                     <value>
@@ -334,14 +268,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== TribeCivil Mount Restrictions ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "TribeCivil"]</xpath>
                     <value>
@@ -355,14 +283,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== TribeRough Mount Restrictions ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "TribeRough"]</xpath>
                     <value>
@@ -376,14 +298,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== TribeSavage Mount Restrictions ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "TribeSavage"]</xpath>
                     <value>
@@ -397,14 +313,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== Pirate Mount Restrictions ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "Pirate"]</xpath>
                     <value>
@@ -418,14 +328,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== PlayerColony Mount Restrictions ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "PlayerColony"]</xpath>
                     <value>
@@ -439,14 +343,8 @@
                     </value>
                 </li>
 
-<<<<<<< HEAD:Patches/GiddyUpPatch.xml
-=======
-<<<<<<< HEAD
-=======
                 <!--==================== PlayerTribe Mount Restrictions ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/GiddyUpPatch.xml
                 <li Class="PatchOperationAddModExtension">
                     <xpath>*/FactionDef[ defName = "PlayerTribe"]</xpath>
                     <value>

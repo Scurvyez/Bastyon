@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD:Defs/ThingDefs_Races/Races_Animal_Alluvium.xml
-=======
-<<<<<<< HEAD
-=======
   <!--==================== Alluvium ThingDef ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Races/Races_Animal_Alluvium.xml
   <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Alluvium</defName>
     <label>alluvium</label>
@@ -56,21 +50,9 @@
 				<defaultProjectile>Bast_AlluviumGoo</defaultProjectile>
 				<warmupTime>1.25</warmupTime>
 				<burstShotCount>3</burstShotCount>
-<<<<<<< HEAD:Defs/ThingDefs_Races/Races_Animal_Alluvium.xml
-				<minRange>1</minRange>
-				<range>12</range>
-				<soundCast>Bast_Throw</soundCast>
-=======
-<<<<<<< HEAD
-				<minRange>1</minRange>
-				<range>12</range>
-				<soundCast>Bast_Throw</soundCast>
-=======
 				<minRange>2</minRange>
 				<range>12</range>
 				<soundCast>Bast_AlluviumGoo</soundCast>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Races/Races_Animal_Alluvium.xml
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>alluvium goo</label>
 				<commonality>1</commonality>
@@ -133,15 +115,7 @@
           <def>AnimalAdult</def>
           <minAge>.50</minAge>
           <soundWounded>Pawn_Rodent_Wounded</soundWounded>
-<<<<<<< HEAD:Defs/ThingDefs_Races/Races_Animal_Alluvium.xml
-          <soundDeath>Pawn_Rodent_Wounded</soundDeath>
-=======
-<<<<<<< HEAD
-          <soundDeath>Pawn_Rodent_Wounded</soundDeath>
-=======
           <soundDeath>Pawn_Rodent_Death</soundDeath>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Races/Races_Animal_Alluvium.xml
           <soundCall>Pawn_Rodent_Call</soundCall>
           <soundAngry>Pawn_Rodent_Angry</soundAngry>
         </li>
@@ -164,14 +138,8 @@
 		</modExtensions>
   </ThingDef>
 
-<<<<<<< HEAD:Defs/ThingDefs_Races/Races_Animal_Alluvium.xml
-=======
-<<<<<<< HEAD
-=======
   <!--==================== Alluvium PawnKindDef ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Races/Races_Animal_Alluvium.xml
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Bast_Alluvium</defName>
     <label>alluvium</label>

@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD:Defs/Bodies/BodyParts_Animal.xml
-	<!--____________________Alluvium Specific Body-parts____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Alluvium Specific Body-parts____________________-->
-=======
 	<!--==================== Alluvium Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyParts_Animal.xml
 
 	<BodyPartDef>
 		<defName>Bast_Nucleus</defName>
@@ -40,15 +32,7 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD:Defs/Bodies/BodyParts_Animal.xml
-	<!--____________________Bahlrin Specific Body-parts____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Bahlrin Specific Body-parts____________________-->
-=======
 	<!--==================== Bahlrin Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyParts_Animal.xml
 
 	<BodyPartDef>
 		<defName>Bast_VibrationReceptor</defName>
@@ -79,16 +63,7 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD:Defs/Bodies/BodyParts_Animal.xml
-	<!--____________________Gnomaclu Specific Body-parts____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Gnomaclu Specific Body-parts____________________-->
-=======
 	<!--==================== Gnomaclu Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyParts_Animal.xml
-
 	<BodyPartDef>
 		<defName>Bast_BigEye</defName>
 		<label>eyeball?</label>
@@ -110,15 +85,7 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD:Defs/Bodies/BodyParts_Animal.xml
-	<!--____________________Spider / Insect Specific Body-parts____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Spider / Insect Specific Body-parts____________________-->
-=======
 	<!--==================== Insect / Spider Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyParts_Animal.xml
 
 	<BodyPartDef>
 		<defName>Bast_Thorax</defName>
@@ -171,15 +138,7 @@
 		<skinCovered>false</skinCovered>
 	</BodyPartDef>
 
-<<<<<<< HEAD:Defs/Bodies/BodyParts_Animal.xml
-	<!--____________________Snipping Snail Specific Body-parts____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Snipping Snail Specific Body-parts____________________-->
-=======
 	<!--==================== Snipping Snail Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyParts_Animal.xml
 	
 	<BodyPartDef>
 		<defName>Bast_GastropodShell</defName>
@@ -240,44 +199,18 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD:Defs/Bodies/BodyParts_Animal.xml
-	<!--____________________Elemental Specific Parts____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Elemental Specific Parts____________________-->
-=======
 	<!--==================== Elemental Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyParts_Animal.xml
 
 	<BodyPartDef>
 		<defName>Bast_SavrogMainBody</defName>
 		<label>ardent shroud</label>
-<<<<<<< HEAD:Defs/Bodies/BodyParts_Animal.xml
-		<hitPoints>350</hitPoints>
-=======
-<<<<<<< HEAD
-		<hitPoints>350</hitPoints>
-=======
 		<hitPoints>400</hitPoints>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyParts_Animal.xml
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<skinCovered>true</skinCovered>
 		<tags>
 			<li>MovingLimbCore</li>
 		</tags>
 	</BodyPartDef>
-<<<<<<< HEAD:Defs/Bodies/BodyParts_Animal.xml
-	
-	<BodyPartDef>
-		<defName>Bast_FieryFist</defName>
-=======
-<<<<<<< HEAD
-	
-	<BodyPartDef>
-		<defName>Bast_FieryFist</defName>
-=======
 
 	<BodyPartDef>
 		<defName>Bast_LightningElementalMainBody</defName>
@@ -305,8 +238,6 @@
 	
 	<BodyPartDef>
 		<defName>Bast_SmolderingFist</defName>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyParts_Animal.xml
 		<label>smoldering fist</label>
 		<hitPoints>30</hitPoints>
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
@@ -318,10 +249,6 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD:Defs/Bodies/BodyParts_Animal.xml
-=======
-<<<<<<< HEAD
-=======
 	<BodyPartDef>
 		<defName>Bast_GalvanizedFist</defName>
 		<label>galvanized fist</label>
@@ -335,6 +262,4 @@
 		</tags>
 	</BodyPartDef>
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyParts_Animal.xml
 </Defs>

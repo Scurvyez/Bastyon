@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_Meats.xml
-	<!--____________________Bases____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Bases____________________-->
-=======
 	<!--==================== Meat Base ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_Meats.xml
 
 	<ThingDef Name="Bast_RawMeatBase" Abstract="True" ParentName="OrganicProductBase">
 		<label>Base meat properties</label>
@@ -35,15 +27,7 @@
 		</thingCategories>
 	</ThingDef>
 
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_Meats.xml
-	<!--____________________Sunburst Gnomaclu____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Sunburst Gnomaclu____________________-->
-=======
 	<!--==================== Sunburst Gnomaclu Meat ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_Meats.xml
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_SunburstGnomacluMeat</defName>
@@ -63,15 +47,7 @@
 		</ingestible>
 	</ThingDef>
 
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_Meats.xml
-	<!--____________________Midnight Gnomaclu____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Midnight Gnomaclu____________________-->
-=======
 	<!--==================== Mignight Gnomaclu Meat ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_Meats.xml
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_MignightGnomacluMeat</defName>
@@ -91,15 +67,7 @@
 		</ingestible>
 	</ThingDef>
 
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_Meats.xml
-	<!--____________________Hazey Gnomaclu____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Hazey Gnomaclu____________________-->
-=======
 	<!--==================== Hazey Gnomaclu Meat ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_Meats.xml
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_HazeyGnomacluMeat</defName>
@@ -119,15 +87,7 @@
 		</ingestible>
 	</ThingDef>
 
-<<<<<<< HEAD:Defs/ThingDefs_Items/Items_Resource_Meats.xml
-	<!--____________________Alluvium____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Alluvium____________________-->
-=======
 	<!--==================== Alluvium Flesh ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Items/Items_Resource_Meats.xml
 
 	<ThingDef ParentName="Bast_RawMeatBase">
 		<defName>Bast_AlluviumFlesh</defName>

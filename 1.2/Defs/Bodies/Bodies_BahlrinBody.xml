@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD:Defs/Bodies/Bodies_BahlrinBody.xml
-	<!--____________________Bahlrin____________________-->
-=======
-<<<<<<< HEAD
-	<!--____________________Bahlrin____________________-->
-=======
 	<!--==================== Bahlrin Body ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/Bodies_BahlrinBody.xml
 
 	<BodyDef>
 		<defName>Bast_BahlrinBody</defName>
@@ -122,13 +114,5 @@
 			</parts>
 		</corePart>
 	</BodyDef>
-<<<<<<< HEAD:Defs/Bodies/Bodies_BahlrinBody.xml
-
-=======
-<<<<<<< HEAD
-
-=======
 	
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/Bodies_BahlrinBody.xml
 </Defs>

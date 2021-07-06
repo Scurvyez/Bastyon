@@ -13,15 +13,7 @@
 					<xpath>/Defs</xpath>
 					<value>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tab Creation____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tab Creation____________________-->
-=======
 						<!--==================== Bastyon Tab Creation ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementTabDef>
 							<defName>Bast_Achievements</defName>
@@ -33,15 +25,7 @@
 							<tab>Bast_Achievements</tab>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tame a Bahlrin____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tame a Bahlrin____________________-->
-=======
 						<!--==================== Tame a Bahlrin ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Bahlrin_Tame</defName>
@@ -61,15 +45,7 @@
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tame a Blazing Felidae____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tame a Blazing Felidae____________________-->
-=======
 						<!--==================== Tame a Blazing Felidae ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Blazing_Felidae_Tame</defName>
@@ -89,15 +65,7 @@
 							<points>50</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Kill 200 Bahlrins____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Kill 200 Bahlrins____________________-->
-=======
 						<!--==================== Kill 200 Bahlrins ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Bahlrin_Swarm</defName>
@@ -113,15 +81,7 @@
 							<points>150</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tame a Scire____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tame a Scire____________________-->
-=======
 						<!--==================== Tame a Scire ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Scire_Tame</defName>
@@ -141,15 +101,7 @@
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tame a pair of Bastyons____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tame a pair of Bastyons____________________-->
-=======
 						<!--==================== Tame a pair of Bastyons ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Bastyon_Tame</defName>
@@ -169,15 +121,7 @@
 							<points>40</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tame several Alluvium____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tame several Alluvium____________________-->
-=======
 						<!--==================== Tame several Alluvium ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Alluvium_Tame</defName>
@@ -197,15 +141,7 @@
 							<points>40</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tame Two Ceratoks____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tame Two Ceratoks____________________-->
-=======
 						<!--==================== Tame two Ceratoks ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Ceratok_Tame</defName>
@@ -225,15 +161,7 @@
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tame a Soul Eater____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tame a Soul Eater____________________-->
-=======
 						<!--==================== Tame a Soul Eater ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Soul_Eater_Tame</defName>
@@ -253,15 +181,7 @@
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tame 3 Chem Tegus____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tame 3 Chem Tegus____________________-->
-=======
 						<!--==================== Tame three Chem Tegus ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Chem_Tegu_Tame</defName>
@@ -281,15 +201,7 @@
 							<points>30</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Tame an Ethereal Lion____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Tame an Ethereal Lion____________________-->
-=======
 						<!--==================== Tame an Ethereal Lion ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Ethereal_Lion_Tame</defName>
@@ -309,15 +221,7 @@
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Collect Alluvium Jelly____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Collect Alluvium Jelly____________________-->
-=======
 						<!--==================== Collect Alluvium Jelly ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_AlluviumJelly_Collect</defName>
@@ -333,15 +237,7 @@
 							<points>13</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Farm 500 Chemfuel____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Farm 500 Chemfuel____________________-->
-=======
 						<!--==================== Farm 500 Chemfuel ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Chemfuel_Collect</defName>
@@ -357,15 +253,7 @@
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
 
-<<<<<<< HEAD:Patches/AchievementsPatch.xml
-						<!--____________________Kill 25 Gray Terrors____________________-->
-=======
-<<<<<<< HEAD
-						<!--____________________Kill 25 Gray Terrors____________________-->
-=======
 						<!--==================== Kill 25 Gray Terrors ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
->>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
 
 						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
 							<defName>Bast_Achievement_Gray_Terror_Kill</defName>

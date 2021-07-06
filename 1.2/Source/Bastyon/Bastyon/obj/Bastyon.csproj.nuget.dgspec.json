@@ -1,38 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj": {}
+    "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon\\Bastyon.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj": {
+    "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon\\Bastyon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj",
+        "projectUniqueName": "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
         "projectName": "Bastyon",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj",
-        "packagesPath": "C:\\Users\\Instakrill-BK\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\obj\\",
+        "projectPath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
+        "packagesPath": "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\Instakrill-BK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aaron Karlsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net40"
+          "net472"
         ],
         "sources": {
+          "C:\\Env\\Repos\\UiPath\\CustomPackages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Aaron Karlsen\\Desktop\\lib": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net40": {
+          "net472": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net40": {
+        "net472": {
           "dependencies": {
             "AchievementsExpanded": {
               "target": "Package",
@@ -40,7 +42,7 @@
             },
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[1.2.2900, )"
+              "version": "[1.2.2905, )"
             },
             "Lib.Harmony": {
               "target": "Package",

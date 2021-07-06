@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD
-    <!--____________________Alluvium Jelly____________________-->
-=======
     <!--==================== Alluvium Jelly ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="OrganicProductBase">
         <defName>Bast_Alluvium_Jelly</defName>
@@ -36,11 +32,7 @@
         </thingCategories>
     </ThingDef>
 
-<<<<<<< HEAD
-    <!--____________________Gray Terror Eggs____________________-->
-=======
     <!--==================== Gray Terror Eggs (Unfert) ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="EggUnfertBase">
       <defName>Bast_Gray_Terror_EggUnfertilized</defName>
@@ -55,11 +47,8 @@
         <MarketValue>5.0</MarketValue>
       </statBases>
     </ThingDef>
-<<<<<<< HEAD
-=======
 
     <!--==================== Gray Terror Eggs (Fert) ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
     
     <ThingDef ParentName="EggFertBase">
       <defName>Bast_Gray_Terror_EggFertilized</defName>
@@ -80,11 +69,7 @@
       </comps>
     </ThingDef>
 
-<<<<<<< HEAD
-    <!--____________________Critter Eggs____________________-->
-=======
     <!--==================== Critter Eggs (Unfert) ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="EggUnfertBase">
       <defName>Bast_Critter_EggUnfertilized</defName>
@@ -99,11 +84,8 @@
         <MarketValue>5.0</MarketValue>
       </statBases>
     </ThingDef>
-<<<<<<< HEAD
-=======
 
     <!--==================== Critter Eggs (Fert) ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
     
     <ThingDef ParentName="EggFertBase">
       <defName>Bast_Critter_EggFertilized</defName>

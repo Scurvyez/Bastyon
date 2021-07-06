@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD
-=======
 	<!--==================== Bahlrin ThingDef ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Bast_Bahlrin</defName>
 		<label>bahlrin</label>
@@ -99,13 +96,8 @@
 					<minAge>1.4</minAge>
 					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
 					<soundDeath>Pawn_BigInsect_Death</soundDeath>
-<<<<<<< HEAD
-					<soundCall>Pawn_BigInsect_Call</soundCall>
-					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
-=======
 					<soundCall>Pawn_Bahlrin_Call</soundCall>
 					<soundAngry>Pawn_Bahlrin_Angry</soundAngry>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -132,11 +124,8 @@
 		</modExtensions>
 	</ThingDef>
 
-<<<<<<< HEAD
-=======
 	<!--==================== Bahlrin PawnKindDef ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Bast_Bahlrin</defName>
 		<label>bahlrin</label>
@@ -208,8 +197,5 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-<<<<<<< HEAD
-=======
 	
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 </Defs>
