@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD
-	<!--____________________Alluvium Specific Body-parts____________________-->
-=======
 	<!--==================== Alluvium Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<BodyPartDef>
 		<defName>Bast_Nucleus</defName>
@@ -36,11 +32,7 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD
-	<!--____________________Bahlrin Specific Body-parts____________________-->
-=======
 	<!--==================== Bahlrin Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<BodyPartDef>
 		<defName>Bast_VibrationReceptor</defName>
@@ -71,12 +63,7 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD
-	<!--____________________Gnomaclu Specific Body-parts____________________-->
-=======
 	<!--==================== Gnomaclu Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
-
 	<BodyPartDef>
 		<defName>Bast_BigEye</defName>
 		<label>eyeball?</label>
@@ -98,11 +85,7 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD
-	<!--____________________Spider / Insect Specific Body-parts____________________-->
-=======
 	<!--==================== Insect / Spider Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<BodyPartDef>
 		<defName>Bast_Thorax</defName>
@@ -155,11 +138,7 @@
 		<skinCovered>false</skinCovered>
 	</BodyPartDef>
 
-<<<<<<< HEAD
-	<!--____________________Snipping Snail Specific Body-parts____________________-->
-=======
 	<!--==================== Snipping Snail Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 	
 	<BodyPartDef>
 		<defName>Bast_GastropodShell</defName>
@@ -220,31 +199,18 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD
-	<!--____________________Elemental Specific Parts____________________-->
-=======
 	<!--==================== Elemental Specific Bodyparts ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<BodyPartDef>
 		<defName>Bast_SavrogMainBody</defName>
 		<label>ardent shroud</label>
-<<<<<<< HEAD
-		<hitPoints>350</hitPoints>
-=======
 		<hitPoints>400</hitPoints>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<skinCovered>true</skinCovered>
 		<tags>
 			<li>MovingLimbCore</li>
 		</tags>
 	</BodyPartDef>
-<<<<<<< HEAD
-	
-	<BodyPartDef>
-		<defName>Bast_FieryFist</defName>
-=======
 
 	<BodyPartDef>
 		<defName>Bast_LightningElementalMainBody</defName>
@@ -272,7 +238,6 @@
 	
 	<BodyPartDef>
 		<defName>Bast_SmolderingFist</defName>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 		<label>smoldering fist</label>
 		<hitPoints>30</hitPoints>
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
@@ -284,8 +249,6 @@
 		</tags>
 	</BodyPartDef>
 
-<<<<<<< HEAD
-=======
 	<BodyPartDef>
 		<defName>Bast_GalvanizedFist</defName>
 		<label>galvanized fist</label>
@@ -299,5 +262,4 @@
 		</tags>
 	</BodyPartDef>
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 </Defs>

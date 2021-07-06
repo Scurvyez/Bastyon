@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD
-=======
   <!--==================== Vibrant Gelatinous Mass ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>Bast_VibrantGelatinousMass</defName>
     <label>vibrant gelatinous mass</label>
@@ -67,11 +64,8 @@
     </comps>
   </ThingDef>
 
-<<<<<<< HEAD
-=======
   <!--==================== Abatanica Ant Colony Mound ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>Bast_AbatanicaAntColonyMound</defName>
     <label>colony mound</label>
