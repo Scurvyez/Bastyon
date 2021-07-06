@@ -27,15 +27,22 @@ namespace Bastyon
 
         public override void WriteSettings()
         {
-            //modSettings.disabledBastyonAnimals = new List<string>();
-            for (int i = 0; i < allBastyonAnimals.Count; i++)
+            modSettings.disabledBastyonAnimals = new List<string>();
+            for (int i = 0; i < modSettings.allBastyonAnimals.Count; i++)
             {
                 if (!modSettings.bastyonAnimalValues[i])
                 {
-                    modSettings.disabledBastyonAnimals.Add(allBastyonAnimals[i].defName);
+                    modSettings.disabledBastyonAnimals.Add(modSettings.allBastyonAnimals[i].defName);
                 }
             }
-
+            modSettings.disabledBastyonIncidents = new List<string>();
+            for (int i = 0; i < modSettings.allBastyonIncidents.Count; i++)
+            {
+                if (!modSettings.bastyoneIncidentValues[i])
+                {
+                    modSettings.disabledBastyonIncidents.Add(modSettings.allBastyonIncidents[i].defName);
+                }
+            }
             base.WriteSettings();
         }
 
@@ -43,6 +50,5 @@ namespace Bastyon
         {
             return "Bastyon";
         }
-        public List<PawnKindDef> allBastyonAnimals = new List<PawnKindDef>();
     }
 }

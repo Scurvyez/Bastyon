@@ -13,28 +13,29 @@ namespace Bastyon
     public class BastyonModSettings : ModSettings
     {
         public List<string> disabledBastyonAnimals = new List<string>();
+        public List<string> disabledBastyonIncidents = new List<string>();
         public List<PawnKindDef> allBastyonAnimals = new List<PawnKindDef>();
-        public bool[] bastyonAnimalValues = new bool[DefUtil.AllAnimalDefs("Bast_").Count];
-
+        public List<IncidentDef> allBastyonIncidents = new List<IncidentDef>();
+        public bool[] bastyoneIncidentValues;
+        public bool[] bastyonAnimalValues;
         public override void ExposeData()
         {
             Scribe_Collections.Look(ref disabledBastyonAnimals, "disabledBastyonAnimals", LookMode.Value, Array.Empty<object>());
+            Scribe_Collections.Look(ref disabledBastyonIncidents, "disabledBastyonIncidents");
+            base.ExposeData();
         }
 
         public void DoSettingsWindowContents(Rect inRect)
         {
-            Rect bottomRect = new Rect(inRect.position + new Vector2(0f, 20f), inRect.size - new Vector2(0f, 20f));
-            Rect viewRect = new Rect(0f, 0f, bottomRect.width - 20f, disabledBastyonAnimals.Count * 8f);
-            
-            Listing_Standard settingsWindow = new Listing_Standard();
-            settingsWindow.Begin(inRect);
-            settingsWindow.Label("Enabled bastyon animals", -1, null);
-            
-            if (allBastyonAnimals == null)
+            if(bastyoneIncidentValues == null)
             {
-                allBastyonAnimals = DefUtil.AllAnimalDefs("Bast_");
+                bastyoneIncidentValues = new bool[allBastyonIncidents.Count];
+                for (int i = 0; i < allBastyonIncidents.Count; i++)
+                {
+                    bastyoneIncidentValues[i] = !disabledBastyonIncidents.Contains(allBastyonIncidents[i].defName);
+                }
             }
-            if (bastyonAnimalValues == null)
+            if(bastyonAnimalValues == null)
             {
                 bastyonAnimalValues = new bool[allBastyonAnimals.Count];
                 for (int i = 0; i < allBastyonAnimals.Count; i++)
@@ -42,19 +43,33 @@ namespace Bastyon
                     bastyonAnimalValues[i] = !disabledBastyonAnimals.Contains(allBastyonAnimals[i].defName);
                 }
             }
-            settingsWindow.BeginScrollView(bottomRect, ref scrollPosition, ref viewRect);
+            Listing_Standard settingsWindowBottom = new Listing_Standard();
+            Rect bottomRect = new Rect(inRect.position + new Vector2(0f, 20f), inRect.size - new Vector2(0f, 20f));
+            Rect viewRect = new Rect(0f, 0f, bottomRect.width - 20f, disabledBastyonAnimals.Count * 8f);
+            settingsWindowBottom.BeginScrollView(bottomRect, ref scrollPosition, ref viewRect);
+            
             for (int i = 0; i < allBastyonAnimals.Count; i++)
             {
-                Rect checkboxRect = settingsWindow.GetRect(Text.LineHeight);
-                settingsWindow.Gap();
+                Log.Message(allBastyonAnimals[i].defName);
+                Rect checkboxRect = settingsWindowBottom.GetRect(Text.LineHeight);
                 if (Mouse.IsOver(checkboxRect))
                 {
                     Widgets.DrawHighlight(checkboxRect);
                 }
                 Widgets.CheckboxLabeled(checkboxRect, allBastyonAnimals[i].label.CapitalizeFirst(), ref bastyonAnimalValues[i], false, null, null, false);
             }
-            settingsWindow.EndScrollView(ref viewRect);
-            settingsWindow.End();
+            settingsWindowBottom.GapLine();
+            for (int i = 0; i < allBastyonIncidents.Count; i++)
+            {
+                Rect checkboxRect = settingsWindowBottom.GetRect(Text.LineHeight);
+                Log.Message(allBastyonIncidents[i].defName);
+                if (Mouse.IsOver(checkboxRect))
+                {
+                    Widgets.DrawHighlight(checkboxRect);
+                }
+                Widgets.CheckboxLabeled(checkboxRect, allBastyonIncidents[i].label.CapitalizeFirst(), ref bastyoneIncidentValues[i], false, null, null, false);
+            }
+            settingsWindowBottom.EndScrollView(ref viewRect);
         }
         private static Vector2 scrollPosition = Vector2.zero;
     }

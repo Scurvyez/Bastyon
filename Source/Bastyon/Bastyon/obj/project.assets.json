@@ -565,27 +565,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Instakrill-BK\\.nuget\\packages\\": {}
+    "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
+      "projectUniqueName": "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
       "projectName": "Bastyon",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
-      "packagesPath": "C:\\Users\\Instakrill-BK\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\obj\\",
+      "projectPath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
+      "packagesPath": "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Instakrill-BK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aaron Karlsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net472"
       ],
       "sources": {
+        "C:\\Env\\Repos\\UiPath\\CustomPackages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Aaron Karlsen\\Desktop\\lib": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

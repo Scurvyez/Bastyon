@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tB1rLxNJ1vb54qhV5Cv2j71Hg2dJ+INKCC1PHJJHypudnTr+kz5qTGl6xWYc8BMobrkYpNncyZEFi/IEd4LXDw==",
+  "dgSpecHash": "sKg01wI14ChI/1kqV6oBBTTCsxmgpUwMaBYrGHMjZOcidVjJGjWazc/grQu2nO/BmRCuawKEVN9IpnHkxk8E/w==",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
+  "projectFilePath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Instakrill-BK\\.nuget\\packages\\achievementsexpanded\\1.0.8\\achievementsexpanded.1.0.8.nupkg.sha512",
-    "C:\\Users\\Instakrill-BK\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2905\\krafs.rimworld.ref.1.2.2905.nupkg.sha512",
-    "C:\\Users\\Instakrill-BK\\.nuget\\packages\\lib.harmony\\2.0.4\\lib.harmony.2.0.4.nupkg.sha512"
+    "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\achievementsexpanded\\1.0.8\\achievementsexpanded.1.0.8.nupkg.sha512",
+    "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2905\\krafs.rimworld.ref.1.2.2905.nupkg.sha512",
+    "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\lib.harmony\\2.0.4\\lib.harmony.2.0.4.nupkg.sha512"
   ],
   "logs": []
 }

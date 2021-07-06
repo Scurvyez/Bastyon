@@ -2,14 +2,14 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Program Files %28x86%29\Steam\steamapps\common\RimWorld\RimWorldWin64.exe</StartProgram>
+    <StartProgram>C:\Rimworld_Debug\RimWorldWin64.exe</StartProgram>
     <StartArguments>-quicktest -savedatafolder=SaveData</StartArguments>
-    <StartWorkingDirectory>C:\Program Files %28x86%29\Steam\steamapps\common\RimWorld\</StartWorkingDirectory>
+    <StartWorkingDirectory>..\..\..\..\</StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Program Files %28x86%29\Steam\steamapps\common\RimWorld\RimWorldWin64.exe</StartProgram>
+    <StartProgram>..\..\..\..\RimWorldWin64.exe</StartProgram>
     <StartArguments>-quicktest -savedatafolder=SaveData</StartArguments>
-    <StartWorkingDirectory>C:\Program Files %28x86%29\Steam\steamapps\common\RimWorld\</StartWorkingDirectory>
+    <StartWorkingDirectory>..\..\..\..\</StartWorkingDirectory>
   </PropertyGroup>
 </Project>
