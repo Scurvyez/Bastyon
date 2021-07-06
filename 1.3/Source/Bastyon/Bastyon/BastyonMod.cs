@@ -35,14 +35,6 @@ namespace Bastyon
                     modSettings.disabledBastyonAnimals.Add(modSettings.allBastyonAnimals[i].defName);
                 }
             }
-            modSettings.disabledBastyonIncidents = new List<string>();
-            for (int i = 0; i < modSettings.allBastyonIncidents.Count; i++)
-            {
-                if (!modSettings.bastyoneIncidentValues[i])
-                {
-                    modSettings.disabledBastyonIncidents.Add(modSettings.allBastyonIncidents[i].defName);
-                }
-            }
             base.WriteSettings();
         }
 

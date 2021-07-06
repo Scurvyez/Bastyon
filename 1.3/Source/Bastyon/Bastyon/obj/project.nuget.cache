@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sKg01wI14ChI/1kqV6oBBTTCsxmgpUwMaBYrGHMjZOcidVjJGjWazc/grQu2nO/BmRCuawKEVN9IpnHkxk8E/w==",
+  "dgSpecHash": "VJBAu8PkLpX0BUeJaUs8PF3RstOVoizDs0VpXtkM27w4F8Nh7R6p0Bnp4ZZzsDYSkKkBobttUIPMxQlSJLq9+g==",
   "success": true,
-  "projectFilePath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
+  "projectFilePath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.3\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\achievementsexpanded\\1.0.8\\achievementsexpanded.1.0.8.nupkg.sha512",
     "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2905\\krafs.rimworld.ref.1.2.2905.nupkg.sha512",

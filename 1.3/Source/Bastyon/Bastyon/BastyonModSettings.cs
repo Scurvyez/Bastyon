@@ -12,29 +12,21 @@ namespace Bastyon
 {
     public class BastyonModSettings : ModSettings
     {
-        public List<string> disabledBastyonAnimals = new List<string>();
-        public List<string> disabledBastyonIncidents = new List<string>();
+        public List<string> disabledBastyonAnimals;
+        //public List<string> disabledBastyonIncidents;
         public List<PawnKindDef> allBastyonAnimals = new List<PawnKindDef>();
-        public List<IncidentDef> allBastyonIncidents = new List<IncidentDef>();
-        public bool[] bastyoneIncidentValues;
+        //public List<IncidentDef> allBastyonIncidents = new List<IncidentDef>();
+        //public static bool[] bastyoneIncidentValues;
         public bool[] bastyonAnimalValues;
         public override void ExposeData()
         {
             Scribe_Collections.Look(ref disabledBastyonAnimals, "disabledBastyonAnimals", LookMode.Value, Array.Empty<object>());
-            Scribe_Collections.Look(ref disabledBastyonIncidents, "disabledBastyonIncidents");
-            base.ExposeData();
+           //Scribe_Collections.Look(ref disabledBastyonIncidents, "disabledBastyonIncidents");
+           
         }
 
         public void DoSettingsWindowContents(Rect inRect)
         {
-            if(bastyoneIncidentValues == null)
-            {
-                bastyoneIncidentValues = new bool[allBastyonIncidents.Count];
-                for (int i = 0; i < allBastyonIncidents.Count; i++)
-                {
-                    bastyoneIncidentValues[i] = !disabledBastyonIncidents.Contains(allBastyonIncidents[i].defName);
-                }
-            }
             if(bastyonAnimalValues == null)
             {
                 bastyonAnimalValues = new bool[allBastyonAnimals.Count];
@@ -59,16 +51,6 @@ namespace Bastyon
                 Widgets.CheckboxLabeled(checkboxRect, allBastyonAnimals[i].label.CapitalizeFirst(), ref bastyonAnimalValues[i], false, null, null, false);
             }
             settingsWindowBottom.GapLine();
-            for (int i = 0; i < allBastyonIncidents.Count; i++)
-            {
-                Rect checkboxRect = settingsWindowBottom.GetRect(Text.LineHeight);
-                Log.Message(allBastyonIncidents[i].defName);
-                if (Mouse.IsOver(checkboxRect))
-                {
-                    Widgets.DrawHighlight(checkboxRect);
-                }
-                Widgets.CheckboxLabeled(checkboxRect, allBastyonIncidents[i].label.CapitalizeFirst(), ref bastyoneIncidentValues[i], false, null, null, false);
-            }
             settingsWindowBottom.EndScrollView(ref viewRect);
         }
         private static Vector2 scrollPosition = Vector2.zero;

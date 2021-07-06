@@ -23,3 +23,10 @@ C:\Rimworld_Debug\Mods\Bastyon\Source\Bastyon\Bastyon\obj\Debug\Bastyon.csproj.C
 C:\Rimworld_Debug\Mods\Bastyon\Source\Bastyon\Bastyon\obj\Debug\Bastyon.csproj.CopyComplete
 C:\Rimworld_Debug\Mods\Bastyon\Source\Bastyon\Bastyon\obj\Debug\Bastyon.dll
 C:\Rimworld_Debug\Mods\Bastyon\Source\Bastyon\Bastyon\obj\Debug\Bastyon.pdb
+C:\Rimworld_Debug\Mods\Bastyon\1.3\Assemblies\Bastyon.dll
+C:\Rimworld_Debug\Mods\Bastyon\1.3\Assemblies\Bastyon.pdb
+C:\Rimworld_Debug\Mods\Bastyon\1.3\Source\Bastyon\Bastyon\obj\Debug\Bastyon.csproj.AssemblyReference.cache
+C:\Rimworld_Debug\Mods\Bastyon\1.3\Source\Bastyon\Bastyon\obj\Debug\Bastyon.csproj.CoreCompileInputs.cache
+C:\Rimworld_Debug\Mods\Bastyon\1.3\Source\Bastyon\Bastyon\obj\Debug\Bastyon.csproj.CopyComplete
+C:\Rimworld_Debug\Mods\Bastyon\1.3\Source\Bastyon\Bastyon\obj\Debug\Bastyon.dll
+C:\Rimworld_Debug\Mods\Bastyon\1.3\Source\Bastyon\Bastyon\obj\Debug\Bastyon.pdb
