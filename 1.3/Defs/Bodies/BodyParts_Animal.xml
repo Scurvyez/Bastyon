@@ -64,7 +64,6 @@
 	</BodyPartDef>
 
 	<!--==================== Gnomaclu Specific Bodyparts ====================-->
-
 	<BodyPartDef>
 		<defName>Bast_BigEye</defName>
 		<label>eyeball?</label>
