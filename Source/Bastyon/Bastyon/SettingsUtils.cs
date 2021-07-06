@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using RimWorld;
+using UnityEngine;
+using Verse;
+
+namespace Bastyon
+{
+    internal static class SettingsUtils
+    {
+		public static void SliderLabeled(this Listing_Standard ls, string label, ref float val, string format, float min = 0f, float max = 1f, string tooltip = null)
+		{
+			Rect rect = ls.GetRect(Text.LineHeight);
+			Rect rect2 = GenUI.Rounded(GenUI.LeftPart(rect, 0.7f));
+			Rect rect3 = GenUI.Rounded(GenUI.LeftPart(GenUI.Rounded(GenUI.RightPart(rect, 0.3f)), 0.67f));
+			Rect rect4 = GenUI.Rounded(GenUI.RightPart(rect, 0.1f));
+			TextAnchor anchor = Text.Anchor;
+			Text.Anchor = TextAnchor.MiddleLeft;
+			Widgets.Label(rect2, label);
+			float num = Widgets.HorizontalSlider(rect3, val, min, max, true, null, null, null, -1f);
+			val = num;
+			Text.Anchor = TextAnchor.MiddleRight;
+			Widgets.Label(rect4, string.Format(format, val));
+			if (!GenText.NullOrEmpty(tooltip))
+			{
+				TooltipHandler.TipRegion(rect, tooltip);
+			}
+			Text.Anchor = anchor;
+			ls.Gap(ls.verticalSpacing);
+		}
+	}
+}
