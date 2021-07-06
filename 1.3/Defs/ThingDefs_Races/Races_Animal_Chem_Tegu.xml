@@ -84,6 +84,7 @@
             <baseHealthScale>0.65</baseHealthScale>
             <foodType>VegetarianRoughAnimal</foodType>
             <leatherDef>Leather_Chem_Tegu</leatherDef>
+            <roamMtbDays>2</roamMtbDays>
             <wildness>0.12</wildness>
             <petness>.1</petness>
             <trainability>None</trainability>
@@ -114,7 +115,7 @@
         </race>
         <tradeTags>
             <li>AnimalUncommon</li>
-            <li>AnimalFighter</li>
+            <li>AnimalFarm</li>
         </tradeTags>
         <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">

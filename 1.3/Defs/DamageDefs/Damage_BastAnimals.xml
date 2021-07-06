@@ -68,7 +68,7 @@
 		<defaultDamage>10</defaultDamage>
 		<defaultArmorPenetration>0</defaultArmorPenetration>
 		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
-		<explosionCellMote>Mote_LightningGlow</explosionCellMote>
+		<explosionCellFleck>LightningGlow</explosionCellFleck>
 		<explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
 		<explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
 		<soundExplosion>Explosion_EMP</soundExplosion>

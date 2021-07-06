@@ -7,7 +7,7 @@
         <defName>Alluvium</defName>
         <corpseCategory>CorpsesAnimal</corpseCategory>
         <damageEffecter>Damage_HitFlesh</damageEffecter>
-        <wounds>
+        <genericWounds>
             <li>
                 <texture>Things/Pawn/Wounds/WoundAlluviumFleshA</texture>
             </li>
@@ -17,7 +17,7 @@
             <li>
                 <texture>Things/Pawn/Wounds/WoundAlluviumFleshC</texture>
             </li>
-        </wounds>
+        </genericWounds>
     </FleshTypeDef>
 
     <!--==================== Svarog Flesh ====================-->
@@ -26,7 +26,7 @@
         <defName>Svarog</defName>
         <corpseCategory>CorpsesAnimal</corpseCategory>
         <damageEffecter>Damage_HitFlesh</damageEffecter>
-        <wounds>
+        <genericWounds>
             <li>
                 <texture>Things/Pawn/Wounds/WoundSvarogFleshA</texture>
             </li>
@@ -36,7 +36,7 @@
             <li>
                 <texture>Things/Pawn/Wounds/WoundSvarogFleshC</texture>
             </li>
-        </wounds>
+        </genericWounds>
     </FleshTypeDef>
 
     <!--==================== Lightning Elemental Flesh ====================-->
@@ -45,7 +45,7 @@
         <defName>LightningElemental</defName>
         <corpseCategory>CorpsesAnimal</corpseCategory>
         <damageEffecter>Damage_HitFlesh</damageEffecter>
-        <wounds>
+        <genericWounds>
             <li>
                 <texture>Things/Pawn/Wounds/WoundLightningElementalFleshA</texture>
             </li>
@@ -55,7 +55,7 @@
             <li>
                 <texture>Things/Pawn/Wounds/WoundLightningElementalFleshC</texture>
             </li>
-        </wounds>
+        </genericWounds>
     </FleshTypeDef>
 
 </Defs>

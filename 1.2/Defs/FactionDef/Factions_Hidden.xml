@@ -6,6 +6,7 @@
   <FactionDef ParentName="FactionBase">
     <defName>Bast_Monsters</defName>
     <label>monsters</label>
+    <description>When the night comes be ready. Creatures of your worst nightmares will thrive in the darkness. They will be many. They will be strong. You must be stronger.</description>
     <pawnSingular>monster</pawnSingular>
     <pawnsPlural>monsters</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>

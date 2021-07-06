@@ -82,6 +82,7 @@
       <bloodDef>Filth_AlluviumBlood</bloodDef>
       <wildness>0.03</wildness>
       <trainability>None</trainability>
+      <roamMtbDays>2</roamMtbDays>
       <manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.00</manhunterOnDamageChance>
       <canBePredatorPrey>true</canBePredatorPrey>
@@ -129,6 +130,7 @@
 		</butcherProducts>
     <tradeTags>
       <li>AnimalUncommon</li>
+      <li>AnimalFarm</li>
     </tradeTags>
     <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
