@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD
-=======
   <!--==================== Scire ThingDef ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
   <ThingDef ParentName="AnimalThingBase">
     <defName>Bast_Scire</defName>
     <label>scire</label>
@@ -38,22 +35,13 @@
 				<accuracyLong>1</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_ScireFireBall</defaultProjectile>
-<<<<<<< HEAD
-				<warmupTime>4</warmupTime>
-				<burstShotCount>3</burstShotCount>
-=======
 				<warmupTime>2</warmupTime>
 				<burstShotCount>2</burstShotCount>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 				<minRange>2</minRange>
 				<range>15</range>
 				<soundCast>Bast_ScireFireBall</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
-<<<<<<< HEAD
-				<label>eternal fire</label>
-=======
 				<label>everlasting flame</label>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 				<commonality>.75</commonality>
 			</li>
 		</verbs>
@@ -173,11 +161,8 @@
 		</modExtensions>
   </ThingDef>
 
-<<<<<<< HEAD
-=======
   <!--==================== Scire PawnKindDef ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Bast_Scire</defName>
     <label>scire</label>

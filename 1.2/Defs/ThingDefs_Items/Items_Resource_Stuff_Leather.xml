@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD
-    <!--____________________Bahlrin Leather____________________-->
-=======
     <!--==================== Bahlrin Leather ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Bahlrin</defName>
@@ -40,11 +36,7 @@
         </stuffProps>
     </ThingDef>
 
-<<<<<<< HEAD
-    <!--____________________Bastyon Fur____________________-->
-=======
     <!--==================== Bastyon Fur ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Bastyon</defName>
@@ -74,11 +66,7 @@
         </stuffProps>
     </ThingDef>
 
-<<<<<<< HEAD
-    <!--____________________Blazing Felidae Fur____________________-->
-=======
     <!--==================== Blazing Felidae Fur ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Blazing_Felidae</defName>
@@ -107,11 +95,7 @@
         </stuffProps>
     </ThingDef>
 
-<<<<<<< HEAD
-    <!--____________________Chem Tegu Leather____________________-->
-=======
     <!--==================== Chem Tegu Leather ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Chem_Tegu</defName>
@@ -146,11 +130,7 @@
         </stuffProps>
     </ThingDef>
 
-<<<<<<< HEAD
-    <!--____________________Scire Leather____________________-->
-=======
     <!--==================== Scire Leather ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Scire</defName>
@@ -186,11 +166,7 @@
         </stuffProps>
     </ThingDef>
 
-<<<<<<< HEAD
-    <!--____________________Ethereal Lion Fur____________________-->
-=======
     <!--==================== Ethereal Lion Fur ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Ethereal_Lion</defName>
@@ -220,11 +196,7 @@
         </stuffProps>
     </ThingDef>
 
-<<<<<<< HEAD
-    <!--____________________Ceratok Leather____________________-->
-=======
     <!--==================== Ceratok Leather ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Ceratok</defName>
@@ -258,11 +230,7 @@
         </stuffProps>
     </ThingDef>
 
-<<<<<<< HEAD
-    <!--____________________Soul Eater Leather____________________-->
-=======
     <!--==================== Soul Eater Leather ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
     <ThingDef ParentName="LeatherBase">
         <defName>Leather_Soul_Eater</defName>

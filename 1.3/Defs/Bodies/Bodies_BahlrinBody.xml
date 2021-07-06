@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD
-	<!--____________________Bahlrin____________________-->
-=======
 	<!--==================== Bahlrin Body ====================-->
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 
 	<BodyDef>
 		<defName>Bast_BahlrinBody</defName>

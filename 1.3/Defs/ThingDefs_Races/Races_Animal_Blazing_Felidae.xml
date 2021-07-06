@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< HEAD
-=======
   <!--==================== Blazing Felidae ThingDef ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
   <ThingDef ParentName="BigCatThingBase">
     <defName>Bast_Blazing_Felidae</defName>
     <label>blazing felidae</label>
@@ -29,11 +26,7 @@
 				<accuracyLong>.75</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_FireStream</defaultProjectile>
-<<<<<<< HEAD
-				<warmupTime>5</warmupTime>
-=======
 				<warmupTime>7</warmupTime>
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
 				<burstShotCount>1</burstShotCount>
 				<minRange>3</minRange>
 				<range>8</range>
@@ -171,11 +164,8 @@
 		</modExtensions>
   </ThingDef>
 
-<<<<<<< HEAD
-=======
   <!--==================== Blazing Felidae PawnKindDef ====================-->
 
->>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
   <PawnKindDef ParentName="BigCatKindBase">
     <defName>Bast_Blazing_Felidae</defName>
     <label>blazing felidae</label>
