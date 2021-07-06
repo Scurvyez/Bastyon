@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--==================== Scire Fireball Ranged Attack Sound ====================-->
+
+	<SoundDef>
+		<defName>Bast_ScireFireBall</defName>
+		<context>MapOnly</context>
+		<eventNames />
+        <maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder"> <!-- Use "AudioGrain_Folder" for multiple sound files per SoundDef. -->
+						<clipFolderPath>Bast_ScireFireBall</clipFolderPath>
+					</li>
+				</grains>
+				<sustainLoop>False</sustainLoop>
+                <volumeRange>60~60</volumeRange>      
+                <pitchRange>0.95~1.05</pitchRange>      
+                <distRange>0~70</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--==================== Spider Web Ranged Attack Sound ====================-->
+
+    <SoundDef>
+		<defName>Bast_Web</defName>
+		<context>MapOnly</context>
+		<eventNames />
+        <maxSimultaneous>2</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Bast_Web</clipFolderPath>
+					</li>
+				</grains>
+				<sustainLoop>False</sustainLoop>
+                <volumeRange>60~60</volumeRange>      
+                <pitchRange>0.95~1.05</pitchRange>      
+                <distRange>0~70</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--==================== Alluvium Goo Ranged Attack Sound ====================-->
+
+    <SoundDef>
+		<defName>Bast_AlluviumGoo</defName>
+		<context>MapOnly</context>
+		<eventNames />
+        <maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Bast_AlluviumGoo</clipFolderPath>
+					</li>
+				</grains>
+				<sustainLoop>False</sustainLoop>
+                <volumeRange>60~60</volumeRange>      
+                <pitchRange>0.95~1.05</pitchRange>      
+                <distRange>0~70</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--==================== Critter Spike Ranged Attack Sound ====================-->
+
+    <SoundDef>
+		<defName>Bast_CritterSpike</defName>
+		<context>MapOnly</context>
+		<eventNames />
+        <maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Bast_CritterSpike</clipFolderPath>
+					</li>
+				</grains>
+				<sustainLoop>False</sustainLoop>
+                <volumeRange>60~60</volumeRange>      
+                <pitchRange>0.95~1.05</pitchRange>      
+                <distRange>0~70</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--==================== Snipping Snail Ranged Attack Sound ====================-->
+
+    <SoundDef>
+		<defName>Bast_SnippingSnailAcid</defName>
+		<context>MapOnly</context>
+		<eventNames />
+        <maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Bast_SnippingSnailAcid</clipFolderPath>
+					</li>
+				</grains>
+				<sustainLoop>False</sustainLoop>
+                <volumeRange>60~60</volumeRange>      
+                <pitchRange>0.95~1.05</pitchRange>      
+                <distRange>0~70</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--==================== Blistering Wind Ranged Attack Sound ====================-->
+
+    <SoundDef>
+		<defName>Bast_BlisteringWind</defName>
+		<context>MapOnly</context>
+		<eventNames />
+        <maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Bast_BlisteringWind</clipFolderPath>
+					</li>
+				</grains>
+				<sustainLoop>true</sustainLoop>
+                <volumeRange>60~60</volumeRange>      
+                <pitchRange>0.95~1.05</pitchRange>      
+                <distRange>0~70</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--==================== Bastyon Plasma Ranged Attack Sound ====================-->
+
+    <SoundDef>
+		<defName>Bast_BastyonPlasmaStream</defName>
+		<context>MapOnly</context>
+		<eventNames />
+        <maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Bast_BastyonPlasmaStream</clipFolderPath>
+					</li>
+				</grains>
+				<sustainLoop>true</sustainLoop>
+                <volumeRange>60~60</volumeRange>      
+                <pitchRange>0.95~1.05</pitchRange>      
+                <distRange>0~70</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--==================== Fire Stream Ranged Attack Sound ====================-->
+
+    <SoundDef>
+		<defName>Bast_FireStream</defName>
+		<context>MapOnly</context>
+		<eventNames />
+        <maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Bast_FireStream</clipFolderPath>
+					</li>
+				</grains>
+				<sustainLoop>true</sustainLoop>
+                <volumeRange>60~60</volumeRange>      
+                <pitchRange>0.95~1.05</pitchRange>      
+                <distRange>0~70</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+</Defs>

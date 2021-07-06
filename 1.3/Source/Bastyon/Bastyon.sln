@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bastyon", "Bastyon\Bastyon.csproj", "{2214C270-6B48-4612-AB31-FBBA6528CFFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2214C270-6B48-4612-AB31-FBBA6528CFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2214C270-6B48-4612-AB31-FBBA6528CFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2214C270-6B48-4612-AB31-FBBA6528CFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2214C270-6B48-4612-AB31-FBBA6528CFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3ABD77B-DCA1-4E26-ACF8-DE0DB2B7E46D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!--==================== Abatanica Ant Adv. Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Abatanica_Ant"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.10</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.01</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Alluvium Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Alluvium"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.10</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.02</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Bahlrin Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Bahlrin"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.05</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Bastyon Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Bastyon"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.02</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Blazing Felidae Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Blazing_Felidae"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.10</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Ceratok Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Ceratok"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.15</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Chem Tegu Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Chem_Tegu"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.01</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.10</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Critter Adv. Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Critter"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.05</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Ethereal Lion Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Ethereal_Lion"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.02</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Sunburst Gnomaclu Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Sunburst_Gnomaclu"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.05</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.08</Wasteland>
+						<Wetland>0.01</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Midnight Gnomaclu Adv. Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Midnight_Gnomaclu"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.05</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.08</Wasteland>
+						<Wetland>0.01</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Hazey Gnomaclu Adv. Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Hazey_Gnomaclu"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.05</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.08</Wasteland>
+						<Wetland>0.01</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Gray Terror Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Gray_Terror"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.01</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.03</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Scire Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Scire"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.07</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Soul Eater Adv. Biomes Spawning ====================-->
+
+                <li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Soul_Eater"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.10</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Snipping Snail Adv. Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Snipping_Snail"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.12</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Lightning Elemental Adv. Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Lightning_Elemental"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.02</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+				<!--==================== Svarog Adv. Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Svarog"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.00</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.05</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.00</Wetland>					
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

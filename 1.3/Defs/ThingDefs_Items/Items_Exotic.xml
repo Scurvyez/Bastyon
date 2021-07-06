@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--==================== Ceratok Horn ====================-->
+
+  <ThingDef ParentName="ResourceVerbBase">
+    <defName>Bast_CeratokHorn</defName>
+    <label>ceratok horn</label>
+    <description>The elegantly curved, glossy horn of a wild Ceratok. These horns make for deadly melee weapons in the right pawns' hands.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/Bast_CeratokHorn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <statBases>
+      <MarketValue>650</MarketValue>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Mass>3.2</Mass>
+      <Flammability>0.4</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Scratch</li>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!--==================== Eternal Flame Core ====================-->
+
+  <ThingDef ParentName="MechSerumBase">
+    <defName>Bast_Eternal_Flame_Core</defName>
+    <label>eternal flame core</label>
+    <description>Once the driving life-force of a majestic male scire, this eternal flame core no longer carries the searing heat of an entire sun within.\n\nHowever... what once carried life offers the chance for another. This core holds the power of resurrection and with it, hope, for a soul who's last breath was not so long ago.\n\nTake care! For the cost of a life may be high.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/Bast_Eternal_Flame_Core</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>1700</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>None</tradeability>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>inject eternal flame core</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SingleCorpse</compClass>
+        <fleshCorpsesOnly>true</fleshCorpsesOnly>
+        <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
+      </li>
+      <li>
+        <compClass>CompTargetEffect_Resurrect</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== Gray Terror ThingDef ====================-->
+
+	<ThingDef ParentName="BaseInsect">
+		<defName>Bast_Gray_Terror</defName>
+		<label>gray terror</label>
+		<description>Gray terrors are gigantic arachnids. Their hides are like steel and will rebuke most blunt attacks, a well placed, and well sharpened, blade however will render these creatures helpless.\n\nThese hulking, grotesque abominations began appearing all over the Rim shortly after one crazed scientist decided to transport a small one back to his lab... nobody knows the fate of the scientist.</description>
+		<statBases>
+			<MoveSpeed>3.7</MoveSpeed>
+			<ComfyTemperatureMin>15</ComfyTemperatureMin>
+			<MarketValue>475</MarketValue>
+			<ArmorRating_Blunt>1.50</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>left front metatarsus</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right front metatarsus</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>Bast_Gray_Terror_EggUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>Bast_Gray_Terror_EggFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>20</eggLayIntervalDays>
+				<eggCountRange>
+					<min>1</min>
+					<max>8</max>
+				</eggCountRange>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>.85</accuracyMedium>
+				<accuracyLong>.75</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bast_Web</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>1</minRange>
+				<range>15</range>
+				<soundCast>Bast_Web</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>spider web</label>
+				<commonality>.5</commonality>
+			</li>
+		</verbs>
+		<race>
+			<wildBiomes>
+                <IceSheet>0.00</IceSheet>
+				<SeaIce>0.00</SeaIce>
+                <ColdBog>0.02</ColdBog>
+                <Desert>0.10</Desert>
+                <BorealForest>0.01</BorealForest>
+                <Tundra>0.01</Tundra>
+				<TemperateForest>0.07</TemperateForest>
+				<TemperateSwamp>0.15</TemperateSwamp>
+				<TropicalRainforest>0.15</TropicalRainforest>
+				<TropicalSwamp>0.15</TropicalSwamp>
+				<AridShrubland>0.10</AridShrubland>
+			</wildBiomes>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<predator>true</predator>
+			<body>Bast_Spider</body>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>1.50</baseBodySize>
+			<baseHungerRate>0.3</baseHungerRate>
+			<baseHealthScale>1.2</baseHealthScale>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+            <useMeatFrom>Megaspider</useMeatFrom>
+			<foodType>OmnivoreAnimal, AnimalProduct</foodType>
+			<wildness>0.99</wildness>
+			<trainability>None</trainability>
+			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(3, 0.7)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>80</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0.00</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>2.50</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>4.21</minAge>
+					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
+					<soundDeath>Pawn_BigInsect_Death</soundDeath>
+					<soundCall>Pawn_BigInsect_Call</soundCall>
+					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			  <Steel>25</Steel>
+		</butcherProducts>
+		<tradeTags>
+			<li>ExoticAnimal</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_GrayTerrorArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!--==================== Gray Terror PawnKindDef ====================-->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+		<defName>Bast_Gray_Terror</defName>
+		<race>Bast_Gray_Terror</race>
+		<label>gray terror</label>
+		<combatPower>180</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>
+			<min>1</min>
+			<max>4</max>
+		</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Gray_Terror</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Dessicated_Gray_Terror</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Gray_Terror</texPath>
+					<drawSize>1.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Dessicated_Gray_Terror</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Gray_Terror</texPath>
+					<drawSize>3.3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Gray_Terror/Bast_Dessicated_Gray_Terror</texPath>
+					<drawSize>3.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

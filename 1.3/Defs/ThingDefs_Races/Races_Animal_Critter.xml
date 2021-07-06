@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Critter ThingDef ====================-->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>Bast_Critter</defName>
+        <label>critter</label>
+        <description>Nobody knows where they came from, but they are here now.\n\nCritters are ravenous little creatures with an appetite to match an entire army. Their mouths are lined with row after row of jagged teeth and their hides are covered in dense, coarse, fur. They lay eggs and seem to hatch into adults almost instantaneously!</description>
+        <statBases>
+            <MoveSpeed>5.00</MoveSpeed>
+            <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+            <ComfyTemperatureMax>30</ComfyTemperatureMax>
+            <MarketValue>150</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>10</MeatAmount>
+            <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <accuracyTouch>1</accuracyTouch>
+                <accuracyShort>.90</accuracyShort>
+                <accuracyMedium>.80</accuracyMedium>
+                <accuracyLong>.65</accuracyLong>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bast_CritterSpike</defaultProjectile>
+                <warmupTime>1.75</warmupTime>
+                <burstShotCount>2</burstShotCount>
+                <minRange>3</minRange>
+                <range>10</range>
+                <soundCast>Bast_CritterSpike</soundCast>
+                <muzzleFlashScale>0</muzzleFlashScale>
+                <label>critter spike</label>
+                <commonality>.90</commonality>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Untameable">
+                <message>Bast_CritterNotTameable</message>
+				<sendMessage>true</sendMessage>
+				<goesManhunter>true</goesManhunter>
+            </li>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>Bast_Critter_EggUnfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>Bast_Critter_EggFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>30</eggLayIntervalDays>
+				<eggCountRange>
+					<min>2</min>
+					<max>6</max>
+				</eggCountRange>
+			</li>
+		</comps>
+        <tools>
+            <li>
+				<label>jagged teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>4</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.30</chanceFactor>
+			</li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <body>Bast_Critter</body>
+            <baseHungerRate>1.2</baseHungerRate>
+            <foodType>OmnivoreAnimal, CarnivoreAnimal</foodType>
+            <baseBodySize>0.65</baseBodySize>
+            <baseHealthScale>0.5</baseHealthScale>
+            <bloodDef>Filth_CritterBlood</bloodDef>
+            <wildness>1.00</wildness>
+            <trainability>None</trainability>
+            <manhunterOnDamageChance>0.99</manhunterOnDamageChance>
+            <canBePredatorPrey>false</canBePredatorPrey>
+            <lifeExpectancy>5</lifeExpectancy>
+            <hasGenders>false</hasGenders>
+            <predator>true</predator>
+			<maxPreyBodySize>2.5</maxPreyBodySize>
+            <wildBiomes>
+                <IceSheet>0.00</IceSheet>
+                <SeaIce>0.00</SeaIce>
+                <ColdBog>0.00</ColdBog>
+                <Desert>0.01</Desert>
+                <BorealForest>0.01</BorealForest>
+                <Tundra>0.01</Tundra>
+                <TemperateForest>0.01</TemperateForest>
+                <TemperateSwamp>0.01</TemperateSwamp>
+                <TropicalRainforest>0.02</TropicalRainforest>
+                <TropicalSwamp>0.01</TropicalSwamp>
+                <AridShrubland>0.01</AridShrubland>
+            </wildBiomes>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>.00</minAge>
+                    <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+                    <soundDeath>Pawn_Rodent_Wounded</soundDeath>
+                    <soundCall>Pawn_Rodent_Call</soundCall>
+                    <soundAngry>Pawn_Rodent_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>Bast_SecondaryRole</li>
+                    <li>Bast_PrimaryRole</li>
+                    <li>Bast_RangedAttacks</li>					
+                </statToAdd>
+                <statValues>
+                    <li>Bast_EggLayer</li>
+                    <li>Bast_DamageRangedSharp</li>
+                    <li>Bast_Yes</li>					
+                </statValues>
+                <statDescriptions>
+                    <li>Bast_EggLayerDesc</li>
+                    <li>Bast_DamageRangedSharpDesc</li>
+                    <li>Bast_Ranged</li>
+                </statDescriptions>
+                <showImageInInfoCard>true</showImageInInfoCard>
+                <ImageToShowInInfoCard>Art/Bast_CritterArt</ImageToShowInInfoCard>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!--==================== Critter PawnKindDef ====================-->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Bast_Critter</defName>
+        <label>critter</label>
+        <race>Bast_Critter</race>
+        <combatPower>50</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.55</ecoSystemWeight>
+        <wildGroupSize>
+        <min>2</min>
+        <max>8</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Critter/Bast_Critter</texPath>
+                    <drawSize>1.0</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Critter/Bast_Dessicated_Critter</texPath>
+                    <drawSize>1.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+</Defs>

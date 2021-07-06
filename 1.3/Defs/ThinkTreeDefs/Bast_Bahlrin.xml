@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== Bahlrin ThinkTrees ====================-->
+
+	<ThinkTreeDef>
+		<defName>Bast_Bahlrin</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<!-- Keep lying down if we have to -->
+				<li Class="ThinkNode_ConditionalMustKeepLyingDown">
+					<subNodes>
+						<!-- Keep lying down -->
+						<li Class="JobGiver_KeepLyingDown"/>
+					</subNodes>
+				</li>
+				<li Class="ThinkNode_Subtree">
+					<treeDef>Downed</treeDef>
+				</li>
+				<li Class="ThinkNode_Subtree">
+					<treeDef>BurningResponse</treeDef>
+				</li>
+				
+				<li Class="JobGiver_ReactToCloseMeleeThreat" />
+
+				<li Class="ThinkNode_Tagger">
+					<tagToGive>SatisfyingNeeds</tagToGive>
+					<subNodes>
+						<li Class="ThinkNode_PrioritySorter">
+							<subNodes>
+								<li Class="JobGiver_GetFood"/>
+								<li Class="JobGiver_GetRest"/>
+							</subNodes>            
+						</li>
+					</subNodes>
+				</li>
+				
+				<li Class="Bastyon.JobGiver_FleeFromSunLight"/>
+				
+				<li Class="Bastyon.JobGiver_MonsterBerserk"/>
+
+				<!-- Wander -->
+				<li Class="ThinkNode_Tagger">
+					<tagToGive>Idle</tagToGive>
+					<subNodes>
+						<li Class="JobGiver_WanderAnywhere">
+							<maxDanger>Deadly</maxDanger>
+							<ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+</Defs>

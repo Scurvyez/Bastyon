@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Lightning Elemental ThingDef ====================-->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>Bast_Lightning_Elemental</defName>
+        <label>lightning elemental</label>
+        <description>Driven by the chaotic storms constantly raging inside their minds and bodies, lightning elements care little for the lives of other organisms.\n\nOften found in the most hostile of environments, they are generally not aggressive until provoked.</description>
+        <statBases>
+            <MoveSpeed>2.5</MoveSpeed>
+            <MarketValue>1250</MarketValue>
+            <ComfyTemperatureMin>-500</ComfyTemperatureMin>
+            <ComfyTemperatureMax>500</ComfyTemperatureMax>
+            <MeatAmount>0</MeatAmount>
+            <Flammability>0.0</Flammability>
+            <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Heat>200</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+        </statBases>
+        <comps>		
+            <li Class="AnimalBehaviours.CompProperties_Floating">
+            
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_Electrified">
+                <electroRate>40</electroRate>
+                <electroRadius>10</electroRadius>
+                <batteriesToAffect>
+                    <li>Battery</li>
+                    <li>Battery_Silver</li>
+                    <li>Battery_Gold</li>
+                    <li>Battery_Plasteel</li>
+                    <li>Battery_Uranium</li>
+                    <li>Battery_Advanced</li>
+                    <li>Battery_Vanometric</li>
+                    <li>Battery4k</li>
+                    <li>Battery16k</li>
+                    <li>Battery64k</li>
+                    <li>Battery256k</li>
+                    <li>ChargeBack_Battery_Prototype</li>
+                    <li>ChargeBack_Battery</li>
+                    <li>SpeedCharge_Battery</li>
+                    <li>ResonanceCell_Battery</li>
+                    <li>VoidCell_Battery</li>
+                    <li>VFE_LargeBattery</li>
+                    <li>VFE_SmallBattery</li>
+                    <li>VFE_AdvancedBattery</li>
+                    <li>VFE_LargeAdvancedBattery</li>
+                    <li>AA_BlueGelBattery</li>
+                    <li>AA_HexaGelBattery</li>
+                    <li>ShipCapacitor</li>
+                    <li>ShipCapacitorSmall</li>
+                </batteriesToAffect>			
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_Blink">
+                <blinkInterval>2500</blinkInterval>
+                <distance>4~10</distance>
+                <warpEffect>true</warpEffect>
+            </li>
+        </comps>
+        <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>.95</accuracyShort>
+				<accuracyMedium>.75</accuracyMedium>
+				<accuracyLong>.60</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bast_LightningBolt</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<burstShotCount>3</burstShotCount>
+				<minRange>1</minRange>
+				<range>25</range>
+				<soundCast>Thunder_OnMap</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>lightning bolt</label>
+				<commonality>.5</commonality>
+			</li>
+		</verbs>
+        <tools>
+            <li>
+                <label>left galvanized fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>3.0</cooldownTime>
+                <linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right galvanized fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>3.0</cooldownTime>
+                <linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <race>
+        <wildBiomes>
+            <IceSheet>0.00</IceSheet>
+            <SeaIce>0.00</SeaIce> 
+            <ColdBog>0.00</ColdBog>
+            <Desert>0.00</Desert>
+            <BorealForest>0.01</BorealForest>
+            <Tundra>0.01</Tundra> 
+            <TemperateForest>0.00</TemperateForest>
+            <TemperateSwamp>0.00</TemperateSwamp>
+            <TropicalRainforest>0.00</TropicalRainforest>
+            <TropicalSwamp>0.00</TropicalSwamp>
+            <AridShrubland>0.00</AridShrubland>
+            <ExtremeDesert>0.00</ExtremeDesert>
+        </wildBiomes>
+        <body>Bast_LightningElementalBody</body>
+        <herdAnimal>false</herdAnimal>
+        <baseBodySize>1.8</baseBodySize>
+        <baseHealthScale>1.8</baseHealthScale>
+        <fleshType>LightningElemental</fleshType>
+        <bloodDef>Filth_LightningElementalBlood</bloodDef>
+        <baseHungerRate>0.05</baseHungerRate>
+        <foodType>OmnivoreAnimal</foodType>
+        <wildness>0.99</wildness>
+        <canBePredatorPrey>false</canBePredatorPrey>
+        <trainability>None</trainability>
+        <nameOnTameChance>1</nameOnTameChance>
+        <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+		<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
+        <mateMtbHours>300</mateMtbHours>
+        <gestationPeriodDays>25</gestationPeriodDays>
+        <lifeExpectancy>1000</lifeExpectancy>
+        <litterSizeCurve>
+            <points>
+            <li>(0.5, 0)</li>
+            <li>(1, 1)</li>
+            <li>(1.0, 1)</li>
+            <li>(2.0, 0)</li>
+            </points>
+        </litterSizeCurve>
+        <lifeStageAges>
+            <li>
+                <def>AnimalBaby</def>
+                <minAge>0</minAge>
+            </li>
+            <li>
+                <def>AnimalJuvenile</def>
+                <minAge>25</minAge>
+            </li>
+            <li>
+                <def>AnimalAdult</def>
+                <minAge>125</minAge>
+                <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+                <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+                <soundCall>Pawn_Thrumbo_Call</soundCall>
+                <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+            </li>
+        </lifeStageAges>
+        <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+        <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+        <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalExotic</li>
+        </tradeTags>
+        <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_LightningElementalArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+    </ThingDef>
+
+    <!--==================== Lightning Elemental PawnKindDef ====================-->
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Bast_Lightning_Elemental</defName>
+        <label>lightning elemental</label>
+        <race>Bast_Lightning_Elemental</race>
+        <combatPower>100</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.4</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>2</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Lightning_Elemental</texPath>
+                    <drawSize>1.9</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Dessicated_Svarog</texPath>
+                    <drawSize>1.9</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Lightning_Elemental</texPath>
+                    <drawSize>3.1</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Dessicated_Svarog</texPath>
+                    <drawSize>3.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Lightning_Elemental</texPath>
+                    <drawSize>5.5</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Dessicated_Svarog</texPath>
+                    <drawSize>5.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+</Defs>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Abatanica Ant ThingDef ====================-->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>Bast_Abatanica_Ant</defName>
+        <label>abatanica ant</label>
+        <description>Although not necessarily aggresive by default, abatanica ants are resource hungry almost all day. They will eat through rocks and minerals alike.\n\nOver millions of years of evolution their stomachs have taken to the hard and cold stone often found scattered in mountains and hills across rimworlds. In addition to their primary diet of granite, slate, limestone, and other rock variants, they will occasionally feast on unrefined resouces like jade, gold, and plasteel.\n\nIf you happen to come across these insects, keep a close eye on your valuables.</description>
+        <statBases>
+            <MoveSpeed>3.8</MoveSpeed>
+            <ComfyTemperatureMin>10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>120</ComfyTemperatureMax>
+            <MarketValue>275</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <ArmorRating_Heat>1</ArmorRating_Heat>
+            <Flammability>0</Flammability>
+        </statBases>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
+		        <customThingToEat>
+                    <li>ChunkSlagSteel</li>
+                    <li>ChunkSandstone</li>
+                    <li>BlocksSandstone</li>
+                    <li>ChunkGranite</li>
+                    <li>BlocksGranite</li>
+                    <li>ChunkLimestone</li>
+                    <li>BlocksLimestone</li>
+                    <li>ChunkSlate</li>
+                    <li>BlocksSlate</li>
+                    <li>ChunkMarble</li>
+                    <li>BlocksMarble</li>
+                    <li>Silver</li>
+                    <li>Gold</li>
+                    <li>Steel</li>
+                    <li>Plasteel</li>
+                    <li>Uranium</li>
+                    <li>Jade</li>
+                </customThingToEat>
+		        <nutrition>1</nutrition>
+                <digThingIfMapEmpty>false</digThingIfMapEmpty>
+                <fullyDestroyThing>true</fullyDestroyThing>
+                <!-- <percentageOfDestruction>0.5</percentageOfDestruction> --> <!-- turn on if fullyDestroyThing is false -->
+                <needsWater>false</needsWater>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+                <resourceDef>Steel</resourceDef>
+                <resourceAmount>5</resourceAmount>
+                <dropChance>0.50</dropChance>			
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
+                <defOfBuilding>Bast_AbatanicaAntColonyMound</defOfBuilding>
+                <ticksToBuild>420000</ticksToBuild>
+                <maxBuildingsPerMap>2</maxBuildingsPerMap>
+                <acceptedTerrains>
+                    <li>Soil</li>
+                    <li>RichSoil</li>
+                </acceptedTerrains>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>Bast_Ant</body>
+            <maxPreyBodySize>0.5</maxPreyBodySize>
+            <baseBodySize>0.10</baseBodySize>
+            <baseHealthScale>2.2</baseHealthScale>
+            <baseHungerRate>1.5</baseHungerRate>
+            <wildness>1.0</wildness>
+            <manhunterOnDamageChance>0.99</manhunterOnDamageChance>
+            <deathActionWorkerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</deathActionWorkerClass>
+            <trainability>None</trainability>
+            <fleshType>Insectoid</fleshType>
+            <bloodDef>Filth_BloodInsect</bloodDef>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>14</lifeExpectancy>
+            <wildBiomes>
+                <IceSheet>0.00</IceSheet>
+				<SeaIce>0.00</SeaIce>
+                <ColdBog>0.00</ColdBog>
+                <Desert>0.10</Desert>
+                <BorealForest>0.01</BorealForest>
+                <Tundra>0.00</Tundra>
+				<TemperateForest>0.02</TemperateForest>
+				<TemperateSwamp>0.02</TemperateSwamp>
+				<TropicalRainforest>0.02</TropicalRainforest>
+				<TropicalSwamp>0.10</TropicalSwamp>
+				<AridShrubland>0.10</AridShrubland>
+                <ExtremeDesert>0.02</ExtremeDesert>
+			</wildBiomes>
+            <lifeStageAges Inherit="false">
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>1.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.3</minAge>
+                    <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+                    <soundDeath>Pawn_Megascarab_Death</soundDeath>
+                    <soundCall>Pawn_Megascarab_Call</soundCall>
+                    <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+        </tradeTags>
+        <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>Bast_PrimaryRole</li>			
+                </statToAdd>
+                <statValues>
+                    <li>Bast_WeirdEater</li>	
+                </statValues>
+                <statDescriptions>
+                    <li>Bast_WeirdEaterDesc</li>
+                </statDescriptions>
+                <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_AbatanicaAntArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+    </ThingDef>
+
+    <!--==================== Abatanica Ant PawnKindDef ====================-->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Bast_Abatanica_Ant</defName>
+        <label>abatanica ant</label>
+        <labelPlural>abatanica ants</labelPlural>
+        <race>Bast_Abatanica_Ant</race>
+        <ecoSystemWeight>0.1</ecoSystemWeight>
+        <combatPower>80</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <wildGroupSize>
+            <min>15</min>
+            <max>40</max>
+        </wildGroupSize>
+        <labelMale>drone</labelMale>
+        <labelFemale>queen</labelFemale>
+        <lifeStages>
+
+            <!-- Child -->
+
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Male</texPath>
+                    <drawSize>0.30</drawSize>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Female</texPath>
+                    <drawSize>0.30</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
+                    <drawSize>0.30</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
+                    <drawSize>0.30</drawSize>
+                </femaleDessicatedBodyGraphicData>
+            </li>
+
+            <!-- Juvenile -->
+
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Male</texPath>
+                    <drawSize>0.50</drawSize>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Child_Female</texPath>
+                    <drawSize>0.60</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
+                    <drawSize>0.50</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
+                    <drawSize>0.60</drawSize>
+                </femaleDessicatedBodyGraphicData>
+            </li>
+
+            <!-- Adult -->
+
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Adult_Male</texPath>
+                    <drawSize>0.80</drawSize>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Abatanica_Ant_Adult_Female</texPath>
+                    <drawSize>0.92</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
+                    <drawSize>0.80</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Abatanica_Ant/Bast_Dessicated_Abatanica_Ant</texPath>
+                    <drawSize>0.92</drawSize>
+                </femaleDessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>
