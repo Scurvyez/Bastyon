@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Stage One Resurrection ====================-->
+
+    <HediffDef ParentName="DiseaseBase">
+		<defName>Bast_Stage_One_Resurrection</defName>
+		<label>stage one resurrection</label>
+		<description>Through means of a rare heriditary phenomenon, this vorpal bunny will one day take the form of another being.\n\nSufficient use of medice will cure the animal of this condition, however, it will no longer be able to see it's next stage in life.</description>
+		<lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+		<isBad>false</isBad>
+		<comps>
+            <li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<severityPerDayTended>-0.53</severityPerDayTended>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
+				<thingToTurnTo>Bast_Vorpal_Bunny_Enraged</thingToTurnTo>
+				<severityToTurn>.25</severityToTurn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
+                <isHostile>false</isHostile>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.02</severityPerDayNotImmune>
+				<immunityPerDaySick>0.0001</immunityPerDaySick>
+				<severityPerDayImmune>-0.50</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.30</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+			</li> 
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>major</label>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>extreme</label>
+			</li>
+			<li>
+				<minSeverity>0.90</minSeverity>
+				<label>extreme</label>
+			</li>
+		</stages>
+	</HediffDef>
+
+    <!--==================== Stage Two Resurrection ====================-->
+
+    <HediffDef ParentName="DiseaseBase">
+		<defName>Bast_Stage_Two_Resurrection</defName>
+		<label>stage two resurrection</label>
+		<description>Through means of a rare heriditary phenomenon, this vorpal bunny will one day take the form of another being.\n\nSufficient use of medice will cure the animal of this condition, however, it will no longer be able to see it's next stage in life.</description>
+		<lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+		<isBad>false</isBad>
+		<comps>
+            <li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<severityPerDayTended>-0.53</severityPerDayTended>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
+				<thingToTurnTo>Bast_Vorpal_Bunny_Iridescent</thingToTurnTo>
+				<severityToTurn>.25</severityToTurn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
+                <isHostile>false</isHostile>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.02</severityPerDayNotImmune>
+				<immunityPerDaySick>0.0001</immunityPerDaySick>
+				<severityPerDayImmune>-0.50</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.30</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+			</li> 
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>major</label>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>extreme</label>
+			</li>
+			<li>
+				<minSeverity>0.90</minSeverity>
+				<label>extreme</label>
+			</li>
+		</stages>
+	</HediffDef>
+
+    <!--==================== Stage Three Resurrection ====================-->
+
+    <HediffDef ParentName="DiseaseBase">
+		<defName>Bast_Stage_Three_Resurrection</defName>
+		<label>stage three resurrection</label>
+		<description>Through means of a rare heriditary phenomenon, this vorpal bunny will one day take the form of another being.\n\nSufficient use of medice will cure the animal of this condition, however, it will no longer be able to see it's next stage in life.</description>
+		<lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+		<isBad>false</isBad>
+		<comps>
+            <li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<severityPerDayTended>-0.53</severityPerDayTended>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
+				<thingToTurnTo>Bast_Vorpal_Bunny_Pragmatic</thingToTurnTo>
+				<severityToTurn>.25</severityToTurn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
+                <isHostile>false</isHostile>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.02</severityPerDayNotImmune>
+				<immunityPerDaySick>0.0001</immunityPerDaySick>
+				<severityPerDayImmune>-0.50</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.30</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+			</li> 
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>major</label>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>extreme</label>
+			</li>
+			<li>
+				<minSeverity>0.90</minSeverity>
+				<label>extreme</label>
+			</li>
+		</stages>
+	</HediffDef>
+
+    <!--==================== Stage Four Resurrection ====================-->
+
+    <HediffDef ParentName="DiseaseBase">
+		<defName>Bast_Stage_Four_Resurrection</defName>
+		<label>stage four resurrection</label>
+		<description>Through means of a rare heriditary phenomenon, this vorpal bunny will one day take the form of another being.\n\nSufficient use of medice will cure the animal of this condition, however, it will no longer be able to see it's next stage in life.</description>
+		<lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+		<isBad>false</isBad>
+		<comps>
+            <li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<severityPerDayTended>-0.53</severityPerDayTended>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
+				<thingToTurnTo>Bast_Vorpal_Bunny_Enduring</thingToTurnTo>
+				<severityToTurn>.25</severityToTurn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
+                <isHostile>false</isHostile>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.02</severityPerDayNotImmune>
+				<immunityPerDaySick>0.0001</immunityPerDaySick>
+				<severityPerDayImmune>-0.50</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.30</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+			</li> 
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>major</label>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>extreme</label>
+			</li>
+			<li>
+				<minSeverity>0.90</minSeverity>
+				<label>extreme</label>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--==================== Stage Five Resurrection ====================-->
+
+    <HediffDef ParentName="DiseaseBase">
+		<defName>Bast_Stage_Five_Resurrection</defName>
+		<label>stage five resurrection</label>
+		<description>Through means of a rare heriditary phenomenon, this vorpal bunny will one day take the form of another being.\n\nSufficient use of medice will cure the animal of this condition, however, it will no longer be able to see it's next stage in life.</description>
+		<lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+		<isBad>false</isBad>
+		<comps>
+            <li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<severityPerDayTended>-0.53</severityPerDayTended>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
+				<thingToTurnTo>Bast_Vorpal_Bunny_Gilded</thingToTurnTo>
+				<severityToTurn>.25</severityToTurn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
+                <isHostile>false</isHostile>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.02</severityPerDayNotImmune>
+				<immunityPerDaySick>0.0001</immunityPerDaySick>
+				<severityPerDayImmune>-0.50</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.30</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+			</li> 
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>major</label>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>extreme</label>
+			</li>
+			<li>
+				<minSeverity>0.90</minSeverity>
+				<label>extreme</label>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--==================== Stage Six Resurrection ====================-->
+
+    <HediffDef ParentName="DiseaseBase">
+		<defName>Bast_Stage_Six_Resurrection</defName>
+		<label>stage six resurrection</label>
+		<description>Through means of a rare heriditary phenomenon, this vorpal bunny will one day take the form of another being.\n\nSufficient use of medice will cure the animal of this condition, however, it will no longer be able to see it's next stage in life.</description>
+		<lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+		<isBad>false</isBad>
+		<comps>
+            <li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<severityPerDayTended>-0.53</severityPerDayTended>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
+				<thingToTurnTo>Bast_Vorpal_Bunny_Befouled</thingToTurnTo>
+				<severityToTurn>.25</severityToTurn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
+                <isHostile>false</isHostile>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.02</severityPerDayNotImmune>
+				<immunityPerDaySick>0.0001</immunityPerDaySick>
+				<severityPerDayImmune>-0.50</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.30</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+			</li> 
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>major</label>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>extreme</label>
+			</li>
+			<li>
+				<minSeverity>0.90</minSeverity>
+				<label>extreme</label>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--==================== Stage Seven Resurrection ====================-->
+
+    <HediffDef ParentName="DiseaseBase">
+		<defName>Bast_Stage_Seven_Resurrection</defName>
+		<label>stage seven resurrection</label>
+		<description>Through means of a rare heriditary phenomenon, this vorpal bunny will one day take the form of another being.\n\nSufficient use of medice will cure the animal of this condition, however, it will no longer be able to see it's next stage in life.</description>
+		<lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+		<isBad>false</isBad>
+		<comps>
+            <li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<severityPerDayTended>-0.53</severityPerDayTended>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_TurnWhenDead">
+				<thingToTurnTo>Bast_Vorpal_Bunny</thingToTurnTo>
+				<severityToTurn>.25</severityToTurn>
+				<numberOfSpawn><li>1</li><li>1</li></numberOfSpawn>
+                <isHostile>false</isHostile>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.02</severityPerDayNotImmune>
+				<immunityPerDaySick>0.0001</immunityPerDaySick>
+				<severityPerDayImmune>-0.50</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.30</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+			</li> 
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>major</label>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>extreme</label>
+			</li>
+			<li>
+				<minSeverity>0.90</minSeverity>
+				<label>extreme</label>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

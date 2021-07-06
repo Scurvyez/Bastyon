@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<<<<<<< HEAD
+    <!--____________________Alluvium____________________-->
+=======
+    <!--==================== Alluvium Body ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+
+    <BodyDef>
+		<defName>Bast_LimblessGelatinous</defName>
+		<label>alluvium</label>
+		<corePart>
+			<def>Body</def>
+			<height>Top</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>Bast_Body</li>
+			</groups>
+			<parts>
+				<li>
+					<def>Bast_Nucleus</def>
+					<coverage>.72</coverage>
+					<depth>Inside</depth>
+				</li>
+                <li>
+                    <def>Stomach</def>
+                    <coverage>0.05</coverage>
+                    <depth>Inside</depth>
+                </li>
+				<li>
+					<def>Bast_Nucleoplasm</def>
+					<coverage>.10</coverage>
+					<depth>Outside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+<<<<<<< HEAD
+
+=======
+	
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+</Defs>

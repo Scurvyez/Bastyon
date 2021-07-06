@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== Scire Fireball Ranged Attack Verb ====================-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_ScireFireBall</defName>
+		<label>fireball</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_ScireFireBall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>1.25</damageAmountBase>
+			<speed>16</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--==================== Spider Web Ranged Attack Verb ====================-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_Web</defName>
+		<label>spider web</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_Web</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>15</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--==================== Alluvium Goo Ranged Attack Verb ====================-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_AlluviumGoo</defName>
+		<label>goo</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_AlluviumGoo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3.5</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<speed>8</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--==================== Critter Spike Ranged Attack Verb ====================-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_CritterSpike</defName>
+		<label>critter spike</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_CritterSpike</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Cut</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<speed>21</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--==================== Snipping Snail Acid Ranged Attack Verb ====================-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_SnippingSnailAcid</defName>
+		<label>acid stream</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_SnippingSnailAcid</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bast_AcidStream</damageDef>
+			<damageAmountBase>2.5</damageAmountBase>
+			<speed>14</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--==================== Blistering Wind Ranged Attack Verb ====================-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_BlisteringWind</defName>
+		<label>blistering wind</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_BlisteringWind</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bast_BlisteringWindExtinguish</damageDef>
+			<damageAmountBase>3.2</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>	
+			<speed>22</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--==================== Lightning Ranged Attack Verb ====================-->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bast_LightningBolt</defName>
+		<label>lightning bolt</label>
+		
+		<graphicData>
+			<texPath>Things/Projectiles/Bast_LightningBolt</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>4.75</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bast_Electric</damageDef>
+			<damageAmountBase>2.0</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>35</speed>
+		</projectile>
+	</ThingDef>
+
+	<!--==================== Fire Stream Ranged Attack Verb ====================-->
+
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Bast_FireStream</defName>
+		<label>blazing fire</label>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_FireStream</texPath>
+			<texPathFadeOut>Things/Projectiles/Proj_FireStreamFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>20</lifeTimeDuration>
+		<widthScaleFactor>0.75</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.5</totalSizeScale>
+		<tickFrameRate>10</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+		<projectile>
+			<damageDef>Flame</damageDef>		
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>		
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<speed>20</speed>
+		</projectile>
+	</VFECore.ExpandableProjectileDef>
+
+	<!--==================== Savrog Fire Stream Ranged Attack Verb ====================-->
+
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Bast_SvarogFireStream</defName>
+		<label> blazing fire</label>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_SvarogFireStream</texPath>
+			<texPathFadeOut>Things/Projectiles/Proj_SvarogFireStreamFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>20</lifeTimeDuration>
+		<widthScaleFactor>0.75</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.5</totalSizeScale>
+		<tickFrameRate>10</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+		<projectile>
+			<damageDef>Flame</damageDef>		
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>		
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<speed>20</speed>
+		</projectile>
+	</VFECore.ExpandableProjectileDef>
+
+	<!--==================== Bastyon Plasma Stream Ranged Attack Verb ====================-->
+
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Bast_BastyonPlasmaStream</defName>
+		<label>scorching plasma</label>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_BastyonPlasmaStream</texPath>
+			<texPathFadeOut>Things/Projectiles/Proj_BastyonPlasmaStreamFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>8</lifeTimeDuration>
+		<widthScaleFactor>0.50</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.5</totalSizeScale>
+		<tickFrameRate>10</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+		<projectile>
+			<damageDef>Burn</damageDef>		
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>5</damageAmountBase>
+			<stoppingPower>1.2</stoppingPower>		
+			<ai_IsIncendiary>false</ai_IsIncendiary>
+			<speed>20</speed>
+		</projectile>
+	</VFECore.ExpandableProjectileDef>
+
+	<!-- <VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Bast_SnippingSnailAcidStream</defName>
+		<label>acid stream</label>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_SnippingSnailAcidStream</texPath>
+			<texPathFadeOut>Things/Projectiles/Proj_SnippingSnailAcidStreamFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>12</lifeTimeDuration>
+		<widthScaleFactor>0.50</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.5</totalSizeScale>
+		<tickFrameRate>10</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>15</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+		<projectile>
+			<damageDef>Bast_AcidStream</damageDef>		
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>3.5</damageAmountBase>
+			<stoppingPower>1.25</stoppingPower>		
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<speed>20</speed>
+		</projectile>
+	</VFECore.ExpandableProjectileDef> -->
+	
+</Defs>

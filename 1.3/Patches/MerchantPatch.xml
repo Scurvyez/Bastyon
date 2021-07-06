@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--==================== Alluvium Jelly Trading ====================-->
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Bast_Alluvium_Jelly</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<!--==================== Sunburst Gnomaclu Meat Trading ====================-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Bast_SunburstGnomacluMeat</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<!--==================== Midnight Gnomaclu Meat Trading ====================-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Bast_MignightGnomacluMeat</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<!--==================== Hazey Gnomaclu Meat Trading ====================-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Bast_HazeyGnomacluMeat</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<!--==================== Alluvium Flesh Trading ====================-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Bast_AlluviumFlesh</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+	<!--==================== Ceratok Horn Trading ====================-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Bast_CeratokHorn</thingDef>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== Raid: Bahlrin Swarm ====================-->
+
+	<IncidentDef>
+		<defName>Bast_BahlrinRaid</defName>
+		<label>Raid: Bahlrin</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>Bastyon.IncidentWorker_RaidCustom</workerClass>
+		<baseChance>.01</baseChance>
+		<category>ThreatBig</category>
+		<tale>Raid</tale>
+		<earliestDay>0</earliestDay>
+		<minRefireDays>35</minRefireDays>
+		<modExtensions>
+			<li Class="Bastyon.RaidOptions">
+				<raidFaction>Bast_Monsters</raidFaction>
+				<raidPointsMultiplier>1.5</raidPointsMultiplier>
+				<!--<fixedRaidPoints>9999</fixedRaidPoints>-->
+				
+				<pawnGroup>
+					<kindDef>Combat</kindDef>
+					<options>
+						<Bast_Bahlrin>1</Bast_Bahlrin>
+					</options>
+				</pawnGroup>
+				
+				<minimumPawnCountPerKind>
+					<kindDef>Combat</kindDef>
+					<options>
+						<Bast_Bahlrin>2</Bast_Bahlrin>
+					</options>
+				</minimumPawnCountPerKind>
+				
+				<!--<minimumPawnCount>5</minimumPawnCount>--> 
+				
+				<!-- if you want to restrict this raid by wealth, tech level or unlocked tech project
+				<minimumPlayerWealth>70000</minimumPlayerWealth>
+				<minimumPlayerTechLevel>Industrial</minimumPlayerTechLevel>
+				<requiredResearchProjectsUnlocked>
+					<li>Smithing</li>
+				</requiredResearchProjectsUnlocked> -->
+				
+				<minimumPlayerTechLevel>Industrial</minimumPlayerTechLevel>
+				<minimumPlayerWealth>40000</minimumPlayerWealth>
+				<raidStrategy>ImmediateAttack</raidStrategy>
+				<raidArrival>EdgeWalkInGroups</raidArrival>
+				<disableLordRaid>true</disableLordRaid>
+				<repeatAfterTicks>850~3000</repeatAfterTicks>
+				<maxRepeatCount>5</maxRepeatCount>
+				<allowedHourRange>18~5</allowedHourRange>
+				
+				<letterDef>ThreatBig</letterDef>
+				<letterTitle>Raid: Bahlrin Swarm</letterTitle>
+				<letterText>Bahlrin wave.</letterText>
+			</li>
+		</modExtensions>
+	</IncidentDef>
+
+</Defs>

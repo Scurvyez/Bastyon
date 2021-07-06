@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--==================== Ethereal Lion ThingDef ====================-->
+
+  <ThingDef ParentName="BigCatThingBase">
+    <defName>Bast_Ethereal_Lion</defName>
+    <label>ethereal lion</label>
+    <description>Larger than typical Earth-bound lions, ethereal lions pack a much bigger punch when threatened. When not found in packs protecting their young, ethereal lions make outstanding additions to colonies all across the rim.\n\nTheir hides yield excellent cold weather protection an they seem to possess self-healing powers..</description>
+    <statBases>
+      <MoveSpeed>4.9</MoveSpeed>
+      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <ComfyTemperatureMax>15</ComfyTemperatureMax>
+      <MarketValue>275</MarketValue>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_Regeneration">
+        <rateInTicks>20</rateInTicks>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <wildBiomes>
+        <IceSheet>0.01</IceSheet>
+				<SeaIce>0.00</SeaIce>
+        <ColdBog>0.02</ColdBog>
+        <Desert>0.00</Desert>
+        <BorealForest>0.25</BorealForest>
+        <Tundra>0.12</Tundra>
+				<TemperateForest>0.01</TemperateForest>
+				<TemperateSwamp>0.01</TemperateSwamp>
+				<TropicalRainforest>0.00</TropicalRainforest>
+				<TropicalSwamp>0.00</TropicalSwamp>
+				<AridShrubland>0.02</AridShrubland>
+			</wildBiomes>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <herdAnimal>false</herdAnimal>
+      <trainability>Advanced</trainability>
+      <petness>.1</petness>
+      <nameOnTameChance>1</nameOnTameChance>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+      <predator>true</predator>
+      <maxPreyBodySize>1.2</maxPreyBodySize>
+      <baseBodySize>1.3</baseBodySize>
+      <baseHungerRate>0.19</baseHungerRate>
+      <baseHealthScale>2.3</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <meatLabel>ethereal lion meat</meatLabel>
+      <leatherDef>Leather_Ethereal_Lion</leatherDef>
+      <wildness>0.85</wildness>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.75</manhunterOnDamageChance>
+      <gestationPeriodDays>26</gestationPeriodDays>
+      <lifeExpectancy>15</lifeExpectancy>
+      <lifeStageAges Inherit="false">
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>2.8</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>5.2</minAge>
+          <soundWounded>Pawn_Cougar_Injured</soundWounded>
+          <soundDeath>Pawn_Cougar_Death</soundDeath>
+          <soundAngry>Pawn_Cougar_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_EtherealLionArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+  <!--==================== Ethereal Lion PawnKindDef ====================-->
+
+  <PawnKindDef ParentName="BigCatKindBase">
+    <defName>Bast_Ethereal_Lion</defName>
+    <label>ethereal lion</label>
+    <race>Bast_Ethereal_Lion</race>
+    <ecoSystemWeight>0.35</ecoSystemWeight>
+    <combatPower>170</combatPower>
+    <wildGroupSize>
+			<min>2</min>
+			<max>3</max>
+		</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Ethereal_Lion/Bast_Ethereal_Lion</texPath>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Ethereal_Lion/Bast_Dessicated_Ethereal_Lion</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Ethereal_Lion/Bast_Ethereal_Lion</texPath>
+          <drawSize>2.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Ethereal_Lion/Bast_Dessicated_Ethereal_Lion</texPath>
+          <drawSize>2.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Ethereal_Lion/Bast_Ethereal_Lion</texPath>
+          <drawSize>3.1</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Ethereal_Lion/Bast_Dessicated_Ethereal_Lion</texPath>
+          <drawSize>3.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

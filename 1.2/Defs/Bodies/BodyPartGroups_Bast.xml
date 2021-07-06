@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<<<<<<< HEAD:Defs/Bodies/BodyPartGroups_Bast.xml
+=======
+<<<<<<< HEAD
+=======
+	<!--==================== Main Body ====================-->
+
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/BodyPartGroups_Bast.xml
+	<BodyPartGroupDef>
+		<defName>Bast_Body</defName>
+		<label>body</label>
+	</BodyPartGroupDef>
+
+</Defs>

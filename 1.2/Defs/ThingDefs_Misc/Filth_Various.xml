@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <!--==================== Critter Blood ====================-->
+
+    <ThingDef ParentName="BaseFilth">
+        <defName>Filth_CritterBlood</defName>
+        <label>critter blood</label>
+        <statBases>
+            <Beauty>-30</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(0, 128, 255)</color>
+        </graphicData>
+        <filth>
+            <disappearsInDays>35~40</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
+    <!--==================== Alluvium Blood ====================-->
+
+    <ThingDef ParentName="BaseFilth">
+        <defName>Filth_AlluviumBlood</defName>
+        <label>alluvium blood</label>
+        <statBases>
+            <Beauty>-30</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(212, 20, 255)</color>
+        </graphicData>
+        <filth>
+            <disappearsInDays>35~40</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
+    <!--==================== Snipping Snail Blood ====================-->
+
+    <ThingDef ParentName="BaseFilth">
+        <defName>Filth_SnippingSnailBlood</defName>
+        <label>snipping snail blood</label>
+        <statBases>
+            <Beauty>-30</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(136, 239, 93)</color>
+        </graphicData>
+        <filth>
+            <disappearsInDays>35~40</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
+    <!--==================== Snipping Snail Slime ====================-->
+
+    <ThingDef ParentName="BaseFilth">
+        <defName>Bast_Filth_SnippingSnailSlime</defName>
+        <label>snipping snail slime</label>
+        <statBases>
+            <Beauty>-25</Beauty>
+            <Cleanliness>-5</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/SnippingSnailSlime</texPath>
+            <color>(136, 239, 93, 170)</color>
+        </graphicData>
+        <filth>
+            <disappearsInDays>10~25</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>30</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
+    <!--==================== Svarog Blood ====================-->
+
+    <ThingDef ParentName="BaseFilth">
+        <defName>Filth_SvarogBlood</defName>
+        <label>svarog residue</label>
+        <statBases>
+            <Beauty>-30</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(250, 89, 25)</color>
+        </graphicData>
+        <filth>
+            <disappearsInDays>35~40</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
+    <!--==================== Lightning Elemental Blood ====================-->
+
+    <ThingDef ParentName="BaseFilth">
+        <defName>Filth_LightningElementalBlood</defName>
+        <label>lightning elemental residue</label>
+        <statBases>
+            <Beauty>-30</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(0, 128, 255)</color>
+        </graphicData>
+        <filth>
+            <disappearsInDays>35~40</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
+</Defs>

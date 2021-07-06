@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Aaron Karlsen\.nuget\packages\</NuGetPackageFolders>
+=======
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">False</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+<<<<<<<< HEAD:Source/Bastyon/obj/Bastyon.csproj.nuget.g.props
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Instakrill-BK\.nuget\packages\</NuGetPackageFolders>
+========
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Aaron Karlsen\.nuget\packages\</NuGetPackageFolders>
+>>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Source/Bastyon/Bastyon/obj/Bastyon.csproj.nuget.g.props
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.10.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
+    <SourceRoot Include="C:\Users\Aaron Karlsen\.nuget\packages\" />
+=======
+<<<<<<<< HEAD:Source/Bastyon/obj/Bastyon.csproj.nuget.g.props
+    <SourceRoot Include="C:\Users\Instakrill-BK\.nuget\packages\" />
+========
+    <SourceRoot Include="C:\Users\Aaron Karlsen\.nuget\packages\" />
+>>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Source/Bastyon/Bastyon/obj/Bastyon.csproj.nuget.g.props
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2
+  </ItemGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+</Project>

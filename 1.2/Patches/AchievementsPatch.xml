@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tab Creation____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tab Creation____________________-->
+=======
+						<!--==================== Bastyon Tab Creation ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>Bast_Achievements</defName>
+							<label>Bastyon</label>
+						</AchievementsExpanded.AchievementTabDef>
+
+						<AchievementsExpanded.AchievementDef Name="Bast_AchievementParent" Abstract="true">					
+							<bgtexPath>Achievements/Bast_AchievementBackground</bgtexPath>
+							<tab>Bast_Achievements</tab>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tame a Bahlrin____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tame a Bahlrin____________________-->
+=======
+						<!--==================== Tame a Bahlrin ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Bahlrin_Tame</defName>
+							<label>Don't Get Too Close to it...</label>
+							<description>Tame the fearsome Bahlrin</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Bahlrin</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Bahlrin_Tame</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tame a Blazing Felidae____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tame a Blazing Felidae____________________-->
+=======
+						<!--==================== Tame a Blazing Felidae ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Blazing_Felidae_Tame</defName>
+							<label>Why Would You Ever Touch It?!</label>
+							<description>Tame a Blazing Felidae</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Blazing_Felidae</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Blazing_Felidae_Tame</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Kill 200 Bahlrins____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Kill 200 Bahlrins____________________-->
+=======
+						<!--==================== Kill 200 Bahlrins ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Bahlrin_Swarm</defName>
+							<label>"One Rule. Stay in the light!"</label>
+							<description>Kill 200 Bahlrins</description>
+
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>Bast_Bahlrin</kindDef>
+								<count>200</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Bahlrin_Swarm</texPath>
+							<points>150</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tame a Scire____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tame a Scire____________________-->
+=======
+						<!--==================== Tame a Scire ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Scire_Tame</defName>
+							<label>Their Antlers Shimmer in the Moonlight</label>
+							<description>Tame the Magejstic Scire</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Scire</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Scire_Tame</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tame a pair of Bastyons____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tame a pair of Bastyons____________________-->
+=======
+						<!--==================== Tame a pair of Bastyons ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Bastyon_Tame</defName>
+							<label>What a Lovely Shade of Green</label>
+							<description>Tame a pair of Bastyons</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Bastyon</key>
+										<value>2</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Bastyon_Tame</texPath>
+							<points>40</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tame several Alluvium____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tame several Alluvium____________________-->
+=======
+						<!--==================== Tame several Alluvium ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Alluvium_Tame</defName>
+							<label>Transparent Provisions?</label>
+							<description>Tame several Alluvium</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Alluvium</key>
+										<value>13</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Alluvium_Tame</texPath>
+							<points>40</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tame Two Ceratoks____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tame Two Ceratoks____________________-->
+=======
+						<!--==================== Tame two Ceratoks ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Ceratok_Tame</defName>
+							<label>Double the Trouble</label>
+							<description>Tame Two Ceratok</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Ceratok</key>
+										<value>2</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Ceratok_Tame</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tame a Soul Eater____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tame a Soul Eater____________________-->
+=======
+						<!--==================== Tame a Soul Eater ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Soul_Eater_Tame</defName>
+							<label>Spooky Little Furball</label>
+							<description>Tame a Soul Eater</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Soul_Eater</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Soul_Eater_Tame</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tame 3 Chem Tegus____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tame 3 Chem Tegus____________________-->
+=======
+						<!--==================== Tame three Chem Tegus ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Chem_Tegu_Tame</defName>
+							<label>Keep an Eye on These Guys</label>
+							<description>Tame 3 Chem Tegus</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Chem_Tegu</key>
+										<value>3</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Chem_Tegu_Tame</texPath>
+							<points>30</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Tame an Ethereal Lion____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Tame an Ethereal Lion____________________-->
+=======
+						<!--==================== Tame an Ethereal Lion ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Ethereal_Lion_Tame</defName>
+							<label>What Big Ears You Have!</label>
+							<description>Tame an Ethereal Lion</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Ethereal_Lion</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Ethereal_Lion_Tame</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Collect Alluvium Jelly____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Collect Alluvium Jelly____________________-->
+=======
+						<!--==================== Collect Alluvium Jelly ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_AlluviumJelly_Collect</defName>
+							<label>Mmmm... Tasty!</label>
+							<description>Barter or Slaughter for 333 Alluvium Jelly</description>
+
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>Bast_Alluvium_Jelly</def>
+								<count>333</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_AlluviumJelly_Collect</texPath>
+							<points>13</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Farm 500 Chemfuel____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Farm 500 Chemfuel____________________-->
+=======
+						<!--==================== Farm 500 Chemfuel ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Chemfuel_Collect</defName>
+							<label>Hot! Hot! Hot!</label>
+							<description>Farm 500 Chemfuel</description>
+
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>Chemfuel</def>
+								<count>500</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Chemfuel_Collect</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+
+<<<<<<< HEAD:Patches/AchievementsPatch.xml
+						<!--____________________Kill 25 Gray Terrors____________________-->
+=======
+<<<<<<< HEAD
+						<!--____________________Kill 25 Gray Terrors____________________-->
+=======
+						<!--==================== Kill 25 Gray Terrors ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Patches/AchievementsPatch.xml
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Gray_Terror_Kill</defName>
+							<label>Man, I hate spiders!</label>
+							<description>Kill 25 Gray Terrors</description>
+
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>Bast_Gray_Terror</kindDef>
+								<count>25</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Gray_Terror_Kill</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+                        
+                    </value>    
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

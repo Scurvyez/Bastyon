@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Golden Tranquility ====================-->
+
+    <ThoughtDef>
+        <defName>Bast_Golden_Tranquility</defName>
+        <icon>Things/Mote/ThoughtSymbol/Bast_Golden_Tranquility</icon>
+        <showBubble>true</showBubble>
+        <durationDays>3</durationDays>
+        <stackLimit>1</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>golden tranquility</label>
+                <description>A gilded vorpal bunny has graced {PAWN_nameDef} with its presence.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================== Infernal Headache ====================-->
+
+    <ThoughtDef>
+        <defName>Bast_Infernal_Headache</defName>
+        <icon>Things/Mote/ThoughtSymbol/Bast_Infernal_Headache</icon>
+        <showBubble>true</showBubble>
+        <durationDays>3</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>infernal headache</label>
+                <description>Upon metamorphisis, an enraged vorpal bunny imbued {PAWN_nameDef} with nightmarish thoughts of a world engulfed in flame. All will pass, in due time...</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================== Undying Optimism ====================-->
+
+    <ThoughtDef>
+        <defName>Bast_Undying_Optimism</defName>
+        <icon>Things/Mote/ThoughtSymbol/Bast_Undying_Optimism</icon>
+        <showBubble>true</showBubble>
+        <durationDays>10</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>undying optimism</label>
+                <description>Through years of hardship and turmoil, an enduring vorpal bunny has temporarily imbued {PAWN_nameDef} with a boost in confidence during these troubling times. May your steel ring true and your harvests be ever bountiful.</description>
+                <baseMoodEffect>15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<<<<<<< HEAD:Defs/ThingDefs_Races/Races_Animal_Scire.xml
+=======
+<<<<<<< HEAD
+=======
+  <!--==================== Scire ThingDef ====================-->
+
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Races/Races_Animal_Scire.xml
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Bast_Scire</defName>
+    <label>scire</label>
+    <description>Scires are deer-like creatures dwelling primarily in temperate regions. While female scires appear unalarming and rather mundane their male counterparts are equipped with massive antlers encasing a precious glowing blue center gemstone.\n\nAlthough not of this realm, they seem to have no trouble navigating this world. They are the protectors of the forest.</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <MarketValue>350</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
+        <hediffsToRemove>
+          <li>Animal_Plague</li>
+          <li>Animal_Flu</li>
+        </hediffsToRemove>
+        <tickInterval>2000</tickInterval>
+      </li>
+      <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+        <resourceDef>Bast_Eternal_Flame_Core</resourceDef>
+        <resourceAmount>1</resourceAmount>
+        <dropChance>0.10</dropChance>
+      </li>
+    </comps>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bast_ScireFireBall</defaultProjectile>
+<<<<<<< HEAD:Defs/ThingDefs_Races/Races_Animal_Scire.xml
+				<warmupTime>4</warmupTime>
+				<burstShotCount>3</burstShotCount>
+=======
+<<<<<<< HEAD
+				<warmupTime>4</warmupTime>
+				<burstShotCount>3</burstShotCount>
+=======
+				<warmupTime>2</warmupTime>
+				<burstShotCount>2</burstShotCount>
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Races/Races_Animal_Scire.xml
+				<minRange>2</minRange>
+				<range>15</range>
+				<soundCast>Bast_ScireFireBall</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+<<<<<<< HEAD:Defs/ThingDefs_Races/Races_Animal_Scire.xml
+				<label>eternal fire</label>
+=======
+<<<<<<< HEAD
+				<label>eternal fire</label>
+=======
+				<label>everlasting flame</label>
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Races/Races_Animal_Scire.xml
+				<commonality>.75</commonality>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.4</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <wildBiomes>
+        <IceSheet>0.01</IceSheet>
+				<SeaIce>0.01</SeaIce>
+        <ColdBog>0.00</ColdBog>
+        <Desert>0.00</Desert>
+        <BorealForest>0.02</BorealForest>
+        <Tundra>0.02</Tundra>
+				<TemperateForest>0.01</TemperateForest>
+				<TemperateSwamp>0.00</TemperateSwamp>
+				<TropicalRainforest>0.00</TropicalRainforest>
+				<TropicalSwamp>0.00</TropicalSwamp>
+				<AridShrubland>0.00</AridShrubland>
+        <ExtremeDesert>0.00</ExtremeDesert>
+			</wildBiomes>
+      <body>QuadrupedAnimalWithHooves</body>
+      <herdAnimal>true</herdAnimal>
+      <trainability>Advanced</trainability>
+      <nameOnTameChance>1</nameOnTameChance>
+      <petness>.01</petness>
+      <nuzzleMtbHours>13</nuzzleMtbHours>
+      <predator>false</predator>
+      <maxPreyBodySize>1.0</maxPreyBodySize>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0.19</baseHungerRate>
+      <baseHealthScale>1.8</baseHealthScale>
+      <bloodDef>Filth_CritterBlood</bloodDef>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <meatLabel>scire shank</meatLabel>
+      <leatherDef>Leather_Scire</leatherDef>
+      <wildness>0.50</wildness>
+      <deathActionWorkerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</deathActionWorkerClass>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+      <gestationPeriodDays>24</gestationPeriodDays>
+      <lifeExpectancy>15</lifeExpectancy>
+      <litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(3, 1)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+      <lifeStageAges Inherit="false">
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>5.2</minAge>
+          <soundWounded>Pawn_Deer_Wounded</soundWounded>
+          <soundDeath>Pawn_Deer_Death</soundDeath>
+          <soundCall>Pawn_Deer_Call</soundCall>
+          <soundAngry>Pawn_Deer_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_ScireArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<<<<<<< HEAD:Defs/ThingDefs_Races/Races_Animal_Scire.xml
+=======
+<<<<<<< HEAD
+=======
+  <!--==================== Scire PawnKindDef ====================-->
+
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/ThingDefs_Races/Races_Animal_Scire.xml
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Bast_Scire</defName>
+    <label>scire</label>
+    <labelPlural>scire</labelPlural>
+    <race>Bast_Scire</race>
+    <combatPower>210</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+    <wildGroupSize>
+			<min>1</min>
+			<max>6</max>
+		</wildGroupSize>
+    <labelMale>stag</labelMale>
+    <labelFemale>hind</labelFemale>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Scire/Bast_ScireMale</texPath>
+          <drawSize>2.9</drawSize>
+          <color>(0,153,255)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.7, 0.7, 0.7)</volume>
+            <offset>(0,0,-0.7)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Scire/Bast_ScireFemale</texPath>
+          <drawSize>1.9</drawSize>
+          <color>(0,102,255)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,-2,0)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Scire/Bast_Dessicated_ScireMale</texPath>
+          <drawSize>2.9</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Scire/Bast_Dessicated_ScireFemale</texPath>
+          <drawSize>1.9</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Scire/Bast_ScireMale</texPath>
+          <drawSize>4.0</drawSize>
+          <color>(0,153,255)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.7, 0.7, 0.7)</volume>
+            <offset>(0,0,-0.7)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Scire/Bast_ScireFemale</texPath>
+          <drawSize>3.0</drawSize>
+          <color>(0,102,255)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,-2,0)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Scire/Bast_Dessicated_ScireMale</texPath>
+          <drawSize>4.0</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Scire/Bast_Dessicated_ScireFemale</texPath>
+          <drawSize>3.0</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

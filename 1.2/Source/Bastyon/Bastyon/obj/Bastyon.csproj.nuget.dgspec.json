@@ -1,0 +1,103 @@
+{
+  "format": 1,
+  "restore": {
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:Source/Bastyon/obj/Bastyon.csproj.nuget.dgspec.json
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj": {}
+  },
+  "projects": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj",
+        "projectName": "Bastyon",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj",
+        "packagesPath": "C:\\Users\\Instakrill-BK\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Instakrill-BK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+========
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2
+    "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj": {}
+  },
+  "projects": {
+    "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
+        "projectName": "Bastyon",
+        "projectPath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\Bastyon.csproj",
+        "packagesPath": "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Aaron Karlsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+=======
+>>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Source/Bastyon/Bastyon/obj/Bastyon.csproj.nuget.dgspec.json
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net40"
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2
+        ],
+        "sources": {
+          "C:\\Env\\Repos\\UiPath\\CustomPackages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Aaron Karlsen\\Desktop\\lib": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+<<<<<<< HEAD
+          "net472": {
+=======
+          "net40": {
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+<<<<<<< HEAD
+        "net472": {
+=======
+        "net40": {
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2
+          "dependencies": {
+            "AchievementsExpanded": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
+            "Krafs.Rimworld.Ref": {
+              "target": "Package",
+              "version": "[1.2.2905, )"
+            },
+            "Lib.Harmony": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

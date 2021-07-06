@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<<<<<<< HEAD:Defs/Bodies/Bodies_LimblessHovering.xml
+    <!--____________________Gnomaclu____________________-->
+=======
+<<<<<<< HEAD
+    <!--____________________Gnomaclu____________________-->
+=======
+    <!--==================== Gnomaclu Body ====================-->
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/Bodies_LimblessHovering.xml
+
+    <BodyDef>
+		<defName>Bast_LimblessHovering</defName>
+		<label>gnomaclu</label>
+		<corePart>
+			<def>Body</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Heart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+                    <def>Head</def>
+					<coverage>0.75</coverage>
+              		<groups>
+                			<li>HeadAttackTool</li>
+              		</groups>
+					<parts>
+						<li>
+							<def>Skull</def>
+							<coverage>0.25</coverage>
+							<depth>Inside</depth>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.08</coverage>
+									<depth>Inside</depth>
+								</li>
+							</parts>
+						</li>
+                        <li>
+                            <def>Bast_BigEye</def>
+                            <coverage>0.07</coverage>
+                        </li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+<<<<<<< HEAD:Defs/Bodies/Bodies_LimblessHovering.xml
+
+=======
+<<<<<<< HEAD
+
+=======
+	
+>>>>>>> 7effa53a9becaf831f2cb37f5a823a41eeda1aef
+>>>>>>> b49f7455aaaf26f20b0e9a24377cd8006f84c1a2:1.2/Defs/Bodies/Bodies_LimblessHovering.xml
+</Defs>

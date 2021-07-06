@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Sunlight Vulnerability Hediff ====================-->
+
+    <HediffDef>
+        <defName>Bast_SunLightDamage</defName>
+        <label>Sunlight damage</label>
+        <labelNoun>Sunlight damage</labelNoun>
+        <description>This creature has an extreme weakness to sunlight and will burn under a stars radiant visage.</description>
+        <hediffClass>Bastyon.Hediff_SunLightDamage</hediffClass>
+        <stages>
+            <li>
+                <label>initial</label>
+            </li>
+            <li>
+                <label>middle</label>
+                <minSeverity>0.50</minSeverity>
+            </li>
+			<li>
+                <label>agony</label>
+                <minSeverity>0.70</minSeverity>
+            </li>
+            <li>
+                <label>completed</label>
+                <minSeverity>1</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+            </li>
+        </stages>
+		<modExtensions>
+			<li Class="Bastyon.SunLightDamage">
+				<hediffSeverity>0.1</hediffSeverity>
+				<tickInterval>360</tickInterval>
+				<fireSpawnChance>0.3</fireSpawnChance>
+				<fireSize>0.1~0.3</fireSize>
+			</li>
+		</modExtensions>
+    </HediffDef>
+	
+</Defs>

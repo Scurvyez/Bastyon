@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--==================== Sunburst Gnomaclu ThingDef ====================-->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Bast_Sunburst_Gnomaclu</defName>
+    <label>sunburst gnomaclu</label>
+    <description>Resembling floating billiard balls with what would appear to be an eye in the center, Gnomaclus often travel in packs and feast on low hanging or standing vegetation. They are very weak creatures and a single well-placed shot to the upper most portion of their spherical form will most certainly guarantee death.</description>
+    <statBases>
+      <MoveSpeed>3.1</MoveSpeed>
+      <MarketValue>100</MarketValue>
+      <ComfyTemperatureMin>-23</ComfyTemperatureMin>
+      <ComfyTemperatureMax>32</ComfyTemperatureMax>
+      <MeatAmount>0</MeatAmount>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <comps>		
+      <li Class="AnimalBehaviours.CompProperties_Floating">
+      
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.0</explosiveRadius>
+        <explosiveDamageType>Extinguish</explosiveDamageType>
+        <startWickHitPointsPercent>-1</startWickHitPointsPercent>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+        <startWickOnDamageTaken>
+          <li>Bullet</li>
+          <li>Arrow</li>
+          <li>ArrowHighVelocity</li>
+        </startWickOnDamageTaken>
+        <!-- <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef> -->
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+      </li>
+    </comps>
+    <tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+    <race>
+      <wildBiomes>
+        <IceSheet>0.00</IceSheet>
+				<SeaIce>0.00</SeaIce>
+        <ColdBog>0.10</ColdBog>
+				<Desert>0.10</Desert>
+        <BorealForest>0.02</BorealForest>
+        <Tundra>0.01</Tundra> 
+				<TemperateForest>0.01</TemperateForest>
+				<TemperateSwamp>0.30</TemperateSwamp>
+				<TropicalRainforest>0.30</TropicalRainforest>
+				<TropicalSwamp>0.35</TropicalSwamp>
+				<AridShrubland>0.10</AridShrubland>
+        <ExtremeDesert>0.02</ExtremeDesert>
+			</wildBiomes>
+      <body>Bast_LimblessHovering</body>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>0.4</baseHealthScale>
+      <baseHungerRate>0.15</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <wildness>0.65</wildness>
+      <canBePredatorPrey>true</canBePredatorPrey>
+      <trainability>None</trainability>
+      <nameOnTameChance>1</nameOnTameChance>
+      <mateMtbHours>150</mateMtbHours>
+      <gestationPeriodDays>18</gestationPeriodDays>
+      <lifeExpectancy>8</lifeExpectancy>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.5, 1)</li>
+          <li>(4.0, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>2.5</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>3.5</minAge>
+          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+          <soundDeath>Pawn_Spelopede_Death</soundDeath>
+          <soundCall>Pawn_Spelopede_Call</soundCall>
+          <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+			  <Bast_SunburstGnomacluMeat>10</Bast_SunburstGnomacluMeat>
+		</butcherProducts>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_SunburstGnomacluArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+  <!--==================== Sunburst Gnomaclu PawnKindDef ====================-->
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Bast_Sunburst_Gnomaclu</defName>
+    <label>sunburst gnomaclu</label>
+    <race>Bast_Sunburst_Gnomaclu</race>
+    <combatPower>7</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.01</ecoSystemWeight>
+    <wildGroupSize>
+			<min>2</min>
+			<max>12</max>
+		</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Sunburst_Gnomaclu</texPath>
+          <drawSize>0.7</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.30, 0.25, 0.20)</volume>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Dessicated_Gnomaclu</texPath>
+          <drawSize>0.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Sunburst_Gnomaclu</texPath>
+          <drawSize>1.5</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.375, 0.375, 0.375)</volume>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Dessicated_Gnomaclu</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Sunburst_Gnomaclu</texPath>
+          <drawSize>2.4</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.4)</volume>
+            <offset>(0,0,-0.05)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Dessicated_Gnomaclu</texPath>
+          <drawSize>2.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>
