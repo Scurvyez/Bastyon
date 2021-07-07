@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using RimWorld;
-using SettingsHelper;
 using UnityEngine;
 
 namespace Bastyon
