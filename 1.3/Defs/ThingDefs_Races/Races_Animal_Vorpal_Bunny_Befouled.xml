@@ -27,10 +27,10 @@
 		        <tickInterval>2000</tickInterval>
                 <consumingFoodReportString>Eating tiny insects</consumingFoodReportString>		
 	        </li>
-            <li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+            <!-- <li Class="AnimalBehaviours.CompProperties_Metamorphosis">
                 <timeInYears>2</timeInYears>
                 <pawnToTurnInto>Bast_Vorpal_Bunny</pawnToTurnInto>
-            </li>
+            </li> -->
             <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
                 <hediffsToRemove>
                     <li>Animal_Plague</li>
@@ -42,7 +42,7 @@
             <li Class="AnimalBehaviours.CompProperties_HediffEffecter">
                 <radius>20</radius>
                 <severity>1</severity>
-                <tickInterval>100</tickInterval>
+                <tickInterval>120000</tickInterval>
                 <hediff>Bast_AdvancedAnalgesia</hediff>
             </li>
         </comps>
@@ -110,10 +110,6 @@
         <combatPower>120</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <ecoSystemWeight>0.08</ecoSystemWeight>
-        <wildGroupSize>
-            <min>1</min>
-            <max>2</max>
-        </wildGroupSize>
         <lifeStages>
             <li>
                 <bodyGraphicData>

@@ -109,10 +109,6 @@
         <combatPower>120</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <ecoSystemWeight>0.08</ecoSystemWeight>
-        <wildGroupSize>
-            <min>1</min>
-            <max>2</max>
-        </wildGroupSize>
         <lifeStages>
             <li>
                 <bodyGraphicData>
