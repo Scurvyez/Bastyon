@@ -23,10 +23,6 @@
                 <distance>3~5</distance>
                 <warpEffect>true</warpEffect>
             </li>
-            <!-- <li Class="AnimalBehaviours.CompProperties_InitialHediff">
-                <hediffname>Bast_Stage_Five_Resurrection</hediffname>
-                <hediffseverity>.01</hediffseverity>
-            </li> -->
             <li Class="AnimalBehaviours.CompProperties_Metamorphosis">
                 <timeInYears>2</timeInYears>
                 <pawnToTurnInto>Bast_Vorpal_Bunny_Gilded</pawnToTurnInto>
@@ -67,6 +63,7 @@
         </tools>
         <race>
             <herdAnimal>false</herdAnimal>
+            <foodType>OmnivoreAnimal</foodType>
             <body>Bast_Critter</body>
             <baseHungerRate>0.15</baseHungerRate>
             <baseBodySize>0.50</baseBodySize>

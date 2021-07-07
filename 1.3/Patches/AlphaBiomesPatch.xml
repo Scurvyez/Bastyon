@@ -260,6 +260,91 @@
 					</value>
 				</li>
 
+				<!--==================== Vorpal Bunny Alpha Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny"]/race/wildBiomes</xpath>
+					<value>
+
+						<AB_MycoticJungle>0.02</AB_MycoticJungle>
+						<AB_OcularForest>0.00</AB_OcularForest>
+						<AB_GelatinousSuperorganism>0.00</AB_GelatinousSuperorganism>
+						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
+						<AB_TarPits>0.00</AB_TarPits>
+                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PyroclasticConflagration>0.00</AB_PyroclasticConflagration>
+
+					</value>
+				</li>
+
+				<!--==================== Enduring Vorpal Bunny Alpha Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Enduring"]/race/wildBiomes</xpath>
+					<value>
+
+						<AB_MycoticJungle>0.02</AB_MycoticJungle>
+						<AB_OcularForest>0.02</AB_OcularForest>
+						<AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>
+						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
+						<AB_TarPits>0.00</AB_TarPits>
+                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PyroclasticConflagration>0.00</AB_PyroclasticConflagration>
+
+					</value>
+				</li>
+
+				<!--==================== Enraged Vorpal Bunny Alpha Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Enraged"]/race/wildBiomes</xpath>
+					<value>
+
+						<AB_MycoticJungle>0.00</AB_MycoticJungle>
+						<AB_OcularForest>0.00</AB_OcularForest>
+						<AB_GelatinousSuperorganism>0.00</AB_GelatinousSuperorganism>
+						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
+						<AB_TarPits>0.02</AB_TarPits>
+                        <AB_PropaneLakes>0.02</AB_PropaneLakes>
+						<AB_PyroclasticConflagration>0.02</AB_PyroclasticConflagration>
+
+					</value>
+				</li>
+
+				<!--==================== Iridescent Vorpal Bunny Alpha Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Iridescent"]/race/wildBiomes</xpath>
+					<value>
+
+						<AB_MycoticJungle>0.02</AB_MycoticJungle>
+						<AB_OcularForest>0.00</AB_OcularForest>
+						<AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>
+						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
+						<AB_TarPits>0.00</AB_TarPits>
+                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PyroclasticConflagration>0.00</AB_PyroclasticConflagration>
+
+					</value>
+				</li>
+
+				<!--==================== Pragmatic Vorpal Bunny Alpha Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Pragmatic"]/race/wildBiomes</xpath>
+					<value>
+
+						<AB_MycoticJungle>0.02</AB_MycoticJungle>
+						<AB_OcularForest>0.00</AB_OcularForest>
+						<AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>
+						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
+						<AB_TarPits>0.00</AB_TarPits>
+                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PyroclasticConflagration>0.02</AB_PyroclasticConflagration>
+
+					</value>
+				</li>
+
             </operations>
 		</match>
 	</Operation>
