@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Rimworld_Debug\RimWorldWin64.exe</StartProgram>
+    <StartProgram>C:\Rimworld1.3_Debug\RimWorldWin64.exe</StartProgram>
     <StartArguments>-quicktest -savedatafolder=SaveData</StartArguments>
     <StartWorkingDirectory>..\..\..\..\</StartWorkingDirectory>
   </PropertyGroup>
