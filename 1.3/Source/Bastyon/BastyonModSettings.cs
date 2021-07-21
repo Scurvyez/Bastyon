@@ -38,7 +38,7 @@ namespace Bastyon
             Listing_Standard settingsWindowBottom = new Listing_Standard();
             Rect bottomRect = new Rect(inRect.position + new Vector2(0f, 20f), inRect.size - new Vector2(0f, 20f));
             Rect viewRect = new Rect(0f, 0f, bottomRect.width - 20f, disabledBastyonAnimals.Count * 8f);
-            settingsWindowBottom.BeginScrollView(bottomRect, ref scrollPosition, ref viewRect);
+            /*settingsWindowBottom.BeginScrollView(bottomRect, ref scrollPosition, ref viewRect);
             
             for (int i = 0; i < allBastyonAnimals.Count; i++)
             {
@@ -51,7 +51,22 @@ namespace Bastyon
                 Widgets.CheckboxLabeled(checkboxRect, allBastyonAnimals[i].label.CapitalizeFirst(), ref bastyonAnimalValues[i], false, null, null, false);
             }
             settingsWindowBottom.GapLine();
-            settingsWindowBottom.EndScrollView(ref viewRect);
+            settingsWindowBottom.EndScrollView(ref viewRect);*/
+            Widgets.BeginScrollView(bottomRect, ref scrollPosition, viewRect, true);
+            bottomRect.height = 100000f;
+            bottomRect.width -= 20f;
+            settingsWindowBottom.Begin(bottomRect.AtZero());
+            for (int i = 0; i < allBastyonAnimals.Count; i++)
+            {
+                Rect checkboxRect = settingsWindowBottom.GetRect(Text.LineHeight);
+                if (Mouse.IsOver(checkboxRect))
+                {
+                    Widgets.DrawHighlight(checkboxRect);
+                }
+                Widgets.CheckboxLabeled(checkboxRect, allBastyonAnimals[i].label.CapitalizeFirst(), ref bastyonAnimalValues[i], false, null, null, false);
+            }
+            Widgets.EndScrollView();
+            settingsWindowBottom.End();
         }
         private static Vector2 scrollPosition = Vector2.zero;
     }
