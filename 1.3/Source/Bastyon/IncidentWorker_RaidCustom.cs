@@ -63,7 +63,7 @@ namespace Bastyon
 			while (num < options.minimumPawnCount && attempts < options.minimumPawnCount + 100)
 			{
 				if (options.pawnGroup.options.TryRandomElementByWeight(x => x.selectionWeight, out var result))
-                {
+				{
 					PawnGenerationRequest request = new PawnGenerationRequest(result.kind, parms.faction, PawnGenerationContext.NonPlayer, -1,
 						forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: true, 1f,
 						forceAddFreeWarmLayerIfNeeded: false, allowGay: true, biocodeWeaponChance: parms.biocodeWeaponsChance, allowFood: true);
@@ -88,7 +88,7 @@ namespace Bastyon
 		{
 			List<Pawn> list = new List<Pawn>();
 			foreach (var pawnCount in options.minimumPawnCountPerKind.options)
-            {
+			{
 				int num = 0;
 				int attempts = 0;
 				int minimumPawnCount = (int)pawnCount.selectionWeight;
@@ -150,7 +150,7 @@ namespace Bastyon
 			}
 			return value;
 		}
-        protected override bool TryExecuteWorker(IncidentParms parms)
+		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
 			var options = this.def.GetModExtension<RaidOptions>();
@@ -163,34 +163,34 @@ namespace Bastyon
 			}
 			ResolveRaidPoints(parms);
 			if (options.minimumPlayerTechLevel.HasValue && Faction.OfPlayer.def.techLevel < options.minimumPlayerTechLevel.Value)
-            {
+			{
 				return false;
-            }
+			}
 			if (options.minimumPlayerWealth.HasValue && options.minimumPlayerWealth.Value > map.wealthWatcher.WealthTotal)
-            {
+			{
 				return false;
-            }
+			}
 			if (options.requiredResearchProjectsUnlocked != null && options.requiredResearchProjectsUnlocked.Any(x => !x.IsFinished))
-            {
+			{
 				return false;
-            }
+			}
 			if (options.raidFaction is null)
-            {
+			{
 				if (!TryResolveRaidFaction(parms))
 				{
 					return false;
 				}
 			}
 			else
-            {
+			{
 				parms.faction = Find.FactionManager.FirstFactionOfDef(options.raidFaction);
-            }
+			}
 			if (!parms.forced && options.repeatAfterTicks.HasValue)
-            {
+			{
 				var curTick = Find.TickManager.TicksGame;
 				var range = options.maxRepeatCount > 0 ? options.maxRepeatCount : 999;
 				for (var i = 0; i < range; i++)
-                {
+				{
 					curTick += options.repeatAfterTicks.Value.RandomInRange;
 					IncidentParms newParms = new IncidentParms
 					{
@@ -199,12 +199,12 @@ namespace Bastyon
 						points = parms.points
 					};
 					Find.Storyteller.incidentQueue.Add(this.def, curTick, newParms);
-                }
+				}
 			}
 			else if (parms.forced && !CanFireNow(parms))
-            {
+			{
 				return false;
-            }
+			}
 			PawnGroupKindDef combat = PawnGroupKindDefOf.Combat;
 			if (options.raidStrategy is null)
 			{
@@ -231,9 +231,9 @@ namespace Bastyon
 			}
 			float points = parms.points;
 			parms.points = AdjustedRaidPoints(parms.points, parms.raidArrivalMode, parms.raidStrategy, parms.faction, combat);
-			
+
 			if (options.fixedRaidPoints != -1)
-            {
+			{
 				parms.points = options.fixedRaidPoints;
 			}
 			if (options.raidPointsMultiplier != -1)
@@ -241,19 +241,19 @@ namespace Bastyon
 				parms.points *= options.raidPointsMultiplier;
 			}
 
-			var list = new List<Pawn>(); 
+			var list = new List<Pawn>();
 			if (options.minimumPawnCount != -1)
-            {
+			{
 				list = SpawnThreats(parms, options);
 			}
 			else if (options.minimumPawnCountPerKind != null)
-            {
+			{
 				list = SpawnThreats2(parms, options);
 			}
 			if (options.pawnGroup != null)
-            {
+			{
 				GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms), options.pawnGroup, list);
-            }
+			}
 
 			if (list.Count == 0)
 			{
@@ -291,9 +291,9 @@ namespace Bastyon
 			}
 			SendStandardLetter(letterLabel, letterText, GetLetterDef(options), parms, list2);
 			if (!options.disableLordRaid.HasValue || !options.disableLordRaid.Value)
-            {
+			{
 				parms.raidStrategy.Worker.MakeLords(parms, list);
-            }
+			}
 			LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
 			if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.ShieldBelts))
 			{
@@ -362,7 +362,7 @@ namespace Bastyon
 		protected string GetLetterLabel(IncidentParms parms, RaidOptions options)
 		{
 			if (!options.letterTitle.NullOrEmpty())
-            {
+			{
 				return options.letterTitle;
 			}
 			return parms.raidStrategy.letterLabelEnemy + ": " + parms.faction.Name;
@@ -389,9 +389,9 @@ namespace Bastyon
 		protected LetterDef GetLetterDef(RaidOptions options)
 		{
 			if (options.letterDef != null)
-            {
+			{
 				return options.letterDef;
-            }
+			}
 			return LetterDefOf.ThreatBig;
 		}
 

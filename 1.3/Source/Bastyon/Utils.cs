@@ -19,7 +19,8 @@ namespace Bastyon
             job.expiryInterval = expiryInterval;
             job.checkOverrideOnExpire = true;
             job.expireRequiresEnemiesNearby = true;
-            job.canBash = true;
+            job.canBashDoors = true;
+            job.canBashFences = true;
             Log.Message(pawn + " is attacking " + enemyTarget + " - " + job);
             return job;
         }

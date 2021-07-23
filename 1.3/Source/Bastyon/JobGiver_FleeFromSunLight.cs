@@ -22,7 +22,8 @@ namespace Bastyon
                 job.exitMapOnArrival = true;
                 job.locomotionUrgency = LocomotionUrgency.Jog;
                 job.expiryInterval = new IntRange(60, 300).RandomInRange;
-                job.canBash = true;
+                job.canBashDoors = true;
+                job.canBashFences = true;
                 return job;
             }
             return null;
