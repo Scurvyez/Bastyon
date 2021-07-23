@@ -39,12 +39,13 @@ namespace Bastyon
 		{
 			if (CanGenerateFrom(parms, groupMaker))
 			{
+				float pointsTotal = parms.points;
 				bool allowFood = parms.raidStrategy == null || parms.raidStrategy.pawnsCanBringFood || (parms.faction != null && !parms.faction.HostileTo(Faction.OfPlayer));
-				Predicate<Pawn> validatorPostGear = (parms.raidStrategy != null) ? ((Predicate<Pawn>)((Pawn p) => parms.raidStrategy.Worker.CanUsePawn(p, outPawns))) : null;
+				Predicate<Pawn> validatorPostGear = (parms.raidStrategy != null) ? ((Predicate<Pawn>)((Pawn p) => parms.raidStrategy.Worker.CanUsePawn(pointsTotal, p, outPawns))) : null;
 				bool flag = false;
 				foreach (PawnGenOption item in PawnGroupMakerUtility.ChoosePawnGenOptionsByPoints(parms.points, groupMaker.options, parms))
 				{
-					Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(item.kind, parms.faction, PawnGenerationContext.NonPlayer, parms.tile, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: true, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood, allowAddictions: true, parms.inhabitants, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, null, 1f, null, validatorPostGear));
+					Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(item.kind, parms.faction, PawnGenerationContext.NonPlayer, parms.tile, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: true, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood, allowAddictions: true, parms.inhabitants, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, validatorPostGear));
 					if (parms.forceOneIncap && !flag)
 					{
 						pawn.health.forceIncap = true;
@@ -154,13 +155,13 @@ namespace Bastyon
 		{
 			Map map = (Map)parms.target;
 			var options = this.def.GetModExtension<RaidOptions>();
-			if (options.raidFaction != null && Find.FactionManager.FirstFactionOfDef(options.raidFaction) is null)
-			{
-				var faction = FactionGenerator.NewGeneratedFaction(options.raidFaction);
-				faction.TrySetRelationKind(Faction.OfPlayer, FactionRelationKind.Hostile, false, null, null);
-				Find.FactionManager.Add(faction);
-				map.attackTargetsCache.Notify_FactionHostilityChanged(faction, Faction.OfPlayer);
-			}
+			//if (options.raidFaction != null && Find.FactionManager.FirstFactionOfDef(options.raidFaction) is null)
+			//{
+			//var faction = FactionGenerator.NewGeneratedFaction(options.raidFaction);
+			//faction.TrySetRelationKind(Faction.OfPlayer, FactionRelationKind.Hostile, false, null, null);
+			//Find.FactionManager.Add(faction);
+			//map.attackTargetsCache.Notify_FactionHostilityChanged(faction, Faction.OfPlayer);
+			//}
 			ResolveRaidPoints(parms);
 			if (options.minimumPlayerTechLevel.HasValue && Faction.OfPlayer.def.techLevel < options.minimumPlayerTechLevel.Value)
 			{
