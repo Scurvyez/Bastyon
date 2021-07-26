@@ -1,85 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "COQy3JuQKGAz+KrIIceL4eygAGaJ4rQuyiIuyOufRi3QQP/iFrdRirCP5GWREtTs4kgGzSfOdTG/yAMg5CO/9A==",
-  "success": false,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\Source\\Bastyon\\Bastyon.csproj",
+  "dgSpecHash": "oo+ppYHE28gI1+4RS5O2ZOpo6qu6EGi4T+jUf+9O7OxnBqfYs5r15XSsIhNA0sY1vlL5DBGauuS0mMvJAygn5Q==",
+  "success": true,
+  "projectFilePath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Instakrill-BK\\.nuget\\packages\\achievementsexpanded\\1.0.8\\achievementsexpanded.1.0.8.nupkg.sha512",
-    "C:\\Users\\Instakrill-BK\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2900\\krafs.rimworld.ref.1.2.2900.nupkg.sha512",
-    "C:\\Users\\Instakrill-BK\\.nuget\\packages\\lib.harmony\\2.0.4\\lib.harmony.2.0.4.nupkg.sha512"
+    "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\achievementsexpanded\\1.0.8\\achievementsexpanded.1.0.8.nupkg.sha512",
+    "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2905\\krafs.rimworld.ref.1.2.2905.nupkg.sha512",
+    "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\lib.harmony\\2.1.0\\lib.harmony.2.1.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package Krafs.Rimworld.Ref 1.2.2900 is not compatible with net40 (.NETFramework,Version=v4.0). Package Krafs.Rimworld.Ref 1.2.2900 supports: net472 (.NETFramework,Version=v4.7.2)",
-      "libraryId": "Krafs.Rimworld.Ref",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.0"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package AchievementsExpanded 1.0.8 is not compatible with net40 (.NETFramework,Version=v4.0). Package AchievementsExpanded 1.0.8 supports: net472 (.NETFramework,Version=v4.7.2)",
-      "libraryId": "AchievementsExpanded",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.0"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package Krafs.Rimworld.Ref 1.2.2900 is not compatible with net40 (.NETFramework,Version=v4.0) / win. Package Krafs.Rimworld.Ref 1.2.2900 supports: net472 (.NETFramework,Version=v4.7.2)",
-      "libraryId": "Krafs.Rimworld.Ref",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.0/win"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package AchievementsExpanded 1.0.8 is not compatible with net40 (.NETFramework,Version=v4.0) / win. Package AchievementsExpanded 1.0.8 supports: net472 (.NETFramework,Version=v4.7.2)",
-      "libraryId": "AchievementsExpanded",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.0/win"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package Krafs.Rimworld.Ref 1.2.2900 is not compatible with net40 (.NETFramework,Version=v4.0) / win-x64. Package Krafs.Rimworld.Ref 1.2.2900 supports: net472 (.NETFramework,Version=v4.7.2)",
-      "libraryId": "Krafs.Rimworld.Ref",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.0/win-x64"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package AchievementsExpanded 1.0.8 is not compatible with net40 (.NETFramework,Version=v4.0) / win-x64. Package AchievementsExpanded 1.0.8 supports: net472 (.NETFramework,Version=v4.7.2)",
-      "libraryId": "AchievementsExpanded",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.0/win-x64"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package Krafs.Rimworld.Ref 1.2.2900 is not compatible with net40 (.NETFramework,Version=v4.0) / win-x86. Package Krafs.Rimworld.Ref 1.2.2900 supports: net472 (.NETFramework,Version=v4.7.2)",
-      "libraryId": "Krafs.Rimworld.Ref",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.0/win-x86"
-      ]
-    },
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package AchievementsExpanded 1.0.8 is not compatible with net40 (.NETFramework,Version=v4.0) / win-x86. Package AchievementsExpanded 1.0.8 supports: net472 (.NETFramework,Version=v4.7.2)",
-      "libraryId": "AchievementsExpanded",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.0/win-x86"
-      ]
-    }
-  ]
+  "logs": []
 }

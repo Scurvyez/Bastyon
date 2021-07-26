@@ -23,6 +23,10 @@
                 <distance>3~5</distance>
                 <warpEffect>true</warpEffect>
             </li>
+            <!-- <li Class="AnimalBehaviours.CompProperties_InitialHediff">
+                <hediffname>Bast_Stage_Three_Resurrection</hediffname>
+                <hediffseverity>.01</hediffseverity>
+            </li> -->
             <li Class="AnimalBehaviours.CompProperties_Metamorphosis">
                 <timeInYears>2</timeInYears>
                 <pawnToTurnInto>Bast_Vorpal_Bunny_Pragmatic</pawnToTurnInto>

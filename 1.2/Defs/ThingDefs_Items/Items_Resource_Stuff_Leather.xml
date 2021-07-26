@@ -263,40 +263,4 @@
         </stuffProps>
     </ThingDef>
 
-    <!--==================== Gleaming Cervus Leather ====================-->
-
-    <ThingDef ParentName="LeatherBase">
-        <defName>Leather_Gleaming_Cervus</defName>
-        <label>gleaming cervus leather</label>
-        <description>The hide taken froma  recently slain gleaming cervus. Its light purple hue shines vibrantly in the light of day.</description>
-        <graphicData>
-            <color>(124,98,163)</color>
-        </graphicData>
-        <statBases>
-            <MarketValue>12.0</MarketValue>
-            <StuffPower_Armor_Sharp>.12</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>.38</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>.43</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
-            <DeteriorationRate>1.25</DeteriorationRate>
-            <Flammability>.25</Flammability>
-            <MaxHitPoints>140</MaxHitPoints>
-            <Mass>0.018</Mass>
-        </statBases>
-        <burnableByRecipe>true</burnableByRecipe>
-        <healthAffectsPrice>true</healthAffectsPrice>
-        <minRewardCount>35</minRewardCount>
-        <stuffProps>
-            <statFactors>
-                <Beauty>1.8</Beauty>
-            </statFactors>
-            <categories>
-                <li>Leathery</li>
-            </categories>
-            <color>(124,98,163)</color>
-            <commonality>0.075</commonality>
-        </stuffProps>
-    </ThingDef>
-
 </Defs>  

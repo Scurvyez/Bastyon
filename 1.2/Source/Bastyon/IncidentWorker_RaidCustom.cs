@@ -294,7 +294,7 @@ namespace Bastyon
             {
 				parms.raidStrategy.Worker.MakeLords(parms, list);
             }
-			LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
+			/*LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
 			if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.ShieldBelts))
 			{
 				for (int j = 0; j < list.Count; j++)
@@ -306,6 +306,7 @@ namespace Bastyon
 					}
 				}
 			}
+			*/
 			Find.TickManager.slower.SignalForceNormalSpeedShort();
 			Find.StoryWatcher.statsRecord.numRaidsEnemy++;
 			Log.Message("2 parms.raidStrategy: " + parms.raidStrategy);
