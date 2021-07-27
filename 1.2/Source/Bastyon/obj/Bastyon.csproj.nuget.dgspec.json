@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon.csproj": {}
+    "C:\\Rimworld1.3_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon.csproj": {}
   },
   "projects": {
-    "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon.csproj": {
+    "C:\\Rimworld1.3_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon.csproj",
+        "projectUniqueName": "C:\\Rimworld1.3_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon.csproj",
         "projectName": "Bastyon",
-        "projectPath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon.csproj",
+        "projectPath": "C:\\Rimworld1.3_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\Bastyon.csproj",
         "packagesPath": "C:\\Users\\Aaron Karlsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Rimworld_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\obj\\",
+        "outputPath": "C:\\Rimworld1.3_Debug\\Mods\\Bastyon\\1.2\\Source\\Bastyon\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [

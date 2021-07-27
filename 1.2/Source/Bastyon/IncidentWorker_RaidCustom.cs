@@ -130,7 +130,11 @@ namespace Bastyon
 				var curHour = GenLocalDate.HourOfDay(map.Tile);
 
 				Log.Message(" - CanFireNowSub - if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max) - 6", true);
-				if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max)
+				if(BastyonEvents.modSettings.disableBahlrinRaid == true)
+                {
+					return false;
+                }
+				else if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max)
 				{
 					Log.Message(" - CanFireNowSub - return value; - 7", true);
 					return value;

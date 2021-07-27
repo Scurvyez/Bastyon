@@ -43,16 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BastDefOf.cs" />
-    <Compile Include="BastDefRemover.cs" />
     <Compile Include="BastyonMod.cs" />
     <Compile Include="BastyonModSettings.cs" />
     <Compile Include="CompVulnerableToSunlight.cs" />
-    <Compile Include="HarmonyPatches.cs" />
     <Compile Include="IncidentWorker_RaidCustom.cs" />
     <Compile Include="JobGiver_FleeFromSunLight.cs" />
     <Compile Include="JobGiver_MonsterBerserk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RaidOptions.cs" />
+    <Compile Include="SettingsHelper.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
