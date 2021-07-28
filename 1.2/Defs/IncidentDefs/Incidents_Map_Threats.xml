@@ -10,11 +10,11 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>Bastyon.IncidentWorker_RaidCustom</workerClass>
-		<baseChance>.01</baseChance>
+		<baseChance>0.01</baseChance>
 		<category>ThreatBig</category>
 		<tale>Raid</tale>
-		<earliestDay>0</earliestDay>
-		<minRefireDays>35</minRefireDays>
+		<earliestDay>45</earliestDay>
+		<minRefireDays>20</minRefireDays>
 		<modExtensions>
 			<li Class="Bastyon.RaidOptions">
 				<raidFaction>Bast_Monsters</raidFaction>
@@ -45,12 +45,12 @@
 				</requiredResearchProjectsUnlocked> -->
 				
 				<minimumPlayerTechLevel>Industrial</minimumPlayerTechLevel>
-				<minimumPlayerWealth>40000</minimumPlayerWealth>
+				<minimumPlayerWealth>80000</minimumPlayerWealth>
 				<raidStrategy>ImmediateAttack</raidStrategy>
 				<raidArrival>EdgeWalkInGroups</raidArrival>
 				<disableLordRaid>true</disableLordRaid>
-				<repeatAfterTicks>850~3000</repeatAfterTicks>
-				<maxRepeatCount>5</maxRepeatCount>
+				<repeatAfterTicks>2500~5000</repeatAfterTicks>
+				<maxRepeatCount>8</maxRepeatCount>
 				<allowedHourRange>18~5</allowedHourRange>
 				
 				<letterDef>ThreatBig</letterDef>
