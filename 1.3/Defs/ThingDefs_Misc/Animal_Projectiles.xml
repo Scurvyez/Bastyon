@@ -112,7 +112,7 @@
 			<damageDef>Bast_BlisteringWindExtinguish</damageDef>
 			<damageAmountBase>3.2</damageAmountBase>
 			<stoppingPower>0.5</stoppingPower>	
-			<speed>22</speed>
+			<speed>20</speed>
 		</projectile>
 	</ThingDef>
 
@@ -132,7 +132,7 @@
 			<damageDef>Bast_Electric</damageDef>
 			<damageAmountBase>2.0</damageAmountBase>
 			<stoppingPower>0.5</stoppingPower>
-			<speed>35</speed>
+			<speed>20</speed>
 		</projectile>
 	</ThingDef>
 
@@ -164,7 +164,7 @@
 			<damageAmountBase>10</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>		
 			<ai_IsIncendiary>true</ai_IsIncendiary>
-			<speed>20</speed>
+			<speed>14</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
 
@@ -196,7 +196,7 @@
 			<damageAmountBase>10</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>		
 			<ai_IsIncendiary>true</ai_IsIncendiary>
-			<speed>20</speed>
+			<speed>14</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
 
@@ -228,7 +228,7 @@
 			<damageAmountBase>5</damageAmountBase>
 			<stoppingPower>1.2</stoppingPower>		
 			<ai_IsIncendiary>false</ai_IsIncendiary>
-			<speed>20</speed>
+			<speed>14</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
 
