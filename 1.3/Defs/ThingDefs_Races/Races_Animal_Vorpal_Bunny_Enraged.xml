@@ -12,7 +12,6 @@
             <ComfyTemperatureMin>5</ComfyTemperatureMin>
             <ComfyTemperatureMax>30</ComfyTemperatureMax>
             <MarketValue>350</MarketValue>
-            <LeatherAmount>0</LeatherAmount>
             <MeatAmount>10</MeatAmount>
             <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
             <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
@@ -63,6 +62,7 @@
             <nameOnTameChance>1</nameOnTameChance>
             <nuzzleMtbHours>12</nuzzleMtbHours>
             <trainability>Advanced</trainability>
+            <leatherDef>Leather_Vorpal_Bunny_Enraged</leatherDef>
             <meatLabel>enraged vorpal bunny meat</meatLabel>
             <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
             <canBePredatorPrey>true</canBePredatorPrey>
