@@ -3,26 +3,67 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HarmonyLib;
 using Verse;
 using RimWorld;
-using HarmonyLib;
+using System.Reflection;
+using System.Reflection.Emit;
 
 namespace Bastyon
 {
-    public static class HarmonyPatches
+    [HarmonyPatch(typeof(WildAnimalSpawner))]
+    [HarmonyPatch("SpawnRandomWildAnimalAt")]
+    public static class BastyonAnimals_WildAnimalSpawner_SpawnRandomWildAnimalAt_Patch
     {
-        public static void CallHarmonyPatches()
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
         {
-            HarmonyPatches_DefGenerator();
+            var codes = new List<CodeInstruction>(instructions);
+            Label label = ilg.DefineLabel();
+            int i = 0;
+            foreach (CodeInstruction instruction in codes)
+            {
+                if (instruction.opcode == OpCodes.Stloc_0)
+                {
+                    codes[i + 1].labels.Add(label);
+                    yield return new CodeInstruction(OpCodes.Stloc_0);
+                    yield return new CodeInstruction(OpCodes.Ldloc_0);//Load "PawnKindDef" local variable. 
+                    yield return new CodeInstruction(OpCodes.Call, typeof(BastyonAnimals_WildAnimalSpawner_SpawnRandomWildAnimalAt_Patch).GetMethod("DetectBastyonCreatureAndOptions"));
+                    yield return new CodeInstruction(OpCodes.Brfalse, label);
+                    yield return new CodeInstruction(OpCodes.Ret);
+                }
+                else
+                {
+                    yield return instruction;
+                }
+
+                i++;
+            }
+
+        }
+        public static bool DetectBastyonCreatureAndOptions(PawnKindDef theCreature)
+        {
+            
+                if (BastyonMod.modSettings.bastyonAnimalToggle != null && BastyonMod.modSettings.bastyonAnimalToggle.Keys.Contains(theCreature.defName))
+                {
+                    if (BastyonMod.modSettings.bastyonAnimalToggle[theCreature.defName])
+                    {
+                        return true;
+                    }
+                    else return false;
+                }
+                else return false;
+            
         }
 
-        public static void HarmonyPatches_DefGenerator()
-        {
-            var harmonyInstance = new Harmony("RimWorld.Scurvyez.Bastyon.HarmonyPatches_DefGenerator");
+    }
 
-            var originalMethod = AccessTools.Method(typeof(DefGenerator), "GenerateImpliedDefs_PreResolve");
-            var prefixMethod = AccessTools.Method(typeof(BastDefRemover), "Prefix_GenerateImpliedDefs_PreResolve");
-            harmonyInstance.Patch(originalMethod, prefix: new HarmonyMethod(prefixMethod));
+    [StaticConstructorOnStartup]
+    public class Main
+    {
+        static Main()
+        {
+            var harmony = new Harmony("com.Bastyon");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
 }

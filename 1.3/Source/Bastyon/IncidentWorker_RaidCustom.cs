@@ -14,6 +14,8 @@ namespace Bastyon
 {
 	public class IncidentWorker_RaidCustom : IncidentWorker_RaidEnemy
 	{
+
+		//2. Second Trigger 
 		protected override bool FactionCanBeGroupSource(Faction f, Map map, bool desperate = false)
 		{
 			if (base.FactionCanBeGroupSource(f, map, desperate) && f.HostileTo(Faction.OfPlayer))
@@ -39,12 +41,13 @@ namespace Bastyon
 		{
 			if (CanGenerateFrom(parms, groupMaker))
 			{
+				float pointsTotal = parms.points;
 				bool allowFood = parms.raidStrategy == null || parms.raidStrategy.pawnsCanBringFood || (parms.faction != null && !parms.faction.HostileTo(Faction.OfPlayer));
-				Predicate<Pawn> validatorPostGear = (parms.raidStrategy != null) ? ((Predicate<Pawn>)((Pawn p) => parms.raidStrategy.Worker.CanUsePawn(p, outPawns))) : null;
+				Predicate<Pawn> validatorPostGear = (parms.raidStrategy != null) ? ((Predicate<Pawn>)((Pawn p) => parms.raidStrategy.Worker.CanUsePawn(pointsTotal, p, outPawns))) : null;
 				bool flag = false;
 				foreach (PawnGenOption item in PawnGroupMakerUtility.ChoosePawnGenOptionsByPoints(parms.points, groupMaker.options, parms))
 				{
-					Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(item.kind, parms.faction, PawnGenerationContext.NonPlayer, parms.tile, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: true, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood, allowAddictions: true, parms.inhabitants, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, null, 1f, null, validatorPostGear));
+					Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(item.kind, parms.faction, PawnGenerationContext.NonPlayer, parms.tile, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: true, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood, allowAddictions: true, parms.inhabitants, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, validatorPostGear));
 					if (parms.forceOneIncap && !flag)
 					{
 						pawn.health.forceIncap = true;
@@ -115,29 +118,41 @@ namespace Bastyon
 			return null;
 		}
 
+
+		//1. An Incident is triggered - Parms contain the incident values.
+		// Incident Parms details are not yet filled
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
-			Log.Message(" - CanFireNowSub - var value = base.CanFireNowSub(parms); - 1", true);
+			Log.Message(" - CanFireNowSub - var value = base.CanFireNowSub(parms); - 1");
 			var value = base.CanFireNowSub(parms);
-			Log.Message(" - CanFireNowSub - var options = this.def.GetModExtension<RaidOptions>(); - 2", true);
+			Log.Message(" - CanFireNowSub - var options = this.def.GetModExtension<RaidOptions>(); - 2");
+			
+			// Gets all raid options from Customer Def
+
 			var options = this.def.GetModExtension<RaidOptions>();
-			Log.Message(" - CanFireNowSub - if (options.allowedHourRange.HasValue && parms.target is Map map) - 3", true);
+			Log.Message(" - CanFireNowSub - if (options.allowedHourRange.HasValue && parms.target is Map map) - 3");
+
+			// This checks the map time to see if it's night time for a Balhrin Raid (can only raid at night)
+
 			if (options.allowedHourRange.HasValue && parms.target is Map map)
 			{
-				Log.Message(" - CanFireNowSub - var hourRange = options.allowedHourRange.Value; - 4", true);
+				Log.Message(" - CanFireNowSub - var hourRange = options.allowedHourRange.Value; - 4");
 				var hourRange = options.allowedHourRange.Value;
-				Log.Message(" - CanFireNowSub - var curHour = GenLocalDate.HourOfDay(map.Tile); - 5", true);
+				Log.Message(" - CanFireNowSub - var curHour = GenLocalDate.HourOfDay(map.Tile); - 5");
 				var curHour = GenLocalDate.HourOfDay(map.Tile);
 
-				Log.Message(" - CanFireNowSub - if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max) - 6", true);
+				var minHour = hourRange.min;
+				var maxHour = hourRange.max;
+
+				Log.Message(" - CanFireNowSub - if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max) - 6");
 				if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max)
 				{
-					Log.Message(" - CanFireNowSub - return value; - 7", true);
+					Log.Message(" - CanFireNowSub - return value; - 7");
 					return value;
 				}
 				else if (curHour >= hourRange.min || curHour <= hourRange.max)
 				{
-					Log.Message(" - CanFireNowSub - return value; - 9", true);
+					Log.Message(" - CanFireNowSub - return value; - 9");
 					return value;
 				}
 				else
@@ -154,18 +169,32 @@ namespace Bastyon
 		{
 			Map map = (Map)parms.target;
 			var options = this.def.GetModExtension<RaidOptions>();
+
 			if (options.raidFaction != null && Find.FactionManager.FirstFactionOfDef(options.raidFaction) is null)
 			{
+				/*
 				var faction = FactionGenerator.NewGeneratedFaction(options.raidFaction);
 				faction.TrySetRelationKind(Faction.OfPlayer, FactionRelationKind.Hostile, false, null, null);
 				Find.FactionManager.Add(faction);
 				map.attackTargetsCache.Notify_FactionHostilityChanged(faction, Faction.OfPlayer);
+				*/
+				FactionGeneratorParms factionGeneratorParms = new FactionGeneratorParms
+				{
+					factionDef = options.raidFaction
+                };
+				var faction = FactionGenerator.NewGeneratedFaction(factionGeneratorParms);
+				faction.SetRelationDirect(Faction.OfPlayer, FactionRelationKind.Hostile, false, null, null);
+				Find.FactionManager.Add(faction);
+				map.attackTargetsCache.Notify_FactionHostilityChanged(faction, Faction.OfPlayer);
 			}
+
 			ResolveRaidPoints(parms);
+			// Tech Level condition
 			if (options.minimumPlayerTechLevel.HasValue && Faction.OfPlayer.def.techLevel < options.minimumPlayerTechLevel.Value)
 			{
 				return false;
 			}
+			//Wealth Condition
 			if (options.minimumPlayerWealth.HasValue && options.minimumPlayerWealth.Value > map.wealthWatcher.WealthTotal)
 			{
 				return false;
@@ -205,6 +234,9 @@ namespace Bastyon
 			{
 				return false;
 			}
+
+			IncidentQueue incidentQueue = Find.Storyteller.incidentQueue;
+
 			PawnGroupKindDef combat = PawnGroupKindDefOf.Combat;
 			if (options.raidStrategy is null)
 			{
@@ -294,7 +326,7 @@ namespace Bastyon
 			{
 				parms.raidStrategy.Worker.MakeLords(parms, list);
 			}
-			LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
+			/*LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
 			if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.ShieldBelts))
 			{
 				for (int j = 0; j < list.Count; j++)
@@ -305,7 +337,7 @@ namespace Bastyon
 						break;
 					}
 				}
-			}
+			}*/
 			Find.TickManager.slower.SignalForceNormalSpeedShort();
 			Find.StoryWatcher.statsRecord.numRaidsEnemy++;
 			Log.Message("2 parms.raidStrategy: " + parms.raidStrategy);

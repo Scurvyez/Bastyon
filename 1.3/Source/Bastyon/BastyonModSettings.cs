@@ -7,67 +7,94 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 
-
 namespace Bastyon
 {
     public class BastyonModSettings : ModSettings
     {
-        public List<string> disabledBastyonAnimals;
-        //public List<string> disabledBastyonIncidents;
-        public List<PawnKindDef> allBastyonAnimals = new List<PawnKindDef>();
-        //public List<IncidentDef> allBastyonIncidents = new List<IncidentDef>();
-        //public static bool[] bastyoneIncidentValues;
-        public bool[] bastyonAnimalValues;
+        private static Vector2 scrollPosition = Vector2.zero;
+        public Dictionary<string, bool> bastyonAnimalToggle = new Dictionary<string, bool>();
+
         public override void ExposeData()
         {
-            Scribe_Collections.Look(ref disabledBastyonAnimals, "disabledBastyonAnimals", LookMode.Value, Array.Empty<object>());
-            //Scribe_Collections.Look(ref disabledBastyonIncidents, "disabledBastyonIncidents");
-
+            base.ExposeData();
+            Scribe_Collections.Look(ref bastyonAnimalToggle, "bastyonAnimalToggle", LookMode.Value, LookMode.Value, ref animalKeys, ref animalValues);
+        
         }
 
-        public void DoSettingsWindowContents(Rect inRect)
+        private List<string> animalKeys;
+        private List<bool> animalValues;
+
+        public void DoWdindowContents(Rect inRect)
         {
-            if (bastyonAnimalValues == null)
+            List<string> keyNames = bastyonAnimalToggle.Keys.ToList().OrderByDescending(x => x).ToList();
+            Listing_Standard ls = new Listing_Standard();
+
+            Rect rect = new Rect(inRect.x, inRect.y, inRect.width, inRect.height);
+            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, ((keyNames.Count / 2) * 50));
+
+            Widgets.BeginScrollView(rect, ref scrollPosition, rect2, true);
+            ls.Label("Disable Wild Animal Spawns");
+            ls.ColumnWidth = rect2.width / 2.2f;
+            ls.Begin(rect2);
+            for (int i = keyNames.Count - 1; i >= 0; i--)
             {
-                bastyonAnimalValues = new bool[allBastyonAnimals.Count];
-                for (int i = 0; i < allBastyonAnimals.Count; i++)
+                if (i == keyNames.Count / 2)
                 {
-                    bastyonAnimalValues[i] = !disabledBastyonAnimals.Contains(allBastyonAnimals[i].defName);
+                    ls.NewColumn();
                 }
+                bool state = bastyonAnimalToggle[keyNames[i]];
+                ls.CheckboxLabeled(string.Format("Disable {0}", PawnKindDef.Named(keyNames[i]).LabelCap), ref state, String.Format("Disable {0}", PawnKindDef.Named(keyNames[i]).LabelCap));
+                bastyonAnimalToggle[keyNames[i]] = state;
             }
-            Listing_Standard settingsWindowBottom = new Listing_Standard();
-            Rect bottomRect = new Rect(inRect.position + new Vector2(0f, 20f), inRect.size - new Vector2(0f, 20f));
-            Rect viewRect = new Rect(0f, 0f, bottomRect.width - 20f, disabledBastyonAnimals.Count * 8f);
-            /*settingsWindowBottom.BeginScrollView(bottomRect, ref scrollPosition, ref viewRect);
-            
-            for (int i = 0; i < allBastyonAnimals.Count; i++)
-            {
-                Log.Message(allBastyonAnimals[i].defName);
-                Rect checkboxRect = settingsWindowBottom.GetRect(Text.LineHeight);
-                if (Mouse.IsOver(checkboxRect))
-                {
-                    Widgets.DrawHighlight(checkboxRect);
-                }
-                Widgets.CheckboxLabeled(checkboxRect, allBastyonAnimals[i].label.CapitalizeFirst(), ref bastyonAnimalValues[i], false, null, null, false);
-            }
-            settingsWindowBottom.GapLine();
-            settingsWindowBottom.EndScrollView(ref viewRect);*/
-            Widgets.BeginScrollView(bottomRect, ref scrollPosition, viewRect, true);
-            bottomRect.height = 100000f;
-            bottomRect.width -= 20f;
-            settingsWindowBottom.Begin(bottomRect.AtZero());
-            for (int i = 0; i < allBastyonAnimals.Count; i++)
-            {
-                Rect checkboxRect = settingsWindowBottom.GetRect(Text.LineHeight);
-                if (Mouse.IsOver(checkboxRect))
-                {
-                    Widgets.DrawHighlight(checkboxRect);
-                }
-                Widgets.CheckboxLabeled(checkboxRect, allBastyonAnimals[i].label.CapitalizeFirst(), ref bastyonAnimalValues[i], false, null, null, false);
-            }
+            ls.End();
             Widgets.EndScrollView();
-            settingsWindowBottom.End();
+            base.Write();
+
         }
-        private static Vector2 scrollPosition = Vector2.zero;
     }
+
+    public class BastyonRaidSettings : ModSettings
+    {
+        public bool disableBahlrinRaid = false;
+        public Dictionary<string, float> raidIncidentChances = new Dictionary<string, float>();
+        public List<string> incidentKeys;
+        public List<float> incidentChancesValues;
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+
+            Scribe_Values.Look(ref disableBahlrinRaid, "disableBahlrinRaid", false, true);
+            Scribe_Collections.Look(ref raidIncidentChances, "raidIncidentChances", LookMode.Value, LookMode.Value, ref incidentKeys, ref incidentChancesValues);
+        }
+
+        public void DoWindowContents(Rect inRect)
+        {
+            var keys = raidIncidentChances.Keys.ToList().OrderByDescending(x => x).ToList();
+            Listing_Standard ls = new Listing_Standard();
+
+            ls.Begin(inRect);
+            ls.Gap(10f);
+
+            ls.CheckboxLabeled("Disable Balhrin Raids", ref disableBahlrinRaid, "Prevents Balhrin raids from spawning");
+            ls.Gap(10f);
+            ls.GapLine();
+            ls.Gap(10f);
+            ls.Label("Set Raid Chance");
+            for (int i = keys.Count - 1; i >= 0; i--)
+            {
+                var incidentDef = DefDatabase<IncidentDef>.GetNamedSilentFail(keys[i]);
+                if (incidentDef != null)
+                {
+                    var incidentChance = raidIncidentChances[keys[i]];
+                    ls.SliderLabeled(String.Format("Incident Chance - {0}", incidentDef.label), ref incidentChance, incidentChance.ToStringDecimalIfSmall(), 0f, 100f, String.Format("Sets incident chance for {0}", incidentDef.label));
+                    raidIncidentChances[keys[i]] = incidentChance;
+
+                }
+            }
+            ls.End();
+        }
+
+    }
+
 }

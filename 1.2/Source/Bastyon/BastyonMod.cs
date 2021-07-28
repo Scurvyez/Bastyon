@@ -14,69 +14,74 @@ namespace Bastyon
         public BastyonMod(ModContentPack modContent) : base(modContent)
         {
             modSettings = GetSettings<BastyonModSettings>();
-            HarmonyPatches.CallHarmonyPatches();
-        }
-
-        public override void DoSettingsWindowContents(Rect inRect)
-        {
-            Listing_Standard settingsWindowTop = new Listing_Standard();
-            settingsWindowTop.Begin(inRect);
-            settingsWindowTop.Label("Enabled bastyon test animals", -1, null);
-            settingsWindowTop.End();
-            if (bastyonAnimalValues == null)
-            {
-                bastyonAnimalValues = new bool[allBastyonAnimals.Count];
-                for (int i = 0; i < allBastyonAnimals.Count; i++)
-                {
-                    bastyonAnimalValues[i] = !modSettings.disabledBastyonAnimals.Contains(allBastyonAnimals[i].defName);
-                }
-            }
-            Listing_Standard settingsWindowBottom = new Listing_Standard();
-            Rect bottomRect = new Rect(inRect.position + new Vector2(0f, 20f), inRect.size - new Vector2(0f, 20f));
-            Rect viewRect = new Rect(0f, 0f, bottomRect.width - 20f, modSettings.disabledBastyonAnimals.Count * 8f);
-            settingsWindowBottom.BeginScrollView(bottomRect, ref scrollPosition, ref viewRect);
-            for (int i = 0; i < allBastyonAnimals.Count; i++)
-            {
-                Log.Message(allBastyonAnimals[i].defName);
-                Rect checkboxRect = settingsWindowBottom.GetRect(Text.LineHeight);
-                if (Mouse.IsOver(checkboxRect))
-                {
-                    Widgets.DrawHighlight(checkboxRect);
-                }
-                Widgets.CheckboxLabeled(checkboxRect, allBastyonAnimals[i].label.CapitalizeFirst(), ref bastyonAnimalValues[i], false, null, null, false);
-            }
-            settingsWindowBottom.EndScrollView(ref viewRect);
-            base.DoSettingsWindowContents(inRect);
-        }
-
-        public override void WriteSettings()
-        {
-            modSettings.disabledBastyonAnimals = new List<string>();
-            for (int i = 0; i < allBastyonAnimals.Count; i++)
-            {
-                if (!bastyonAnimalValues[i])
-                {
-                    modSettings.disabledBastyonAnimals.Add(allBastyonAnimals[i].defName);
-                }
-            }
-            base.WriteSettings();
+            //HarmonyPatches.CallHarmonyPatches();
         }
 
         public override string SettingsCategory()
         {
-            return "Bastyon";
+            return "Bastyon Animal Settings";
+        }
+
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            base.DoSettingsWindowContents(inRect);
+
+            allBastyonAnimals = (from currentDef in DefDatabase<PawnKindDef>.AllDefs
+                                 where currentDef.defName.Contains("Bast_")
+                                 orderby currentDef.defName
+                                 select currentDef).ToList<PawnKindDef>();
+
+            if (modSettings.bastyonAnimalToggle == null) modSettings.bastyonAnimalToggle = new Dictionary<string, bool>();
+            for (int i = 0; i < allBastyonAnimals.Count; i++)
+            {
+                if (!modSettings.bastyonAnimalToggle.ContainsKey(allBastyonAnimals[i].defName))
+                {
+                    modSettings.bastyonAnimalToggle[allBastyonAnimals[i].defName] = false;
+                }
+            }
+
+            modSettings.DoWdindowContents(inRect);
         }
 
         public static BastyonModSettings modSettings;
-
-        public static List<PawnKindDef> allBastyonAnimals = new List<PawnKindDef>();
-            /*(from currentDef in DefDatabase<PawnKindDef>.AllDefs
-             where currentDef.modContentPack.PackageId == "Scurvyez.Bastyon".ToLower()
-             orderby currentDef.defName
-             select currentDef).ToList<PawnKindDef>();*/
-
-        public static bool[] bastyonAnimalValues;
-
-        public static Vector2 scrollPosition = Vector2.zero;
+        public List<PawnKindDef> allBastyonAnimals = new List<PawnKindDef>();
     }
+
+    public class BastyonEvents : Mod
+    {
+        public BastyonEvents(ModContentPack content) : base(content)
+        {
+            modSettings = GetSettings<BastyonRaidSettings>();
+        }
+
+        public override string SettingsCategory()
+        {
+            return "Bastyon Raid Settings";
+        }
+
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            base.DoSettingsWindowContents(inRect);
+            allBastyonIncidents = (from currentDef in DefDatabase<IncidentDef>.AllDefs
+                                   where currentDef.defName.Contains("Bast_")
+                                   orderby currentDef.defName
+                                   select currentDef).ToList<IncidentDef>();
+
+            if (modSettings.raidIncidentChances == null) modSettings.raidIncidentChances = new Dictionary<string, float>();
+            for (int i = 0; i < allBastyonIncidents.Count; i++)
+            {
+                if (!modSettings.raidIncidentChances.ContainsKey(allBastyonIncidents[i].defName))
+                {
+                    modSettings.raidIncidentChances[allBastyonIncidents[i].defName] = allBastyonIncidents[i].baseChance;
+                }
+            }
+
+            modSettings.DoWindowContents(inRect);
+        }
+
+        public static BastyonRaidSettings modSettings;
+        public List<IncidentDef> allBastyonIncidents = new List<IncidentDef>();
+    }
+
+
 }

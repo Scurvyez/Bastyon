@@ -130,7 +130,11 @@ namespace Bastyon
 				var curHour = GenLocalDate.HourOfDay(map.Tile);
 
 				Log.Message(" - CanFireNowSub - if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max) - 6", true);
-				if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max)
+				if(BastyonEvents.modSettings.disableBahlrinRaid == true)
+                {
+					return false;
+                }
+				else if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max)
 				{
 					Log.Message(" - CanFireNowSub - return value; - 7", true);
 					return value;
@@ -294,7 +298,7 @@ namespace Bastyon
             {
 				parms.raidStrategy.Worker.MakeLords(parms, list);
             }
-			LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
+			/*LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
 			if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.ShieldBelts))
 			{
 				for (int j = 0; j < list.Count; j++)
@@ -306,6 +310,7 @@ namespace Bastyon
 					}
 				}
 			}
+			*/
 			Find.TickManager.slower.SignalForceNormalSpeedShort();
 			Find.StoryWatcher.statsRecord.numRaidsEnemy++;
 			Log.Message("2 parms.raidStrategy: " + parms.raidStrategy);
