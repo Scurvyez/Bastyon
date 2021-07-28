@@ -76,8 +76,6 @@ namespace Bastyon
 
             ls.CheckboxLabeled("Disable Balhrin Raids", ref disableBahlrinRaid, "Prevents Balhrin raids from spawning");
             ls.Gap(10f);
-            ls.GapLine();
-            ls.Gap(10f);
             for (int i = keys.Count -1; i >= 0; i--)
             {
                 var incidentDef = DefDatabase<IncidentDef>.GetNamedSilentFail(keys[i]);
