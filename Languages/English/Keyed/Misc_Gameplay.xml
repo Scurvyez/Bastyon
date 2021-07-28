@@ -27,7 +27,7 @@
     <Bast_Boomer>Boomer</Bast_Boomer>
     <Bast_Farm>Farm Animal</Bast_Farm>
     <Bast_EggLayer>Egg Layer</Bast_EggLayer>
-    <Bast_WeirdEater>Weird Eater<Bast_WeirdEater>
+    <Bast_WeirdEater>Weird Eater</Bast_WeirdEater>
 	<Bast_LivingFireExtinguisher>Living Fire Extinguisher</Bast_LivingFireExtinguisher>
 	<Bast_LivingEMPBlast>Living EMP Blast</Bast_LivingEMPBlast>
     <Bast_LivingSmokeScreen>Living Smoke Screen</Bast_LivingSmokeScreen>
@@ -42,7 +42,7 @@
     <Bast_BoomerDesc>This animal explodes on death.</Bast_BoomerDesc>
     <Bast_FarmDesc>This is a farm animal.</Bast_FarmDesc>
     <Bast_EggLayerDesc>This animal will periodically lay eggs.</Bast_EggLayerDesc>
-    <Bast_WeirdEaterDesc>This animal eats a very strange variety of foods.<Bast_WeirdEaterDesc>
+    <Bast_WeirdEaterDesc>This animal eats a very strange variety of foods.</Bast_WeirdEaterDesc>
 	<Bast_LivingFireExtinguisherDesc>When damaged via ranged attacks this animal will burst, emitting a supersonic puff of air extinguishing all flames nearby.</Bast_LivingFireExtinguisherDesc>
 	<Bast_LivingEMPBlastDesc>When damaged via ranged attacks this animal will burst, emitting a large EMP blast.</Bast_LivingEMPBlastDesc>
     <Bast_LivingSmokeScreenDesc>When damaged via ranged attacks this animal will burst, engulfing the surrounding area in thick smoke.</Bast_LivingSmokeScreenDesc>
