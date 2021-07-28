@@ -46,6 +46,7 @@
     <Compile Include="BastyonMod.cs" />
     <Compile Include="BastyonModSettings.cs" />
     <Compile Include="CompVulnerableToSunlight.cs" />
+    <Compile Include="HarmonyPatches.cs" />
     <Compile Include="IncidentWorker_RaidCustom.cs" />
     <Compile Include="JobGiver_FleeFromSunLight.cs" />
     <Compile Include="JobGiver_MonsterBerserk.cs" />

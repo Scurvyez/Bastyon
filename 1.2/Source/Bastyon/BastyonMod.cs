@@ -19,7 +19,7 @@ namespace Bastyon
 
         public override string SettingsCategory()
         {
-            return "Bastyon";
+            return "Bastyon Animal Settings";
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
@@ -27,9 +27,9 @@ namespace Bastyon
             base.DoSettingsWindowContents(inRect);
 
             allBastyonAnimals = (from currentDef in DefDatabase<PawnKindDef>.AllDefs
-                                                                where currentDef.defName.Contains("Bast_")
-                                                                orderby currentDef.defName
-                                                                select currentDef).ToList<PawnKindDef>();
+                                 where currentDef.defName.Contains("Bast_")
+                                 orderby currentDef.defName
+                                 select currentDef).ToList<PawnKindDef>();
 
             if (modSettings.bastyonAnimalToggle == null) modSettings.bastyonAnimalToggle = new Dictionary<string, bool>();
             for (int i = 0; i < allBastyonAnimals.Count; i++)
@@ -47,7 +47,7 @@ namespace Bastyon
         public List<PawnKindDef> allBastyonAnimals = new List<PawnKindDef>();
     }
 
-    public class BastyonEvents : Mod 
+    public class BastyonEvents : Mod
     {
         public BastyonEvents(ModContentPack content) : base(content)
         {
@@ -63,9 +63,9 @@ namespace Bastyon
         {
             base.DoSettingsWindowContents(inRect);
             allBastyonIncidents = (from currentDef in DefDatabase<IncidentDef>.AllDefs
-                                  where currentDef.defName.Contains("Bast_")
-                                  orderby currentDef.defName
-                                  select currentDef).ToList<IncidentDef>();
+                                   where currentDef.defName.Contains("Bast_")
+                                   orderby currentDef.defName
+                                   select currentDef).ToList<IncidentDef>();
 
             if (modSettings.raidIncidentChances == null) modSettings.raidIncidentChances = new Dictionary<string, float>();
             for (int i = 0; i < allBastyonIncidents.Count; i++)

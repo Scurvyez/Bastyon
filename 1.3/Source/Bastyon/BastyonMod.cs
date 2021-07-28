@@ -19,7 +19,7 @@ namespace Bastyon
 
         public override string SettingsCategory()
         {
-            return "Bastyon";
+            return "Bastyon Animal Settings";
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

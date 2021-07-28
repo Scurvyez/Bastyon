@@ -18,6 +18,7 @@ namespace Bastyon
         {
             base.ExposeData();
             Scribe_Collections.Look(ref bastyonAnimalToggle, "bastyonAnimalToggle", LookMode.Value, LookMode.Value, ref animalKeys, ref animalValues);
+        
         }
 
         private List<string> animalKeys;
@@ -32,6 +33,7 @@ namespace Bastyon
             Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, ((keyNames.Count / 2) * 50));
 
             Widgets.BeginScrollView(rect, ref scrollPosition, rect2, true);
+            ls.Label("Disable Wild Animal Spawns");
             ls.ColumnWidth = rect2.width / 2.2f;
             ls.Begin(rect2);
             for (int i = keyNames.Count - 1; i >= 0; i--)
@@ -41,7 +43,7 @@ namespace Bastyon
                     ls.NewColumn();
                 }
                 bool state = bastyonAnimalToggle[keyNames[i]];
-                ls.CheckboxLabeled(PawnKindDef.Named(keyNames[i]).LabelCap, ref state);
+                ls.CheckboxLabeled(string.Format("Disable {0}", PawnKindDef.Named(keyNames[i]).LabelCap), ref state, String.Format("Disable {0}", PawnKindDef.Named(keyNames[i]).LabelCap));
                 bastyonAnimalToggle[keyNames[i]] = state;
             }
             ls.End();
@@ -78,13 +80,14 @@ namespace Bastyon
             ls.Gap(10f);
             ls.GapLine();
             ls.Gap(10f);
+            ls.Label("Set Raid Chance");
             for (int i = keys.Count - 1; i >= 0; i--)
             {
                 var incidentDef = DefDatabase<IncidentDef>.GetNamedSilentFail(keys[i]);
                 if (incidentDef != null)
                 {
                     var incidentChance = raidIncidentChances[keys[i]];
-                    ls.SliderLabeled(String.Format("Incident Chance - {0}", incidentDef.label), ref incidentChance, incidentChance.ToStringDecimalIfSmall(), 0f, 5f, String.Format("Sets incident chance for {0}", incidentDef.label));
+                    ls.SliderLabeled(String.Format("Incident Chance - {0}", incidentDef.label), ref incidentChance, incidentChance.ToStringDecimalIfSmall(), 0f, 100f, String.Format("Sets incident chance for {0}", incidentDef.label));
                     raidIncidentChances[keys[i]] = incidentChance;
 
                 }

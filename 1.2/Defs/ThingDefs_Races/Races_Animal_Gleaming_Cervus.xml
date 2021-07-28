@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--==================== Gleaming Cervus ThingDef ====================-->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Bast_Gleaming_Cervus</defName>
+    <label>gleaming cervus</label>
+    <description>Cervus' are grand beasts often found in cooler climates. Their hides and hair resemble a beautiful aurora in the northern night skies.</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+      <ComfyTemperatureMax>30</ComfyTemperatureMax>
+      <MarketValue>450</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
+        <hediffsToRemove>
+          <li>Animal_Plague</li>
+          <li>Animal_Flu</li>
+        </hediffsToRemove>
+        <tickInterval>2000</tickInterval>
+      </li>
+      <li Class="AnimalBehaviours.CompProperties_NearbyEffecter">
+        <thingsToAffect>
+          <li>Plant_Grass</li>
+          <li>Plant_Astragalus</li>
+          <li>Plant_TallGrass</li>
+          <li>Plant_Brambles</li>
+          <li>AB_TinkleGrass</li>
+          <li>AB_GlowingGrass</li>
+          <li>AB_HardyGrass</li>
+          <li>AB_TallSlimyGrass</li>
+          <li>AB_AlienGrass</li>
+          <li>Plant_Bush</li>
+          <li>Plant_Alocasia</li>
+          <li>Plant_Clivia</li>
+          <li>Plant_Rafflesia</li>
+          <li>AB_GreenRockFern</li>
+        </thingsToAffect>
+        <thingsToConvertTo>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+          <li>Plant_GleamingBerry</li>
+        </thingsToConvertTo>
+        <ticksConversionRate>120000</ticksConversionRate>
+        <radius>3</radius>
+        <feedCauser>false</feedCauser>	
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>daunting antlers</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.4</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <wildBiomes>
+        <IceSheet>0.01</IceSheet>
+				<SeaIce>0.01</SeaIce>
+        <ColdBog>0.00</ColdBog>
+        <Desert>0.00</Desert>
+        <BorealForest>0.02</BorealForest>
+        <Tundra>0.02</Tundra>
+				<TemperateForest>0.01</TemperateForest>
+				<TemperateSwamp>0.00</TemperateSwamp>
+				<TropicalRainforest>0.00</TropicalRainforest>
+				<TropicalSwamp>0.00</TropicalSwamp>
+				<AridShrubland>0.00</AridShrubland>
+        <ExtremeDesert>0.00</ExtremeDesert>
+			</wildBiomes>
+      <body>QuadrupedAnimalWithHooves</body>
+      <herdAnimal>true</herdAnimal>
+      <trainability>Advanced</trainability>
+      <nameOnTameChance>1</nameOnTameChance>
+      <petness>.05</petness>
+      <nuzzleMtbHours>16</nuzzleMtbHours>
+      <predator>false</predator>
+      <maxPreyBodySize>1.0</maxPreyBodySize>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0.19</baseHungerRate>
+      <baseHealthScale>1.8</baseHealthScale>
+      <bloodDef>Filth_CritterBlood</bloodDef>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <meatLabel>cervus shank</meatLabel>
+      <leatherDef>Leather_Gleaming_Cervus</leatherDef>
+      <wildness>0.50</wildness>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+      <gestationPeriodDays>24</gestationPeriodDays>
+      <lifeExpectancy>15</lifeExpectancy>
+      <litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(3, 1)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+      <lifeStageAges Inherit="false">
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>5.2</minAge>
+          <soundWounded>Pawn_Deer_Wounded</soundWounded>
+          <soundDeath>Pawn_Deer_Death</soundDeath>
+          <soundCall>Pawn_Deer_Call</soundCall>
+          <soundAngry>Pawn_Deer_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+    <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_GleamingCervusArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+  <!--==================== Gleaming Cervus PawnKindDef ====================-->
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Bast_Gleaming_Cervus</defName>
+    <label>gleaming cervus</label>
+    <labelPlural>gleaming cervus'</labelPlural>
+    <race>Bast_Gleaming_Cervus</race>
+    <combatPower>250</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+    <wildGroupSize>
+			<min>2</min>
+			<max>6</max>
+		</wildGroupSize>
+    <labelMale>stag</labelMale>
+    <labelFemale>hind</labelFemale>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Bast_Gleaming_CervusMale</texPath>
+          <drawSize>2.9</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.7, 0.7, 0.7)</volume>
+            <offset>(0,0,-0.7)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Bast_Gleaming_CervusFemale</texPath>
+          <drawSize>1.9</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,-2,0)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Bast_Dessicated_Gleaming_CervusMale</texPath>
+          <drawSize>2.9</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Bast_Dessicated_Gleaming_CervusFemale</texPath>
+          <drawSize>1.9</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Bast_Gleaming_CervusMale</texPath>
+          <drawSize>4.0</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.7, 0.7, 0.7)</volume>
+            <offset>(0,0,-0.7)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Bast_Gleaming_CervusFemale</texPath>
+          <drawSize>3.0</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,-2,0)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Bast_Dessicated_Gleaming_CervusMale</texPath>
+          <drawSize>4.0</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Bast_Dessicated_Gleaming_CervusFemale</texPath>
+          <drawSize>3.0</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

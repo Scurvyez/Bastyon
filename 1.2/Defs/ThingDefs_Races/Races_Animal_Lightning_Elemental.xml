@@ -57,6 +57,18 @@
                 <distance>4~10</distance>
                 <warpEffect>true</warpEffect>
             </li>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>5.0</explosiveRadius>
+                <explosiveDamageType>EMP</explosiveDamageType>
+                <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+                <chanceNeverExplodeFromDamage>0.10</chanceNeverExplodeFromDamage>
+                <wickTicks>10</wickTicks>
+                <startWickOnDamageTaken>
+                    <li>Bullet</li>
+                    <li>Arrow</li>
+                    <li>ArrowHighVelocity</li>
+                </startWickOnDamageTaken>
+            </li>
         </comps>
         <verbs>
 			<li>

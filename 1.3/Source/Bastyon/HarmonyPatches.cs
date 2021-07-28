@@ -42,17 +42,17 @@ namespace Bastyon
         }
         public static bool DetectBastyonCreatureAndOptions(PawnKindDef theCreature)
         {
-
-            if (BastyonMod.modSettings.bastyonAnimalToggle != null && BastyonMod.modSettings.bastyonAnimalToggle.Keys.Contains(theCreature.defName))
-            {
-                if (BastyonMod.modSettings.bastyonAnimalToggle[theCreature.defName])
+            
+                if (BastyonMod.modSettings.bastyonAnimalToggle != null && BastyonMod.modSettings.bastyonAnimalToggle.Keys.Contains(theCreature.defName))
                 {
-                    return true;
+                    if (BastyonMod.modSettings.bastyonAnimalToggle[theCreature.defName])
+                    {
+                        return true;
+                    }
+                    else return false;
                 }
                 else return false;
-            }
-            else return false;
-
+            
         }
 
     }

@@ -3,7 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>C:\Rimworld_Debug\RimWorldWin64.exe</StartProgram>
-    <StartArguments>-quicktest -savedatafolder=SaveData</StartArguments>
+    <StartArguments>-quicktest -savedatafolder=SaveData_12</StartArguments>
     <StartWorkingDirectory>..\..\..\..\</StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">

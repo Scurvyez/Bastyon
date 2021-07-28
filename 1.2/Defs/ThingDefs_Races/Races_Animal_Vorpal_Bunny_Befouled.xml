@@ -23,18 +23,14 @@
                 <distance>3~5</distance>
                 <warpEffect>true</warpEffect>
             </li>
-            <!-- <li Class="AnimalBehaviours.CompProperties_InitialHediff">
-                <hediffname>Bast_Stage_Seven_Resurrection</hediffname>
-                <hediffseverity>.01</hediffseverity>
-            </li> -->
             <li Class="AnimalBehaviours.CompProperties_AutoNutrition">
 		        <tickInterval>2000</tickInterval>
                 <consumingFoodReportString>Eating tiny insects</consumingFoodReportString>		
 	        </li>
-            <li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+            <!-- <li Class="AnimalBehaviours.CompProperties_Metamorphosis">
                 <timeInYears>2</timeInYears>
                 <pawnToTurnInto>Bast_Vorpal_Bunny</pawnToTurnInto>
-            </li>
+            </li> -->
             <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
                 <hediffsToRemove>
                     <li>Animal_Plague</li>
@@ -46,7 +42,7 @@
             <li Class="AnimalBehaviours.CompProperties_HediffEffecter">
                 <radius>20</radius>
                 <severity>1</severity>
-                <tickInterval>100</tickInterval>
+                <tickInterval>120000</tickInterval>
                 <hediff>Bast_AdvancedAnalgesia</hediff>
             </li>
         </comps>
@@ -65,6 +61,7 @@
         </tools>
         <race>
             <herdAnimal>false</herdAnimal>
+            <foodType>OmnivoreAnimal</foodType>
             <body>Bast_Critter</body>
             <baseHungerRate>0.15</baseHungerRate>
             <baseBodySize>0.50</baseBodySize>
