@@ -45,6 +45,7 @@
     <Compile Include="BastDefOf.cs" />
     <Compile Include="BastyonMod.cs" />
     <Compile Include="BastyonModSettings.cs" />
+    <Compile Include="CompRepelledByBuildings.cs" />
     <Compile Include="CompVulnerableToSunlight.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="IncidentWorker_RaidCustom.cs" />

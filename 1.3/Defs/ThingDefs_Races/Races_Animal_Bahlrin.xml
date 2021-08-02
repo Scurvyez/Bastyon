@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--==================== Bahlrin ThingDef ====================-->
@@ -110,11 +110,12 @@
 		</tradeTags>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_Untameable">
-                <message>Bast_BahlrinNotTameable</message>
+				<message>Bast_BahlrinNotTameable</message>
 				<sendMessage>true</sendMessage>
 				<goesManhunter>true</goesManhunter>
-            </li>
+			</li>
 			<li Class="Bastyon.CompProperties_VulnerableToSunlight"></li>
+			<li Class="Bastyon.CompProperties_RepelledByBuildings"></li>
 		</comps>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -197,5 +198,5 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	
+
 </Defs>
