@@ -115,6 +115,21 @@
     </tradeTags>
     <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <statToAdd>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_SecondaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+					<li>Bast_ExtinguisherBoomer</li>	
+					<li>Bast_Floater</li>	
+					<li>Bast_No</li>	
+				</statValues>
+				<statDescriptions>
+					<li>Bast_ExtinguisherBoomerDesc</li>
+					<li>Bast_FloaterDesc</li>
+					<li>Bast_NoRanged</li>
+				</statDescriptions>
         <showImageInInfoCard>true</showImageInInfoCard>
 				<ImageToShowInInfoCard>Art/Bast_SunburstGnomacluArt</ImageToShowInInfoCard>
 			</li>

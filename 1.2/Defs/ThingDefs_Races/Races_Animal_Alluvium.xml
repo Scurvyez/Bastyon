@@ -132,6 +132,21 @@
     </tradeTags>
     <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <statToAdd>
+          <li>Bast_PrimaryRole</li>
+          <li>Bast_SecondaryRole</li>				
+          <li>Bast_RangedAttacks</li>
+        </statToAdd>
+        <statValues>
+          <li>Bast_Farm</li>	
+          <li>Bast_DamageRangedSlime</li>	
+          <li>Bast_Yes</li>	
+        </statValues>
+        <statDescriptions>
+          <li>Bast_1.2FarmDesc</li>
+          <li>Bast_DamageRangedSlimeDesc</li>
+          <li>Bast_Ranged</li>
+        </statDescriptions>
         <showImageInInfoCard>true</showImageInInfoCard>
 				<ImageToShowInInfoCard>Art/Bast_AlluviumArt</ImageToShowInInfoCard>
 			</li>

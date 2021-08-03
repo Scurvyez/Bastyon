@@ -163,6 +163,21 @@
     </tradeTags>
     <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <statToAdd>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_SecondaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+					<li>Bast_Protector</li>	
+					<li>Bast_DamageRangedPlasma</li>	
+					<li>Bast_Yes</li>	
+				</statValues>
+				<statDescriptions>
+					<li>Bast_ProtectorDesc</li>
+					<li>Bast_DamageRangedPlasmaDesc</li>
+					<li>Bast_Ranged</li>
+				</statDescriptions>
         <showImageInInfoCard>true</showImageInInfoCard>
 				<ImageToShowInInfoCard>Art/Bast_BastyonArt</ImageToShowInInfoCard>
 			</li>

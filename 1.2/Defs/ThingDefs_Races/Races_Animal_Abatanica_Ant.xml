@@ -134,14 +134,17 @@
         <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>
-                    <li>Bast_PrimaryRole</li>			
-                </statToAdd>
-                <statValues>
-                    <li>Bast_WeirdEater</li>	
-                </statValues>
-                <statDescriptions>
-                    <li>Bast_WeirdEaterDesc</li>
-                </statDescriptions>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+					<li>Bast_WeirdEater</li>	
+					<li>Bast_No</li>	
+				</statValues>
+				<statDescriptions>
+					<li>Bast_WeirdEaterDesc</li>
+					<li>Bast_NoRanged</li>
+				</statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
 				<ImageToShowInInfoCard>Art/Bast_AbatanicaAntArt</ImageToShowInInfoCard>
 			</li>

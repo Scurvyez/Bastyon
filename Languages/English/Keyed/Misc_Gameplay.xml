@@ -15,6 +15,7 @@
 	
 	<Bast_PrimaryRole>Primary Role</Bast_PrimaryRole>
 	<Bast_SecondaryRole>Secondary Role</Bast_SecondaryRole>
+    <Bast_TertiaryRole>Tertiary Role</Bast_TertiaryRole>
 	<Bast_RangedAttacks>Uses Ranged Attacks</Bast_RangedAttacks>
 	<Bast_Yes>Yes</Bast_Yes>
 	<Bast_No>No</Bast_No>
@@ -25,30 +26,61 @@
 
     <Bast_Floater>Floater</Bast_Floater>
     <Bast_Boomer>Boomer</Bast_Boomer>
+    <Bast_ESDBoomer>ESD Boomer</Bast_ESDBoomer>
+    <Bast_ExtinguisherBoomer>Extinguisher Boomer</Bast_ExtinguisherBoomer>
+    <Bast_SmokeyBoomer>Smokey Boomer</Bast_SmokeyBoomer>
     <Bast_Farm>Farm Animal</Bast_Farm>
     <Bast_EggLayer>Egg Layer</Bast_EggLayer>
     <Bast_WeirdEater>Weird Eater</Bast_WeirdEater>
-	<Bast_LivingFireExtinguisher>Living Fire Extinguisher</Bast_LivingFireExtinguisher>
-	<Bast_LivingEMPBlast>Living EMP Blast</Bast_LivingEMPBlast>
-    <Bast_LivingSmokeScreen>Living Smoke Screen</Bast_LivingSmokeScreen>
 	<Bast_DamageRangedSharp>Sharp Ranged Attacker</Bast_DamageRangedSharp>
 	<Bast_DamageRangedAcid>Acid Ranged Attacker</Bast_DamageRangedAcid>
     <Bast_DamageRangedFlame>Flame Ranged Attacker</Bast_DamageRangedFlame>
     <Bast_DamageRangedPlasma>Plasma Ranged Attacker</Bast_DamageRangedPlasma>
+    <Bast_DamageRangedElectric>Electric Ranged Attacker</Bast_DamageRangedElectric>
+    <Bast_DamageRangedSlime>Slime Ranged Attacker</Bast_DamageRangedSlime>
+    <Bast_DamageRangedWind>Wind Ranged Attacker</Bast_DamageRangedWind>
+    <Bast_WebShooter>Web Shooter</Bast_WebShooter>
+    <Bast_ExtremeAggressor>Extreme Aggressor</Bast_ExtremeAggressor>
+    <Bast_Protector>Protector</Bast_Protector>
+    <Bast_Excavtor>Excavtor</Bast_Excavtor>
+    <Bast_SelfRegeneration>Regeneration</Bast_SelfRegeneration>
+    <Bast_PassiveRegeneration>Passive Regeneration</Bast_PassiveRegeneration>
+    <Bast_NatureEffecter>Nature Effecter</Bast_NatureEffecter>
+    <Bast_Effecter>Effecter</Bast_Effecter>
+    <Bast_Immune>Perfectly Immune</Bast_Immune>
+    <Bast_AcidImmunity>Acid Immunity</Bast_AcidImmunity>
+    <Bast_NoPain>Painless</Bast_NoPain>
+    <Bast_Cute>Cute</Bast_Cute>
 
     <!-- Role Descriptions -->
 	
 	<Bast_FloaterDesc>This animal floats above the ground, ignoring all movement penalties.</Bast_FloaterDesc>
     <Bast_BoomerDesc>This animal explodes on death.</Bast_BoomerDesc>
-    <Bast_FarmDesc>This is a farm animal.</Bast_FarmDesc>
+    <Bast_ESDBoomerDesc>When damaged via ranged attacks this animal has a chance to explode, subsequently releasing a strong electrostatic discharge.</Bast_ESDBoomerDesc>
+    <Bast_ExtinguisherBoomerDesc>When damaged via ranged attacks this animal has a chance to explode, subsequently releasing a violent burst of air and extinguishing all nearby flames.</Bast_ExtinguisherBoomerDesc>
+    <Bast_SmokeyBoomerDesc>When damaged via ranged attacks this animal has a chance to explode, subsequently releasing a giant plume of smoke and rendering visibility almost useless.</Bast_SmokeyBoomerDesc>
+    <Bast_1.2FarmDesc>This is a farm animal and will produce resources over time.</Bast_1.2FarmDesc>
+    <Bast_1.3FarmDesc>This is a farm animal and will produce resources over time. Needs to be penned in or it will wander off.</Bast_1.3FarmDesc>
     <Bast_EggLayerDesc>This animal will periodically lay eggs.</Bast_EggLayerDesc>
     <Bast_WeirdEaterDesc>This animal eats a very strange variety of foods.</Bast_WeirdEaterDesc>
-	<Bast_LivingFireExtinguisherDesc>When damaged via ranged attacks this animal will burst, emitting a supersonic puff of air extinguishing all flames nearby.</Bast_LivingFireExtinguisherDesc>
-	<Bast_LivingEMPBlastDesc>When damaged via ranged attacks this animal will burst, emitting a large EMP blast.</Bast_LivingEMPBlastDesc>
-    <Bast_LivingSmokeScreenDesc>When damaged via ranged attacks this animal will burst, engulfing the surrounding area in thick smoke.</Bast_LivingSmokeScreenDesc>
     <Bast_DamageRangedSharpDesc>This animal will use ranged attacks which inflict cutting damage.</Bast_DamageRangedSharpDesc>
 	<Bast_DamageRangedAcidDesc>This animal will use highly corrosive ranged attacks to inflict lasting acidic damage.</Bast_DamageRangedAcidDesc>
     <Bast_DamageRangedFlameDesc>This animal will spew blazing flames towards its target, most likely lighting anything in between on fire.</Bast_DamageRangedFlameDesc>
     <Bast_DamageRangedPlasmaDesc>This animal will shell out devastating plasma-based ranged attacks which carry the heat of an entire sun.</Bast_DamageRangedPlasmaDesc>
+    <Bast_DamageRangedElectricDesc>This animal will unleash a hail of electrical based attacks capable of stopping a healthy heart in its tracks.</Bast_DamageRangedElectricDesc>
+    <Bast_DamageRangedSlimeDesc>This animal will throw, spit, shoot, or launch a weird sticky substance at hostile pawns.</Bast_DamageRangedSlimeDesc>
+    <Bast_DamageRangedWindDesc>This animal is capable of discharging tremendous gusts of blisteringly cold wind. Frost bite is a real concern.</Bast_DamageRangedWindDesc>
+    <Bast_WebShooterDesc>This animal will shoot sticky, stringy, webs at foes as an attempt to slow their movement.</Bast_WebShooterDesc>
+    <Bast_ExtremeAggressorDesc>This animal, regardless of mental state or physical well-being, will be extremely aggressive towards all living things.</Bast_ExtremeAggressorDesc>
+    <Bast_ProtectorDesc>When properly trained, this animal will fight to protect the colony until it's dying breath.</Bast_ProtectorDesc>
+    <Bast_ExcavtorDesc>This animal will periodically dig in the ground for various stones.</Bast_ExcavtorDesc>
+    <Bast_SelfRegenerationDesc>Due to an unknown genetic anomaly, this animal will regenerate wounds over time.</Bast_SelfRegenerationDesc>
+    <Bast_PassiveRegenerationDesc>Through this animals good graces, nearby pawns are healed of their painful physical afflictions.</Bast_PassiveRegenerationDesc>
+    <Bast_NatureEffecterDesc>This animal will periodically alter vegetation, thus creating new life and unlocking potentially useful resources.</Bast_NatureEffecterDesc>
+    <Bast_EffecterDesc>This animal effects the mental state of nearby pawns, for better or for worse.</Bast_EffecterDesc>
+    <Bast_DiseaseImmunityDesc>This animal is immune to all known diseases.</Bast_DiseaseImmunityDesc>
+    <Bast_AcidImmunityDesc>This animal is immune to all forms of acid.</Bast_AcidImmunityDesc>
+    <Bast_NoPainDesc>This animal doesn't even know what pain means. It will push on, no matter how grave its injuries are.</Bast_NoPainDesc>
+    <Bast_CuteDesc>Congrats. You've found an easter egg. :)</Bast_CuteDesc>
 
 </LanguageData>
