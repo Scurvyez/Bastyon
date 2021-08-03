@@ -268,6 +268,102 @@
 							<texPath>Achievements/Bast_Achievement_Gray_Terror_Kill</texPath>
 							<points>50</points>
 						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Hediff: Advanced Analgesia ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Advanced_Analgesia</defName>
+							<label>Take the pain away</label>
+							<description>Have a colonist develop advanced analgesia.</description>
+
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>Bast_AdvancedAnalgesia</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Advanced_Analgesia</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Tame a Pair of Gleaming Cervus' ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Gleaming_Cervus_Tame</defName>
+							<label>Oh, the radiance!</label>
+							<description>Tame a pair of Gleaming Cervus'.</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Gleaming_Cervus</key>
+										<value>2</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Gleaming_Cervus_Tame</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Tame one of Every Vorpal Bunny ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Vorpal_Bunny_Tame</defName>
+							<label>One big disfunctional family!</label>
+							<description>Tame one of every vorpal bunny.</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>Bast_Vorpal_Bunny</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>Bast_Vorpal_Bunny_Enraged</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>Bast_Vorpal_Bunny_Iridescent</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>Bast_Vorpal_Bunny_Pragmatic</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>Bast_Vorpal_Bunny_Enduring</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>Bast_Vorpal_Bunny_Gilded</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>Bast_Vorpal_Bunny_Befouled</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Vorpal_Bunny_Tame</texPath>
+							<points>100</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Experience a Bahlrin Swarm Raid ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Bast_AchievementParent">
+							<defName>Bast_Achievement_Bahlrin_Swarm_Raid</defName>
+							<label>"One rule. Stay in the light!"</label>
+							<description>Experience a bahlrin raid and survive the swarms.</description>
+
+							<tracker Class="AchievementsExpanded.IncidentTracker">
+								<def>Bast_BahlrinRaid</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/Bast_Achievement_Bahlrin_Swarm_Raid</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
                         
                     </value>    
 				</li>

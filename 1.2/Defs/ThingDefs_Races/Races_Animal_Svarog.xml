@@ -146,6 +146,21 @@
         </tradeTags>
         <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_SecondaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+					<li>Bast_DamageRangedFlame</li>	
+					<li>Bast_Floater</li>	
+					<li>Bast_Yes</li>	
+				</statValues>
+				<statDescriptions>
+					<li>Bast_DamageRangedFlameDesc</li>
+					<li>Bast_FloaterDesc</li>
+					<li>Bast_Ranged</li>
+				</statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
 				<ImageToShowInInfoCard>Art/Bast_SvarogArt</ImageToShowInInfoCard>
 			</li>

@@ -57,18 +57,6 @@
                 <distance>4~10</distance>
                 <warpEffect>true</warpEffect>
             </li>
-            <!-- <li Class="CompProperties_Explosive">
-                <explosiveRadius>5.0</explosiveRadius>
-                <explosiveDamageType>EMP</explosiveDamageType>
-                <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-                <chanceNeverExplodeFromDamage>0.01</chanceNeverExplodeFromDamage>
-                <wickTicks>10</wickTicks>
-                <startWickOnDamageTaken>
-                    <li>Bullet</li>
-                    <li>Arrow</li>
-                    <li>ArrowHighVelocity</li>
-                </startWickOnDamageTaken>
-            </li> -->
         </comps>
         <verbs>
 			<li>
@@ -192,6 +180,21 @@
         </tradeTags>
         <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_SecondaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+					<li>Bast_DamageRangedElectric</li>	
+					<li>Bast_Floater</li>	
+					<li>Bast_Yes</li>	
+				</statValues>
+				<statDescriptions>
+					<li>Bast_DamageRangedElectricDesc</li>
+					<li>Bast_FloaterDesc</li>
+					<li>Bast_Ranged</li>
+				</statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
 				<ImageToShowInInfoCard>Art/Bast_LightningElementalArt</ImageToShowInInfoCard>
 			</li>

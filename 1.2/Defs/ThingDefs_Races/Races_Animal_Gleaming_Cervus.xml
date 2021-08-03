@@ -168,6 +168,21 @@
     </tradeTags>
     <modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
+        <statToAdd>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_SecondaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+					<li>Bast_NatureEffecter</li>	
+					<li>Bast_Immune</li>	
+					<li>Bast_No</li>	
+				</statValues>
+				<statDescriptions>
+					<li>Bast_NatureEffecterDesc</li>
+					<li>Bast_DiseaseImmunityDesc</li>
+					<li>Bast_NoRanged</li>
+				</statDescriptions>
         <showImageInInfoCard>true</showImageInInfoCard>
 				<ImageToShowInInfoCard>Art/Bast_GleamingCervusArt</ImageToShowInInfoCard>
 			</li>
