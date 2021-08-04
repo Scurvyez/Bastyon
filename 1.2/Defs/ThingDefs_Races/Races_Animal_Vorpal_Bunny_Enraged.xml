@@ -102,6 +102,18 @@
         </tradeTags>
         <modExtensions>
             <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+					<li>Bast_Effecter</li>
+					<li>Bast_No</li>	
+				</statValues>
+				<statDescriptions>
+					<li>Bast_EffecterDesc</li>
+					<li>Bast_NoRanged</li>
+				</statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
                 <ImageToShowInInfoCard>Art/Bast_VorpalBunnyEnragedArt</ImageToShowInInfoCard>
             </li>
