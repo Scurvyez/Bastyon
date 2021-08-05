@@ -32,17 +32,7 @@ namespace Bastyon
 
     public class CompRepelledByBuildings : ThingComp
     {
-        public Pawn pawn => this.parent as Pawn;
-        public override void PostSpawnSetup(bool respawningAfterLoad)
-        {
-            base.PostSpawnSetup(respawningAfterLoad);
-            if (!pawn.health.hediffSet.HasHediff(BastDefOf.Bast_SunLightDamage))
-            {
-                var hediff = HediffMaker.MakeHediff(BastDefOf.Bast_SunLightDamage, pawn);
-                pawn.health.AddHediff(hediff);
-                hediff.Severity = 0;
-            }
-        }
+        
     }
 
 

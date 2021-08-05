@@ -165,6 +165,7 @@
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>
       <li Class="CompProperties_Styleable" />
+      <li Class="Bastyon.CompProperties_CompRepelMonster"></li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>2.0</fuelConsumptionRate>
         <fuelCapacity>20.0</fuelCapacity>
@@ -208,7 +209,7 @@
               <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
             </defs>
             <offsetPerBuilding>0.01</offsetPerBuilding>
-            <radius>100</radius>
+            <radius>50</radius>
             <maxBuildings>8</maxBuildings>
             <explanationKey>MeditationFocusPerFlame</explanationKey>
             <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>

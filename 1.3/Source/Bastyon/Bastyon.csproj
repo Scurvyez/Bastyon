@@ -44,28 +44,33 @@
   <ItemGroup>
     <Compile Include="BastDefOf.cs" />
     <Compile Include="BastyonMod.cs" />
-    <Compile Include="BastyonModSettings.cs" />
-    <Compile Include="CompRepelledByBuildings.cs" />
-    <Compile Include="CompVulnerableToSunlight.cs" />
+    <Compile Include="Controllers\BuildingCompController.cs" />
+    <Compile Include="Settings\BastyonModSettings.cs" />
+    <Compile Include="Comps\CompRepelMonster.cs" />
+    <Compile Include="Comps\CompRepelledByBuildings.cs" />
+    <Compile Include="Comps\CompVulnerableToSunlight.cs" />
     <Compile Include="HarmonyPatches.cs" />
-    <Compile Include="IncidentWorker_RaidCustom.cs" />
-    <Compile Include="JobGiver_FleeFromSunLight.cs" />
-    <Compile Include="JobGiver_MonsterBerserk.cs" />
+    <Compile Include="Incidents\IncidentWorker_RaidCustom.cs" />
+    <Compile Include="JobGivers\JobGiver_FleeFromSunLight.cs" />
+    <Compile Include="JobGivers\JobGiver_MonsterBerserk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RaidOptions.cs" />
-    <Compile Include="SettingsHelper.cs" />
-    <Compile Include="Utils.cs" />
+    <Compile Include="Incidents\RaidOptions.cs" />
+    <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="Utils\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AchievementsExpanded">
       <Version>1.3.7862</Version>
     </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.3.3067</Version>
+      <Version>1.3.3080</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
-      <Version>2.1.0</Version>
+      <Version>2.1.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Hediffs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
