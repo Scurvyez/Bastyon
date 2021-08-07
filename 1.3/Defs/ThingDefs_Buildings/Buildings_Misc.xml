@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <!--==================== Expositor ====================-->
+
     <ThingDef ParentName="BuildingBase">
-        <defName>FabricationExpositor</defName>
-        <label>fabrication expositor</label>
+        <defName>Bast_Expositor</defName>
+        <label>expositor</label>
         <description>This expositor enables the construction of advanced security assemblies. The eternal flame core enclosed within the containment field is a source of great power and knowledge.\n\nKeep it safe. Keep it contained!</description>
         <graphicData>
-            <texPath>Things/Building/Misc/Fabrication_Expositor</texPath>
+            <texPath>Things/Building/Misc/Bast_Expositor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>3</drawSize>
-            <drawOffset>(0,0,0.7)</drawOffset>
+            <shaderType>Transparent</shaderType>
+            <drawSize>4</drawSize>
+            <drawOffset>(0,0,0.5)</drawOffset>
         </graphicData>
+<<<<<<< HEAD
         <uiIconScale>0.85</uiIconScale>
         <researchPrerequisites>
             <li>FabricationExpositor</li>
         </researchPrerequisites>
         <!-- Make our own research for this to unlock the new security buildings. -->
         <size>(2,2)</size>
+=======
+        <uiIconPath>Things/Building/Misc/Bast_Expositor</uiIconPath>
+        <uiIconOffset>(0, -0.15)</uiIconOffset>
+        <uiIconScale>1.4</uiIconScale>
+        <researchPrerequisites><li>Expositor</li></researchPrerequisites>
+        <size>(2,3)</size>
+>>>>>>> be04c79bd007d629e6da5c44641ee17765ac52ed
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
+        <passability>Impassable</passability>
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>0.5</fillPercent>
         <designationHotKey>Misc4</designationHotKey>
@@ -54,7 +65,7 @@
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>6</glowRadius>
-                <glowColor>(0,171,214,0)</glowColor>
+                <glowColor>(12,196,246)</glowColor>
             </li>
             <li Class="CompProperties_Breakdownable" />
             <li Class="CompProperties_Flickable" />
@@ -71,15 +82,22 @@
         <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
     </ThingDef>
 
+<<<<<<< HEAD
 
     <!--==================== Torch Repeller ====================-->
 
+=======
+    <!--==================== Repeller ====================-->
+>>>>>>> be04c79bd007d629e6da5c44641ee17765ac52ed
 
     <ThingDef Name="Bast_Repeller" ParentName="BuildingBase">
         <defName>Bast_Repeller</defName>
         <label>repeller</label>
         <description>PLACEHOLDER TEXT FOR NOW</description>
+<<<<<<< HEAD
         <thingClass>Bastyon.TorchRepellant</thingClass>
+=======
+>>>>>>> be04c79bd007d629e6da5c44641ee17765ac52ed
         <category>Building</category>
         <graphicData>
             <texPath>Things/Building/Misc/Bast_Repeller</texPath>
@@ -97,12 +115,20 @@
         <uiIconScale>1.4</uiIconScale>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
+<<<<<<< HEAD
         <passability>PassThroughOnly</passability>
         <pathCost>20</pathCost>
         <researchPrerequisites>
             <li>FabricationExpositor</li>
         </researchPrerequisites>
         <size>(2,3)</size>
+=======
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <researchPrerequisites><li>Expositor</li></researchPrerequisites>
+        <size>(2,3)</size>
+        <canOverlapZones>false</canOverlapZones>
+>>>>>>> be04c79bd007d629e6da5c44641ee17765ac52ed
         <constructEffect>ConstructMetal</constructEffect>
         <tickerType>Normal</tickerType>
         <drawerType>RealtimeOnly</drawerType>
@@ -118,20 +144,37 @@
             <Gold>5</Gold>
             <Plasteel>10</Plasteel>
             <ComponentIndustrial>1</ComponentIndustrial>
+<<<<<<< HEAD
         </costList>
         <building>
             <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+=======
+            <Bast_Eternal_Flame_Core_Shard>1</Bast_Eternal_Flame_Core_Shard>
+        </costList>
+        <building>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+            <soundAmbient>ShipReactor_Ambience</soundAmbient>
+>>>>>>> be04c79bd007d629e6da5c44641ee17765ac52ed
         </building>
         <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
         <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
         <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
         <placeWorkers>
+<<<<<<< HEAD
             <li>Bastyon.PlaceWorker_RepellerDesignator</li>
         </placeWorkers>
         <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <comps>
             <li Class="CompProperties_Breakdownable" />
             <li Class="Bastyon.CompProperties_CompRepelMonster"></li>
+=======
+            <li>PlaceWorker_Heater</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <comps>
+            <li Class="CompProperties_Breakdownable"/>
+>>>>>>> be04c79bd007d629e6da5c44641ee17765ac52ed
             <li Class="CompProperties_Glower">
                 <glowRadius>10</glowRadius>
                 <glowColor>(12,196,246)</glowColor>
@@ -141,6 +184,7 @@
                 <heatPerSecond>3.5</heatPerSecond>
                 <heatPushMaxTemperature>23</heatPushMaxTemperature>
             </li>
+<<<<<<< HEAD
             <li>
                 <compClass>Bastyon.CompRepelMonster</compClass>
             </li>
@@ -157,4 +201,10 @@
         </modExtensions>
         <specialDisplayRadius>5.8</specialDisplayRadius>
     </ThingDef>
+=======
+        </comps>
+        <designationCategory>Security</designationCategory>
+    </ThingDef>
+
+>>>>>>> be04c79bd007d629e6da5c44641ee17765ac52ed
 </Defs>
