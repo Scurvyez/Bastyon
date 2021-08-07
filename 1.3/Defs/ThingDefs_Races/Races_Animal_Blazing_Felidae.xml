@@ -26,10 +26,10 @@
 				<accuracyLong>.75</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_FireStream</defaultProjectile>
-				<warmupTime>7</warmupTime>
+				<warmupTime>4</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>3</minRange>
-				<range>8</range>
+				<range>12</range>
 				<soundCast>Bast_FireStream</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>blazing fire</label>

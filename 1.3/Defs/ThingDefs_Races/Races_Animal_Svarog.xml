@@ -27,10 +27,10 @@
 				<accuracyLong>.75</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_SvarogFireStream</defaultProjectile>
-				<warmupTime>8</warmupTime>
-				<burstShotCount>2</burstShotCount>
+				<warmupTime>4</warmupTime>
+				<burstShotCount>1</burstShotCount>
 				<minRange>3</minRange>
-				<range>12</range>
+				<range>13</range>
 				<soundCast>Bast_FireStream</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>searing fire</label>

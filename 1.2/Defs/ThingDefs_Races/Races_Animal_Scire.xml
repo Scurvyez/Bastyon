@@ -21,9 +21,23 @@
         <tickInterval>2000</tickInterval>
       </li>
       <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
-        <resourceDef>Bast_Eternal_Flame_Core</resourceDef>
+        <!-- <resourceDef>Bast_Eternal_Flame_Core</resourceDef> -->
         <resourceAmount>1</resourceAmount>
-        <dropChance>0.10</dropChance>
+        <dropChance>0.20</dropChance>
+        <isRandom>true</isRandom>
+        <randomItems>
+          <li>Bast_Eternal_Flame_Core</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+          <li>Bast_Eternal_Flame_Core_Shard</li>
+        </randomItems>
       </li>
     </comps>
     <verbs>
