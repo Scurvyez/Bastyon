@@ -16,6 +16,7 @@
 	<Bast_PrimaryRole>Primary Role</Bast_PrimaryRole>
 	<Bast_SecondaryRole>Secondary Role</Bast_SecondaryRole>
     <Bast_TertiaryRole>Tertiary Role</Bast_TertiaryRole>
+    <Bast_Movement>Movement</Bast_Movement>
 	<Bast_RangedAttacks>Uses Ranged Attacks</Bast_RangedAttacks>
 	<Bast_Yes>Yes</Bast_Yes>
 	<Bast_No>No</Bast_No>
@@ -25,6 +26,7 @@
     <!-- Roles -->
 
     <Bast_Floater>Floater</Bast_Floater>
+    <Bast_Warper>Warper</Bast_Warper>
     <Bast_Boomer>Boomer</Bast_Boomer>
     <Bast_ESDBoomer>ESD Boomer</Bast_ESDBoomer>
     <Bast_ExtinguisherBoomer>Extinguisher Boomer</Bast_ExtinguisherBoomer>
@@ -55,6 +57,7 @@
     <!-- Role Descriptions -->
 	
 	<Bast_FloaterDesc>This animal floats above the ground, ignoring all movement penalties.</Bast_FloaterDesc>
+    <Bast_WarperDesc>This animal will sporadically teleport short distances.</Bast_WarperDesc>
     <Bast_BoomerDesc>This animal explodes on death.</Bast_BoomerDesc>
     <Bast_ESDBoomerDesc>When damaged via ranged attacks this animal has a chance to explode, subsequently releasing a strong electrostatic discharge.</Bast_ESDBoomerDesc>
     <Bast_ExtinguisherBoomerDesc>When damaged via ranged attacks this animal has a chance to explode, subsequently releasing a violent burst of air and extinguishing all nearby flames.</Bast_ExtinguisherBoomerDesc>

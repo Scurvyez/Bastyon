@@ -32,10 +32,10 @@
 				<accuracyLong>.75</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bast_BastyonPlasmaStream</defaultProjectile>
-				<warmupTime>8</warmupTime>
+				<warmupTime>4</warmupTime>
 				<burstShotCount>2</burstShotCount>
 				<minRange>3</minRange>
-				<range>12</range>
+				<range>15</range>
 				<soundCast>Bast_BastyonPlasmaStream</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>terrestrial plasma</label>
