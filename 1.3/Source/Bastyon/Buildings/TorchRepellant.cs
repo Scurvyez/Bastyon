@@ -12,5 +12,9 @@ namespace Bastyon
 {
     public class TorchRepellant : Building
     {
+        public override void DrawExtraSelectionOverlays()
+        {
+
+        }
     }
 }

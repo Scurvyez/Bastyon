@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <ThingDef ParentName="BuildingBase">
@@ -12,7 +12,9 @@
             <drawOffset>(0,0,0.7)</drawOffset>
         </graphicData>
         <uiIconScale>0.85</uiIconScale>
-        <researchPrerequisites><li>FabricationExpositor</li></researchPrerequisites>
+        <researchPrerequisites>
+            <li>FabricationExpositor</li>
+        </researchPrerequisites>
         <!-- Make our own research for this to unlock the new security buildings. -->
         <size>(2,2)</size>
         <rotatable>false</rotatable>
@@ -54,8 +56,8 @@
                 <glowRadius>6</glowRadius>
                 <glowColor>(0,171,214,0)</glowColor>
             </li>
-            <li Class="CompProperties_Breakdownable"/>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable" />
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Facility">
                 <statOffsets>
                     <WorkTableWorkSpeedFactor>0.1</WorkTableWorkSpeedFactor>
@@ -69,4 +71,90 @@
         <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
     </ThingDef>
 
+
+    <!--==================== Torch Repeller ====================-->
+
+
+    <ThingDef Name="Bast_Repeller" ParentName="BuildingBase">
+        <defName>Bast_Repeller</defName>
+        <label>repeller</label>
+        <description>PLACEHOLDER TEXT FOR NOW</description>
+        <thingClass>Bastyon.TorchRepellant</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Misc/Bast_Repeller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Transparent</shaderType>
+            <drawRotated>false</drawRotated>
+            <drawSize>4</drawSize>
+            <drawOffset>(0,0,.5)</drawOffset>
+            <damageData>
+                <rect>(0.35,0.35,0.3,0.3)</rect>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Misc/Bast_Repeller</uiIconPath>
+        <uiIconOffset>(0, -0.15)</uiIconOffset>
+        <uiIconScale>1.4</uiIconScale>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>20</pathCost>
+        <researchPrerequisites>
+            <li>FabricationExpositor</li>
+        </researchPrerequisites>
+        <size>(2,3)</size>
+        <constructEffect>ConstructMetal</constructEffect>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>50</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <selectable>true</selectable>
+        <costList>
+            <Steel>30</Steel>
+            <Gold>5</Gold>
+            <Plasteel>10</Plasteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <building>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+        </building>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <placeWorkers>
+            <li>Bastyon.PlaceWorker_RepellerDesignator</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <comps>
+            <li Class="CompProperties_Breakdownable" />
+            <li Class="Bastyon.CompProperties_CompRepelMonster"></li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>10</glowRadius>
+                <glowColor>(12,196,246)</glowColor>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>3.5</heatPerSecond>
+                <heatPushMaxTemperature>23</heatPushMaxTemperature>
+            </li>
+            <li>
+                <compClass>Bastyon.CompRepelMonster</compClass>
+            </li>
+        </comps>
+        <designationCategory>Security</designationCategory>
+        <modExtensions>
+            <li Class="Bastyon.RepelBalhrin">
+                <repelledBy>true</repelledBy>
+                <hediffSeverity>0.1</hediffSeverity>
+                <tickInterval>360</tickInterval>
+                <fireSpawnChance>0.3</fireSpawnChance>
+                <fireSize>0.1~0.3</fireSize>
+            </li>
+        </modExtensions>
+        <specialDisplayRadius>5.8</specialDisplayRadius>
+    </ThingDef>
 </Defs>

@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BastDefOf.cs" />
     <Compile Include="BastyonMod.cs" />
+    <Compile Include="Buildings\TorchRepellant.cs" />
     <Compile Include="Controllers\BuildingCompController.cs" />
     <Compile Include="Settings\BastyonModSettings.cs" />
     <Compile Include="Comps\CompRepelMonster.cs" />

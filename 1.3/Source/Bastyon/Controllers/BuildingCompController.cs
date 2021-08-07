@@ -12,17 +12,12 @@ namespace Bastyon
 {
     public static class BuildingCompController
     {
-        public static List<Building> GetAllBuildingsOfName(Map map, string buildingName)
-        {
-            return map.listerBuildings.AllBuildingsColonistOfDef(DefDatabase<ThingDef>.GetNamed(buildingName)).ToList();
-        }
 
-        public static IntVec2 Centroid(this List<IntVec2> path)
-        {
-            IntVec2 result = path.Aggregate(IntVec2.Zero, (current, point) => current + point);
-            result /= path.Count;
+    }
 
-            return result;
-        }
+    public class PlaceWorker_RepellerDesignator : PlaceWorker
+    {
+        
+        
     }
 }
