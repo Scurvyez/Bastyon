@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!--==================== Expositor ====================-->
+
     <ThingDef ParentName="BuildingBase">
-        <defName>FabricationExpositor</defName>
-        <label>fabrication expositor</label>
+        <defName>Bast_Expositor</defName>
+        <label>expositor</label>
         <description>This expositor enables the construction of advanced security assemblies. The eternal flame core enclosed within the containment field is a source of great power and knowledge.\n\nKeep it safe. Keep it contained!</description>
         <graphicData>
-            <texPath>Things/Building/Misc/Fabrication_Expositor</texPath>
+            <texPath>Things/Building/Misc/Bast_Expositor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>3</drawSize>
-            <drawOffset>(0,0,0.7)</drawOffset>
+            <shaderType>Transparent</shaderType>
+            <drawSize>4</drawSize>
+            <drawOffset>(0,0,0.5)</drawOffset>
         </graphicData>
-        <uiIconScale>0.85</uiIconScale>
-        <researchPrerequisites><li>FabricationExpositor</li></researchPrerequisites>
-        <!-- Make our own research for this to unlock the new security buildings. -->
-        <size>(2,2)</size>
+        <uiIconPath>Things/Building/Misc/Bast_Expositor</uiIconPath>
+        <uiIconOffset>(0, -0.15)</uiIconOffset>
+        <uiIconScale>1.4</uiIconScale>
+        <researchPrerequisites><li>Expositor</li></researchPrerequisites>
+        <size>(2,3)</size>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
+        <passability>Impassable</passability>
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>0.5</fillPercent>
         <designationHotKey>Misc4</designationHotKey>
@@ -52,7 +56,7 @@
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>6</glowRadius>
-                <glowColor>(0,171,214,0)</glowColor>
+                <glowColor>(12,196,246)</glowColor>
             </li>
             <li Class="CompProperties_Breakdownable"/>
             <li Class="CompProperties_Flickable"/>
@@ -67,6 +71,78 @@
             <li>PlaceWorker_ShowFacilitiesConnections</li>
         </placeWorkers>
         <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <!--==================== Repeller ====================-->
+
+    <ThingDef Name="Bast_Repeller" ParentName="BuildingBase">
+        <defName>Bast_Repeller</defName>
+        <label>repeller</label>
+        <description>PLACEHOLDER TEXT FOR NOW</description>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Misc/Bast_Repeller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Transparent</shaderType>
+            <drawRotated>false</drawRotated>
+            <drawSize>4</drawSize>
+            <drawOffset>(0,0,.5)</drawOffset>
+            <damageData>
+                <rect>(0.35,0.35,0.3,0.3)</rect>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Misc/Bast_Repeller</uiIconPath>
+        <uiIconOffset>(0, -0.15)</uiIconOffset>
+        <uiIconScale>1.4</uiIconScale>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <researchPrerequisites><li>Expositor</li></researchPrerequisites>
+        <size>(2,3)</size>
+        <canOverlapZones>false</canOverlapZones>
+        <constructEffect>ConstructMetal</constructEffect>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>50</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <selectable>true</selectable>
+        <costList>
+            <Steel>30</Steel>
+            <Gold>5</Gold>
+            <Plasteel>10</Plasteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <Bast_Eternal_Flame_Core_Shard>1</Bast_Eternal_Flame_Core_Shard>
+        </costList>
+        <building>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+            <soundAmbient>ShipReactor_Ambience</soundAmbient>
+        </building>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <placeWorkers>
+            <li>PlaceWorker_Heater</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <comps>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>10</glowRadius>
+                <glowColor>(12,196,246)</glowColor>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>3.5</heatPerSecond>
+                <heatPushMaxTemperature>23</heatPushMaxTemperature>
+            </li>
+        </comps>
+        <designationCategory>Security</designationCategory>
     </ThingDef>
 
 </Defs>
