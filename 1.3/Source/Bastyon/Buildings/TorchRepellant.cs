@@ -10,11 +10,8 @@ using Verse;
 
 namespace Bastyon
 {
-    public class TorchRepellant : Building
+    public class BuildingRepeller : Building
     {
-        public override void DrawExtraSelectionOverlays()
-        {
-
-        }
     }
+
 }
