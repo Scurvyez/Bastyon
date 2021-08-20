@@ -18,7 +18,7 @@
     </statBases>
     <comps>
       <li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
-        <reproductionIntervalDays>8</reproductionIntervalDays>
+        <reproductionIntervalDays>16</reproductionIntervalDays>
         <customString>Duplicating in: </customString>
       </li>
       <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
