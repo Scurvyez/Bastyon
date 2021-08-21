@@ -9,6 +9,7 @@ namespace Bastyon
 {
     class AlternateGraphicsModExt : DefModExtension
     {
+#pragma warning disable 0649
         public List<AlternateGraphic> alternateGraphicsFemale;
     }
 }

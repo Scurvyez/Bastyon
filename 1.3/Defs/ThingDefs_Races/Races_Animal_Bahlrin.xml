@@ -156,7 +156,7 @@
 			<max>5</max>
 		</wildGroupSize>
 
-		<alternateGraphicChance>1.00</alternateGraphicChance> <!-- 0.2 -->
+		<alternateGraphicChance>0.50</alternateGraphicChance> <!-- 0.2 -->
 		<alternateGraphics>
 			<!--<li>
 				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin</texPath>
