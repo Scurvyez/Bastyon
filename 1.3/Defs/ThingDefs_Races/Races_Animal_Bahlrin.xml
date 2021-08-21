@@ -156,21 +156,39 @@
 			<max>5</max>
 		</wildGroupSize>
 
-		<alternateGraphicChance>0.20</alternateGraphicChance>
+		<alternateGraphicChance>1.00</alternateGraphicChance> <!-- 0.2 -->
 		<alternateGraphics>
-			<li>
+			<!--<li>
 				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin</texPath>
-			</li>
+			</li>-->
 			<li>
 				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin2</texPath>
 			</li>
-			<li>
+			<!--<li>
 				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin3</texPath>
 			</li>
 			<li>
 				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin4</texPath>
-			</li>
+			</li>-->
 		</alternateGraphics>
+    <modExtensions>
+      <li Class="Bastyon.AlternateGraphicsModExt">
+        <alternateGraphicsFemale>
+          <!--<li>
+            <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin</texPath>
+          </li>-->
+          <!--<li>
+            <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin2</texPath>
+          </li>-->
+          <li>
+            <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin3</texPath>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin4</texPath>
+          </li>
+        </alternateGraphicsFemale>
+      </li>
+    </modExtensions>
 
 		<lifeStages>
 			<li>

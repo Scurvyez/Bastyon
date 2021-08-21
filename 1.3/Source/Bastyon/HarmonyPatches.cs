@@ -66,4 +66,26 @@ namespace Bastyon
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
+
+    [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
+    class PawnGraphicSet_ResolveAllGraphics_Postfix
+    {
+        static void Postfix(PawnGraphicSet __instance)
+        {
+            if (__instance?.pawn?.RaceProps?.Animal != true) return;
+            if (__instance?.pawn?.gender != Gender.Female) return;
+            var modExt = __instance?.pawn?.kindDef?.GetModExtension<AlternateGraphicsModExt>();
+            if (modExt == null) return;
+
+            if (!modExt.alternateGraphicsFemale.NullOrEmpty<AlternateGraphic>())
+            {
+                Rand.PushState(__instance.pawn.thingIDNumber ^ 46101);
+                if (Rand.Value <= __instance.pawn.kindDef.alternateGraphicChance)
+                {
+                    __instance.nakedGraphic = modExt.alternateGraphicsFemale.RandomElementByWeight((AlternateGraphic x) => x.Weight).GetGraphic(__instance.nakedGraphic);
+                }
+                Rand.PopState();
+            }
+        }
+    }
 }
