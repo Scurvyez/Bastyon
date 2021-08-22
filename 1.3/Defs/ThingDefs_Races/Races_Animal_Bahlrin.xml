@@ -156,33 +156,25 @@
 			<max>5</max>
 		</wildGroupSize>
 
-		<alternateGraphicChance>0.50</alternateGraphicChance> <!-- 0.2 -->
+		<alternateGraphicChance>0.20</alternateGraphicChance>
 		<alternateGraphics>
-			<!--<li>
+			<li>
 				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin</texPath>
-			</li>-->
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin</texPath>
+			</li>
 			<li>
 				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin2</texPath>
 			</li>
-			<!--<li>
-				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin3</texPath>
-			</li>
-			<li>
-				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin4</texPath>
-			</li>-->
 		</alternateGraphics>
+		
     <modExtensions>
       <li Class="Bastyon.AlternateGraphicsModExt">
         <alternateGraphicsFemale>
-          <!--<li>
-            <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin</texPath>
-          </li>-->
-          <!--<li>
-            <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin2</texPath>
-          </li>-->
-          <li>
-            <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin3</texPath>
-          </li>
           <li>
             <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin4</texPath>
           </li>
@@ -199,10 +191,21 @@
 						<volume>(0.30, 0.25, 0.20)</volume>
 					</shadowData>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin3</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.30, 0.25, 0.20)</volume>
+					</shadowData>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Dessicated_Bahlrin</texPath>
 					<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Dessicated_Bahlrin</texPath>
+					<drawSize>1.4</drawSize>
+				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -212,10 +215,21 @@
 						<volume>(0.375, 0.375, 0.375)</volume>
 					</shadowData>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin3</texPath>
+					<drawSize>2.6</drawSize>
+					<shadowData>
+						<volume>(0.30, 0.25, 0.20)</volume>
+					</shadowData>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Dessicated_Bahlrin</texPath>
 					<drawSize>2.6</drawSize>
 				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Dessicated_Bahlrin</texPath>
+					<drawSize>2.6</drawSize>
+				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -226,10 +240,21 @@
 						<offset>(0,0,-0.05)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin3</texPath>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.30, 0.25, 0.20)</volume>
+					</shadowData>
+				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Dessicated_Bahlrin</texPath>
 					<drawSize>3.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Dessicated_Bahlrin</texPath>
+					<drawSize>3.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
