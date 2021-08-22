@@ -42,6 +42,7 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlternateGraphicsModExt.cs" />
     <Compile Include="BastDefOf.cs" />
     <Compile Include="BastyonMod.cs" />
     <Compile Include="BastyonModSettings.cs" />

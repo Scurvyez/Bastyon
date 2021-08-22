@@ -42,17 +42,17 @@ namespace Bastyon
         }
         public static bool DetectBastyonCreatureAndOptions(PawnKindDef theCreature)
         {
-            
-                if (BastyonMod.modSettings.bastyonAnimalToggle != null && BastyonMod.modSettings.bastyonAnimalToggle.Keys.Contains(theCreature.defName))
+
+            if (BastyonMod.modSettings.bastyonAnimalToggle != null && BastyonMod.modSettings.bastyonAnimalToggle.Keys.Contains(theCreature.defName))
+            {
+                if (BastyonMod.modSettings.bastyonAnimalToggle[theCreature.defName])
                 {
-                    if (BastyonMod.modSettings.bastyonAnimalToggle[theCreature.defName])
-                    {
-                        return true;
-                    }
-                    else return false;
+                    return true;
                 }
                 else return false;
-            
+            }
+            else return false;
+
         }
 
     }
@@ -64,6 +64,39 @@ namespace Bastyon
         {
             var harmony = new Harmony("com.Bastyon");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
+        }
+    }
+
+    [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
+    class PawnGraphicSet_ResolveAllGraphics_Postfix
+    {
+        static void Postfix(PawnGraphicSet __instance)
+        {
+            if (__instance?.pawn?.RaceProps?.Animal != true) return;
+            if (__instance?.pawn?.gender != Gender.Female) return;
+            var modExt = __instance?.pawn?.kindDef?.GetModExtension<AlternateGraphicsModExt>();
+            if (modExt == null) return;
+
+            if (modExt.alternateGraphicsFemale.NullOrEmpty<AlternateGraphic>())
+            {
+                RestoreDefaultGraphic(__instance);
+                return;
+            }
+            Rand.PushState(__instance.pawn.thingIDNumber ^ 46101);
+            if (Rand.Value <= __instance.pawn.kindDef.alternateGraphicChance)
+            {
+                __instance.nakedGraphic = modExt.alternateGraphicsFemale.RandomElementByWeight((AlternateGraphic x) => x.Weight).GetGraphic(__instance.nakedGraphic);
+            }
+            else RestoreDefaultGraphic(__instance);
+            Rand.PopState();
+        }
+
+        private static void RestoreDefaultGraphic(PawnGraphicSet __instance)
+        {
+            var curKindLifeStage = __instance?.pawn?.ageTracker?.CurKindLifeStage;
+            if (curKindLifeStage == null) return;
+            if (__instance.pawn.gender != Gender.Female || curKindLifeStage.femaleGraphicData == null) __instance.nakedGraphic = curKindLifeStage.bodyGraphicData.Graphic;
+            else __instance.nakedGraphic = curKindLifeStage.femaleGraphicData.Graphic;
         }
     }
 }
