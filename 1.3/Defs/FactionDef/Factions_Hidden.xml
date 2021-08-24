@@ -12,7 +12,7 @@
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Monsters</fixedName>
     <factionNameMaker>NamerFactionMechanoid</factionNameMaker>
-    <factionIconPath>World/WorldObjects/Expanding/Sites/MechCluster</factionIconPath>
+    <!--<factionIconPath>World/WorldObjects/Expanding/Sites/MechCluster</factionIconPath>-->
     <raidCommonalityFromPointsCurve>
       <points>
         <li>(300,  0)</li>
