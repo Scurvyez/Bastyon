@@ -8,9 +8,14 @@
 		<label>svarog</label>
 		<corePart>
 			<def>Bast_SavrogMainBody</def>
-			<height>Middle</height>
+			<height>Top</height>
 			<depth>Outside</depth>
 			<parts>
+				<li>
+                    <def>Head</def>
+					<customLabel>firey visage</customLabel>
+					<coverage>0.02</coverage>
+				</li>
 				<li>
 					<def>Bast_ImmortalCore</def>
 					<coverage>0.05</coverage>
@@ -45,9 +50,14 @@
 		<label>lightning elemental</label>
 		<corePart>
 			<def>Bast_LightningElementalMainBody</def>
-			<height>Middle</height>
+			<height>Top</height>
 			<depth>Outside</depth>
 			<parts>
+				<li>
+                    <def>Head</def>
+					<customLabel>electrified visage</customLabel>
+					<coverage>0.02</coverage>
+				</li>
 				<li>
 					<def>Bast_ImmortalCore</def>
 					<coverage>0.05</coverage>
