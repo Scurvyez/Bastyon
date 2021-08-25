@@ -130,6 +130,7 @@
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Ceratok</leatherDef>
       <wildness>0.50</wildness>
+      <packAnimal>true</packAnimal>
       <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.18</manhunterOnDamageChance>
       <gestationPeriodDays>43</gestationPeriodDays>

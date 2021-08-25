@@ -31,7 +31,7 @@
     </killedLeavings>
     <comps>
       <li Class="CompProperties_CanBeDormant">
-        <startsDormant>false</startsDormant>
+        <startsDormant>true</startsDormant>
         <canWakeUpFogged>false</canWakeUpFogged>
       </li>
       <li Class="CompProperties_WakeUpDormant" />
@@ -39,7 +39,7 @@
         <spawnablePawnKinds>
           <li>Bast_Alluvium</li>
         </spawnablePawnKinds>
-        <lordJob>LordJob_DefendAndExpandHive</lordJob>
+        <!-- <lordJob>LordJob_DefendAndExpandHive</lordJob> -->
         <spawnSound>Hive_Spawn</spawnSound>
         <initialPawnsPoints>200</initialPawnsPoints>
         <maxSpawnedPawnsPoints>75</maxSpawnedPawnsPoints>
@@ -52,7 +52,7 @@
         <thingToSpawn>Bast_Alluvium_Jelly</thingToSpawn>
         <spawnCount>20</spawnCount>
         <spawnIntervalRange>26000~30000</spawnIntervalRange>
-        <spawnMaxAdjacent>80</spawnMaxAdjacent>
+        <spawnMaxAdjacent>5</spawnMaxAdjacent>
         <spawnForbidden>true</spawnForbidden>
         <saveKeysPrefix>jelly</saveKeysPrefix>
       </li>

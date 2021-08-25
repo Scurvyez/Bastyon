@@ -130,8 +130,8 @@
         </wildBiomes>
         <body>Bast_LightningElementalBody</body>
         <herdAnimal>false</herdAnimal>
-        <baseBodySize>1.8</baseBodySize>
-        <baseHealthScale>1.8</baseHealthScale>
+        <baseBodySize>2.5</baseBodySize>
+        <baseHealthScale>2.0</baseHealthScale>
         <fleshType>LightningElemental</fleshType>
         <bloodDef>Filth_LightningElementalBlood</bloodDef>
         <baseHungerRate>0.05</baseHungerRate>
@@ -207,12 +207,12 @@
         <defName>Bast_Lightning_Elemental</defName>
         <label>lightning elemental</label>
         <race>Bast_Lightning_Elemental</race>
-        <combatPower>100</combatPower>
+        <combatPower>250</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <ecoSystemWeight>0.4</ecoSystemWeight>
         <wildGroupSize>
             <min>1</min>
-            <max>2</max>
+            <max>6</max>
         </wildGroupSize>
         <lifeStages>
             <li>

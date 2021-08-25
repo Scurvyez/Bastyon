@@ -204,7 +204,7 @@
 	<BodyPartDef>
 		<defName>Bast_SavrogMainBody</defName>
 		<label>ardent shroud</label>
-		<hitPoints>400</hitPoints>
+		<hitPoints>1000</hitPoints>
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<skinCovered>true</skinCovered>
 		<tags>
@@ -215,7 +215,7 @@
 	<BodyPartDef>
 		<defName>Bast_LightningElementalMainBody</defName>
 		<label>electrified shroud</label>
-		<hitPoints>400</hitPoints>
+		<hitPoints>1000</hitPoints>
 		<frostbiteVulnerability>0.02</frostbiteVulnerability>
 		<skinCovered>true</skinCovered>
 		<tags>
@@ -226,7 +226,7 @@
 	<BodyPartDef>
 		<defName>Bast_ImmortalCore</defName>
 		<label>immortal core</label>
-		<hitPoints>175</hitPoints>
+		<hitPoints>350</hitPoints>
 		<skinCovered>true</skinCovered>
 		<tags>
 			<li>BloodPumpingSource</li>
@@ -239,7 +239,7 @@
 	<BodyPartDef>
 		<defName>Bast_SmolderingFist</defName>
 		<label>smoldering fist</label>
-		<hitPoints>30</hitPoints>
+		<hitPoints>50</hitPoints>
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>true</skinCovered>
@@ -252,7 +252,7 @@
 	<BodyPartDef>
 		<defName>Bast_GalvanizedFist</defName>
 		<label>galvanized fist</label>
-		<hitPoints>30</hitPoints>
+		<hitPoints>50</hitPoints>
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>true</skinCovered>
