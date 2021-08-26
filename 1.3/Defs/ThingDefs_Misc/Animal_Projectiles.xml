@@ -205,7 +205,7 @@
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Bast_BastyonPlasmaStream</defName>
 		<label>scorching plasma</label>
-		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<thingClass>VFECore.BastyonBaseExpandingProjectile</thingClass>
 		<graphicData>
 			<texPath>Things/Projectiles/Proj_BastyonPlasmaStream</texPath>
 			<texPathFadeOut>Things/Projectiles/Proj_BastyonPlasmaStreamFadeOut</texPathFadeOut>
@@ -225,17 +225,17 @@
 		<projectile>
 			<damageDef>Burn</damageDef>		
 			<flyOverhead>false</flyOverhead>
-			<damageAmountBase>5</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>1.2</stoppingPower>		
-			<ai_IsIncendiary>false</ai_IsIncendiary>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<speed>14</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
 
-	<!-- <VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Bast_SnippingSnailAcidStream</defName>
 		<label>acid stream</label>
-		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<thingClass>VFECore.BastyonBaseExpandingProjectile</thingClass>
 		<graphicData>
 			<texPath>Things/Projectiles/Proj_SnippingSnailAcidStream</texPath>
 			<texPathFadeOut>Things/Projectiles/Proj_SnippingSnailAcidStreamFadeOut</texPathFadeOut>
@@ -255,11 +255,11 @@
 		<projectile>
 			<damageDef>Bast_AcidStream</damageDef>		
 			<flyOverhead>false</flyOverhead>
-			<damageAmountBase>3.5</damageAmountBase>
+			<damageAmountBase>12.0</damageAmountBase>
 			<stoppingPower>1.25</stoppingPower>		
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<speed>20</speed>
 		</projectile>
-	</VFECore.ExpandableProjectileDef> -->
+	</VFECore.ExpandableProjectileDef>
 	
 </Defs>

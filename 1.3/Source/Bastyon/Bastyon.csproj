@@ -40,12 +40,17 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="VFECore, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\VFECore.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlternateGraphicsModExt.cs" />
     <Compile Include="BastDefOf.cs" />
     <Compile Include="BastyonMod.cs" />
     <Compile Include="BastyonModSettings.cs" />
+    <Compile Include="BastyonBaseExpandingProjectile.cs" />
     <Compile Include="CompVulnerableToSunlight.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="IncidentWorker_RaidCustom.cs" />

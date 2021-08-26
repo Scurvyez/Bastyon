@@ -51,7 +51,7 @@
 				<accuracyMedium>.85</accuracyMedium>
 				<accuracyLong>.75</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bast_SnippingSnailAcid</defaultProjectile>
+				<defaultProjectile>Bast_SnippingSnailAcidStream</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>1</minRange>
