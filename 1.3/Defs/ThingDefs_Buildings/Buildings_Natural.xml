@@ -30,36 +30,25 @@
       <Bast_Alluvium_Jelly>45</Bast_Alluvium_Jelly>
     </killedLeavings>
     <comps>
-      <li Class="CompProperties_CanBeDormant">
-        <startsDormant>true</startsDormant>
-        <canWakeUpFogged>false</canWakeUpFogged>
-      </li>
       <li Class="CompProperties_WakeUpDormant" />
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Bast_Alluvium_Jelly</thingToSpawn>
+        <spawnCount>20</spawnCount>
+        <spawnIntervalRange>26000~30000</spawnIntervalRange>
+        <spawnMaxAdjacent>2</spawnMaxAdjacent>
+        <spawnForbidden>true</spawnForbidden>
+        <saveKeysPrefix>jelly</saveKeysPrefix>
+      </li>
       <li Class="CompProperties_SpawnerPawn">
         <spawnablePawnKinds>
           <li>Bast_Alluvium</li>
         </spawnablePawnKinds>
-        <!-- <lordJob>LordJob_DefendAndExpandHive</lordJob> -->
         <spawnSound>Hive_Spawn</spawnSound>
         <initialPawnsPoints>200</initialPawnsPoints>
         <maxSpawnedPawnsPoints>75</maxSpawnedPawnsPoints>
       </li>
       <li Class="CompProperties_SelfhealHitpoints">
         <ticksPerHeal>6000</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
-      </li>
-      <li Class="CompProperties_SpawnerHives" />
-      <li Class="CompProperties_Spawner">
-        <thingToSpawn>Bast_Alluvium_Jelly</thingToSpawn>
-        <spawnCount>20</spawnCount>
-        <spawnIntervalRange>26000~30000</spawnIntervalRange>
-        <spawnMaxAdjacent>5</spawnMaxAdjacent>
-        <spawnForbidden>true</spawnForbidden>
-        <saveKeysPrefix>jelly</saveKeysPrefix>
-      </li>
-      <li Class="CompProperties_Maintainable">
-        <ticksHealthy>60000</ticksHealthy>
-        <ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
-        <damagePerTickRare>10</damagePerTickRare>
       </li>
     </comps>
   </ThingDef>
