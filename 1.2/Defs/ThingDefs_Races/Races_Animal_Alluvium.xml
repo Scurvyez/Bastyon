@@ -31,7 +31,7 @@
       <li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
         <defOfBuilding>Bast_VibrantGelatinousMass</defOfBuilding>
         <ticksToBuild>720000</ticksToBuild>
-        <maxBuildingsPerMap>2</maxBuildingsPerMap>
+        <maxBuildingsPerMap>1</maxBuildingsPerMap>
         <acceptedTerrains>
           <li>Mud</li>
           <li>Soil</li>
