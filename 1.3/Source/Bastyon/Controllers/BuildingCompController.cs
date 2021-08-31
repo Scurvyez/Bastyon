@@ -10,86 +10,54 @@ using Verse;
 
 namespace Bastyon
 {
-    public static class BuildingCompController
-    {
-
-    }
-
     public class PlaceWorker_RepellerDesignator : PlaceWorker
     {
         public override void DrawGhost(ThingDef def, IntVec3 center, Rot4 rot, Color ghostCol, Thing thing = null)
         {
-            // On selection of buiding in architect menue - show ring around the item
-            range = def.specialDisplayRadius;
-            GenDraw.DrawRadiusRing(center, this.range);
+            CompProperties_RepelMonster compProperties = def.GetCompProperties<CompProperties_RepelMonster>();
 
-            //find nearest second building and draw a line between them.
-            List<Thing> forCell = Find.CurrentMap.listerBuldingOfDefInProximity.GetForCell(center, this.range, def);
-            List<Dictionary<string, object>> ConnectorPairs = new List<Dictionary<string, object>>();
+            if (compProperties.BuildingConnectionRadius != 0f) range = compProperties.BuildingConnectionRadius;
 
-            foreach (Thing node in forCell)
+            List<IntVec3> cells = new List<IntVec3>();
+            int buildCountIndex = 0;
+            for (int d = 0; d < 4; d++)
             {
-                ConnectorPairs.Add(new Dictionary<string, object> {
-                    {"CurrentNode", node.Position },
-                    {"xVector", forCell.OrderBy(xValue => Math.Abs(node.Position.x - xValue.Position.x)).First().Position},
-                    { "zVector", forCell.OrderBy(zValue => Math.Abs(node.Position.z - zValue.Position.z)).First().Position},
-                    { "xConnection", false},
-                    { "zConnection", true}
-                });
-            }
-
-            if (forCell.Count > 2)
-            {
-                for (int i = 0; i < 2; i++)
+                if (buildCountIndex != 1)
                 {
-                    Dictionary<string, object> NodeConnectors = ConnectorPairs[i];
-                    bool xConnector = Convert.ToBoolean(NodeConnectors["xConnection"]);
-                    bool zConnector = Convert.ToBoolean(NodeConnectors["zConnection"]);
-                    var xNode = NodeConnectors["xVector"];
-                    var zNode = NodeConnectors["zVector"];
-                    var currNode = NodeConnectors["CurrentNode"];
-
-                    foreach (Dictionary<string, object> nodeConnector in ConnectorPairs)
+                    for (int i = 0; i <= (Int32)range; i++)
                     {
-                        if (xConnector == false)
+                        var curCell = center + new IntVec3(0, 0, i).RotatedBy(new Rot4(d));
+                        if (!curCell.InBounds(Find.CurrentMap)) break;
+                        var node = curCell.GetFirstBuilding(Find.CurrentMap);
+                        if(node != null)
                         {
-                            GenDraw.DrawLineBetween(GenThing.TrueCenter(center, Rot4.North, def.size, def.Altitude), (Vector3)xNode, SimpleColor.Green, 0.2f);
-                            ConnectorPairs[i]["xConnection"] = true;
-                            foreach (Dictionary<String, object> x in ConnectorPairs)
+                            if (node.def.defName == def.defName)
                             {
-                                if(x["CurrentNode"] == ConnectorPairs[i]["xConnection"])
-                                {
-                                    x["xConnection"] = true;
-                                    break;
-                                }
+                                GenDraw.DrawLineBetween(GenThing.TrueCenter(center, Rot4.North, def.size, def.Altitude), node.TrueCenter(), SimpleColor.Green, 0.2f);
+                                buildCountIndex++;
                             }
                         }
-                        if (zConnector == false)
-                        {
-                            GenDraw.DrawLineBetween(GenThing.TrueCenter(center, Rot4.North, def.size, def.Altitude), (Vector3)zNode, SimpleColor.Green, 0.2f);
-                            ConnectorPairs[i]["zConnection"] = true;
-                            foreach (Dictionary<String, object> z in ConnectorPairs)
-                            {
-                                if (z["CurrentNode"] == ConnectorPairs[i]["zConnection"])
-                                {
-                                    z["zConnection"] = true;
-                                    break;
-                                }
-                            }
-                        }
+                    }
+                    if (buildCountIndex == 1)
+                    {
+                        break;
                     }
                 }
             }
         }
-
-
         public float range;
     }
-    
-    public class LinkBuildingNodeController
-    {
-        
-        
 
+    public class PlaceWorker_RepellerConnectionRadius : PlaceWorker
+    {
+        public override void DrawGhost(ThingDef def, IntVec3 center, Rot4 rot, Color ghostCol, Thing thing = null)
+        {
+            CompProperties_RepelMonster compProperties = def.GetCompProperties<CompProperties_RepelMonster>();
+
+            if (compProperties.BuildingConnectionRadius != 0f) range = compProperties.BuildingConnectionRadius;
+
+            GenDraw.DrawRadiusRing(center, this.range);
+        }
+        public float range;
     }
 }

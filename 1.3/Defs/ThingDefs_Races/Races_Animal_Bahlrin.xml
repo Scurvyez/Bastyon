@@ -109,15 +109,12 @@
 			<li>AnimalFighter</li>
 		</tradeTags>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_Floating">
-      
-      		</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating"></li>
 			<li Class="AnimalBehaviours.CompProperties_Untameable">
 				<message>Bast_BahlrinNotTameable</message>
 				<sendMessage>true</sendMessage>
 				<goesManhunter>true</goesManhunter>
 			</li>
-			<li Class="Bastyon.CompProperties_VulnerableToSunlight"></li>
 			<li Class="Bastyon.CompProperties_RepelledByBuildings"></li>
 		</comps>
 		<modExtensions>
@@ -125,12 +122,12 @@
 				<statToAdd>
 					<li>Bast_PrimaryRole</li>
 					<li>Bast_SecondaryRole</li>
-					<li>Bast_RangedAttacks</li>			
+					<li>Bast_RangedAttacks</li>
 				</statToAdd>
 				<statValues>
-					<li>Bast_Floater</li>	
-					<li>Bast_ExtremeAggressor</li>	
-					<li>Bast_No</li>	
+					<li>Bast_Floater</li>
+					<li>Bast_ExtremeAggressor</li>
+					<li>Bast_No</li>
 				</statValues>
 				<statDescriptions>
 					<li>Bast_FloaterDesc</li>
@@ -172,16 +169,16 @@
 				<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin2</texPath>
 			</li>
 		</alternateGraphics>
-		
-    <modExtensions>
-      <li Class="Bastyon.AlternateGraphicsModExt">
-        <alternateGraphicsFemale>
-          <li>
-            <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin4</texPath>
-          </li>
-        </alternateGraphicsFemale>
-      </li>
-    </modExtensions>
+
+		<modExtensions>
+			<li Class="Bastyon.AlternateGraphicsModExt">
+				<alternateGraphicsFemale>
+					<li>
+						<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin4</texPath>
+					</li>
+				</alternateGraphicsFemale>
+			</li>
+		</modExtensions>
 
 		<lifeStages>
 			<li>

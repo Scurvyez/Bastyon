@@ -79,6 +79,7 @@
 
     <ThingDef Name="Bast_Repeller" ParentName="BuildingBase">
         <defName>Bast_Repeller</defName>
+        <thingClass>Bastyon.BuildingRepeller</thingClass>
         <label>repeller</label>
         <description>PLACEHOLDER TEXT FOR NOW</description>
         <category>Building</category>
@@ -133,22 +134,16 @@
         <placeWorkers>
             <li>PlaceWorker_Heater</li>
             <li>Bastyon.PlaceWorker_RepellerDesignator</li>
+            <li>Bastyon.PlaceWorker_RepellerConnectionRadius</li>
         </placeWorkers>
-        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
         <comps>
             <li Class="CompProperties_Breakdownable" />
-            <li Class="CompProperties_Glower">
-                <glowRadius>10</glowRadius>
-                <glowColor>(12,196,246)</glowColor>
-            </li>
-            <li Class="CompProperties_HeatPusher">
-                <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>3.5</heatPerSecond>
-                <heatPushMaxTemperature>23</heatPushMaxTemperature>
+            <li Class="Bastyon.CompProperties_RepelMonster">
+                <BuildingConnectionRadius>20</BuildingConnectionRadius>
             </li>
         </comps>
         <designationCategory>Security</designationCategory>
-        <specialDisplayRadius>50</specialDisplayRadius>
     </ThingDef>
 
 </Defs>

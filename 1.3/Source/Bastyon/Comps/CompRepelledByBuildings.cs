@@ -10,18 +10,6 @@ using Verse;
 
 namespace Bastyon
 {
-    public class RepelBalhrin : DefModExtension
-    {
-        public bool repelledBy;
-
-        public float hediffSeverity;
-
-        public int tickInterval;
-
-        public float fireSpawnChance;
-
-        public FloatRange fireSize;
-    }
     public class CompProperties_RepelledByBuildings : CompProperties
     {
         public CompProperties_RepelledByBuildings()
@@ -30,10 +18,15 @@ namespace Bastyon
         }
     }
 
+
     public class CompRepelledByBuildings : ThingComp
     {
-        
+        public List<Vector3> repellerBuildingsOnMap = new List<Vector3>();
+        public ThingDef repellerBuildingDef = Utils_RepellerBuilding.RepellerDef;
+        public Pawn pawn => this.parent as Pawn;
+        public override void CompTick()
+        {
+            base.CompTick();
+        }
     }
-
-
 }
