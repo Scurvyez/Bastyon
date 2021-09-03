@@ -47,7 +47,7 @@
 				<TropicalSwamp>0.08</TropicalSwamp>
 				<AridShrubland>0.00</AridShrubland>
 			</wildBiomes>
-            <body>Bast_LimblessHovering</body>
+            <body>Bast_LimblessHoveringWisp</body>
             <herdAnimal>true</herdAnimal>
             <baseBodySize>1.0</baseBodySize>
             <baseHealthScale>1.5</baseHealthScale>

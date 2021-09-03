@@ -270,4 +270,32 @@
 		</tags>
 	</BodyPartDef>
 
+	<!--==================== Wisp Specific Bodyparts ====================-->
+
+	<BodyPartDef>
+		<defName>Bast_WispMainBody</defName>
+		<label>glowing shroud</label>
+		<hitPoints>550</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>0.02</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_InnerEnergySource</defName>
+		<label>inner energy source</label>
+		<hitPoints>100</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+
 </Defs>
