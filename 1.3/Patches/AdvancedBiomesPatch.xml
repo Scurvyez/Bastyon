@@ -309,6 +309,19 @@
 					</value>
 				</li>
 
+				<!--==================== Wisp Adv. Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Bast_Wisp"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.10</PoisonForest>
+						<Savanna>0.00</Savanna>
+						<Volcano>0.00</Volcano>
+						<Wasteland>0.00</Wasteland>
+						<Wetland>0.01</Wetland>					
+					</value>
+				</li>
+
 			</operations>
 		</match>
 	</Operation>
