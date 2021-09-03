@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Wisp Body ====================-->
+
+    <BodyDef>
+		<defName>Bast_LimblessHoveringWisp</defName>
+		<label>wisp</label>
+		<corePart>
+			<def>Bast_WispMainBody</def>
+			<height>Top</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Heart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+                <li>
+					<def>Bast_InnerEnergySource</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+                    <def>Head</def>
+                    <customLabel>bright nothingness</customLabel>
+					<coverage>0.02</coverage>
+              		<groups>
+                		<li>HeadAttackTool</li>
+              		</groups>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	
+</Defs>
