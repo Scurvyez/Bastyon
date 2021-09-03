@@ -53,6 +53,7 @@
     <Bast_AcidImmunity>Acid Immunity</Bast_AcidImmunity>
     <Bast_NoPain>Painless</Bast_NoPain>
     <Bast_Cute>Cute</Bast_Cute>
+    <Bast_Glower>Glower</Bast_Glower>
 
     <!-- Role Descriptions -->
 	
@@ -85,5 +86,6 @@
     <Bast_AcidImmunityDesc>This animal is immune to all forms of acid.</Bast_AcidImmunityDesc>
     <Bast_NoPainDesc>This animal doesn't even know what pain means. It will push on, no matter how grave its injuries are.</Bast_NoPainDesc>
     <Bast_CuteDesc>Congrats. You've found an easter egg. :)</Bast_CuteDesc>
+    <Bast_GlowerDesc>This animal glows like a small sun... well... maybe more like street lamp.</Bast_GlowerDesc>
 
 </LanguageData>

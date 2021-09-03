@@ -141,8 +141,8 @@
         </graphicData>
         <statBases>
             <MarketValue>12.0</MarketValue>
-            <StuffPower_Armor_Sharp>.12</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>.38</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Sharp>1.20</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>.88</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>.43</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
