@@ -48,7 +48,6 @@
     <Compile Include="Buildings\TorchRepellant.cs" />
     <Compile Include="Comps\CompRepelledByBuildings.cs" />
     <Compile Include="Controllers\BuildingCompController.cs" />
-    <Compile Include="JobGivers\JobGiver_FleeFromRepeller.cs" />
     <Compile Include="Settings\BastyonModSettings.cs" />
     <Compile Include="Comps\CompRepelMonster.cs" />
     <Compile Include="Comps\CompVulnerableToSunlight.cs" />

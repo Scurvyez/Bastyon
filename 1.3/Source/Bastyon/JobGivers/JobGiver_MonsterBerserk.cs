@@ -24,7 +24,7 @@ namespace Bastyon
                 return null;
             }
 
-            Pawn victim = pawn.FindPawnTarget(distanceToReact, (Thing p) => p is Pawn v && !v.Downed);
+            Pawn victim = pawn.FindPawnTarget(distanceToReact, (Thing p) => p is Pawn v && !v.Downed && !Utils_RepellerBuilding.InRepellerArea(Utils_RepellerBuilding.GetAllBuildingPositions(), v.Position.ToVector3()));
             if (victim == null)
             {
                 if (pawn.GetRoom() != null && !pawn.GetRoom().PsychologicallyOutdoors)

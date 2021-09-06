@@ -34,9 +34,8 @@
 						</li>
 					</subNodes>
 				</li>
-
-
-				<li Class="Bastyon.JobGiver_FleeFromRepeller" />
+				<li Class="Bastyon.JobGiver_FleeFromSunLight" />
+				<li Class="Bastyon.JobGiver_MonsterBerserk" />
 
 				<!-- Wander -->
 				<li Class="ThinkNode_Tagger">
