@@ -20,7 +20,7 @@
 							<label>Bastyon</label>
 						</AchievementsExpanded.AchievementTabDef>
 
-						<AchievementsExpanded.AchievementDef Name="Bast_AchievementParent" Abstract="true">					
+						<AchievementsExpanded.AchievementDef Name="Bast_AchievementParent" Abstract="true">
 							<bgtexPath>Achievements/Bast_AchievementBackground</bgtexPath>
 							<tab>Bast_Achievements</tab>
 						</AchievementsExpanded.AchievementDef>

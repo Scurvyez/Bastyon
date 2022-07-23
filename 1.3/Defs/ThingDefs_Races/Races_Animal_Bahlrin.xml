@@ -172,15 +172,15 @@
 			</li>
 		</alternateGraphics>
 		
-    <modExtensions>
-      <li Class="Bastyon.AlternateGraphicsModExt">
-        <alternateGraphicsFemale>
-          <li>
-            <texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin4</texPath>
-          </li>
-        </alternateGraphicsFemale>
-      </li>
-    </modExtensions>
+		<modExtensions>
+			<li Class="Bastyon.AlternateGraphicsModExt">
+				<alternateGraphicsFemale>
+				<li>
+					<texPath>Things/Pawn/Animal/Bast_Bahlrin/Bast_Bahlrin4</texPath>
+				</li>
+				</alternateGraphicsFemale>
+			</li>
+		</modExtensions>
 
 		<lifeStages>
 			<li>
