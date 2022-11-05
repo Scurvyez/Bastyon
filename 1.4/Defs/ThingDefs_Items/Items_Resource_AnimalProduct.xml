@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Alluvium Jelly ====================-->
+
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>Bast_Alluvium_Jelly</defName>
+        <label>alluvium jelly</label>
+        <description>The vibrant, molasses-like jelly of an Alluvium. Yummy!</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Bast_AlluviumJelly</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>7.5</MarketValue>
+            <Mass>0.025</Mass>
+            <Nutrition>0.10</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.03</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <ingestible>
+            <foodType>AnimalProduct</foodType>
+            <preferability>MealFine</preferability>
+            <joy>0.08</joy>
+            <joyKind>Gluttonous</joyKind>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!--==================== Gray Terror Eggs (Unfert) ====================-->
+
+    <ThingDef ParentName="EggUnfertBase">
+      <defName>Bast_Gray_Terror_EggUnfertilized</defName>
+      <label>gray terror egg (unfert.)</label>
+      <description>An unfertilized gray terror egg. If all goes well (not sure why you would want it to), it should hatch into a baby gray terror. It can be eaten raw and isn't much better cooked.</description>
+      <graphicData>
+        <texPath>Things/Item/Resource/AnimalProductRaw/EggGrayTerror</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+      </graphicData>
+      <tradeability>Sellable</tradeability>
+      <statBases>
+        <MarketValue>5.0</MarketValue>
+      </statBases>
+    </ThingDef>
+
+    <!--==================== Gray Terror Eggs (Fert) ====================-->
+    
+    <ThingDef ParentName="EggFertBase">
+      <defName>Bast_Gray_Terror_EggFertilized</defName>
+      <label>gray terror egg (fert.)</label>
+      <description>A fertilized gray terror egg. If all goes well (not sure why you would want it to), it should hatch into a baby gray terror. It can be eaten raw and isn't much better cooked.</description>
+      <graphicData>
+        <texPath>Things/Item/Resource/AnimalProductRaw/EggGrayTerror</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+      </graphicData>
+      <statBases>
+        <MarketValue>5.0</MarketValue>
+      </statBases>
+      <comps>
+        <li Class="CompProperties_Hatcher">
+          <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+          <hatcherPawn>Bast_Gray_Terror</hatcherPawn>
+        </li>
+      </comps>
+    </ThingDef>
+
+    <!--==================== Critter Eggs (Unfert) ====================-->
+
+    <ThingDef ParentName="EggUnfertBase">
+      <defName>Bast_Critter_EggUnfertilized</defName>
+      <label>critter egg (unfert.)</label>
+      <description>An unfertilized critter egg. You don't want these...</description>
+      <graphicData>
+        <texPath>Things/Item/Resource/AnimalProductRaw/EggCritter</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+      </graphicData>
+      <tradeability>Sellable</tradeability>
+      <statBases>
+        <MarketValue>5.0</MarketValue>
+      </statBases>
+    </ThingDef>
+
+    <!--==================== Critter Eggs (Fert) ====================-->
+    
+    <ThingDef ParentName="EggFertBase">
+      <defName>Bast_Critter_EggFertilized</defName>
+      <label>critter egg (fert.)</label>
+      <description>A fertilized critter egg. You don't want these...</description>
+      <graphicData>
+        <texPath>Things/Item/Resource/AnimalProductRaw/EggCritter</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+      </graphicData>
+      <statBases>
+        <MarketValue>5.0</MarketValue>
+      </statBases>
+      <comps>
+        <li Class="CompProperties_Hatcher">
+          <hatcherDaystoHatch>15</hatcherDaystoHatch>
+          <hatcherPawn>Bast_Critter</hatcherPawn>
+        </li>
+      </comps>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== No-Pain Hediff ====================-->
+
+    <HediffDef>
+		<defName>Bast_NoPain</defName>
+		<description>This creature does not experience pain like others. It barely knows what pain is. Pain is an afterthought.</description>
+		<label>no pain sensitivity</label>
+		<defaultLabelColor>(66,245,245)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<statOffsets>
+					<PainShockThreshold>1</PainShockThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!--==================== Advanced Analgesia Hediff ====================-->
+
+    <HediffDef>
+		<defName>Bast_AdvancedAnalgesia</defName>
+		<description>By means of its psychokinetic powers, a befouled vorpal bunny has shared its ability to repel all forms of pain.</description>
+		<label>advanced analgesia</label>
+		<defaultLabelColor>(66,245,245)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<statOffsets>
+					<PainShockThreshold>1</PainShockThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

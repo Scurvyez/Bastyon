@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Vorpal Bunny ThingDef ====================-->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>Bast_Vorpal_Bunny</defName>
+        <label>vorpal bunny</label>
+        <description>These creatures have been hunted for their precious fluffy tails and long, opulent feathers for many centuries across the rim. Because of this, they have taken to the densely wooded regions of most planets in search of a refuge from the trophy hunters among men and creature alike.</description>
+        <statBases>
+            <MoveSpeed>5.00</MoveSpeed>
+            <ComfyTemperatureMin>5</ComfyTemperatureMin>
+            <ComfyTemperatureMax>30</ComfyTemperatureMax>
+            <MarketValue>350</MarketValue>
+            <MeatAmount>10</MeatAmount>
+            <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+        </statBases>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Blink">
+                <blinkInterval>5000</blinkInterval>
+                <distance>3~5</distance>
+                <warpEffect>true</warpEffect>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+                <timeInYears>2</timeInYears>
+                <pawnToTurnInto>Bast_Vorpal_Bunny_Enraged</pawnToTurnInto>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_AutoNutrition">
+		        <tickInterval>2000</tickInterval>
+                <consumingFoodReportString>Eating tiny insects</consumingFoodReportString>		
+	        </li>
+        </comps>
+        <tools>
+            <li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>3.0</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.75</chanceFactor>
+			</li>
+        </tools>
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <foodType>OmnivoreAnimal</foodType>
+            <body>Bast_Critter</body>
+            <baseHungerRate>0.15</baseHungerRate>
+            <baseBodySize>0.50</baseBodySize>
+            <baseHealthScale>1.75</baseHealthScale>
+            <bloodDef>Filth_CritterBlood</bloodDef>
+            <wildness>0.75</wildness>
+            <petness>0.10</petness>
+            <nameOnTameChance>1</nameOnTameChance>
+            <nuzzleMtbHours>12</nuzzleMtbHours>
+            <trainability>Advanced</trainability>
+            <leatherDef>Leather_Vorpal_Bunny</leatherDef>
+            <meatLabel>vorpal bunny meat</meatLabel>
+            <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+            <canBePredatorPrey>true</canBePredatorPrey>
+            <lifeExpectancy>3</lifeExpectancy>
+            <hasGenders>false</hasGenders>
+            <predator>false</predator>
+			<maxPreyBodySize>1.0</maxPreyBodySize>
+            <wildBiomes>
+                <IceSheet>0.00</IceSheet>
+                <SeaIce>0.00</SeaIce>
+                <ColdBog>0.00</ColdBog>
+                <Desert>0.00</Desert>
+                <BorealForest>0.05</BorealForest>
+                <Tundra>0.05</Tundra>
+                <TemperateForest>0.05</TemperateForest>
+                <TemperateSwamp>0.00</TemperateSwamp>
+                <TropicalRainforest>0.10</TropicalRainforest>
+                <TropicalSwamp>0.00</TropicalSwamp>
+                <AridShrubland>0.00</AridShrubland>
+            </wildBiomes>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>.00</minAge>
+                    <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+                    <soundDeath>Pawn_Rodent_Wounded</soundDeath>
+                    <soundCall>Pawn_Rodent_Call</soundCall>
+                    <soundAngry>Pawn_Rodent_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalExotic</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+                    <li>Bast_Cute</li>	
+					<li>Bast_No</li>	
+				</statValues>
+				<statDescriptions>
+                    <li>Bast_CuteDesc</li>
+					<li>Bast_NoRanged</li>
+				</statDescriptions>
+                <showImageInInfoCard>true</showImageInInfoCard>
+                <ImageToShowInInfoCard>Art/Bast_VorpalBunnyArt</ImageToShowInInfoCard>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!--==================== Vorpal Bunny PawnKindDef ====================-->
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Bast_Vorpal_Bunny</defName>
+        <label>vorpal bunny</label>
+        <race>Bast_Vorpal_Bunny</race>
+        <combatPower>120</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.08</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>2</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Vorpal_Bunny/Bast_Vorpal_Bunny</texPath>
+                    <drawSize>2.0</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Vorpal_Bunny/Bast_Dessicated_Vorpal_Bunny</texPath>
+                    <drawSize>2.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+</Defs>

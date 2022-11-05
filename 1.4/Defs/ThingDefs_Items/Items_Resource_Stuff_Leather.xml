@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Bahlrin Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Bahlrin</defName>
+        <label>bahlrin leather</label>
+        <description>A Bahlrin's hide is not beautiful. It is not good at insulating. However, the heavy dark-grayish skin is astonishingly durable. Stopping most sharp attcks in their tracks, this alien leather is perfect for the warrior pawns of your colony!</description>
+        <graphicData>
+            <color>(69,69,69)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.0</MarketValue>
+            <StuffPower_Armor_Sharp>.82</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>.02</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>.12</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>-10</StuffPower_Insulation_Cold>
+            <DeteriorationRate>1.25</DeteriorationRate>
+            <Flammability>.25</Flammability>
+            <MaxHitPoints>340</MaxHitPoints>
+            <Mass>0.018</Mass>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>35</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Beauty>0.4</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(69,69,69)</color>
+            <commonality>0.025</commonality>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Bastyon Fur ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Bastyon</defName>
+        <label>bastyon fur</label>
+        <description>The hide of a bastyon shimmers in the sunlight as brightly as under a full moon in the night sky. A valuable textile in the hands of the right trader!</description>
+        <graphicData>
+            <color>(83,210,148)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>8.8</MarketValue>
+            <StuffPower_Armor_Sharp>.93</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>.42</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(83,210,148)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>1.125</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Blazing Felidae Fur ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Blazing_Felidae</defName>
+        <label>blazing felidae fur</label>
+        <description>Subject to constant roaring fire, Blazing Felidae fur offers unrivalled protection against heat and flames. The fur also provides excellent protection against bladed weapons.</description>
+        <graphicData>
+            <color>(60,63,98)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>3.8</MarketValue>
+            <StuffPower_Armor_Sharp>1.30</StuffPower_Armor_Sharp>
+            <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>95</StuffPower_Insulation_Heat>
+            <Flammability>0.00</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(60,63,98)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>1.45</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Chem Tegu Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Chem_Tegu</defName>
+        <label>chem tegu leather</label>
+        <description>As a genetically enhanced variant of the common black and white tegu, the chem tegu's leather bears all the same similarities. With one exception, it is strangley fire-resistant. As such, it makes for rather decent warm climate clothing.</description>
+        <graphicData>
+            <color>(92,50,31)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>8.0</MarketValue>
+            <StuffPower_Armor_Sharp>.20</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>.08</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>.65</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+            <DeteriorationRate>1.25</DeteriorationRate>
+            <Flammability>0.05</Flammability>
+            <MaxHitPoints>125</MaxHitPoints>
+            <Mass>0.03</Mass>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>35</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Beauty>0.4</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(92,50,31)</color>
+            <commonality>0.025</commonality>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Scire Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Scire</defName>
+        <label>scire leather</label>
+        <description>A mysterious shimmering animal hide. Extrememly durable and sought after by many. Great choice for armor!</description>
+        <graphicData>
+            <color>(0,150,252)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>12.0</MarketValue>
+            <StuffPower_Armor_Sharp>1.20</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>.88</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>.43</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
+            <DeteriorationRate>1.25</DeteriorationRate>
+            <Flammability>.25</Flammability>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>0.018</Mass>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>35</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Beauty>1.8</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(0,150,252)</color>
+            <commonality>0.075</commonality>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Ethereal Lion Fur ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Ethereal_Lion</defName>
+        <label>ethereal lion fur</label>
+        <description>With a lightly darkened greenish color, the fur of an Ethereal Lion will offer your colonists proper cold-weather protection for harsh, windy biomes.</description>
+        <graphicData>
+            <color>(94,141,125)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.8</MarketValue>
+            <StuffPower_Armor_Sharp>1.30</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.50</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>95</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(94,141,125)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>1.45</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Ceratok Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Ceratok</defName>
+        <label>ceratok leather</label>
+        <description>Ceratok leather is extremely resiliant towards blunt damage. It is by no means a beautiful textile, but it will get the job done when your colony needs protection.</description>
+        <graphicData>
+            <color>(146,128,99)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5.1</MarketValue>
+            <StuffPower_Armor_Sharp>1.00</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.60</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>.12</StuffPower_Armor_Heat>
+            <DeteriorationRate>1.25</DeteriorationRate>
+            <Flammability>.25</Flammability>
+            <MaxHitPoints>340</MaxHitPoints>
+            <Mass>0.04</Mass>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>75</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Beauty>0.4</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(146,128,99)</color>
+            <commonality>0.025</commonality>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Soul Eater Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Soul_Eater</defName>
+        <label>soul eater leather</label>
+        <description>Whereas most animal hides share the hur of the creatures skin, that of a soul eater retains the color of the souls ravaged by the once-living beast.</description>
+        <graphicData>
+            <color>(227,234,93)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>8.0</MarketValue>
+            <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.40</StuffPower_Armor_Blunt>
+            <DeteriorationRate>1.25</DeteriorationRate>
+            <Flammability>.25</Flammability>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>0.018</Mass>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>35</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Beauty>0.4</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(227,234,93)</color>
+            <commonality>0.025</commonality>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Gleaming Cervus Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Gleaming_Cervus</defName>
+        <label>gleaming cervus leather</label>
+        <description>The hide taken froma  recently slain gleaming cervus. Its light purple hue shines vibrantly in the light of day.</description>
+        <graphicData>
+            <color>(124,98,163)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>12.0</MarketValue>
+            <StuffPower_Armor_Sharp>.12</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>.38</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>.43</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
+            <DeteriorationRate>1.25</DeteriorationRate>
+            <Flammability>.25</Flammability>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>0.018</Mass>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>35</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Beauty>1.8</Beauty>
+            </statFactors>
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <color>(124,98,163)</color>
+            <commonality>0.075</commonality>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Vorpal Bunny Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Vorpal_Bunny</defName>
+        <label>vorpal bunny fur</label>
+        <description>This fur is soft. Almost too soft... and filled with intense feelings of a life not yet lived.</description>
+        <graphicData>
+            <color>(96,169,167)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.0</MarketValue>
+            <StuffPower_Armor_Sharp>1.00</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.00</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(96,169,167)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>0.9</MaxHitPoints>
+                <Beauty>1.45</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Enraged Vorpal Bunny Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Vorpal_Bunny_Enraged</defName>
+        <label>enraged vorpal bunny fur</label>
+        <description>Even the fur of an enraged vorpal bunny seems to be infuritated and fueled by hate. Simply by donning the material you feel the fleeting inkling of a recent release of heat.</description>
+        <graphicData>
+            <color>(255,107,66)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.7</MarketValue>
+            <StuffPower_Armor_Sharp>1.00</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.00</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>60</StuffPower_Insulation_Heat>
+            <Flammability>0.05</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(255,107,66)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>1.0</MaxHitPoints>
+                <Beauty>1.45</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Iridescent Vorpal Bunny Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Vorpal_Bunny_Iridescent</defName>
+        <label>iridescent vorpal bunny fur</label>
+        <description>Shimmering under the sun and stars alike, this fur will offer little in terms of protection but will fetch a fair price with the right trader.</description>
+        <graphicData>
+            <color>(239,75,241)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>3.2</MarketValue>
+            <StuffPower_Armor_Sharp>1.00</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.00</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(239,75,241)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>0.8</MaxHitPoints>
+                <Beauty>2.0</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Pragmatic Vorpal Bunny Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Vorpal_Bunny_Pragmatic</defName>
+        <label>pragmatic vorpal bunny fur</label>
+        <description>Green! The color of nature, and a down-to-earth mentality. Your colonists will find adequate protection from the elements via this pragmatic fur.</description>
+        <graphicData>
+            <color>(148,219,77)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>3.5</MarketValue>
+            <StuffPower_Armor_Sharp>1.00</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.00</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(148,219,77)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>0.9</MaxHitPoints>
+                <Beauty>1.45</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Enduring Vorpal Bunny Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Vorpal_Bunny_Enduring</defName>
+        <label>enduring vorpal bunny fur</label>
+        <description>The fur of a recently deceased enduring vorpal bunny. The creature once adorned with this magnificant pelt had no-doubtedly seen great turmoil and lived a life full of never-ending spirit. May the right colonist sport it with pride and conviction.</description>
+        <graphicData>
+            <color>(174,143,224)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>3.2</MarketValue>
+            <StuffPower_Armor_Sharp>1.50</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.50</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(174,143,224)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>0.9</MaxHitPoints>
+                <Beauty>1.45</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Gilded Vorpal Bunny Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Vorpal_Bunny_Gilded</defName>
+        <label>gilded vorpal bunny fur</label>
+        <description>Having lived an adventurous and prosporous life on the rim, a gilded vorpal bunny's fur will protect any colonist from the most devastating attacks time and time again.</description>
+        <graphicData>
+            <color>(255,230,102)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>6.0</MarketValue>
+            <StuffPower_Armor_Sharp>1.90</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.90</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(255,230,102)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>2.5</MaxHitPoints>
+                <Beauty>1.60</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================== Befouled Vorpal Bunny Leather ====================-->
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Vorpal_Bunny_Befouled</defName>
+        <label>befouled vorpal bunny fur</label>
+        <description>Drenched in countless quadrums of bitter war, pain, and suffering... the fur of a befouled vorpal bunny will grant one safety from the harshest of the rims' environments.</description>
+        <graphicData>
+            <color>(31,31,31)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>6.0</MarketValue>
+            <StuffPower_Armor_Sharp>1.00</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.00</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>-100</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>100</StuffPower_Insulation_Heat>
+            <Flammability>0.30</Flammability>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <minRewardCount>40</minRewardCount>
+        <stuffProps>
+            <color>(31,31,31)</color>
+            <commonality>0.001</commonality>
+            <statFactors>
+                <MaxHitPoints>2.5</MaxHitPoints>
+                <Beauty>0.50</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>  

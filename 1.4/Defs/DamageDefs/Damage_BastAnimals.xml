@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== Acid Stream Damage ====================-->
+
+    <DamageDef>
+		<defName>Bast_AcidStream</defName>
+		<label>acid spew</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>VEF_AcidBurn</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>VEF_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.02</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+		<isRanged>true</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+
+	<!-- ==================== Blistering Wind Damage ====================-->
+
+	<DamageDef>
+		<defName>Bast_BlisteringWindExtinguish</defName>
+		<label>blistering wind</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been permanently extinguished.</deathMessage>
+		<hediff>Frostbite</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>Hypothermia</hediff>
+				<severityPerDamageDealt>0.05</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Tornado</impactSoundType>
+		<overkillPctToDestroyPart>0~0.4</overkillPctToDestroyPart>
+		<harmsHealth>true</harmsHealth>
+		<isRanged>true</isRanged>
+	</DamageDef>
+
+	<!-- ==================== Electric Damage ====================-->
+
+	<DamageDef>
+		<defName>Bast_Electric</defName>
+		<label>electric shock</label>
+		<hediff>Cut</hediff>
+
+		<additionalHediffs>
+			<li>
+				<hediff>Bast_Electric</hediff>
+				<severityPerDamageDealt>0.040</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<hasForcefulImpact>true</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has succumbed to the pain of electrocution</deathMessage>
+		<armorCategory>Heat</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+		<explosionCellFleck>LightningGlow</explosionCellFleck>
+		<explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+		<explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<combatLogRules>Damage_EMP</combatLogRules>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	</DamageDef>
+
+</Defs>

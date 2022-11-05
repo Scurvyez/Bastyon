@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Gnomaclu Body ====================-->
+
+    <BodyDef>
+		<defName>Bast_LimblessHovering</defName>
+		<label>gnomaclu</label>
+		<corePart>
+			<def>Body</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Heart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+                    <def>Head</def>
+					<coverage>0.75</coverage>
+              		<groups>
+                			<li>HeadAttackTool</li>
+              		</groups>
+					<parts>
+						<li>
+							<def>Skull</def>
+							<coverage>0.25</coverage>
+							<depth>Inside</depth>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.08</coverage>
+									<depth>Inside</depth>
+								</li>
+							</parts>
+						</li>
+                        <li>
+                            <def>Bast_BigEye</def>
+                            <coverage>0.07</coverage>
+                        </li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	
+</Defs>

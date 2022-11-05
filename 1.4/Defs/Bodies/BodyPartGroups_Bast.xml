@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== Main Body ====================-->
+
+	<BodyPartGroupDef>
+		<defName>Bast_Body</defName>
+		<label>body</label>
+	</BodyPartGroupDef>
+
+</Defs>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--==================== Wisp ThingDef ====================-->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>Bast_Wisp</defName>
+        <label>wisp</label>
+        <description>These vaguely transluscent floating creatures seem to generate in forrested regions. They lack adequate attacks, and their whimsical bodies offer even less protection from the hardships of the rim. However, these fairy-like constructions of matter are beautiful to gaze upon and offer refuge in the mind of those who witness their fleeting presence.</description>
+        <statBases>
+            <MoveSpeed>6.0</MoveSpeed>
+            <MarketValue>115</MarketValue>
+            <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+            <ComfyTemperatureMax>200</ComfyTemperatureMax>
+            <MeatAmount>0</MeatAmount>
+            <Flammability>0.0</Flammability>
+        </statBases>
+        <comps>		
+            <li Class="AnimalBehaviours.CompProperties_Floating">
+      
+            </li>
+        </comps>
+        <tools>
+			<li>
+				<label>encapsulation</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+        <race>
+            <wildBiomes>
+                <IceSheet>0.00</IceSheet>
+				<SeaIce>0.00</SeaIce>
+                <ColdBog>0.00</ColdBog>
+				<Desert>0.00</Desert>
+                <BorealForest>0.10</BorealForest>
+                <Tundra>0.08</Tundra> 
+				<TemperateForest>0.15</TemperateForest>
+				<TemperateSwamp>0.08</TemperateSwamp>
+				<TropicalRainforest>0.10</TropicalRainforest>
+				<TropicalSwamp>0.08</TropicalSwamp>
+				<AridShrubland>0.00</AridShrubland>
+			</wildBiomes>
+            <body>Bast_LimblessHoveringWisp</body>
+            <herdAnimal>true</herdAnimal>
+            <baseBodySize>1.0</baseBodySize>
+            <baseHealthScale>1.5</baseHealthScale>
+            <baseHungerRate>0.15</baseHungerRate>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <wildness>0.65</wildness>
+            <canBePredatorPrey>true</canBePredatorPrey>
+            <trainability>None</trainability>
+            <nameOnTameChance>1</nameOnTameChance>
+            <mateMtbHours>150</mateMtbHours>
+            <gestationPeriodDays>18</gestationPeriodDays>
+            <lifeExpectancy>8</lifeExpectancy>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.5, 1)</li>
+                    <li>(4.0, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>2.5</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>3.5</minAge>
+                    <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+                    <soundDeath>Pawn_Spelopede_Death</soundDeath>
+                    <soundCall>Pawn_Spelopede_Call</soundCall>
+                    <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+        </tradeTags>
+        <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_SecondaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+					<li>Bast_Glower</li>	
+					<li>Bast_Floater</li>	
+					<li>Bast_No</li>	
+				</statValues>
+				<statDescriptions>
+					<li>Bast_GlowerDesc</li>
+					<li>Bast_FloaterDesc</li>
+					<li>Bast_Ranged</li>
+				</statDescriptions>
+                <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_WispArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+    </ThingDef>
+
+  <!--==================== Wisp PawnKindDef ====================-->
+  
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Bast_Wisp</defName>
+        <label>wisp</label>
+        <race>Bast_Wisp</race>
+        <combatPower>99</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <ecoSystemWeight>0.005</ecoSystemWeight>
+        <wildGroupSize>
+			<min>1</min>
+			<max>25</max>
+		</wildGroupSize>
+
+        <alternateGraphicChance>0.858</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp2</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp3</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp4</texPath>
+			</li>
+            <li>
+				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp5</texPath>
+			</li>
+            <li>
+				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp6</texPath>
+			</li>
+            <li>
+				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp7</texPath>
+			</li>
+		</alternateGraphics>
+
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp</texPath>
+                    <drawSize>1.6</drawSize>
+                    <shaderType>
+                        <li>TransparentPostLight</li>
+                    </shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Dessicated_Vibrant_Wisp</texPath>
+                    <drawSize>1.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp</texPath>
+                    <drawSize>2.25</drawSize>
+                    <shaderType>
+                        <li>TransparentPostLight</li>
+                    </shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Dessicated_Vibrant_Wisp</texPath>
+                    <drawSize>2.25</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp</texPath>
+                    <drawSize>5.0</drawSize>
+                    <shaderType>
+                        <li>TransparentPostLight</li>
+                    </shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Dessicated_Vibrant_Wisp</texPath>
+                    <drawSize>5.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+</Defs>

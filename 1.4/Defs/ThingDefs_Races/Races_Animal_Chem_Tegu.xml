@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Chem Tegu ThingDef ====================-->
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>Bast_Chem_Tegu</defName>
+        <label>chem tegu</label>
+        <description>Genetically altered lizards equipped with tempered glass tubes full of noxious and highly combustible chemfuel. They makes great farm animals, so long as you don't blow them up!</description>
+        <statBases>
+            <MoveSpeed>3.4</MoveSpeed>
+            <MarketValue>350</MarketValue>
+            <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+        </statBases>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+                <resourceDef>Chemfuel</resourceDef>
+                <gatheringIntervalDays>1</gatheringIntervalDays>
+                <resourceAmount>15</resourceAmount>
+                <customResourceString>Chemfuel</customResourceString>
+                <isRandom>false</isRandom>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+            <li>
+                <label>left claws</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claws</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.5</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <wildBiomes>
+                <IceSheet>0.00</IceSheet>
+			    <SeaIce>0.00</SeaIce>
+                <ColdBog>0.00</ColdBog>
+                <Desert>0.12</Desert>
+                <BorealForest>0.00</BorealForest>
+                <Tundra>0.00</Tundra>
+				<TemperateForest>0.04</TemperateForest>
+				<TemperateSwamp>0.18</TemperateSwamp>
+				<TropicalRainforest>0.18</TropicalRainforest>
+				<TropicalSwamp>0.20</TropicalSwamp>
+				<AridShrubland>0.12</AridShrubland>
+			</wildBiomes>
+            <body>QuadrupedAnimalWithHoovesAndHump</body>
+            <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+            <executionRange>7</executionRange>
+            <herdAnimal>true</herdAnimal>
+            <baseBodySize>1.0</baseBodySize>
+            <baseHungerRate>1.3</baseHungerRate>
+            <baseHealthScale>0.65</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Chem_Tegu</leatherDef>
+            <roamMtbDays>2</roamMtbDays>
+            <wildness>0.12</wildness>
+            <petness>.1</petness>
+            <trainability>None</trainability>
+            <canBePredatorPrey>false</canBePredatorPrey>
+            <gestationPeriodDays>20</gestationPeriodDays>
+            <lifeExpectancy>15</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>1.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>3</minAge>
+                    <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+                    <soundDeath>Pawn_Muffalo_Death</soundDeath>
+                    <soundCall>Pawn_Muffalo_Call</soundCall>
+                    <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
+        <modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+					<li>Bast_PrimaryRole</li>
+					<li>Bast_SecondaryRole</li>
+					<li>Bast_RangedAttacks</li>			
+				</statToAdd>
+				<statValues>
+					<li>Bast_Farm</li>	
+					<li>Bast_Boomer</li>	
+					<li>Bast_No</li>	
+				</statValues>
+				<statDescriptions>
+					<li>Bast_1.3FarmDesc</li>
+					<li>Bast_BoomerDesc</li>
+					<li>Bast_NoRanged</li>
+				</statDescriptions>
+                <showImageInInfoCard>true</showImageInInfoCard>
+				<ImageToShowInInfoCard>Art/Bast_ChemTeguArt</ImageToShowInInfoCard>
+			</li>
+		</modExtensions>
+    </ThingDef>
+
+    <!--==================== Chem Tegu PawnKindDef ====================-->
+  
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Bast_Chem_Tegu</defName>
+        <label>chem tegu</label>
+        <race>Bast_Chem_Tegu</race>
+        <combatPower>80</combatPower>
+        <ecoSystemWeight>0.5</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>4</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Bast_Chem_Tegu</texPath>
+                    <drawSize>1.0</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Bast_Dessicated_Chem_Tegu</texPath>
+                    <drawSize>1.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Bast_Chem_Tegu</texPath>
+                    <drawSize>1.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Bast_Dessicated_Chem_Tegu</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Bast_Chem_Tegu</texPath>
+                    <drawSize>2.6</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Bast_Dessicated_Chem_Tegu</texPath>
+                    <drawSize>2.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>

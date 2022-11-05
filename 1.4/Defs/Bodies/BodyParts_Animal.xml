@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== Alluvium Specific Bodyparts ====================-->
+
+	<BodyPartDef>
+		<defName>Bast_Nucleus</defName>
+		<label>nucleus</label>
+		<hitPoints>100</hitPoints>
+		<bleedRate>15</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>SightSource</li>
+			<li>EatingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_Nucleoplasm</defName>
+		<label>nucleoplasm</label>
+		<hitPoints>10</hitPoints>
+		<bleedRate>2</bleedRate>
+		<skinCovered>true</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<!--==================== Bahlrin Specific Bodyparts ====================-->
+
+	<BodyPartDef>
+		<defName>Bast_VibrationReceptor</defName>
+		<label>resonance gland</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>30</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>true</skinCovered>
+		<socketed>false</socketed>
+		<beautyRelated>false</beautyRelated>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+    
+	<BodyPartDef>
+		<defName>Bast_Wing</defName>
+		<label>wing</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<socketed>true</socketed>
+		<alive>true</alive>
+		<bleedRate>0.10</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!--==================== Gnomaclu Specific Bodyparts ====================-->
+	<BodyPartDef>
+		<defName>Bast_BigEye</defName>
+		<label>eyeball?</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>30</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>true</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<socketed>true</socketed>
+		<beautyRelated>false</beautyRelated>
+		<hitChanceFactors>
+			<li>
+				<key>Blunt</key>
+				<value>0</value>
+			</li>
+		</hitChanceFactors>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<!--==================== Insect / Spider Specific Bodyparts ====================-->
+
+	<BodyPartDef>
+		<defName>Bast_Thorax</defName>
+		<label>thorax</label>
+		<hitPoints>80</hitPoints>
+		<bleedRate>.25</bleedRate>
+		<frostbiteVulnerability>0.8</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_InsectMouth</defName>
+		<label>mouth</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0.8</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>EatingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_SmallInsectLeg</defName>
+		<label>small leg</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_Abdomen</defName>
+		<label>abdomen</label>
+		<hitPoints>50</hitPoints>
+		<bleedRate>.1</bleedRate>
+		<skinCovered>true</skinCovered>
+
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_Antennae</defName>
+		<label>antennae</label>
+		<hitPoints>5</hitPoints>
+		<bleedRate>1</bleedRate>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+
+	<!--==================== Snipping Snail Specific Bodyparts ====================-->
+	
+	<BodyPartDef>
+		<defName>Bast_GastropodShell</defName>
+		<label>hardy gastropod shell</label>
+		<hitPoints>100</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>			
+
+	<BodyPartDef>
+		<defName>Bast_SnailBody</defName>
+		<label>snail body</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_SnailEyeStalk</defName>
+		<label>eyestalk</label>
+		<hitPoints>12</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+
+		<alive>true</alive>
+		<tags>
+			<li>ManipulationLimbCore</li>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_BladedLeftLeg</defName>
+		<label>left bladed leg</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_BladedRightLeg</defName>
+		<label>right bladed leg</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!--==================== Elemental Specific Bodyparts ====================-->
+
+	<BodyPartDef>
+		<defName>Bast_SavrogMainBody</defName>
+		<label>ardent shroud</label>
+		<hitPoints>1000</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>0.02</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_LightningElementalMainBody</defName>
+		<label>electrified shroud</label>
+		<hitPoints>1000</hitPoints>
+		<frostbiteVulnerability>0.02</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>0.02</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_ImmortalCore</defName>
+		<label>immortal core</label>
+		<hitPoints>350</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Bast_SmolderingFist</defName>
+		<label>smoldering fist</label>
+		<hitPoints>50</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>0.02</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_GalvanizedFist</defName>
+		<label>galvanized fist</label>
+		<hitPoints>50</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>0.02</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!--==================== Wisp Specific Bodyparts ====================-->
+
+	<BodyPartDef>
+		<defName>Bast_WispMainBody</defName>
+		<label>glowing shroud</label>
+		<hitPoints>550</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>0.02</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Bast_InnerEnergySource</defName>
+		<label>inner energy source</label>
+		<hitPoints>100</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+
+</Defs>

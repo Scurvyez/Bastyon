@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== Meat Base ====================-->
+
+	<ThingDef Name="Bast_RawMeatBase" Abstract="True" ParentName="OrganicProductBase">
+		<label>Base meat properties</label>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>3.5</daysToRotStart>
+				<rotDestroys>True</rotDestroys>
+			</li>
+		</comps>
+		<statBases>
+			<Nutrition>0.05</Nutrition>
+			<Flammability>0.5</Flammability>
+			<FoodPoisonChanceFixedHuman>0.04</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<foodType>Meat</foodType>
+			<preferability>DesperateOnly</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>		
+		</ingestible>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!--==================== Sunburst Gnomaclu Meat ====================-->
+
+	<ThingDef ParentName="Bast_RawMeatBase">
+		<defName>Bast_SunburstGnomacluMeat</defName>
+		<label>weird rubbery meat</label>
+		<description>Raw meat from a recently slain Gnomaclu. The texture is similar to aged rubber.\n\nIt will fullfill hunger, if it's all you've got...</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Bast_SunburstGnomacluMeat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<MarketValue>2</MarketValue>
+			<Flammability>0.00</Flammability>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+	</ThingDef>
+
+	<!--==================== Mignight Gnomaclu Meat ====================-->
+
+	<ThingDef ParentName="Bast_RawMeatBase">
+		<defName>Bast_MignightGnomacluMeat</defName>
+		<label>weird rubbery meat</label>
+		<description>Raw meat from a recently slain Gnomaclu. The texture is similar to aged rubber.\n\nIt will fullfill hunger, if it's all you've got...</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Bast_MidnightGnomacluMeat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<MarketValue>2</MarketValue>
+			<Flammability>0.00</Flammability>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+	</ThingDef>
+
+	<!--==================== Hazey Gnomaclu Meat ====================-->
+
+	<ThingDef ParentName="Bast_RawMeatBase">
+		<defName>Bast_HazeyGnomacluMeat</defName>
+		<label>weird rubbery meat</label>
+		<description>Raw meat from a recently slain Gnomaclu. The texture is similar to aged rubber.\n\nIt will fullfill hunger, if it's all you've got...</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Bast_HazeyGnomacluMeat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.03</Mass>
+			<MarketValue>2</MarketValue>
+			<Flammability>0.00</Flammability>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+	</ThingDef>
+
+	<!--==================== Alluvium Flesh ====================-->
+
+	<ThingDef ParentName="Bast_RawMeatBase">
+		<defName>Bast_AlluviumFlesh</defName>
+		<label>transparent flesh</label>
+		<description>The oddly transparent flesh of an Alluvium.\n\nAt least it looks like candy.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Bast_AlluviumFlesh</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<MarketValue>2.3</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+	</ThingDef>
+
+</Defs>

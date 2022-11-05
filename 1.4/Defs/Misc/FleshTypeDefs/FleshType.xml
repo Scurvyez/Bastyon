@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Alluvium Flesh ====================-->
+
+    <FleshTypeDef>
+        <defName>Alluvium</defName>
+        <corpseCategory>CorpsesAnimal</corpseCategory>
+        <damageEffecter>Damage_HitFlesh</damageEffecter>
+        <genericWounds>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundAlluviumFleshA</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundAlluviumFleshB</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundAlluviumFleshC</texture>
+            </li>
+        </genericWounds>
+    </FleshTypeDef>
+
+    <!--==================== Svarog Flesh ====================-->
+
+    <FleshTypeDef>
+        <defName>Svarog</defName>
+        <corpseCategory>CorpsesAnimal</corpseCategory>
+        <damageEffecter>Damage_HitFlesh</damageEffecter>
+        <genericWounds>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundSvarogFleshA</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundSvarogFleshB</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundSvarogFleshC</texture>
+            </li>
+        </genericWounds>
+    </FleshTypeDef>
+
+    <!--==================== Lightning Elemental Flesh ====================-->
+
+    <FleshTypeDef>
+        <defName>LightningElemental</defName>
+        <corpseCategory>CorpsesAnimal</corpseCategory>
+        <damageEffecter>Damage_HitFlesh</damageEffecter>
+        <genericWounds>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundLightningElementalFleshA</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundLightningElementalFleshB</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundLightningElementalFleshC</texture>
+            </li>
+        </genericWounds>
+    </FleshTypeDef>
+
+</Defs>
