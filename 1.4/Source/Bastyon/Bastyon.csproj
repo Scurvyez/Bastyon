@@ -47,6 +47,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BastyonMain.cs" />
     <Compile Include="DefModExtensions\AlternateGraphicsModExt.cs" />
     <Compile Include="DefOfs\BastDefOf.cs" />
     <Compile Include="Settings\BastyonMod.cs" />

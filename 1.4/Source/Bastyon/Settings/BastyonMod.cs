@@ -16,7 +16,7 @@ namespace Bastyon
 
         public override string SettingsCategory()
         {
-            return "Steve's Animals Animal Settings";
+            return "Steve's Animals: Spawn Toggles";
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
@@ -53,7 +53,7 @@ namespace Bastyon
 
         public override string SettingsCategory()
         {
-            return "Steve's Animals Raid Settings";
+            return "Steve's Animals: Raid Settings";
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

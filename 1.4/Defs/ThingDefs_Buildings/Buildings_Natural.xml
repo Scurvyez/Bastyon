@@ -39,14 +39,14 @@
                 <spawnForbidden>true</spawnForbidden>
                 <saveKeysPrefix>jelly</saveKeysPrefix>
             </li>
-            <li Class="CompProperties_SpawnerPawn">
+            <!-- <li Class="CompProperties_SpawnerPawn">
                 <spawnablePawnKinds>
                     <li>Bast_Alluvium</li>
                 </spawnablePawnKinds>
                 <spawnSound>Hive_Spawn</spawnSound>
                 <initialPawnsPoints>200</initialPawnsPoints>
                 <maxSpawnedPawnsPoints>75</maxSpawnedPawnsPoints>
-            </li>
+            </li> -->
             <li Class="CompProperties_SelfhealHitpoints">
                 <ticksPerHeal>6000</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
             </li>

@@ -18,7 +18,7 @@
         </statBases>
         <comps>
             <li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
-                <reproductionIntervalDays>20</reproductionIntervalDays>
+                <reproductionIntervalDays>30</reproductionIntervalDays>
                 <customString>Duplicating in: </customString>
             </li>
             <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
@@ -34,8 +34,6 @@
                 <maxBuildingsPerMap>1</maxBuildingsPerMap>
                 <acceptedTerrains>
                     <li>Mud</li>
-                    <li>Soil</li>
-                    <li>RichSoil</li>
                 </acceptedTerrains>
             </li>
         </comps>
