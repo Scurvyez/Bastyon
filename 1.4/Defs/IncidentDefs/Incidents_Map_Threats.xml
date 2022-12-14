@@ -16,7 +16,7 @@
 		<earliestDay>45</earliestDay>
 		<minRefireDays>20</minRefireDays>
 		<modExtensions>
-			<li Class="Bastyon.RaidOptions">
+			<li Class="Bastyon.RaidOptionsModExt">
 				<raidFaction>Bast_Monsters</raidFaction>
 				<raidPointsMultiplier>1.5</raidPointsMultiplier>
 				<!--<fixedRaidPoints>9999</fixedRaidPoints>-->

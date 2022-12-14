@@ -28,7 +28,7 @@
             </li>
         </stages>
 		<modExtensions>
-			<li Class="Bastyon.SunLightDamage">
+			<li Class="Bastyon.SunLightDamageModExt">
 				<hediffSeverity>0.1</hediffSeverity>
 				<tickInterval>360</tickInterval>
 				<fireSpawnChance>0.3</fireSpawnChance>

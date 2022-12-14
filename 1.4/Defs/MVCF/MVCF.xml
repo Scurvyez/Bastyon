@@ -3,8 +3,8 @@
 
 	<MVCF.ModDef>
 		<defName>Bast_Bastyon</defName>
-		<label>Steve's animals</label>
-		<description>Adding animal ranged attacks for Steve's Animals</description>
+		<label>Steve's Animals</label>
+		<description>Adding ranged attacks for Steve's Animals</description>
 		<ActivateFeatures>
 			<li>RangedAnimals</li>
 			<li>HediffVerbs</li>
