@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!--==================== Wisp ThingDef ====================-->
+    <!--==================== Wisp ThingDef ====================-->
 
     <ThingDef ParentName="AnimalThingBase">
         <defName>Bast_Wisp</defName>
@@ -15,38 +15,36 @@
             <MeatAmount>0</MeatAmount>
             <Flammability>0.0</Flammability>
         </statBases>
-        <comps>		
-            <li Class="AnimalBehaviours.CompProperties_Floating">
-      
-            </li>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Floating"></li>
         </comps>
         <tools>
-			<li>
-				<label>encapsulation</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>25</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.1</chanceFactor>
-			</li>
-		</tools>
+            <li>
+                <label>encapsulation</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+        </tools>
         <race>
             <wildBiomes>
                 <IceSheet>0.00</IceSheet>
-				<SeaIce>0.00</SeaIce>
+                <SeaIce>0.00</SeaIce>
                 <ColdBog>0.00</ColdBog>
-				<Desert>0.00</Desert>
+                <Desert>0.00</Desert>
                 <BorealForest>0.10</BorealForest>
-                <Tundra>0.08</Tundra> 
-				<TemperateForest>0.15</TemperateForest>
-				<TemperateSwamp>0.08</TemperateSwamp>
-				<TropicalRainforest>0.10</TropicalRainforest>
-				<TropicalSwamp>0.08</TropicalSwamp>
-				<AridShrubland>0.00</AridShrubland>
-			</wildBiomes>
+                <Tundra>0.08</Tundra>
+                <TemperateForest>0.15</TemperateForest>
+                <TemperateSwamp>0.08</TemperateSwamp>
+                <TropicalRainforest>0.10</TropicalRainforest>
+                <TropicalSwamp>0.08</TropicalSwamp>
+                <AridShrubland>0.00</AridShrubland>
+            </wildBiomes>
             <body>Bast_LimblessHoveringWisp</body>
             <herdAnimal>true</herdAnimal>
             <baseBodySize>1.0</baseBodySize>
@@ -94,30 +92,30 @@
             <li>AnimalUncommon</li>
         </tradeTags>
         <modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
+            <li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>
-					<li>Bast_PrimaryRole</li>
-					<li>Bast_SecondaryRole</li>
-					<li>Bast_RangedAttacks</li>			
-				</statToAdd>
-				<statValues>
-					<li>Bast_Glower</li>	
-					<li>Bast_Floater</li>	
-					<li>Bast_No</li>	
-				</statValues>
-				<statDescriptions>
-					<li>Bast_GlowerDesc</li>
-					<li>Bast_FloaterDesc</li>
-					<li>Bast_Ranged</li>
-				</statDescriptions>
+                    <li>Bast_PrimaryRole</li>
+                    <li>Bast_SecondaryRole</li>
+                    <li>Bast_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>Bast_Glower</li>
+                    <li>Bast_Floater</li>
+                    <li>Bast_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>Bast_GlowerDesc</li>
+                    <li>Bast_FloaterDesc</li>
+                    <li>Bast_Ranged</li>
+                </statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Art/Bast_WispArt</ImageToShowInInfoCard>
-			</li>
-		</modExtensions>
+                <ImageToShowInInfoCard>Art/Bast_WispArt</ImageToShowInInfoCard>
+            </li>
+        </modExtensions>
     </ThingDef>
 
-  <!--==================== Wisp PawnKindDef ====================-->
-  
+    <!--==================== Wisp PawnKindDef ====================-->
+
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>Bast_Wisp</defName>
         <label>wisp</label>
@@ -126,31 +124,31 @@
         <canArriveManhunter>true</canArriveManhunter>
         <ecoSystemWeight>0.005</ecoSystemWeight>
         <wildGroupSize>
-			<min>1</min>
-			<max>25</max>
-		</wildGroupSize>
+            <min>1</min>
+            <max>25</max>
+        </wildGroupSize>
 
         <alternateGraphicChance>0.858</alternateGraphicChance>
-		<alternateGraphics>
-			<li>
-				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp2</texPath>
-			</li>
-			<li>
-				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp3</texPath>
-			</li>
-			<li>
-				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp4</texPath>
-			</li>
+        <alternateGraphics>
             <li>
-				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp5</texPath>
-			</li>
+                <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp2</texPath>
+            </li>
             <li>
-				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp6</texPath>
-			</li>
+                <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp3</texPath>
+            </li>
             <li>
-				<texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp7</texPath>
-			</li>
-		</alternateGraphics>
+                <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp4</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp5</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp6</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Vibrant_Wisp7</texPath>
+            </li>
+        </alternateGraphics>
 
         <lifeStages>
             <li>
@@ -194,5 +192,5 @@
             </li>
         </lifeStages>
     </PawnKindDef>
-  
+
 </Defs>

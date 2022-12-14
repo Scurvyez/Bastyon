@@ -7,18 +7,20 @@
         <defName>Plant_GleamingBerry</defName>
         <label>gleaming berry bush</label>
         <description>A vibrant alien-like berry bush. I wonder where it came from...</description>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <fillPercent>0.20</fillPercent>
+        <pathCost>30</pathCost>
         <statBases>
             <MaxHitPoints>120</MaxHitPoints>
             <Nutrition>0.50</Nutrition>
         </statBases>
-
         <comps>
             <li Class="CompProperties_Glower">
                 <glowRadius>5.9</glowRadius>
                 <glowColor>(0,255,234)</glowColor>
             </li>
         </comps>
-
         <graphicData>
             <texPath>Things/Plant/GleamingBerryPlant/GleamingBerryPlantA</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -27,10 +29,6 @@
                 <offset>(0,0,-0.25)</offset>
             </shadowData>
         </graphicData>
-        <selectable>true</selectable>
-        <neverMultiSelect>false</neverMultiSelect>
-        <fillPercent>0.20</fillPercent>
-        <pathCost>30</pathCost>
         <plant>
             <fertilityMin>0.5</fertilityMin>
             <fertilitySensitivity>0.5</fertilitySensitivity>

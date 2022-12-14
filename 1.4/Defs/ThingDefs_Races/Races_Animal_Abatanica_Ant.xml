@@ -46,7 +46,7 @@
             <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
                 <resourceDef>Steel</resourceDef>
                 <resourceAmount>5</resourceAmount>
-                <dropChance>0.50</dropChance>			
+                <dropChance>0.50</dropChance>
             </li>
             <li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
                 <defOfBuilding>Bast_AbatanicaAntColonyMound</defOfBuilding>
@@ -136,11 +136,11 @@
 			<li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>
 					<li>Bast_PrimaryRole</li>
-					<li>Bast_RangedAttacks</li>			
+					<li>Bast_RangedAttacks</li>
 				</statToAdd>
 				<statValues>
-					<li>Bast_WeirdEater</li>	
-					<li>Bast_No</li>	
+					<li>Bast_WeirdEater</li>
+					<li>Bast_No</li>
 				</statValues>
 				<statDescriptions>
 					<li>Bast_WeirdEaterDesc</li>
@@ -162,12 +162,12 @@
         <ecoSystemWeight>0.1</ecoSystemWeight>
         <combatPower>80</combatPower>
         <canArriveManhunter>false</canArriveManhunter>
+        <labelMale>drone</labelMale>
+        <labelFemale>queen</labelFemale>
         <wildGroupSize>
             <min>15</min>
             <max>40</max>
         </wildGroupSize>
-        <labelMale>drone</labelMale>
-        <labelFemale>queen</labelFemale>
         <lifeStages>
 
             <!-- Child -->

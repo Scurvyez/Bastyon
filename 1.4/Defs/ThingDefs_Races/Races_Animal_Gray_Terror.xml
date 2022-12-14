@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--==================== Gray Terror ThingDef ====================-->
@@ -77,12 +77,12 @@
 		</verbs>
 		<race>
 			<wildBiomes>
-                <IceSheet>0.00</IceSheet>
+				<IceSheet>0.00</IceSheet>
 				<SeaIce>0.00</SeaIce>
-                <ColdBog>0.02</ColdBog>
-                <Desert>0.10</Desert>
-                <BorealForest>0.01</BorealForest>
-                <Tundra>0.01</Tundra>
+				<ColdBog>0.02</ColdBog>
+				<Desert>0.10</Desert>
+				<BorealForest>0.01</BorealForest>
+				<Tundra>0.01</Tundra>
 				<TemperateForest>0.07</TemperateForest>
 				<TemperateSwamp>0.15</TemperateSwamp>
 				<TropicalRainforest>0.15</TropicalRainforest>
@@ -97,7 +97,7 @@
 			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>1.2</baseHealthScale>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-            <useMeatFrom>Megaspider</useMeatFrom>
+			<useMeatFrom>Megaspider</useMeatFrom>
 			<foodType>OmnivoreAnimal, AnimalProduct</foodType>
 			<wildness>0.99</wildness>
 			<trainability>None</trainability>
@@ -135,7 +135,7 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 		<butcherProducts>
-			  <Steel>25</Steel>
+			<Steel>25</Steel>
 		</butcherProducts>
 		<tradeTags>
 			<li>ExoticAnimal</li>
@@ -145,12 +145,12 @@
 				<statToAdd>
 					<li>Bast_PrimaryRole</li>
 					<li>Bast_SecondaryRole</li>
-					<li>Bast_RangedAttacks</li>			
+					<li>Bast_RangedAttacks</li>
 				</statToAdd>
 				<statValues>
-					<li>Bast_EggLayer</li>	
-					<li>Bast_WebShooter</li>	
-					<li>Bast_Yes</li>	
+					<li>Bast_EggLayer</li>
+					<li>Bast_WebShooter</li>
+					<li>Bast_Yes</li>
 				</statValues>
 				<statDescriptions>
 					<li>Bast_EggLayerDesc</li>
@@ -165,7 +165,7 @@
 
 	<!--==================== Gray Terror PawnKindDef ====================-->
 
-    <PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Bast_Gray_Terror</defName>
 		<race>Bast_Gray_Terror</race>
 		<label>gray terror</label>

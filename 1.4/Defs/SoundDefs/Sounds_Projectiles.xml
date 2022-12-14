@@ -16,8 +16,8 @@
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
-                <volumeRange>60~60</volumeRange>      
-                <pitchRange>0.95~1.05</pitchRange>      
+                <volumeRange>60~60</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
                 <distRange>0~70</distRange>
 			</li>
 		</subSounds>
@@ -38,8 +38,8 @@
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
-                <volumeRange>60~60</volumeRange>      
-                <pitchRange>0.95~1.05</pitchRange>      
+                <volumeRange>60~60</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
                 <distRange>0~70</distRange>
 			</li>
 		</subSounds>
@@ -60,8 +60,8 @@
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
-                <volumeRange>60~60</volumeRange>      
-                <pitchRange>0.95~1.05</pitchRange>      
+                <volumeRange>60~60</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
                 <distRange>0~70</distRange>
 			</li>
 		</subSounds>
@@ -82,8 +82,8 @@
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
-                <volumeRange>60~60</volumeRange>      
-                <pitchRange>0.95~1.05</pitchRange>      
+                <volumeRange>60~60</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
                 <distRange>0~70</distRange>
 			</li>
 		</subSounds>
@@ -104,8 +104,8 @@
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
-                <volumeRange>60~60</volumeRange>      
-                <pitchRange>0.95~1.05</pitchRange>      
+                <volumeRange>60~60</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
                 <distRange>0~70</distRange>
 			</li>
 		</subSounds>
@@ -126,8 +126,8 @@
 					</li>
 				</grains>
 				<sustainLoop>true</sustainLoop>
-                <volumeRange>60~60</volumeRange>      
-                <pitchRange>0.95~1.05</pitchRange>      
+                <volumeRange>60~60</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
                 <distRange>0~70</distRange>
 			</li>
 		</subSounds>
@@ -148,8 +148,8 @@
 					</li>
 				</grains>
 				<sustainLoop>true</sustainLoop>
-                <volumeRange>60~60</volumeRange>      
-                <pitchRange>0.95~1.05</pitchRange>      
+                <volumeRange>60~60</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
                 <distRange>0~70</distRange>
 			</li>
 		</subSounds>
@@ -170,12 +170,11 @@
 					</li>
 				</grains>
 				<sustainLoop>true</sustainLoop>
-                <volumeRange>60~60</volumeRange>      
-                <pitchRange>0.95~1.05</pitchRange>      
+                <volumeRange>60~60</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
                 <distRange>0~70</distRange>
 			</li>
 		</subSounds>
 	</SoundDef>
-
 
 </Defs>

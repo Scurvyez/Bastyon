@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <!--==================== Vorpal Bunny ThingDef ====================-->
@@ -27,22 +27,22 @@
                 <pawnToTurnInto>Bast_Vorpal_Bunny_Enraged</pawnToTurnInto>
             </li>
             <li Class="AnimalBehaviours.CompProperties_AutoNutrition">
-		        <tickInterval>2000</tickInterval>
-                <consumingFoodReportString>Eating tiny insects</consumingFoodReportString>		
-	        </li>
+                <tickInterval>2000</tickInterval>
+                <consumingFoodReportString>Eating tiny insects</consumingFoodReportString>
+            </li>
         </comps>
         <tools>
             <li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>25</power>
-				<cooldownTime>3.0</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.75</chanceFactor>
-			</li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>3.0</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.75</chanceFactor>
+            </li>
         </tools>
         <race>
             <herdAnimal>false</herdAnimal>
@@ -64,7 +64,7 @@
             <lifeExpectancy>3</lifeExpectancy>
             <hasGenders>false</hasGenders>
             <predator>false</predator>
-			<maxPreyBodySize>1.0</maxPreyBodySize>
+            <maxPreyBodySize>1.0</maxPreyBodySize>
             <wildBiomes>
                 <IceSheet>0.00</IceSheet>
                 <SeaIce>0.00</SeaIce>
@@ -98,17 +98,17 @@
         <modExtensions>
             <li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>
-					<li>Bast_PrimaryRole</li>
-					<li>Bast_RangedAttacks</li>			
-				</statToAdd>
-				<statValues>
-                    <li>Bast_Cute</li>	
-					<li>Bast_No</li>	
-				</statValues>
-				<statDescriptions>
+                    <li>Bast_PrimaryRole</li>
+                    <li>Bast_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>Bast_Cute</li>
+                    <li>Bast_No</li>
+                </statValues>
+                <statDescriptions>
                     <li>Bast_CuteDesc</li>
-					<li>Bast_NoRanged</li>
-				</statDescriptions>
+                    <li>Bast_NoRanged</li>
+                </statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
                 <ImageToShowInInfoCard>Art/Bast_VorpalBunnyArt</ImageToShowInInfoCard>
             </li>
@@ -141,5 +141,5 @@
             </li>
         </lifeStages>
     </PawnKindDef>
-  
+
 </Defs>

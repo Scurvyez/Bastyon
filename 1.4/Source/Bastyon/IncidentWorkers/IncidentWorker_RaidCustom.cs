@@ -21,6 +21,7 @@ namespace Bastyon
 			}
 			return false;
 		}
+
 		public bool CanGenerateFrom(PawnGroupMakerParms parms, PawnGroupMaker groupMaker)
 		{
 			if (!PawnGroupMakerUtility.ChoosePawnGenOptionsByPoints(parms.points, groupMaker.options, parms).Any())
@@ -38,12 +39,38 @@ namespace Bastyon
 				bool allowFood = parms.raidStrategy == null || parms.raidStrategy.pawnsCanBringFood || (parms.faction != null && !parms.faction.HostileTo(Faction.OfPlayer));
 				Predicate<Pawn> validatorPostGear = (parms.raidStrategy != null) ? ((Predicate<Pawn>)((Pawn p) => parms.raidStrategy.Worker.CanUsePawn(pointsTotal, p, outPawns))) : null;
 				bool flag = false;
-				foreach (PawnGenOption item in PawnGroupMakerUtility.ChoosePawnGenOptionsByPoints(parms.points, groupMaker.options, parms))
+				foreach (PawnGenOptionWithXenotype item in PawnGroupMakerUtility.ChoosePawnGenOptionsByPoints(parms.points, groupMaker.options, parms))
 				{
-					Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(item.kind, parms.faction, PawnGenerationContext.NonPlayer, parms.tile, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: true, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood, allowAddictions: true, parms.inhabitants, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, validatorPostGear));
-					if (parms.forceOneIncap && !flag)
+					Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(
+						item.Option.kind,
+						parms.faction, 
+						PawnGenerationContext.NonPlayer, 
+						parms.tile, 
+						forceGenerateNewPawn: false, 
+						allowDead: false, 
+						allowDowned: false, 
+						canGeneratePawnRelations: false,
+						mustBeCapableOfViolence: true, 
+						1f, 
+						forceAddFreeWarmLayerIfNeeded: false, 
+						allowGay: true, 
+						allowPregnant: false, 
+						allowFood, 
+						allowAddictions: true, 
+						parms.inhabitants, 
+						certainlyBeenInCryptosleep: false, 
+						forceRedressWorldPawnIfFormerColonist: false, 
+						worldPawnFactionDoesntMatter: false, 
+						0f, 
+						0f, 
+						null, 
+						1f, 
+						null, 
+						validatorPostGear));
+					
+					if (parms.forceOneDowned && !flag)
 					{
-						pawn.health.forceIncap = true;
+						pawn.health.forceDowned = true;
 						pawn.mindState.canFleeIndividual = false;
 						flag = true;
 					}
@@ -51,6 +78,7 @@ namespace Bastyon
 				}
 			}
 		}
+
 		public List<Pawn> SpawnThreats(IncidentParms parms, RaidOptionsModExt options)
 		{
 			List<Pawn> list = new List<Pawn>();
@@ -60,9 +88,32 @@ namespace Bastyon
 			{
 				if (options.pawnGroup.options.TryRandomElementByWeight(x => x.selectionWeight, out var result))
 				{
-					PawnGenerationRequest request = new PawnGenerationRequest(result.kind, parms.faction, PawnGenerationContext.NonPlayer, -1,
-						forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: true, 1f,
-						forceAddFreeWarmLayerIfNeeded: false, allowGay: true, biocodeWeaponChance: parms.biocodeWeaponsChance, allowFood: true);
+					PawnGenerationRequest request = new PawnGenerationRequest(
+						result.kind,
+						parms.faction, 
+						PawnGenerationContext.NonPlayer, 
+						-1,
+						forceGenerateNewPawn: false, 
+						allowDead: false, 
+						allowDowned: false, 
+						canGeneratePawnRelations: false, 
+						mustBeCapableOfViolence: true, 
+						1f,
+						forceAddFreeWarmLayerIfNeeded: false, 
+						allowGay: true, 
+						allowPregnant: false,
+						allowFood: true,
+						allowAddictions: true,
+						inhabitant: false,
+						certainlyBeenInCryptosleep: false,
+						forceRedressWorldPawnIfFormerColonist: false,
+						worldPawnFactionDoesntMatter: false,
+						0f,
+						0f,
+						null,
+						1f,
+						null);
+
 					request.BiocodeApparelChance = 1f;
 					Pawn pawn = PawnGenerator.GeneratePawn(request);
 					if (pawn != null)
@@ -90,9 +141,32 @@ namespace Bastyon
 				int minimumPawnCount = (int)pawnCount.selectionWeight;
 				while (num < minimumPawnCount && attempts < minimumPawnCount + 100)
 				{
-					PawnGenerationRequest request = new PawnGenerationRequest(pawnCount.kind, parms.faction, PawnGenerationContext.NonPlayer, -1,
-						forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: true, 1f,
-						forceAddFreeWarmLayerIfNeeded: false, allowGay: true, biocodeWeaponChance: parms.biocodeWeaponsChance, allowFood: true);
+					PawnGenerationRequest request = new PawnGenerationRequest(
+						pawnCount.kind, 
+						parms.faction, 
+						PawnGenerationContext.NonPlayer,
+						-1,
+						forceGenerateNewPawn: false, 
+						allowDead: false, 
+						allowDowned: false, 
+						canGeneratePawnRelations: false, 
+						mustBeCapableOfViolence: true, 
+						1f,
+						forceAddFreeWarmLayerIfNeeded: false, 
+						allowGay: true, 
+						allowPregnant: false,
+						allowFood: true,
+						allowAddictions: true,
+						inhabitant: false,
+						certainlyBeenInCryptosleep: false,
+						forceRedressWorldPawnIfFormerColonist: false,
+						worldPawnFactionDoesntMatter: false,
+						0f,
+						0f,
+						null,
+						1f,
+						null);
+
 					request.BiocodeApparelChance = 1f;
 					Pawn pawn = PawnGenerator.GeneratePawn(request);
 					if (pawn != null)
@@ -158,6 +232,7 @@ namespace Bastyon
 			}
 			return value;
 		}
+
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;

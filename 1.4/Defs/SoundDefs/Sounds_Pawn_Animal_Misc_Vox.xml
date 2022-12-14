@@ -39,9 +39,9 @@
             </li>
         </subSounds>
     </SoundDef>
-    
+
     <SoundDef>
-        <defName>Pawn_Alluvium_Wounded</defName>  
+        <defName>Pawn_Alluvium_Wounded</defName>
         <context>MapOnly</context>
         <subSounds>
             <li>
@@ -49,18 +49,18 @@
                     <li Class="AudioGrain_Folder">
                         <clipFolderPath>Pawn/Animal/Alluvium/Alluvium_Pain</clipFolderPath>
                     </li>
-                </grains>      
-                <volumeRange>15~15</volumeRange>      
-                <pitchRange>0.9311765~1.091765</pitchRange>      
-                <distRange>0~70</distRange>      
-                <repeatMode>NeverTwice</repeatMode>      
+                </grains>
+                <volumeRange>15~15</volumeRange>
+                <pitchRange>0.9311765~1.091765</pitchRange>
+                <distRange>0~70</distRange>
+                <repeatMode>NeverTwice</repeatMode>
                 <sustainLoop>False</sustainLoop>
             </li>
         </subSounds>
     </SoundDef>
 
     <SoundDef>
-        <defName>Pawn_Alluvium_Death</defName>  
+        <defName>Pawn_Alluvium_Death</defName>
         <context>MapOnly</context>
         <subSounds>
             <li>
@@ -68,10 +68,10 @@
                     <li Class="AudioGrain_Folder">
                         <clipFolderPath>Pawn/Animal/Alluvium/Alluvium_Death</clipFolderPath>
                     </li>
-                </grains>      
-                <volumeRange>20~20</volumeRange>      
-                <pitchRange>0.9311764~1.068824</pitchRange>      
-                <distRange>0~70</distRange>      
+                </grains>
+                <volumeRange>20~20</volumeRange>
+                <pitchRange>0.9311764~1.068824</pitchRange>
+                <distRange>0~70</distRange>
                 <sustainLoop>False</sustainLoop>
             </li>
         </subSounds>
@@ -115,7 +115,7 @@
             </li>
         </subSounds>
     </SoundDef>
-    
+
     <SoundDef>
         <defName>Pawn_Bahlrin_Wounded</defName>
         <context>MapOnly</context>
@@ -125,18 +125,18 @@
                     <li Class="AudioGrain_Folder">
                         <clipFolderPath>Pawn/Animal/Bahlrin/Bahlrin_Pain</clipFolderPath>
                     </li>
-                </grains>      
-                <volumeRange>15~15</volumeRange>      
-                <pitchRange>0.9311765~1.091765</pitchRange>      
-                <distRange>0~70</distRange>      
-                <repeatMode>NeverTwice</repeatMode>      
+                </grains>
+                <volumeRange>15~15</volumeRange>
+                <pitchRange>0.9311765~1.091765</pitchRange>
+                <distRange>0~70</distRange>
+                <repeatMode>NeverTwice</repeatMode>
                 <sustainLoop>False</sustainLoop>
             </li>
         </subSounds>
     </SoundDef>
 
     <SoundDef>
-        <defName>Pawn_Bahlrin_Death</defName>  
+        <defName>Pawn_Bahlrin_Death</defName>
         <context>MapOnly</context>
         <subSounds>
             <li>
@@ -144,10 +144,10 @@
                     <li Class="AudioGrain_Folder">
                         <clipFolderPath>Pawn/Animal/Bahlrin/Bahlrin_Death</clipFolderPath>
                     </li>
-                </grains>      
-                <volumeRange>20~20</volumeRange>      
-                <pitchRange>0.9311764~1.068824</pitchRange>      
-                <distRange>0~70</distRange>      
+                </grains>
+                <volumeRange>20~20</volumeRange>
+                <pitchRange>0.9311764~1.068824</pitchRange>
+                <distRange>0~70</distRange>
                 <sustainLoop>False</sustainLoop>
             </li>
         </subSounds>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <!--==================== Enduring Vorpal Bunny ThingDef ====================-->
@@ -27,9 +27,9 @@
                 <pawnToTurnInto>Bast_Vorpal_Bunny_Gilded</pawnToTurnInto>
             </li>
             <li Class="AnimalBehaviours.CompProperties_AutoNutrition">
-		        <tickInterval>2000</tickInterval>
-                <consumingFoodReportString>Eating tiny insects</consumingFoodReportString>		
-	        </li>
+                <tickInterval>2000</tickInterval>
+                <consumingFoodReportString>Eating tiny insects</consumingFoodReportString>
+            </li>
             <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
                 <hediffsToRemove>
                     <li>Animal_Plague</li>
@@ -49,16 +49,16 @@
         </comps>
         <tools>
             <li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>25</power>
-				<cooldownTime>3.0</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.75</chanceFactor>
-			</li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>3.0</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.75</chanceFactor>
+            </li>
         </tools>
         <race>
             <herdAnimal>false</herdAnimal>
@@ -80,7 +80,7 @@
             <lifeExpectancy>3</lifeExpectancy>
             <hasGenders>false</hasGenders>
             <predator>false</predator>
-			<maxPreyBodySize>1.0</maxPreyBodySize>
+            <maxPreyBodySize>1.0</maxPreyBodySize>
             <wildBiomes>
                 <IceSheet>0.00</IceSheet>
                 <SeaIce>0.00</SeaIce>
@@ -114,23 +114,23 @@
         <modExtensions>
             <li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>
-					<li>Bast_PrimaryRole</li>
-					<li>Bast_SecondaryRole</li>
+                    <li>Bast_PrimaryRole</li>
+                    <li>Bast_SecondaryRole</li>
                     <li>Bast_TertiaryRole</li>
-					<li>Bast_RangedAttacks</li>			
-				</statToAdd>
-				<statValues>
-					<li>Bast_Effecter</li>	
-					<li>Bast_SelfRegeneration</li>
-                    <li>Bast_Immune</li>	
-					<li>Bast_No</li>	
-				</statValues>
-				<statDescriptions>
-					<li>Bast_EffecterDesc</li>
-					<li>Bast_SelfRegenerationDesc</li>
+                    <li>Bast_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>Bast_Effecter</li>
+                    <li>Bast_SelfRegeneration</li>
+                    <li>Bast_Immune</li>
+                    <li>Bast_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>Bast_EffecterDesc</li>
+                    <li>Bast_SelfRegenerationDesc</li>
                     <li>Bast_DiseaseImmunityDesc</li>
-					<li>Bast_NoRanged</li>
-				</statDescriptions>
+                    <li>Bast_NoRanged</li>
+                </statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
                 <ImageToShowInInfoCard>Art/Bast_VorpalBunnyEnduringArt</ImageToShowInInfoCard>
             </li>
@@ -163,5 +163,5 @@
             </li>
         </lifeStages>
     </PawnKindDef>
-  
+
 </Defs>

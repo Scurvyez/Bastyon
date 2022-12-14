@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationFindMod">
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Achievements Expanded</li>
 		</mods>
@@ -9,7 +9,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
 
@@ -364,8 +364,8 @@
 							<texPath>Achievements/Bast_Achievement_Bahlrin_Swarm_Raid</texPath>
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
-                        
-                    </value>    
+
+					</value>
 				</li>
 			</operations>
 		</match>

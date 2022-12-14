@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <!--==================== Lightning Elemental ThingDef ====================-->
@@ -15,13 +15,11 @@
             <MeatAmount>0</MeatAmount>
             <Flammability>0.0</Flammability>
             <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
-			<ArmorRating_Heat>200</ArmorRating_Heat>
-			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+            <ArmorRating_Heat>200</ArmorRating_Heat>
+            <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
         </statBases>
-        <comps>		
-            <li Class="AnimalBehaviours.CompProperties_Floating">
-            
-            </li>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Floating"></li>
             <li Class="AnimalBehaviours.CompProperties_Electrified">
                 <electroRate>40</electroRate>
                 <electroRadius>10</electroRadius>
@@ -50,7 +48,7 @@
                     <li>AA_HexaGelBattery</li>
                     <li>ShipCapacitor</li>
                     <li>ShipCapacitorSmall</li>
-                </batteriesToAffect>			
+                </batteriesToAffect>
             </li>
             <li Class="AnimalBehaviours.CompProperties_Blink">
                 <blinkInterval>2500</blinkInterval>
@@ -59,24 +57,24 @@
             </li>
         </comps>
         <verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<accuracyTouch>1</accuracyTouch>
-				<accuracyShort>.95</accuracyShort>
-				<accuracyMedium>.75</accuracyMedium>
-				<accuracyLong>.60</accuracyLong>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bast_LightningBolt</defaultProjectile>
-				<warmupTime>4</warmupTime>
-				<burstShotCount>3</burstShotCount>
-				<minRange>1</minRange>
-				<range>25</range>
-				<soundCast>Thunder_OnMap</soundCast>
-				<muzzleFlashScale>0</muzzleFlashScale>
-				<label>lightning bolt</label>
-				<commonality>.5</commonality>
-			</li>
-		</verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <accuracyTouch>1</accuracyTouch>
+                <accuracyShort>.95</accuracyShort>
+                <accuracyMedium>.75</accuracyMedium>
+                <accuracyLong>.60</accuracyLong>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bast_LightningBolt</defaultProjectile>
+                <warmupTime>4</warmupTime>
+                <burstShotCount>3</burstShotCount>
+                <minRange>1</minRange>
+                <range>25</range>
+                <soundCast>Thunder_OnMap</soundCast>
+                <muzzleFlashScale>0</muzzleFlashScale>
+                <label>lightning bolt</label>
+                <commonality>.5</commonality>
+            </li>
+        </verbs>
         <tools>
             <li>
                 <label>left galvanized fist</label>
@@ -114,95 +112,95 @@
             </li>
         </tools>
         <race>
-        <wildBiomes>
-            <IceSheet>0.00</IceSheet>
-            <SeaIce>0.00</SeaIce> 
-            <ColdBog>0.00</ColdBog>
-            <Desert>0.00</Desert>
-            <BorealForest>0.01</BorealForest>
-            <Tundra>0.01</Tundra> 
-            <TemperateForest>0.00</TemperateForest>
-            <TemperateSwamp>0.00</TemperateSwamp>
-            <TropicalRainforest>0.00</TropicalRainforest>
-            <TropicalSwamp>0.00</TropicalSwamp>
-            <AridShrubland>0.00</AridShrubland>
-            <ExtremeDesert>0.00</ExtremeDesert>
-        </wildBiomes>
-        <body>Bast_LightningElementalBody</body>
-        <herdAnimal>false</herdAnimal>
-        <baseBodySize>2.5</baseBodySize>
-        <baseHealthScale>2.0</baseHealthScale>
-        <fleshType>LightningElemental</fleshType>
-        <bloodDef>Filth_LightningElementalBlood</bloodDef>
-        <baseHungerRate>0.05</baseHungerRate>
-        <foodType>OmnivoreAnimal</foodType>
-        <wildness>0.99</wildness>
-        <canBePredatorPrey>false</canBePredatorPrey>
-        <trainability>None</trainability>
-        <nameOnTameChance>1</nameOnTameChance>
-        <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
-		<manhunterOnDamageChance>0.85</manhunterOnDamageChance>
-        <mateMtbHours>300</mateMtbHours>
-        <gestationPeriodDays>25</gestationPeriodDays>
-        <lifeExpectancy>1000</lifeExpectancy>
-        <litterSizeCurve>
-            <points>
-            <li>(0.5, 0)</li>
-            <li>(1, 1)</li>
-            <li>(1.0, 1)</li>
-            <li>(2.0, 0)</li>
-            </points>
-        </litterSizeCurve>
-        <lifeStageAges>
-            <li>
-                <def>AnimalBaby</def>
-                <minAge>0</minAge>
-            </li>
-            <li>
-                <def>AnimalJuvenile</def>
-                <minAge>25</minAge>
-            </li>
-            <li>
-                <def>AnimalAdult</def>
-                <minAge>125</minAge>
-                <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
-                <soundDeath>Pawn_Thrumbo_Death</soundDeath>
-                <soundCall>Pawn_Thrumbo_Call</soundCall>
-                <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
-            </li>
-        </lifeStageAges>
-        <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-        <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-        <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+            <wildBiomes>
+                <IceSheet>0.00</IceSheet>
+                <SeaIce>0.00</SeaIce>
+                <ColdBog>0.00</ColdBog>
+                <Desert>0.00</Desert>
+                <BorealForest>0.01</BorealForest>
+                <Tundra>0.01</Tundra>
+                <TemperateForest>0.00</TemperateForest>
+                <TemperateSwamp>0.00</TemperateSwamp>
+                <TropicalRainforest>0.00</TropicalRainforest>
+                <TropicalSwamp>0.00</TropicalSwamp>
+                <AridShrubland>0.00</AridShrubland>
+                <ExtremeDesert>0.00</ExtremeDesert>
+            </wildBiomes>
+            <body>Bast_LightningElementalBody</body>
+            <herdAnimal>false</herdAnimal>
+            <baseBodySize>2.5</baseBodySize>
+            <baseHealthScale>2.0</baseHealthScale>
+            <fleshType>LightningElemental</fleshType>
+            <bloodDef>Filth_LightningElementalBlood</bloodDef>
+            <baseHungerRate>0.05</baseHungerRate>
+            <foodType>OmnivoreAnimal</foodType>
+            <wildness>0.99</wildness>
+            <canBePredatorPrey>false</canBePredatorPrey>
+            <trainability>None</trainability>
+            <nameOnTameChance>1</nameOnTameChance>
+            <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.85</manhunterOnDamageChance>
+            <mateMtbHours>300</mateMtbHours>
+            <gestationPeriodDays>25</gestationPeriodDays>
+            <lifeExpectancy>1000</lifeExpectancy>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.0, 1)</li>
+                    <li>(2.0, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>25</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>125</minAge>
+                    <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+                    <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+                    <soundCall>Pawn_Thrumbo_Call</soundCall>
+                    <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
         </race>
         <tradeTags>
             <li>AnimalExotic</li>
         </tradeTags>
         <modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
+            <li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>
-					<li>Bast_PrimaryRole</li>
-					<li>Bast_SecondaryRole</li>
-					<li>Bast_RangedAttacks</li>			
-				</statToAdd>
-				<statValues>
-					<li>Bast_DamageRangedElectric</li>	
-					<li>Bast_Floater</li>	
-					<li>Bast_Yes</li>	
-				</statValues>
-				<statDescriptions>
-					<li>Bast_DamageRangedElectricDesc</li>
-					<li>Bast_FloaterDesc</li>
-					<li>Bast_Ranged</li>
-				</statDescriptions>
+                    <li>Bast_PrimaryRole</li>
+                    <li>Bast_SecondaryRole</li>
+                    <li>Bast_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>Bast_DamageRangedElectric</li>
+                    <li>Bast_Floater</li>
+                    <li>Bast_Yes</li>
+                </statValues>
+                <statDescriptions>
+                    <li>Bast_DamageRangedElectricDesc</li>
+                    <li>Bast_FloaterDesc</li>
+                    <li>Bast_Ranged</li>
+                </statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Art/Bast_LightningElementalArt</ImageToShowInInfoCard>
-			</li>
-		</modExtensions>
+                <ImageToShowInInfoCard>Art/Bast_LightningElementalArt</ImageToShowInInfoCard>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <!--==================== Lightning Elemental PawnKindDef ====================-->
-    
+
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>Bast_Lightning_Elemental</defName>
         <label>lightning elemental</label>
@@ -250,5 +248,5 @@
             </li>
         </lifeStages>
     </PawnKindDef>
-  
+
 </Defs>

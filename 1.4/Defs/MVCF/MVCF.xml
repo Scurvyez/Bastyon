@@ -3,12 +3,12 @@
 
 	<MVCF.ModDef>
 		<defName>Bast_Bastyon</defName>
-		<label>Bastyon</label>
-		<description>Adding animal ranged attacks for Bastyon creatures</description>
+		<label>Steve's animals</label>
+		<description>Adding animal ranged attacks for Steve's Animals</description>
 		<ActivateFeatures>
-			<RangedAnimals>true</RangedAnimals>
-			<HediffVerbs>true</HediffVerbs>
-			<IntegratedToggle>true</IntegratedToggle>
+			<li>RangedAnimals</li>
+			<li>HediffVerbs</li>
+			<li>IntegratedToggle</li>
 		</ActivateFeatures>
 	</MVCF.ModDef>
 

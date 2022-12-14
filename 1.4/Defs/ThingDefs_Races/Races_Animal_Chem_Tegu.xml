@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <!--==================== Chem Tegu ThingDef ====================-->
@@ -64,17 +64,17 @@
         <race>
             <wildBiomes>
                 <IceSheet>0.00</IceSheet>
-			    <SeaIce>0.00</SeaIce>
+                <SeaIce>0.00</SeaIce>
                 <ColdBog>0.00</ColdBog>
                 <Desert>0.12</Desert>
                 <BorealForest>0.00</BorealForest>
                 <Tundra>0.00</Tundra>
-				<TemperateForest>0.04</TemperateForest>
-				<TemperateSwamp>0.18</TemperateSwamp>
-				<TropicalRainforest>0.18</TropicalRainforest>
-				<TropicalSwamp>0.20</TropicalSwamp>
-				<AridShrubland>0.12</AridShrubland>
-			</wildBiomes>
+                <TemperateForest>0.04</TemperateForest>
+                <TemperateSwamp>0.18</TemperateSwamp>
+                <TropicalRainforest>0.18</TropicalRainforest>
+                <TropicalSwamp>0.20</TropicalSwamp>
+                <AridShrubland>0.12</AridShrubland>
+            </wildBiomes>
             <body>QuadrupedAnimalWithHoovesAndHump</body>
             <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
             <executionRange>7</executionRange>
@@ -118,30 +118,30 @@
             <li>AnimalFarm</li>
         </tradeTags>
         <modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
+            <li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>
-					<li>Bast_PrimaryRole</li>
-					<li>Bast_SecondaryRole</li>
-					<li>Bast_RangedAttacks</li>			
-				</statToAdd>
-				<statValues>
-					<li>Bast_Farm</li>	
-					<li>Bast_Boomer</li>	
-					<li>Bast_No</li>	
-				</statValues>
-				<statDescriptions>
-					<li>Bast_1.3FarmDesc</li>
-					<li>Bast_BoomerDesc</li>
-					<li>Bast_NoRanged</li>
-				</statDescriptions>
+                    <li>Bast_PrimaryRole</li>
+                    <li>Bast_SecondaryRole</li>
+                    <li>Bast_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>Bast_Farm</li>
+                    <li>Bast_Boomer</li>
+                    <li>Bast_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>Bast_1.3FarmDesc</li>
+                    <li>Bast_BoomerDesc</li>
+                    <li>Bast_NoRanged</li>
+                </statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
-				<ImageToShowInInfoCard>Art/Bast_ChemTeguArt</ImageToShowInInfoCard>
-			</li>
-		</modExtensions>
+                <ImageToShowInInfoCard>Art/Bast_ChemTeguArt</ImageToShowInInfoCard>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <!--==================== Chem Tegu PawnKindDef ====================-->
-  
+
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>Bast_Chem_Tegu</defName>
         <label>chem tegu</label>

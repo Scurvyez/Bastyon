@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--==================== Ceratok Horn ====================-->
+    <!--==================== Ceratok Horn ====================-->
 
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>Bast_CeratokHorn</defName>
-    <label>ceratok horn</label>
-    <description>The elegantly curved, glossy horn of a wild Ceratok. These horns make for deadly melee weapons in the right pawns' hands.</description>
-    <graphicData>
-      <texPath>Things/Item/Special/Bast_CeratokHorn</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <equippedAngleOffset>-20</equippedAngleOffset>
-    <statBases>
-      <MarketValue>650</MarketValue>
-      <MaxHitPoints>125</MaxHitPoints>
-      <Mass>3.2</Mass>
-      <Flammability>0.4</Flammability>
-      <DeteriorationRate>0.5</DeteriorationRate>
-    </statBases>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>10</stackLimit>
-    <tools>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Scratch</li>
-          <li>Stab</li>
-        </capacities>
-        <power>18</power>
-        <cooldownTime>2.4</cooldownTime>
-      </li>
-      <li>
-        <label>base</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-        <chanceFactor>0.5</chanceFactor>
-      </li>
-    </tools>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags>
-    <thingSetMakerTags>
-      <li>AnimalPart</li>
-    </thingSetMakerTags>
-  </ThingDef>
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>Bast_CeratokHorn</defName>
+        <label>ceratok horn</label>
+        <description>The elegantly curved, glossy horn of a wild Ceratok. These horns make for deadly melee weapons in the right pawns' hands.</description>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <graphicData>
+            <texPath>Things/Item/Special/Bast_CeratokHorn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>650</MarketValue>
+            <MaxHitPoints>125</MaxHitPoints>
+            <Mass>3.2</Mass>
+            <Flammability>0.4</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+        </statBases>
+        <tools>
+            <li>
+                <label>point</label>
+                <capacities>
+                <li>Scratch</li>
+                <li>Stab</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2.4</cooldownTime>
+            </li>
+            <li>
+                <label>base</label>
+                <capacities>
+                <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <chanceFactor>0.5</chanceFactor>
+            </li>
+        </tools>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
 
-  <!--==================== Eternal Flame Core ====================-->
+    <!--==================== Eternal Flame Core ====================-->
 
-  <ThingDef ParentName="MechSerumBase">
-    <defName>Bast_Eternal_Flame_Core</defName>
-    <label>eternal flame core</label>
-    <description>Once the driving life-force of a majestic male scire, this eternal flame core no longer carries the searing heat of an entire sun within.\n\nHowever... what once carried life offers the chance for another. This core holds the power of resurrection and with it, hope, for a soul who's last breath was not so long ago.\n\nTake care! For the cost of a life may be high.</description>
-    <graphicData>
-      <texPath>Things/Item/Special/Bast_Eternal_Flame_Core</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>Transparent</shaderType>
-    </graphicData>
-    <stackLimit>10</stackLimit>
-    <statBases>
-      <MarketValue>900</MarketValue>
-    </statBases>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <tradeability>None</tradeability>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
-  </ThingDef>
+    <ThingDef ParentName="MechSerumBase">
+        <defName>Bast_Eternal_Flame_Core</defName>
+        <label>eternal flame core</label>
+        <description>Once the driving life-force of a majestic male scire, this eternal flame core no longer carries the searing heat of an entire sun within.\n\nHowever... what once carried life offers the chance for another. This core holds the power of resurrection and with it, hope, for a soul who's last breath was not so long ago.\n\nTake care! For the cost of a life may be high.</description>
+        <stackLimit>10</stackLimit>
+        <tradeability>None</tradeability>
+        <graphicData>
+            <texPath>Things/Item/Special/Bast_Eternal_Flame_Core</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+        <statBases>
+            <MarketValue>900</MarketValue>
+        </statBases>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <thingSetMakerTags>
+            <li>RewardStandardMidFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
 
-  <!--==================== Eternal Flame Core Shard ====================-->
+    <!--==================== Eternal Flame Core Shard ====================-->
 
-  <ThingDef ParentName="MechSerumBase">
-    <defName>Bast_Eternal_Flame_Core_Shard</defName>
-    <label>eternal flame core shard</label>
-    <description>A small fragment of an entire flame core.</description>
-    <graphicData>
-      <texPath>Things/Item/Special/EternalFlameCoreShard</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <shaderType>Transparent</shaderType>
-    </graphicData>
-    <stackLimit>75</stackLimit>
-    <statBases>
-      <MarketValue>125</MarketValue>
-    </statBases>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <tradeability>Buyable</tradeability>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
-  </ThingDef>
+    <ThingDef ParentName="MechSerumBase">
+        <defName>Bast_Eternal_Flame_Core_Shard</defName>
+        <label>eternal flame core shard</label>
+        <description>A small fragment of an entire flame core.</description>
+        <stackLimit>75</stackLimit>
+        <tradeability>Buyable</tradeability>
+        <graphicData>
+            <texPath>Things/Item/Special/EternalFlameCoreShard</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+        <statBases>
+            <MarketValue>125</MarketValue>
+        </statBases>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <thingSetMakerTags>
+            <li>RewardStandardMidFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
 
 </Defs>

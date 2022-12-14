@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
-    <Operation Class="PatchOperationFindMod">
+
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Alpha Biomes</li>
 		</mods>
@@ -11,7 +11,7 @@
 
 				<!--==================== Abatanica Ant Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Abatanica_Ant"]/race/wildBiomes</xpath>
 					<value>
 
@@ -20,7 +20,7 @@
 						<AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.00</AB_TarPits>
-                        <AB_PropaneLakes>0.01</AB_PropaneLakes>
+						<AB_PropaneLakes>0.01</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.01</AB_PyroclasticConflagration>
 
 					</value>
@@ -28,7 +28,7 @@
 
 				<!--==================== Alluvium Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Alluvium"]/race/wildBiomes</xpath>
 					<value>
 
@@ -37,7 +37,7 @@
 						<AB_GelatinousSuperorganism>0.25</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.05</AB_GallatrossGraveyard>
 						<AB_TarPits>0.30</AB_TarPits>
-                        <AB_PropaneLakes>0.05</AB_PropaneLakes>
+						<AB_PropaneLakes>0.05</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.05</AB_PyroclasticConflagration>
 
 					</value>
@@ -45,7 +45,7 @@
 
 				<!--==================== Bahlrin Alpha Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Bahlrin"]/race/wildBiomes</xpath>
 					<value>
 
@@ -57,7 +57,7 @@
 
 				<!--==================== Bastyon Alpha Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Bastyon"]/race/wildBiomes</xpath>
 					<value>
 
@@ -70,7 +70,7 @@
 
 				<!--==================== Blazing Felidae Alpha Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Blazing_Felidae"]/race/wildBiomes</xpath>
 					<value>
 
@@ -82,7 +82,7 @@
 
 				<!--==================== Ceratok Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Ceratok"]/race/wildBiomes</xpath>
 					<value>
 
@@ -94,7 +94,7 @@
 
 				<!--==================== Chem Tegu Alpha Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Chem_Tegu"]/race/wildBiomes</xpath>
 					<value>
 
@@ -106,7 +106,7 @@
 
 				<!--==================== Critter Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Critter"]/race/wildBiomes</xpath>
 					<value>
 
@@ -115,7 +115,7 @@
 						<AB_GelatinousSuperorganism>0.00</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.02</AB_GallatrossGraveyard>
 						<AB_TarPits>0.02</AB_TarPits>
-                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PropaneLakes>0.00</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.00</AB_PyroclasticConflagration>
 
 					</value>
@@ -123,7 +123,7 @@
 
 				<!--==================== Ethereal Lion Alpha Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Ethereal_Lion"]/race/wildBiomes</xpath>
 					<value>
 
@@ -136,7 +136,7 @@
 
 				<!--==================== Sunburst Gnomaclu Alpha Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Sunburst_Gnomaclu"]/race/wildBiomes</xpath>
 					<value>
 
@@ -149,7 +149,7 @@
 
 				<!--==================== Midnight Gnomaclu Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Midnight_Gnomaclu"]/race/wildBiomes</xpath>
 					<value>
 
@@ -162,7 +162,7 @@
 
 				<!--==================== Hazey Gnomaclu Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Hazey_Gnomaclu"]/race/wildBiomes</xpath>
 					<value>
 
@@ -175,7 +175,7 @@
 
 				<!--==================== Gray Terror Gnomaclu Alpha Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Gray_Terror"]/race/wildBiomes</xpath>
 					<value>
 
@@ -186,7 +186,7 @@
 
 				<!--==================== Scire Alpha Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Scire"]/race/wildBiomes</xpath>
 					<value>
 
@@ -197,7 +197,7 @@
 
 				<!--==================== Soul Eater Alpha Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Soul_Eater"]/race/wildBiomes</xpath>
 					<value>
 
@@ -211,7 +211,7 @@
 
 				<!--==================== Snipping Snail Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Snipping_Snail"]/race/wildBiomes</xpath>
 					<value>
 
@@ -220,7 +220,7 @@
 						<AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.00</AB_TarPits>
-                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PropaneLakes>0.00</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.00</AB_PyroclasticConflagration>
 
 					</value>
@@ -228,7 +228,7 @@
 
 				<!--==================== Lightning Elemental Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Lightning_Elemental"]/race/wildBiomes</xpath>
 					<value>
 
@@ -237,7 +237,7 @@
 						<AB_GelatinousSuperorganism>0.00</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.00</AB_TarPits>
-                        <AB_PropaneLakes>0.01</AB_PropaneLakes>
+						<AB_PropaneLakes>0.01</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.05</AB_PyroclasticConflagration>
 
 					</value>
@@ -245,7 +245,7 @@
 
 				<!--==================== Svarog Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Svarog"]/race/wildBiomes</xpath>
 					<value>
 
@@ -254,7 +254,7 @@
 						<AB_GelatinousSuperorganism>0.00</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.02</AB_TarPits>
-                        <AB_PropaneLakes>0.05</AB_PropaneLakes>
+						<AB_PropaneLakes>0.05</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.05</AB_PyroclasticConflagration>
 
 					</value>
@@ -262,7 +262,7 @@
 
 				<!--==================== Vorpal Bunny Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny"]/race/wildBiomes</xpath>
 					<value>
 
@@ -271,7 +271,7 @@
 						<AB_GelatinousSuperorganism>0.00</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.00</AB_TarPits>
-                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PropaneLakes>0.00</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.00</AB_PyroclasticConflagration>
 
 					</value>
@@ -279,7 +279,7 @@
 
 				<!--==================== Enduring Vorpal Bunny Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Enduring"]/race/wildBiomes</xpath>
 					<value>
 
@@ -288,7 +288,7 @@
 						<AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.00</AB_TarPits>
-                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PropaneLakes>0.00</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.00</AB_PyroclasticConflagration>
 
 					</value>
@@ -296,7 +296,7 @@
 
 				<!--==================== Enraged Vorpal Bunny Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Enraged"]/race/wildBiomes</xpath>
 					<value>
 
@@ -305,7 +305,7 @@
 						<AB_GelatinousSuperorganism>0.00</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.02</AB_TarPits>
-                        <AB_PropaneLakes>0.02</AB_PropaneLakes>
+						<AB_PropaneLakes>0.02</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.02</AB_PyroclasticConflagration>
 
 					</value>
@@ -313,7 +313,7 @@
 
 				<!--==================== Iridescent Vorpal Bunny Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Iridescent"]/race/wildBiomes</xpath>
 					<value>
 
@@ -322,7 +322,7 @@
 						<AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.00</AB_TarPits>
-                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PropaneLakes>0.00</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.00</AB_PyroclasticConflagration>
 
 					</value>
@@ -330,7 +330,7 @@
 
 				<!--==================== Pragmatic Vorpal Bunny Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Pragmatic"]/race/wildBiomes</xpath>
 					<value>
 
@@ -339,7 +339,7 @@
 						<AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.00</AB_TarPits>
-                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PropaneLakes>0.00</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.02</AB_PyroclasticConflagration>
 
 					</value>
@@ -347,7 +347,7 @@
 
 				<!--==================== Wisp Alpha Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Wisp"]/race/wildBiomes</xpath>
 					<value>
 
@@ -356,13 +356,13 @@
 						<AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>
 						<AB_GallatrossGraveyard>0.00</AB_GallatrossGraveyard>
 						<AB_TarPits>0.00</AB_TarPits>
-                        <AB_PropaneLakes>0.00</AB_PropaneLakes>
+						<AB_PropaneLakes>0.00</AB_PropaneLakes>
 						<AB_PyroclasticConflagration>0.00</AB_PyroclasticConflagration>
 
 					</value>
 				</li>
 
-            </operations>
+			</operations>
 		</match>
 	</Operation>
 

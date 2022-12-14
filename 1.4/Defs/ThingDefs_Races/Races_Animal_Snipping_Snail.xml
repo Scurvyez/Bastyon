@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--==================== Snipping Snail ThingDef ====================-->
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>Bast_Snipping_Snail</defName>									
+		<defName>Bast_Snipping_Snail</defName>
 		<label>snipping snail</label>
 		<description>Although they are slow, don't be fooled by snipping snails! Up close they can deliver devastating blows with their dual front bladed appendages.\n\nSnipping snails are often found roaming the rim in small groups, so they can guard eachother in hostile environments.</description>
 		<statBases>
@@ -64,14 +64,12 @@
 		</verbs>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
-				<filthType>Bast_Filth_SnippingSnailSlime</filthType> 
-				<rate>0.1</rate> 
-				<radius>1</radius> 
+				<filthType>Bast_Filth_SnippingSnailSlime</filthType>
+				<rate>0.1</rate>
+				<radius>1</radius>
 				<ticksToCreateFilth>12000</ticksToCreateFilth>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_AcidImmunity">		
-
-			</li>
+			<li Class="AnimalBehaviours.CompProperties_AcidImmunity"></li>
 		</comps>
 		<race>
 			<wildBiomes>
@@ -83,16 +81,16 @@
 				<TemperateSwamp>0.09</TemperateSwamp>
 				<TemperateForest>0.00</TemperateForest>
 				<TropicalSwamp>0.08</TropicalSwamp>
-				<TropicalRainforest>0.00</TropicalRainforest>       
+				<TropicalRainforest>0.00</TropicalRainforest>
 				<AridShrubland>0.01</AridShrubland>
 				<Desert>0.00</Desert>
-				<ExtremeDesert>0.00</ExtremeDesert>      
+				<ExtremeDesert>0.00</ExtremeDesert>
 			</wildBiomes>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>0.4</maxPreyBodySize>
 			<body>Bast_SnippingSnail</body>
-            <bloodDef>Filth_SnippingSnailBlood</bloodDef>
+			<bloodDef>Filth_SnippingSnailBlood</bloodDef>
 			<baseBodySize>0.5</baseBodySize>
 			<baseHungerRate>0.16</baseHungerRate>
 			<baseHealthScale>2.5</baseHealthScale>
@@ -102,7 +100,7 @@
 			<hasGenders>false</hasGenders>
 			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-      		<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
 			<mateMtbHours>100</mateMtbHours>
 			<gestationPeriodDays>12</gestationPeriodDays>
 			<lifeStageAges>
@@ -132,15 +130,15 @@
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
-                <statToAdd>
+				<statToAdd>
 					<li>Bast_PrimaryRole</li>
 					<li>Bast_SecondaryRole</li>
-					<li>Bast_RangedAttacks</li>			
+					<li>Bast_RangedAttacks</li>
 				</statToAdd>
 				<statValues>
-					<li>Bast_DamageRangedAcid</li>	
-					<li>Bast_AcidImmunity</li>	
-					<li>Bast_Yes</li>	
+					<li>Bast_DamageRangedAcid</li>
+					<li>Bast_AcidImmunity</li>
+					<li>Bast_Yes</li>
 				</statValues>
 				<statDescriptions>
 					<li>Bast_DamageRangedAcidDesc</li>
@@ -159,9 +157,9 @@
 		<defName>Bast_Snipping_Snail</defName>
 		<label>snipping snail</label>
 		<race>Bast_Snipping_Snail</race>
-		<combatPower>35</combatPower>	
+		<combatPower>35</combatPower>
 		<ecoSystemWeight>0.05</ecoSystemWeight>
-        <canArriveManhunter>true</canArriveManhunter>
+		<canArriveManhunter>true</canArriveManhunter>
 		<wildGroupSize>
 			<min>2</min>
 			<max>5</max>

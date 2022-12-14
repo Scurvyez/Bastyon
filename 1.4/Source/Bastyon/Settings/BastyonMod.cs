@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 using RimWorld;
 using UnityEngine;
@@ -19,7 +16,7 @@ namespace Bastyon
 
         public override string SettingsCategory()
         {
-            return "Bastyon Animal Settings";
+            return "Steve's Animals Animal Settings";
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
@@ -56,7 +53,7 @@ namespace Bastyon
 
         public override string SettingsCategory()
         {
-            return "Bastyon Raid Settings";
+            return "Steve's Animals Raid Settings";
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

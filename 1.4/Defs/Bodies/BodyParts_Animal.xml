@@ -47,7 +47,7 @@
 			<li>ManipulationLimbCore</li>
 		</tags>
 	</BodyPartDef>
-    
+
 	<BodyPartDef>
 		<defName>Bast_Wing</defName>
 		<label>wing</label>
@@ -139,7 +139,7 @@
 	</BodyPartDef>
 
 	<!--==================== Snipping Snail Specific Bodyparts ====================-->
-	
+
 	<BodyPartDef>
 		<defName>Bast_GastropodShell</defName>
 		<label>hardy gastropod shell</label>
@@ -148,7 +148,7 @@
 		<solid>true</solid>
 		<alive>false</alive>
 		<bleedRate>0</bleedRate>
-	</BodyPartDef>			
+	</BodyPartDef>
 
 	<BodyPartDef>
 		<defName>Bast_SnailBody</defName>
@@ -239,7 +239,7 @@
 			<li>BreathingSource</li>
 		</tags>
 	</BodyPartDef>
-	
+
 	<BodyPartDef>
 		<defName>Bast_SmolderingFist</defName>
 		<label>smoldering fist</label>

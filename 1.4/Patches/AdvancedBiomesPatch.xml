@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Patch>
-	
-    <Operation Class="PatchOperationFindMod">
+
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Advanced Biomes (Continued)</li>
 		</mods>
@@ -12,7 +12,7 @@
 
 				<!--==================== Abatanica Ant Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Abatanica_Ant"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.10</PoisonForest>
@@ -25,7 +25,7 @@
 
 				<!--==================== Alluvium Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Alluvium"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.10</PoisonForest>
@@ -38,7 +38,7 @@
 
 				<!--==================== Bahlrin Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Bahlrin"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -51,7 +51,7 @@
 
 				<!--==================== Bastyon Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Bastyon"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -64,7 +64,7 @@
 
 				<!--==================== Blazing Felidae Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Blazing_Felidae"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -77,7 +77,7 @@
 
 				<!--==================== Ceratok Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Ceratok"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -90,7 +90,7 @@
 
 				<!--==================== Chem Tegu Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Chem_Tegu"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.01</PoisonForest>
@@ -103,7 +103,7 @@
 
 				<!--==================== Critter Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Critter"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.05</PoisonForest>
@@ -116,7 +116,7 @@
 
 				<!--==================== Ethereal Lion Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Ethereal_Lion"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -129,7 +129,7 @@
 
 				<!--==================== Sunburst Gnomaclu Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Sunburst_Gnomaclu"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.05</PoisonForest>
@@ -142,7 +142,7 @@
 
 				<!--==================== Midnight Gnomaclu Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Midnight_Gnomaclu"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.05</PoisonForest>
@@ -155,7 +155,7 @@
 
 				<!--==================== Hazey Gnomaclu Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Hazey_Gnomaclu"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.05</PoisonForest>
@@ -168,7 +168,7 @@
 
 				<!--==================== Gray Terror Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Gray_Terror"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.01</PoisonForest>
@@ -181,7 +181,7 @@
 
 				<!--==================== Scire Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Scire"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.07</PoisonForest>
@@ -194,7 +194,7 @@
 
 				<!--==================== Soul Eater Adv. Biomes Spawning ====================-->
 
-                <li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Soul_Eater"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -207,7 +207,7 @@
 
 				<!--==================== Snipping Snail Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Snipping_Snail"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.12</PoisonForest>
@@ -220,7 +220,7 @@
 
 				<!--==================== Lightning Elemental Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Lightning_Elemental"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -233,7 +233,7 @@
 
 				<!--==================== Svarog Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Svarog"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -246,7 +246,7 @@
 
 				<!--==================== Vorpal Bunny Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.03</PoisonForest>
@@ -259,7 +259,7 @@
 
 				<!--==================== Enduring Vorpal Bunny Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Enduring"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -272,7 +272,7 @@
 
 				<!--==================== Enraged Vorpal Bunny Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Enraged"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.03</PoisonForest>
@@ -285,7 +285,7 @@
 
 				<!--==================== Iridescent Vorpal Bunny Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Iridescent"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.03</PoisonForest>
@@ -298,7 +298,7 @@
 
 				<!--==================== Pragmatic Vorpal Bunny Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Vorpal_Bunny_Pragmatic"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.00</PoisonForest>
@@ -311,7 +311,7 @@
 
 				<!--==================== Wisp Adv. Biomes Spawning ====================-->
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="Bast_Wisp"]/race/wildBiomes</xpath>
 					<value>
 						<PoisonForest>0.10</PoisonForest>
