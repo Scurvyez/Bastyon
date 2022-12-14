@@ -1,0 +1,5 @@
+S:\Games\Steam\steamapps\common\RimWorld\Mods\Bastyon\1.4\Assemblies\Bastyon.dll
+S:\Games\Steam\steamapps\common\RimWorld\Mods\Bastyon\1.4\Source\Bastyon\obj\Debug\Bastyon.csproj.AssemblyReference.cache
+S:\Games\Steam\steamapps\common\RimWorld\Mods\Bastyon\1.4\Source\Bastyon\obj\Debug\Bastyon.csproj.CoreCompileInputs.cache
+S:\Games\Steam\steamapps\common\RimWorld\Mods\Bastyon\1.4\Source\Bastyon\obj\Debug\Bastyon.csproj.CopyComplete
+S:\Games\Steam\steamapps\common\RimWorld\Mods\Bastyon\1.4\Source\Bastyon\obj\Debug\Bastyon.dll

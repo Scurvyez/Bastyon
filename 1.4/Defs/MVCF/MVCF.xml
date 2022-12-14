@@ -5,11 +5,11 @@
 		<defName>Bast_Bastyon</defName>
 		<label>Bastyon</label>
 		<description>Adding animal ranged attacks for Bastyon creatures</description>
-		<Features>
+		<ActivateFeatures>
 			<RangedAnimals>true</RangedAnimals>
 			<HediffVerbs>true</HediffVerbs>
 			<IntegratedToggle>true</IntegratedToggle>
-		</Features>
+		</ActivateFeatures>
 	</MVCF.ModDef>
 
 </Defs>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "tEZDyJ6ds+XAzAEo2z2mns+/Osbx0cuRucZSOkafTxTipXLuDGdW8nvv35Q62MYlLZ9M5kHv1QYtd6PoNLBOkg==",
+  "success": true,
+  "projectFilePath": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bastyon\\1.4\\Source\\Bastyon\\Bastyon.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\steve\\.nuget\\packages\\achievementsexpanded\\1.4.82\\achievementsexpanded.1.4.82.nupkg.sha512",
+    "C:\\Users\\steve\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3563\\krafs.rimworld.ref.1.4.3563.nupkg.sha512",
+    "C:\\Users\\steve\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

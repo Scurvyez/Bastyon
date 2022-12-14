@@ -1,20 +1,13 @@
-﻿using HarmonyLib;
-using RimWorld;
+﻿using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 using Verse;
-using Verse.AI;
-using Verse.AI.Group;
 
 namespace Bastyon
 {
 	public class IncidentWorker_RaidCustom : IncidentWorker_RaidEnemy
 	{
-
 		//2. Second Trigger 
 		protected override bool FactionCanBeGroupSource(Faction f, Map map, bool desperate = false)
 		{
@@ -58,7 +51,7 @@ namespace Bastyon
 				}
 			}
 		}
-		public List<Pawn> SpawnThreats(IncidentParms parms, RaidOptions options)
+		public List<Pawn> SpawnThreats(IncidentParms parms, RaidOptionsModExt options)
 		{
 			List<Pawn> list = new List<Pawn>();
 			int num = 0;
@@ -87,7 +80,7 @@ namespace Bastyon
 			return null;
 		}
 
-		public List<Pawn> SpawnThreats2(IncidentParms parms, RaidOptions options)
+		public List<Pawn> SpawnThreats2(IncidentParms parms, RaidOptionsModExt options)
 		{
 			List<Pawn> list = new List<Pawn>();
 			foreach (var pawnCount in options.minimumPawnCountPerKind.options)
@@ -123,43 +116,43 @@ namespace Bastyon
 		// Incident Parms details are not yet filled
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
-			Log.Message(" - CanFireNowSub - var value = base.CanFireNowSub(parms); - 1");
+			//Log.Message(" - CanFireNowSub - var value = base.CanFireNowSub(parms); - 1");
 			var value = base.CanFireNowSub(parms);
-			Log.Message(" - CanFireNowSub - var options = this.def.GetModExtension<RaidOptions>(); - 2");
+			//Log.Message(" - CanFireNowSub - var options = this.def.GetModExtension<RaidOptions>(); - 2");
 			
 			// Gets all raid options from Customer Def
 
-			var options = this.def.GetModExtension<RaidOptions>();
-			Log.Message(" - CanFireNowSub - if (options.allowedHourRange.HasValue && parms.target is Map map) - 3");
+			var options = this.def.GetModExtension<RaidOptionsModExt>();
+			//Log.Message(" - CanFireNowSub - if (options.allowedHourRange.HasValue && parms.target is Map map) - 3");
 
 			// This checks the map time to see if it's night time for a Balhrin Raid (can only raid at night)
 
 			if (options.allowedHourRange.HasValue && parms.target is Map map)
 			{
-				Log.Message(" - CanFireNowSub - var hourRange = options.allowedHourRange.Value; - 4");
+				//Log.Message(" - CanFireNowSub - var hourRange = options.allowedHourRange.Value; - 4");
 				var hourRange = options.allowedHourRange.Value;
-				Log.Message(" - CanFireNowSub - var curHour = GenLocalDate.HourOfDay(map.Tile); - 5");
+				//Log.Message(" - CanFireNowSub - var curHour = GenLocalDate.HourOfDay(map.Tile); - 5");
 				var curHour = GenLocalDate.HourOfDay(map.Tile);
 
 				var minHour = hourRange.min;
 				var maxHour = hourRange.max;
 
-				Log.Message(" - CanFireNowSub - if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max) - 6");
+				//Log.Message(" - CanFireNowSub - if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max) - 6");
 				if (hourRange.min <= hourRange.max && curHour >= hourRange.min && curHour <= hourRange.max)
 				{
-					Log.Message(" - CanFireNowSub - return value; - 7");
+					//Log.Message(" - CanFireNowSub - return value; - 7");
 					return value;
 				}
 				else if (curHour >= hourRange.min || curHour <= hourRange.max)
 				{
-					Log.Message(" - CanFireNowSub - return value; - 9");
+					//Log.Message(" - CanFireNowSub - return value; - 9");
 					return value;
 				}
 				else
 				{
-					Log.Message("curHour: " + curHour);
-					Log.Message("hourRange.min: " + hourRange.min);
-					Log.Message("hourRange.max: " + hourRange.max);
+					//Log.Message("curHour: " + curHour);
+					//Log.Message("hourRange.min: " + hourRange.min);
+					//Log.Message("hourRange.max: " + hourRange.max);
 					return false;
 				}
 			}
@@ -168,7 +161,7 @@ namespace Bastyon
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
-			var options = this.def.GetModExtension<RaidOptions>();
+			var options = this.def.GetModExtension<RaidOptionsModExt>();
 
 			if (options.raidFaction != null && Find.FactionManager.FirstFactionOfDef(options.raidFaction) is null)
 			{
@@ -246,7 +239,7 @@ namespace Bastyon
 			{
 				parms.raidStrategy = options.raidStrategy;
 			}
-			Log.Message("parms.raidStrategy: " + parms.raidStrategy);
+			//Log.Message("parms.raidStrategy: " + parms.raidStrategy);
 			if (options.raidArrival is null)
 			{
 				ResolveRaidArriveMode(parms);
@@ -289,7 +282,7 @@ namespace Bastyon
 
 			if (list.Count == 0)
 			{
-				Log.Error("Got no pawns spawning raid from parms " + parms);
+				Log.Error("[Bastyon] Got no pawns spawning raid from parms " + parms);
 				return false;
 			}
 			parms.raidArrivalMode.Worker.Arrive(list, parms);
@@ -340,7 +333,7 @@ namespace Bastyon
 			}*/
 			Find.TickManager.slower.SignalForceNormalSpeedShort();
 			Find.StoryWatcher.statsRecord.numRaidsEnemy++;
-			Log.Message("2 parms.raidStrategy: " + parms.raidStrategy);
+			//Log.Message("2 parms.raidStrategy: " + parms.raidStrategy);
 			return true;
 		}
 
@@ -371,7 +364,7 @@ namespace Bastyon
 		{
 			if (parms.points <= 0f)
 			{
-				Log.Error("RaidEnemy is resolving raid points. They should always be set before initiating the incident.");
+				Log.Error("[Bastyon] RaidEnemy is resolving raid points. They should always be set before initiating the incident.");
 				parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
 			}
 		}
@@ -385,13 +378,13 @@ namespace Bastyon
 				parms.raidStrategy = result;
 				if (parms.raidStrategy == null)
 				{
-					Log.Error(string.Concat("No raid stategy found, defaulting to ImmediateAttack. Faction=", parms.faction.def.defName, ", points=", parms.points, ", groupKind=", groupKind, ", parms=", parms));
+					Log.Error(string.Concat("[Bastyon] No raid stategy found, defaulting to ImmediateAttack. Faction=", parms.faction.def.defName, ", points=", parms.points, ", groupKind=", groupKind, ", parms=", parms));
 					parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
 				}
 			}
 		}
 
-		protected string GetLetterLabel(IncidentParms parms, RaidOptions options)
+		protected string GetLetterLabel(IncidentParms parms, RaidOptionsModExt options)
 		{
 			if (!options.letterTitle.NullOrEmpty())
 			{
@@ -400,7 +393,7 @@ namespace Bastyon
 			return parms.raidStrategy.letterLabelEnemy + ": " + parms.faction.Name;
 		}
 
-		protected string GetLetterText(IncidentParms parms, List<Pawn> pawns, RaidOptions options)
+		protected string GetLetterText(IncidentParms parms, List<Pawn> pawns, RaidOptionsModExt options)
 		{
 			if (!options.letterText.NullOrEmpty())
 			{
@@ -418,7 +411,7 @@ namespace Bastyon
 			return str;
 		}
 
-		protected LetterDef GetLetterDef(RaidOptions options)
+		protected LetterDef GetLetterDef(RaidOptionsModExt options)
 		{
 			if (options.letterDef != null)
 			{
