@@ -56,6 +56,11 @@
     <Compile Include="DefModExtensions\SunLightDamageModExt.cs" />
     <Compile Include="Hediffs\Hediff_SunLightDamage.cs" />
     <Compile Include="Settings\BastyonRaidSettings.cs" />
+    <Compile Include="SubEffecters\SubEffecter_ConstantCircleEmote.cs" />
+    <Compile Include="ThingComps\CompProps\CompProperties_PawnStateVisuals.cs" />
+    <Compile Include="ThingComps\Comp_PawnStateVisuals.cs" />
+    <Compile Include="ThingComps\CompProps\CompProperties_ExtraPawnGraphics.cs" />
+    <Compile Include="ThingComps\Comp_ExtraPawnGraphics.cs" />
     <Compile Include="ThingComps\CompProps\CompProperties_VulnerableToSunlight.cs" />
     <Compile Include="ThingComps\Comp_VulnerableToSunlight.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />

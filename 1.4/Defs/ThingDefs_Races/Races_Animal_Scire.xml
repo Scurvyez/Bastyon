@@ -20,8 +20,7 @@
                 </hediffsToRemove>
                 <tickInterval>2000</tickInterval>
             </li>
-            <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
-                <!-- <resourceDef>Bast_Eternal_Flame_Core</resourceDef> -->
+            <!-- <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
                 <resourceAmount>1</resourceAmount>
                 <dropChance>0.20</dropChance>
                 <isRandom>true</isRandom>
@@ -38,7 +37,7 @@
                     <li>Bast_Eternal_Flame_Core_Shard</li>
                     <li>Bast_Eternal_Flame_Core_Shard</li>
                 </randomItems>
-            </li>
+            </li> -->
         </comps>
         <verbs>
             <li>

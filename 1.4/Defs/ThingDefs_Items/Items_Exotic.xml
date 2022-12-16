@@ -54,7 +54,7 @@
 
     <!--==================== Eternal Flame Core ====================-->
 
-    <ThingDef ParentName="MechSerumBase">
+    <!-- <ThingDef ParentName="MechSerumBase">
         <defName>Bast_Eternal_Flame_Core</defName>
         <label>eternal flame core</label>
         <description>Once the driving life-force of a majestic male scire, this eternal flame core no longer carries the searing heat of an entire sun within.\n\nHowever... what once carried life offers the chance for another. This core holds the power of resurrection and with it, hope, for a soul who's last breath was not so long ago.\n\nTake care! For the cost of a life may be high.</description>
@@ -74,11 +74,11 @@
         <thingSetMakerTags>
             <li>RewardStandardMidFreq</li>
         </thingSetMakerTags>
-    </ThingDef>
+    </ThingDef> -->
 
     <!--==================== Eternal Flame Core Shard ====================-->
 
-    <ThingDef ParentName="MechSerumBase">
+    <!-- <ThingDef ParentName="MechSerumBase">
         <defName>Bast_Eternal_Flame_Core_Shard</defName>
         <label>eternal flame core shard</label>
         <description>A small fragment of an entire flame core.</description>
@@ -98,6 +98,6 @@
         <thingSetMakerTags>
             <li>RewardStandardMidFreq</li>
         </thingSetMakerTags>
-    </ThingDef>
+    </ThingDef> -->
 
 </Defs>

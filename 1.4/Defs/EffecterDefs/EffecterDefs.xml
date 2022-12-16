@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ==========  ==========-->
+
+    <EffecterDef>
+        <defName>Bast_PawnAttackingWarmup</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+                <spawnLocType>OnSource</spawnLocType>
+                <burstCount>3~5</burstCount>
+                <positionRadius>2</positionRadius>
+                <scale>0.5</scale>
+                <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+                <ticksBetweenMotes>30</ticksBetweenMotes>
+                <positionLerpFactor>1</positionLerpFactor>
+                <moteDef>Bast_PawnAttacking_Mote</moteDef>
+                <angle>0~15</angle>
+                <speed>1</speed>
+            </li>
+            <li>
+                <subEffecterClass>Bastyon.SubEffecter_ConstantCircleEmote</subEffecterClass>
+                <spawnLocType>OnSource</spawnLocType>
+                <maxMoteCount>9</maxMoteCount>
+                <positionRadius>3.9</positionRadius>
+                <ticksBetweenMotes>30</ticksBetweenMotes>
+                <scale>0.5</scale>
+                <angle>0</angle>
+                <moteDef>Bast_PawnAttacking_MoteMaintained</moteDef>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+                <spawnLocType>OnSource</spawnLocType>
+                <scale>1</scale>
+                <ticksBetweenMotes>30</ticksBetweenMotes>
+                <fleckDef>PsycastPsychicEffect</fleckDef>
+            </li>
+        </children>
+    </EffecterDef>
+
+    <!-- ==========  ==========-->
+
+    <EffecterDef>
+        <defName>Bast_PawnAttackingEnd</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+                <spawnLocType>OnSource</spawnLocType>
+                <burstCount>4~7</burstCount>
+                <positionRadius>2</positionRadius>
+                <scale>0.8</scale>
+                <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+                <ticksBetweenMotes>40</ticksBetweenMotes>
+                <positionLerpFactor>1</positionLerpFactor>
+                <moteDef>Bast_PawnAttacking_Mote</moteDef>
+                <angle>0~15</angle>
+                <speed>1</speed>
+            </li>
+        </children>
+    </EffecterDef>
+
+    <!-- ==========  ==========-->
+
+    <ThingDef ParentName="MoteBase">
+        <defName>Bast_PawnAttacking_Mote</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <graphicData>
+            <texPath>Effects/Motes/Attacking</texPath>
+            <graphicClass>Graphic_MoteRandom</graphicClass>
+            <!--<shaderType>MoteDistorted</shaderType>-->
+            <drawSize>(0.8, 0.8)</drawSize>
+        </graphicData>
+        <mote>
+            <fadeInTime>0.03</fadeInTime>
+            <fadeOutTime>0.2</fadeOutTime>
+            <solidTime>0.4</solidTime>
+        </mote>
+    </ThingDef>
+
+    <!-- ==========  ==========-->
+
+    <ThingDef ParentName="MoteBase">
+        <defName>Bast_PawnAttacking_MoteMaintained</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <graphicData>
+            <texPath>Effects/Motes/Attacking</texPath>
+            <graphicClass>Graphic_MoteRandom</graphicClass>
+            <!--<shaderType>MoteDistorted</shaderType>-->
+            <drawSize>(0.8, 0.8)</drawSize>
+        </graphicData>
+        <mote>
+            <fadeInTime>0.03</fadeInTime>
+            <fadeOutTime>0.2</fadeOutTime>
+            <solidTime>0.3</solidTime>
+        </mote>
+    </ThingDef>
+
+</Defs>

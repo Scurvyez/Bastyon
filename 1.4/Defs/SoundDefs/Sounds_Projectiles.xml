@@ -11,8 +11,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder"> <!-- Use "AudioGrain_Folder" for multiple sound files per SoundDef. -->
-						<clipFolderPath>Bast_ScireFireBall</clipFolderPath>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>ScireFireBall</clipFolderPath>
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
@@ -33,8 +33,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>Bast_Web</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Bast_Web</clipPath>
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
@@ -56,7 +56,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>Bast_AlluviumGoo</clipFolderPath>
+						<clipFolderPath>AlluviumGoo</clipFolderPath>
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
@@ -78,7 +78,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>Bast_CritterSpike</clipFolderPath>
+						<clipFolderPath>CritterSpike</clipFolderPath>
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
@@ -99,8 +99,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>Bast_SnippingSnailAcid</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Bast_SnippingSnailAcid</clipPath>
 					</li>
 				</grains>
 				<sustainLoop>False</sustainLoop>
@@ -121,8 +121,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>Bast_BlisteringWind</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Bast_BlisteringWind</clipPath>
 					</li>
 				</grains>
 				<sustainLoop>true</sustainLoop>
@@ -144,7 +144,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>Bast_BastyonPlasmaStream</clipFolderPath>
+						<clipFolderPath>BastyonPlasmaStream</clipFolderPath>
 					</li>
 				</grains>
 				<sustainLoop>true</sustainLoop>
@@ -165,8 +165,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>Bast_FireStream</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Bast_FireStream</clipPath>
 					</li>
 				</grains>
 				<sustainLoop>true</sustainLoop>

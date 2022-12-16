@@ -114,14 +114,14 @@
                 <IceSheet>0.00</IceSheet>
                 <SeaIce>0.00</SeaIce>
                 <ColdBog>0.00</ColdBog>
-                <Desert>0.15</Desert>
+                <Desert>0.35</Desert>
                 <BorealForest>0.00</BorealForest>
                 <Tundra>0.00</Tundra>
                 <TemperateForest>0.03</TemperateForest>
                 <TemperateSwamp>0.00</TemperateSwamp>
                 <TropicalRainforest>0.01</TropicalRainforest>
                 <TropicalSwamp>0.00</TropicalSwamp>
-                <AridShrubland>0.15</AridShrubland>
+                <AridShrubland>0.25</AridShrubland>
             </wildBiomes>
             <body>QuadrupedAnimalWithHoovesAndHorn</body>
             <baseHungerRate>1.5</baseHungerRate>

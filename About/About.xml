@@ -63,3 +63,10 @@ View the full changelog on Github as well.
     </loadAfter>
 
 </ModMetaData>
+
+<!-- 
+    TO-DO...
+        + fix all sound files
+        + add animals to Alien Biomes spawning logic, in BiomeDef's
+
+-->

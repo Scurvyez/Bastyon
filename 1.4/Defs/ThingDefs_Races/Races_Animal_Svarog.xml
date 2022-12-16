@@ -40,66 +40,6 @@
         <comps>
             <li Class="AnimalBehaviours.CompProperties_Floating"></li>
             <li Class="AnimalBehaviours.CompProperties_LightSustenance"></li>
-            <!-- <li Class="AnimalBehaviours.CompProperties_PawnOverlay">
-                <graphicElements>
-                    <li>
-                        <texPath>Things/Special/Svarog/Layer1/East/East</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>TransparentPlant</shaderType>
-                        <drawOffset>(0.00, 0.00, 0.00)</drawOffset>
-                        <drawSize>3.00</drawSize>
-                    </li>
-                    <li>
-                        <texPath>Things/Special/Svarog/Layer1/West/West</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>TransparentPlant</shaderType>
-                        <drawOffset>(0.00, 0.00, 0.00)</drawOffset>
-                        <drawSize>3.00</drawSize>
-                    </li>
-                    <li>
-                        <texPath>Things/Special/Svarog/Layer1/South/South</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>TransparentPlant</shaderType>
-                        <drawOffset>(0.00, 0.00, 0.00)</drawOffset>
-                        <drawSize>3.00</drawSize>
-                    </li>
-                    <li>
-                        <texPath>Things/Special/Svarog/Layer1/North/North</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>TransparentPlant</shaderType>
-                        <drawOffset>(0.00, 0.00, 0.00)</drawOffset>
-                        <drawSize>3.00</drawSize>
-                    </li>
-                    <li>
-                        <texPath>Things/Special/Svarog/Layer2/East/East</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>TransparentPlant</shaderType>
-                        <drawOffset>(0.00, 0.00, 0.00)</drawOffset>
-                        <drawSize>3.00</drawSize>
-                    </li>
-                    <li>
-                        <texPath>Things/Special/Svarog/Layer2/West/West</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>TransparentPlant</shaderType>
-                        <drawOffset>(0.00, 0.00, 0.00)</drawOffset>
-                        <drawSize>3.00</drawSize>
-                    </li>
-                    <li>
-                        <texPath>Things/Special/Svarog/Layer2/South/South</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>TransparentPlant</shaderType>
-                        <drawOffset>(0.00, 0.00, 0.00)</drawOffset>
-                        <drawSize>3.00</drawSize>
-                    </li>
-                    <li>
-                        <texPath>Things/Special/Svarog/Layer2/North/North</texPath>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>TransparentPlant</shaderType>
-                        <drawOffset>(0.00, 0.00, 0.00)</drawOffset>
-                        <drawSize>3.00</drawSize>
-                    </li>
-                </graphicElements>
-            </li> -->
         </comps>
         <tools>
             <li>

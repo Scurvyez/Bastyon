@@ -160,7 +160,7 @@
                     </shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Dessicated_Vibrant_Wisp</texPath>
+                    <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Dessicated_Svarog</texPath>
                     <drawSize>1.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -173,7 +173,7 @@
                     </shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Dessicated_Vibrant_Wisp</texPath>
+                    <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Dessicated_Svarog</texPath>
                     <drawSize>2.25</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -186,7 +186,7 @@
                     </shaderType>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Bast_Wisp/Bast_Dessicated_Vibrant_Wisp</texPath>
+                    <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Dessicated_Svarog</texPath>
                     <drawSize>5.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>

@@ -9,8 +9,8 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Pawn/Animal/Alluvium/Alluvium_Call</clipFolderPath>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Pawn/Animal/Alluvium/Alluvium_Call</clipPath>
                     </li>
                 </grains>
                 <volumeRange>15.42672~14.7734</volumeRange>
@@ -22,7 +22,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>Pawn_Alluvium_Angry</defName>
+        <defName>Pawn_Alluvium_Angry</defName> <!-- PLACEHOLDER -->
         <context>MapOnly</context>
         <maxVoices>2</maxVoices>
         <subSounds>
@@ -41,7 +41,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>Pawn_Alluvium_Wounded</defName>
+        <defName>Pawn_Alluvium_Wounded</defName>  <!-- PLACEHOLDER -->
         <context>MapOnly</context>
         <subSounds>
             <li>
@@ -60,7 +60,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>Pawn_Alluvium_Death</defName>
+        <defName>Pawn_Alluvium_Death</defName>  <!-- PLACEHOLDER -->
         <context>MapOnly</context>
         <subSounds>
             <li>
@@ -85,8 +85,8 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Pawn/Animal/Bahlrin/Bahlrin_Call</clipFolderPath>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Pawn/Animal/Bahlrin/Bahlrin_Call</clipPath>
                     </li>
                 </grains>
                 <volumeRange>15.42672~14.7734</volumeRange>
@@ -98,7 +98,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>Pawn_Bahlrin_Angry</defName>
+        <defName>Pawn_Bahlrin_Angry</defName> <!-- PLACEHOLDER -->
         <context>MapOnly</context>
         <maxVoices>2</maxVoices>
         <subSounds>
@@ -122,8 +122,8 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Pawn/Animal/Bahlrin/Bahlrin_Pain</clipFolderPath>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Pawn/Animal/Bahlrin/Bahlrin_Pain</clipPath>
                     </li>
                 </grains>
                 <volumeRange>15~15</volumeRange>
@@ -136,7 +136,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>Pawn_Bahlrin_Death</defName>
+        <defName>Pawn_Bahlrin_Death</defName> <!-- PLACEHOLDER -->
         <context>MapOnly</context>
         <subSounds>
             <li>
