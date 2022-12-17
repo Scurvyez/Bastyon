@@ -99,14 +99,19 @@
 		<graphicData>
 			<texPath>Things/Projectiles/Bast_BlisteringWind</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlowDistorted</shaderType>
 			<drawSize>2.5</drawSize>
+			<shaderParameters>
+				<_distortionIntensity>0.15</_distortionIntensity>
+				<_DistortionTex>/Other/Ripples</_DistortionTex>
+			</shaderParameters>
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bast_BlisteringWindExtinguish</damageDef>
 			<damageAmountBase>3.2</damageAmountBase>
 			<stoppingPower>0.5</stoppingPower>	
-			<speed>20</speed>
+			<speed>12</speed>
 		</projectile>
 	</ThingDef>
 
@@ -118,7 +123,13 @@
 		<graphicData>
 			<texPath>Things/Projectiles/Bast_LightningBolt</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>MoteGlowDistorted</shaderType>
 			<drawSize>4.75</drawSize>
+			<shaderParameters>
+				<_distortionScale>0.020</_distortionScale>
+				<_distortionIntensity>0.085</_distortionIntensity>
+				<_DistortionTex>/Other/Ripples</_DistortionTex>
+			</shaderParameters>
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>

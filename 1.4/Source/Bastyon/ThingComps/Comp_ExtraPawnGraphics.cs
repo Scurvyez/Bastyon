@@ -25,23 +25,41 @@ namespace Bastyon
         public override void PostDraw()
         {
             base.PostDraw();
-            ParentPawn = (Pawn)parent;
+            Vector3 drawPos = parent.DrawPos;
+            Rot4 rotation = parent.Rotation;
+            ParentPawn = parent as Pawn;
             pawnKind = ParentPawn.kindDef;
+            Vector2 drawSize = pawnKind.lifeStages[ParentPawn.ageTracker.CurLifeStageIndex].bodyGraphicData.Graphic.drawSize;
             Pawn_JobTracker parentJob = new Pawn_JobTracker(ParentPawn);
 
             if (ParentPawn != null)
             {
+                if (Props.graphicsExtra != null)
+                {
+                    for (int i = 0; i < Props.graphicsExtra.Count; i++)
+                    {
+                        Props.graphicsExtra[i].Graphic.drawSize = drawSize;
+
+                        Props.graphicsExtra[i].Graphic.Draw(
+                            (
+                            drawPos + Props.graphicsExtra[i].drawOffset),
+                            rotation,
+                            parent
+                            );
+                    }
+                }
+
                 if (Props.graphicsAttacking != null && ParentPawn.IsAttacking())
                 {
                     for (int i = 0; i < Props.graphicsAttacking.Count; i++)
                     {
-                        Props.graphicsAttacking[i].Graphic.DrawWorker(
+                        Props.graphicsAttacking[i].Graphic.drawSize = drawSize;
+
+                        Props.graphicsAttacking[i].Graphic.Draw(
                             (
-                            parent.DrawPos + Props.graphicsAttacking[i].drawOffset), 
-                            parent.Rotation, 
-                            parent.def, 
-                            parent, 
-                            0f
+                            drawPos + Props.graphicsAttacking[i].drawOffset),
+                            rotation, 
+                            parent
                             );
                     }
                 }
@@ -50,20 +68,16 @@ namespace Bastyon
                 {
                     for (int i = 0; i < Props.graphicsResting.Count; i++)
                     {
-                        Props.graphicsResting[i].Graphic.DrawWorker(
+                        Props.graphicsResting[i].Graphic.drawSize = drawSize;
+
+                        Props.graphicsResting[i].Graphic.Draw(
                             (
-                            parent.DrawPos + Props.graphicsResting[i].drawOffset),
-                            parent.Rotation,
-                            parent.def,
-                            parent,
-                            0f
+                            drawPos + Props.graphicsResting[i].drawOffset),
+                            rotation,
+                            parent
                             );
                     }
                 }
-            }
-            else
-            {
-                parent.DefaultGraphic.Draw(parent.DrawPos, parent.Rotation, parent);
             }
         }
     }

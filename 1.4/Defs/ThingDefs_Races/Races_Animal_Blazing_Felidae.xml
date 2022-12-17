@@ -156,6 +156,27 @@
             <li>AnimalRare</li>
             <li>AnimalFighter</li>
         </tradeTags>
+        <comps>
+            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+                <graphicsExtra>
+                    <!-- RIGHT FIST -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Blazing_Felidae/Overlays/Bast_Blazing_Felidae_Overlay</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>2</_distortionScale>
+                            <_distortionIntensity>0.058</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtra>
+            </li>
+        </comps>
         <modExtensions>
             <li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>

@@ -40,6 +40,55 @@
         <comps>
             <li Class="AnimalBehaviours.CompProperties_Floating"></li>
             <li Class="AnimalBehaviours.CompProperties_LightSustenance"></li>
+            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+                <graphicsExtra>
+                    <!-- BODY -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Svarog/Body/Bast_Svarog_Body</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>1</_distortionScale>
+                            <_distortionIntensity>0.065</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <!-- RIGHT FIST -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Svarog/RightFist/Bast_Svarog_RightFist</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>2</_distortionScale>
+                            <_distortionIntensity>0.058</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <!-- LEFT FIST -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Svarog/LeftFist/Bast_Svarog_LeftFist</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>2</_distortionScale>
+                            <_distortionIntensity>0.056</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtra>
+            </li>
         </comps>
         <tools>
             <li>
@@ -180,7 +229,7 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Bast_Svarog/Bast_Svarog</texPath>
+                    <texPath>Blank/BlankTex</texPath>
                     <drawSize>0.7</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
@@ -191,7 +240,7 @@
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Bast_Svarog/Bast_Svarog</texPath>
+                    <texPath>Blank/BlankTex</texPath>
                     <drawSize>1.8</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>
@@ -202,7 +251,7 @@
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Bast_Svarog/Bast_Svarog</texPath>
+                    <texPath>Blank/BlankTex</texPath>
                     <drawSize>3.5</drawSize>
                     <shaderType>CutoutComplex</shaderType>
                 </bodyGraphicData>

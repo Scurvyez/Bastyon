@@ -20,6 +20,37 @@
                 <customResourceString>Chemfuel</customResourceString>
                 <isRandom>false</isRandom>
             </li>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>6.0</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <startWickHitPointsPercent>0.1</startWickHitPointsPercent>
+                <chanceNeverExplodeFromDamage>0.85</chanceNeverExplodeFromDamage>
+                <wickTicks>30</wickTicks>
+                <startWickOnDamageTaken>
+                    <li>Bullet</li>
+                    <li>Arrow</li>
+                    <li>ArrowHighVelocity</li>
+                </startWickOnDamageTaken>
+            </li>
+            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+                <graphicsExtra>
+                    <!-- RIGHT FIST -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Overlays/Bast_Chem_Tegu_Overlay</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>0.25</_distortionScale>
+                            <_distortionIntensity>0.088</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtra>
+            </li>
         </comps>
         <tools>
             <li>
