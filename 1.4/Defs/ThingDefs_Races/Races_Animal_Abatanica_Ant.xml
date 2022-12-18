@@ -6,7 +6,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>Bast_Abatanica_Ant</defName>
         <label>abatanica ant</label>
-        <description>Although not necessarily aggressive by default, abatanica ants are resource hungry almost all day. They will eat through rocks and minerals alike.\n\nOver millions of years of evolution their stomachs have taken to the hard and cold stone often found scattered in mountains and hills across rimworlds. In addition to their primary diet of granite, slate, limestone, and other rock variants, they will occasionally feast on unrefined resources like jade, gold, and plasteel.\n\nIf you happen to come across these insects, keep a close eye on your valuables.</description>
+        <description>Although not necessarily aggressive by default, abatanica ants are resource hungry all hours of the day. They will eat through rocks and minerals alike.\n\nOver millions of years of evolution their stomachs have taken to the hard and cold stone often found scattered in mountains and hills across rimworlds. In addition to their primary diet of granite, slate, limestone, and other rock variants, they will occasionally feast on unrefined resources like jade, gold, and plasteel.\n\nIf you happen to come across these insects, keep a close eye on your valuables.</description>
         <statBases>
             <MoveSpeed>3.8</MoveSpeed>
             <ComfyTemperatureMin>10</ComfyTemperatureMin>
@@ -51,7 +51,7 @@
             <li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
                 <defOfBuilding>Bast_AbatanicaAntColonyMound</defOfBuilding>
                 <ticksToBuild>420000</ticksToBuild>
-                <maxBuildingsPerMap>2</maxBuildingsPerMap>
+                <maxBuildingsPerMap>1</maxBuildingsPerMap>
                 <acceptedTerrains>
                     <li>Soil</li>
                     <li>RichSoil</li>

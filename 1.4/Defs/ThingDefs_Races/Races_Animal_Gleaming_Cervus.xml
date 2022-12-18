@@ -58,6 +58,101 @@
                 <radius>3</radius>
                 <feedCauser>false</feedCauser>
             </li>
+            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+                <gameCondition>Aurora</gameCondition>
+                <!-- MALE -->
+                <graphicsGameCondition>
+                    <!-- ETHEREAL EFFECTS -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Overlays/Bast_Gleaming_CervusMale_Overlay1</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>0.325</_distortionScale>
+                            <_distortionIntensity>0.0125</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Overlays/Bast_Gleaming_CervusMale_Overlay2</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, -1.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>0.325</_distortionScale>
+                            <_distortionIntensity>0.0125</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Overlays/Bast_Gleaming_CervusMale_Overlay3</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>0.325</_distortionScale>
+                            <_distortionIntensity>0.0125</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsGameCondition>
+                <!-- FEMALE -->
+                <graphicsGameConditionFemale>
+                    <!-- ETHEREAL EFFECTS -->
+                    <li>
+                        <texPath>Blank/BlankTex</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>0.325</_distortionScale>
+                            <_distortionIntensity>0.0125</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <li>
+                        <texPath>Blank/BlankTex</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, -1.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>0.325</_distortionScale>
+                            <_distortionIntensity>0.0125</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <li>
+                        <texPath>Blank/BlankTex</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>0.325</_distortionScale>
+                            <_distortionIntensity>0.0125</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsGameConditionFemale>
+            </li>
         </comps>
         <tools>
             <li>

@@ -16,7 +16,21 @@ namespace Bastyon
         public CompProperties_ExtraPawnGraphics Props => (CompProperties_ExtraPawnGraphics)props;
         public Pawn ParentPawn = new Pawn();
         public PawnKindDef pawnKind = new PawnKindDef();
+        public GameConditionDef Aurora = GameConditionDefOf.Aurora;
 
+        /// <summary>
+        /// Returns true if the parent pawn has any female body graphics listed.
+        /// </summary>
+        protected bool UseProperSexGraphics()
+        {
+            if (pawnKind.lifeStages[ParentPawn.ageTracker.CurLifeStageIndex].femaleGraphicData != null)
+            {
+                return true;
+            }
+
+            return false;
+        }
+        
         /// <summary>
         /// Checks to see if an animal is attacking, sleeping, eating, or moving over certain terrain types.
         /// If any of these conditions are met additional graphics are applied and the DefaultGraphic
@@ -30,7 +44,10 @@ namespace Bastyon
             ParentPawn = parent as Pawn;
             pawnKind = ParentPawn.kindDef;
             Vector2 drawSize = pawnKind.lifeStages[ParentPawn.ageTracker.CurLifeStageIndex].bodyGraphicData.Graphic.drawSize;
+            Vector3 drawOffset = pawnKind.lifeStages[ParentPawn.ageTracker.CurLifeStageIndex].bodyGraphicData.Graphic.data.drawOffset;
             Pawn_JobTracker parentJob = new Pawn_JobTracker(ParentPawn);
+
+            Color color1 = new Color(0.145f, 0.588f, 0.745f, 1f); // for debugging text
 
             if (ParentPawn != null)
             {
@@ -76,6 +93,39 @@ namespace Bastyon
                             rotation,
                             parent
                             );
+                    }
+                }
+
+                if (Props.graphicsGameCondition != null && parent.MapHeld.gameConditionManager.ConditionIsActive(Props.gameCondition))
+                {
+                    if (Props.graphicsGameConditionFemale != null && ParentPawn.gender == Gender.Female)
+                    {
+                        for (int i = 0; i < Props.graphicsGameConditionFemale.Count; i++)
+                        {
+                            Props.graphicsGameConditionFemale[i].Graphic.drawSize = drawSize;
+
+                            Props.graphicsGameConditionFemale[i].Graphic.Draw(
+                                (
+                                drawPos + Props.graphicsGameConditionFemale[i].drawOffset),
+                                rotation,
+                                parent
+                                );
+                        }
+                    }
+
+                    else
+                    {
+                        for (int i = 0; i < Props.graphicsGameCondition.Count; i++)
+                        {
+                            Props.graphicsGameCondition[i].Graphic.drawSize = drawSize;
+
+                            Props.graphicsGameCondition[i].Graphic.Draw(
+                                (
+                                drawPos + Props.graphicsGameCondition[i].drawOffset),
+                                rotation,
+                                parent
+                                );
+                        }
                     }
                 }
             }

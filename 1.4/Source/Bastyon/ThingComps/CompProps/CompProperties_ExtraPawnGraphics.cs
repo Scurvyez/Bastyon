@@ -17,6 +17,10 @@ namespace Bastyon
         public List<GraphicData> graphicsResting = null;
         public List<GraphicData> graphicsEating = null;
         public List<GraphicData> graphicsOnTerrain = null;
+        public List<GraphicData> graphicsGameCondition = null;
+        public List<GraphicData> graphicsGameConditionFemale = null;
+
+        public GameConditionDef gameCondition = null;
 
         public CompProperties_ExtraPawnGraphics()
         {
