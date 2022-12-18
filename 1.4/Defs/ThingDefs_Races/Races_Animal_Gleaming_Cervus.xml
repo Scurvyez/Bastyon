@@ -112,13 +112,8 @@
                     <li>
                         <texPath>Blank/BlankTex</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
-                        <shaderParameters>
-                            <_distortionScale>0.325</_distortionScale>
-                            <_distortionIntensity>0.0125</_distortionIntensity>
-                            <_DistortionTex>/Other/Ripples</_DistortionTex>
-                        </shaderParameters>
+                        <shaderType>Cutout</shaderType>
+                        <drawOffset>(0, 0, 0)</drawOffset>
                         <damageData>
                             <enabled>false</enabled>
                         </damageData>
@@ -126,13 +121,8 @@
                     <li>
                         <texPath>Blank/BlankTex</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, -1.0, 0.0)</drawOffset>
-                        <shaderParameters>
-                            <_distortionScale>0.325</_distortionScale>
-                            <_distortionIntensity>0.0125</_distortionIntensity>
-                            <_DistortionTex>/Other/Ripples</_DistortionTex>
-                        </shaderParameters>
+                        <shaderType>Cutout</shaderType>
+                        <drawOffset>(0, 0, 0)</drawOffset>
                         <damageData>
                             <enabled>false</enabled>
                         </damageData>
@@ -140,13 +130,8 @@
                     <li>
                         <texPath>Blank/BlankTex</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
-                        <shaderParameters>
-                            <_distortionScale>0.325</_distortionScale>
-                            <_distortionIntensity>0.0125</_distortionIntensity>
-                            <_DistortionTex>/Other/Ripples</_DistortionTex>
-                        </shaderParameters>
+                        <shaderType>Cutout</shaderType>
+                        <drawOffset>(0, 0, 0)</drawOffset>
                         <damageData>
                             <enabled>false</enabled>
                         </damageData>
