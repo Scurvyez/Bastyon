@@ -7,6 +7,7 @@
         <defName>Bast_Svarog</defName>
         <label>svarog</label>
         <description>A once glorious being of ethereal power, svarogs are the result of centuries of genetic experimentation mixed with forgotten folklore.\n\nHumans, driven by their insatiable lust for the perfect form of life, once attempted to create a lifeform in the image of a god. The result? A tormented soul trapped in a metaphysical form of flame and ash.\n\nSvarogs are elusive and secretive creatures and are seldom seen throughout the rim. In their creators failures they now cling to the only thing they've ever know. Fire.\n\nVolcanoes, magma, extremely hot and barren environments are their only remaining sanctuary.</description>
+        <uiIconPath>Things/Pawn/Animal/Bast_Svarog/Bast_Svarog_east</uiIconPath>
         <statBases>
             <MoveSpeed>2.5</MoveSpeed>
             <MarketValue>1250</MarketValue>

@@ -7,6 +7,7 @@
         <defName>Bast_Lightning_Elemental</defName>
         <label>lightning elemental</label>
         <description>Driven by the chaotic storms constantly raging inside their minds and bodies, lightning elements care little for the lives of other organisms.\n\nOften found in the most hostile of environments, they are generally not aggressive until provoked.</description>
+        <uiIconPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Lightning_Elemental_south</uiIconPath>
         <statBases>
             <MoveSpeed>2.5</MoveSpeed>
             <MarketValue>1250</MarketValue>

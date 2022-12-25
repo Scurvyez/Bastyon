@@ -7,6 +7,7 @@
         <defName>Bast_Wisp</defName>
         <label>wisp</label>
         <description>These vaguely transluscent floating creatures seem to generate in forrested regions. They lack adequate attacks, and their whimsical bodies offer even less protection from the hardships of the rim. However, these fairy-like constructions of matter are beautiful to gaze upon and offer refuge in the mind of those who witness their fleeting presence.</description>
+        <uiIconPath>Things/Pawn/Animal/Bast_Wisp/WispIcon</uiIconPath>
         <statBases>
             <MoveSpeed>1.0</MoveSpeed>
             <MarketValue>115</MarketValue>
