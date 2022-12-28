@@ -107,13 +107,11 @@
                     </li>
                 </graphicsGameCondition>
                 <!-- FEMALE -->
-                <graphicsGameConditionFemale>
-                    <!-- ETHEREAL EFFECTS -->
+                <femalesHaveSeparateGraphics>true</femalesHaveSeparateGraphics>
+                <graphicsExtraFemale>
                     <li>
                         <texPath>Blank/BlankTex</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>Cutout</shaderType>
-                        <drawOffset>(0, 0, 0)</drawOffset>
                         <damageData>
                             <enabled>false</enabled>
                         </damageData>
@@ -121,8 +119,6 @@
                     <li>
                         <texPath>Blank/BlankTex</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>Cutout</shaderType>
-                        <drawOffset>(0, 0, 0)</drawOffset>
                         <damageData>
                             <enabled>false</enabled>
                         </damageData>
@@ -130,13 +126,11 @@
                     <li>
                         <texPath>Blank/BlankTex</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
-                        <shaderType>Cutout</shaderType>
-                        <drawOffset>(0, 0, 0)</drawOffset>
                         <damageData>
                             <enabled>false</enabled>
                         </damageData>
                     </li>
-                </graphicsGameConditionFemale>
+                </graphicsExtraFemale>
             </li>
         </comps>
         <tools>

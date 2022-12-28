@@ -13,12 +13,12 @@ namespace Bastyon
     public class CompProperties_ExtraPawnGraphics : CompProperties
     {
         public List<GraphicData> graphicsExtra = null;
+        public List<GraphicData> graphicsExtraFemale = null;
         public List<GraphicData> graphicsAttacking = null;
-        public List<GraphicData> graphicsResting = null;
-        public List<GraphicData> graphicsEating = null;
         public List<GraphicData> graphicsOnTerrain = null;
         public List<GraphicData> graphicsGameCondition = null;
-        public List<GraphicData> graphicsGameConditionFemale = null;
+
+        public bool femalesHaveSeparateGraphics = false;
 
         public GameConditionDef gameCondition = null;
 

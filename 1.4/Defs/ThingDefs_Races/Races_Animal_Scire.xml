@@ -20,24 +20,51 @@
                 </hediffsToRemove>
                 <tickInterval>2000</tickInterval>
             </li>
-            <!-- <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
-                <resourceAmount>1</resourceAmount>
-                <dropChance>0.20</dropChance>
-                <isRandom>true</isRandom>
-                <randomItems>
-                    <li>Bast_Eternal_Flame_Core</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                    <li>Bast_Eternal_Flame_Core_Shard</li>
-                </randomItems>
-            </li> -->
+            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+                <graphicsExtra>
+                    <!-- BLUE ETERNAL FLAME -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Scire/Overlays/Bast_Scire_Overlay</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.00, 1.0, 0.00)</drawOffset>
+                        <drawSize>1.30</drawSize>
+                        <shaderParameters>
+                            <_distortionScale>2</_distortionScale>
+                            <_distortionIntensity>0.058</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtra>
+                <!-- FEMALE -->
+                <femalesHaveSeparateGraphics>true</femalesHaveSeparateGraphics>
+                <graphicsExtraFemale>
+                    <li>
+                        <texPath>Blank/BlankTex</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <li>
+                        <texPath>Blank/BlankTex</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <li>
+                        <texPath>Blank/BlankTex</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtraFemale>
+            </li>
         </comps>
         <verbs>
             <li>

@@ -14,8 +14,40 @@ namespace Bastyon
     public class Comp_ExtraPawnGraphics : ThingComp
     {
         public CompProperties_ExtraPawnGraphics Props => (CompProperties_ExtraPawnGraphics)props;
-        public GameConditionDef Aurora = GameConditionDefOf.Aurora;
         
+        private bool OnlyShowDuringGameCondition()
+        {
+            if (Props.graphicsGameCondition != null && parent.MapHeld.gameConditionManager.ConditionIsActive(Props.gameCondition) && Props.gameCondition != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private bool IsMale()
+        {
+            if (parent is Pawn parentPawn)
+            {
+                if (parentPawn.gender == Gender.Male)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool IsFemale()
+        {
+            if (parent is Pawn parentPawn)
+            {
+                if (parentPawn.gender == Gender.Female)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         /// <summary>
         /// Checks to see if an animal is attacking, sleeping, eating, or moving over certain terrain types.
         /// If any of these conditions are met additional graphics are applied. :)
@@ -23,20 +55,19 @@ namespace Bastyon
         public override void PostDraw()
         {
             base.PostDraw();
-            Pawn parentPawn = parent as Pawn;
+            //Color color1 = new Color(0.145f, 0.588f, 0.745f, 1f); // for debugging text
 
-            Color color1 = new Color(0.145f, 0.588f, 0.745f, 1f); // for debugging text
-
-            if (parentPawn != null)
+            if (parent is Pawn parentPawn)
             {
                 PawnKindDef pawnKind = parentPawn.kindDef;
-                Pawn_JobTracker parentJob = parentPawn.jobs;
+                //Pawn_JobTracker parentJob = parentPawn.jobs;
 
                 Rot4 rotation = parent.Rotation;
                 Vector2 drawSize = pawnKind.lifeStages[parentPawn.ageTracker.CurLifeStageIndex].bodyGraphicData.Graphic.drawSize;
                 Vector3 drawPos = parent.DrawPos;
 
-                if (Props.graphicsExtra != null)
+
+                if (Props.graphicsExtra != null && IsMale())
                 {
                     for (int i = 0; i < Props.graphicsExtra.Count; i++)
                     {
@@ -45,6 +76,21 @@ namespace Bastyon
                         Props.graphicsExtra[i].Graphic.Draw(
                             (
                             drawPos + Props.graphicsExtra[i].drawOffset),
+                            rotation,
+                            parent
+                            );
+                    }
+                }
+
+                else if (Props.graphicsExtraFemale != null && IsFemale())
+                {
+                    for (int i = 0; i < Props.graphicsExtraFemale.Count; i++)
+                    {
+                        Props.graphicsExtraFemale[i].Graphic.drawSize = drawSize;
+
+                        Props.graphicsExtraFemale[i].Graphic.Draw(
+                            (
+                            drawPos + Props.graphicsExtraFemale[i].drawOffset),
                             rotation,
                             parent
                             );
@@ -60,45 +106,15 @@ namespace Bastyon
                         Props.graphicsAttacking[i].Graphic.Draw(
                             (
                             drawPos + Props.graphicsAttacking[i].drawOffset),
-                            rotation, 
-                            parent
-                            );
-                    }
-                }
-
-                if (Props.graphicsResting != null && parentJob.posture.Laying())
-                {
-                    for (int i = 0; i < Props.graphicsResting.Count; i++)
-                    {
-                        Props.graphicsResting[i].Graphic.drawSize = drawSize;
-
-                        Props.graphicsResting[i].Graphic.Draw(
-                            (
-                            drawPos + Props.graphicsResting[i].drawOffset),
                             rotation,
                             parent
                             );
                     }
                 }
 
-                if (Props.graphicsGameCondition != null && parent.MapHeld.gameConditionManager.ConditionIsActive(Props.gameCondition))
+                if (OnlyShowDuringGameCondition() == true)
                 {
-                    if (Props.graphicsGameConditionFemale != null && parentPawn.gender == Gender.Female)
-                    {
-                        for (int i = 0; i < Props.graphicsGameConditionFemale.Count; i++)
-                        {
-                            Props.graphicsGameConditionFemale[i].Graphic.drawSize = drawSize;
-
-                            Props.graphicsGameConditionFemale[i].Graphic.Draw(
-                                (
-                                drawPos + Props.graphicsGameConditionFemale[i].drawOffset),
-                                rotation,
-                                parent
-                                );
-                        }
-                    }
-
-                    else
+                    if (!IsFemale())
                     {
                         for (int i = 0; i < Props.graphicsGameCondition.Count; i++)
                         {
@@ -107,6 +123,20 @@ namespace Bastyon
                             Props.graphicsGameCondition[i].Graphic.Draw(
                                 (
                                 drawPos + Props.graphicsGameCondition[i].drawOffset),
+                                rotation,
+                                parent
+                                );
+                        }
+                    }
+                    else
+                    {
+                        for (int i = 0; i < Props.graphicsExtraFemale.Count; i++)
+                        {
+                            Props.graphicsExtraFemale[i].Graphic.drawSize = drawSize;
+
+                            Props.graphicsExtraFemale[i].Graphic.Draw(
+                                (
+                                drawPos + Props.graphicsExtraFemale[i].drawOffset),
                                 rotation,
                                 parent
                                 );
