@@ -50,17 +50,33 @@
                         </damageData>
                     </li>
                 </graphicsExtra>
-                <graphicsAttacking>
+                <graphicsExtraFemale>
+                    <!-- HEAD -->
                     <li>
-                        <texPath>Effects/Motes/Attacking</texPath>
-					    <graphicClass>Graphic_Flicker</graphicClass>
-                        <shaderType>MoteGlow</shaderType>
-                        <drawOffset>(0.75, 3.0, 1.2)</drawOffset>
+                        <texPath>Things/Pawn/Animal/Bast_Soul_Eater/Overlays/Head/Bast_Soul_Eater_Head</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>Cutout</shaderType>
+                        <drawOffset>(0.0, 3.0, 0.0)</drawOffset>
                         <damageData>
                             <enabled>false</enabled>
                         </damageData>
                     </li>
-                </graphicsAttacking>
+                    <!-- SPIRIT EFFECT -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Soul_Eater/Overlays/Bast_Soul_Eater_Overlay</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <!-- <_distortionScale>50</_distortionScale> -->
+                            <_distortionIntensity>0.035</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtraFemale>
             </li>
         </comps>
         <tools>

@@ -48,6 +48,18 @@ namespace Bastyon
             return false;
         }
 
+        private bool IsAsexual()
+        {
+            if (parent is Pawn parentPawn)
+            {
+                if (parentPawn.gender == Gender.None)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         /// <summary>
         /// Checks to see if an animal is attacking, sleeping, eating, or moving over certain terrain types.
         /// If any of these conditions are met additional graphics are applied. :)
@@ -67,7 +79,7 @@ namespace Bastyon
                 Vector3 drawPos = parent.DrawPos;
 
 
-                if (Props.graphicsExtra != null && IsMale())
+                if (Props.graphicsExtra != null && (IsMale() || IsAsexual()))
                 {
                     for (int i = 0; i < Props.graphicsExtra.Count; i++)
                     {

@@ -159,7 +159,7 @@
         <comps>
             <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
                 <graphicsExtra>
-                    <!-- RIGHT FIST -->
+                    <!-- WHOLE BODY: FIRE -->
                     <li>
                         <texPath>Things/Pawn/Animal/Bast_Blazing_Felidae/Overlays/Bast_Blazing_Felidae_Overlay</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>

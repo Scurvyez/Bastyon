@@ -55,7 +55,7 @@
                     <li>Plant_GleamingBerry</li>
                 </thingsToConvertTo>
                 <ticksConversionRate>120000</ticksConversionRate>
-                <radius>3</radius>
+                <radius>1</radius>
                 <feedCauser>false</feedCauser>
             </li>
             <li Class="Bastyon.CompProperties_ExtraPawnGraphics">

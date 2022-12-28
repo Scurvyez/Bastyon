@@ -77,6 +77,65 @@
                         </damageData>
                     </li>
                 </graphicsExtra>
+                <!-- FEMALE -->
+                <graphicsExtra>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Wisp/RedWisp/Base/RedWisp_Base</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>2</_distortionScale>
+                            <_distortionIntensity>0.068</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Wisp/RedWisp/Effects/RedWisp_Effect1</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>3</_distortionScale>
+                            <_distortionIntensity>0.038</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Wisp/RedWisp/Effects/RedWisp_Effect2</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.2, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>1.25</_distortionScale>
+                            <_distortionIntensity>0.028</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Wisp/RedWisp/Effects/RedWisp_Effect3</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.3, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>1</_distortionScale>
+                            <_distortionIntensity>0.083</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtra>
             </li>
         </comps>
         <tools>

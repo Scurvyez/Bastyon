@@ -50,6 +50,24 @@
                         </damageData>
                     </li>
                 </graphicsExtra>
+                <!-- FEMALE -->
+                <graphicsExtraFemale>
+                    <!-- RIGHT FIST -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Chem_Tegu/Overlays/Bast_Chem_Tegu_Overlay</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>0.25</_distortionScale>
+                            <_distortionIntensity>0.088</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtraFemale>
             </li>
         </comps>
         <tools>

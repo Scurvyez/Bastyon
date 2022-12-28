@@ -89,6 +89,53 @@
                         </damageData>
                     </li>
                 </graphicsExtra>
+                <graphicsExtraFemale>
+                    <!-- BODY -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Svarog/Body/Bast_Svarog_Body</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>1</_distortionScale>
+                            <_distortionIntensity>0.065</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <!-- RIGHT FIST -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Svarog/RightFist/Bast_Svarog_RightFist</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>2</_distortionScale>
+                            <_distortionIntensity>0.058</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                    <!-- LEFT FIST -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Svarog/LeftFist/Bast_Svarog_LeftFist</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>2</_distortionScale>
+                            <_distortionIntensity>0.056</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtraFemale>
             </li>
         </comps>
         <tools>
