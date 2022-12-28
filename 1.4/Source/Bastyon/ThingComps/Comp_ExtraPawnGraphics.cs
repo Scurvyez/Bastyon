@@ -63,6 +63,8 @@ namespace Bastyon
         /// <summary>
         /// Checks to see if an animal is attacking, sleeping, eating, or moving over certain terrain types.
         /// If any of these conditions are met additional graphics are applied. :)
+        /// 
+        /// DO THE SLEEPING CHECKS AND HIDE THE GRAPHICS
         /// </summary>
         public override void PostDraw()
         {

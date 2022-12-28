@@ -78,7 +78,7 @@
                     </li>
                 </graphicsExtra>
                 <!-- FEMALE -->
-                <graphicsExtra>
+                <graphicsExtraFemale>
                     <li>
                         <texPath>Things/Pawn/Animal/Bast_Wisp/RedWisp/Base/RedWisp_Base</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
@@ -135,7 +135,7 @@
                             <enabled>false</enabled>
                         </damageData>
                     </li>
-                </graphicsExtra>
+                </graphicsExtraFemale>
             </li>
         </comps>
         <tools>
