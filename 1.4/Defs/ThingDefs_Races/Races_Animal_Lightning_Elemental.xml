@@ -58,7 +58,7 @@
             </li>
             <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
                 <graphicsExtra>
-                    <!-- WHOLE BODY EFFECT -->
+                    <!-- WHOLE BODY EFFECT: MALE -->
                     <li>
                         <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Lightning_Elemental</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
@@ -74,6 +74,23 @@
                         </damageData>
                     </li>
                 </graphicsExtra>
+                <graphicsExtraFemale>
+                    <!-- WHOLE BODY EFFECT: FEMALE -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Lightning_Elemental</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>-0.5</_distortionScale>
+                            <_distortionIntensity>0.070</_distortionIntensity>
+                            <_DistortionTex>/Other/CircularRipples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtraFemale>
             </li>
         </comps>
         <verbs>

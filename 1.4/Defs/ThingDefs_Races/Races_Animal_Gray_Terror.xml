@@ -119,7 +119,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Gray_Terror/Overlays/Bast_Gray_Terror_Layer1</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, -1.0, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>2</_distortionScale>
                             <_distortionIntensity>0.068</_distortionIntensity>
@@ -133,7 +133,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Gray_Terror/Overlays/Bast_Gray_Terror_Layer2</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, -1.1, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>3</_distortionScale>
                             <_distortionIntensity>0.038</_distortionIntensity>
@@ -147,7 +147,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Gray_Terror/Overlays/Bast_Gray_Terror_Layer3</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, -1.2, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.2, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>1.25</_distortionScale>
                             <_distortionIntensity>0.028</_distortionIntensity>
@@ -161,7 +161,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Gray_Terror/Overlays/Bast_Gray_Terror_Layer4</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, -1.3, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.3, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>1</_distortionScale>
                             <_distortionIntensity>0.083</_distortionIntensity>

@@ -66,13 +66,14 @@ View the full changelog on Github as well.
 
 <!-- 
     TO-DO...
-        + [DONE] fix all sound files
+        + fix all sound files
+            - add a few that are missing
         + add animals to Alien Biomes spawning logic, in BiomeDef's
         + create caravan animal pack textures
             - ceratok
         + animal retextures
             - [DONE] soul eater
-            - gray terror
+            - [DONE] gray terror
             - [DONE] wisp
-
+            - [DONE] gnomaclu's, all 3
 -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!--==================== Sunburst Gnomaclu ThingDef ====================-->
+    <!--==================== Hazey Gnomaclu ThingDef ====================-->
 
     <ThingDef ParentName="AnimalThingBase">
-        <defName>Bast_Sunburst_Gnomaclu</defName>
-        <label>sunburst gnomaclu</label>
+        <defName>Bast_Hazey_Gnomaclu</defName>
+        <label>hazey gnomaclu</label>
         <description>Resembling floating billiard balls with what would appear to be an eye in the center, Gnomaclus often travel in packs and feast on low hanging or standing vegetation. They are very weak creatures and a single well-placed shot to the upper most portion of their spherical form will most certainly guarantee death.</description>
-        <uiIconPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Sunburst_Gnomaclu_east</uiIconPath>
+        <uiIconPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Hazey_Gnomaclu_east</uiIconPath>
         <statBases>
             <MoveSpeed>3.1</MoveSpeed>
             <MarketValue>100</MarketValue>
@@ -19,29 +19,28 @@
         <comps>
             <li Class="AnimalBehaviours.CompProperties_Floating"></li>
             <li Class="CompProperties_Explosive">
-                <explosiveRadius>5.0</explosiveRadius>
-                <explosiveDamageType>Extinguish</explosiveDamageType>
-                <startWickHitPointsPercent>-1</startWickHitPointsPercent>
+                <explosiveRadius>6.0</explosiveRadius>
+                <explosiveDamageType>Smoke</explosiveDamageType>
+                <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+                <postExplosionGasType>BlindSmoke</postExplosionGasType>
+                <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
                 <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+                <wickTicks>10</wickTicks>
                 <startWickOnDamageTaken>
                     <li>Bullet</li>
                     <li>Arrow</li>
                     <li>ArrowHighVelocity</li>
                 </startWickOnDamageTaken>
-                <!-- <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef> -->
-                <postExplosionSpawnChance>1</postExplosionSpawnChance>
-                <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
-                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-                <explosionEffect>ExtinguisherExplosion</explosionEffect>
             </li>
             <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
                 <graphicsExtra>
-                    <!-- BODY -->
+                    <!-- BODY: MALE -->
                     <li>
-                        <texPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Sunburst_Gnomaclu</texPath>
+                        <texPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Hazey_Gnomaclu</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteDistorted</shaderType>
-                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>0.045</_distortionScale>
                             <_distortionIntensity>0.035</_distortionIntensity>
@@ -52,6 +51,23 @@
                         </damageData>
                     </li>
                 </graphicsExtra>
+                <graphicsExtraFemale>
+                    <!-- BODY: FEMALE -->
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Gnomaclu/Bast_Hazey_Gnomaclu</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>MoteDistorted</shaderType>
+                        <drawOffset>(0.0, 1.0, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>0.045</_distortionScale>
+                            <_distortionIntensity>0.035</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsExtraFemale>
             </li>
         </comps>
         <tools>
@@ -80,7 +96,6 @@
                 <TropicalRainforest>0.30</TropicalRainforest>
                 <TropicalSwamp>0.35</TropicalSwamp>
                 <AridShrubland>0.10</AridShrubland>
-                <ExtremeDesert>0.02</ExtremeDesert>
             </wildBiomes>
             <body>Bast_LimblessHovering</body>
             <herdAnimal>true</herdAnimal>
@@ -126,7 +141,7 @@
             <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
         </race>
         <butcherProducts>
-            <Bast_SunburstGnomacluMeat>10</Bast_SunburstGnomacluMeat>
+            <Bast_HazeyGnomacluMeat>10</Bast_HazeyGnomacluMeat>
         </butcherProducts>
         <tradeTags>
             <li>AnimalCommon</li>
@@ -139,27 +154,27 @@
                     <li>Bast_RangedAttacks</li>
                 </statToAdd>
                 <statValues>
-                    <li>Bast_ExtinguisherBoomer</li>
+                    <li>Bast_SmokeyBoomer</li>
                     <li>Bast_Floater</li>
                     <li>Bast_No</li>
                 </statValues>
                 <statDescriptions>
-                    <li>Bast_ExtinguisherBoomerDesc</li>
+                    <li>Bast_SmokeyBoomerDesc</li>
                     <li>Bast_FloaterDesc</li>
                     <li>Bast_NoRanged</li>
                 </statDescriptions>
                 <showImageInInfoCard>true</showImageInInfoCard>
-                <ImageToShowInInfoCard>Art/Bast_SunburstGnomacluArt</ImageToShowInInfoCard>
+                <ImageToShowInInfoCard>Art/Bast_HazeyGnomacluArt</ImageToShowInInfoCard>
             </li>
         </modExtensions>
     </ThingDef>
 
-    <!--==================== Sunburst Gnomaclu PawnKindDef ====================-->
+    <!--==================== Hazey Gnomaclu PawnKindDef ====================-->
 
     <PawnKindDef ParentName="AnimalKindBase">
-        <defName>Bast_Sunburst_Gnomaclu</defName>
-        <label>sunburst gnomaclu</label>
-        <race>Bast_Sunburst_Gnomaclu</race>
+        <defName>Bast_Hazey_Gnomaclu</defName>
+        <label>hazey gnomaclu</label>
+        <race>Bast_Hazey_Gnomaclu</race>
         <combatPower>7</combatPower>
         <canArriveManhunter>false</canArriveManhunter>
         <ecoSystemWeight>0.01</ecoSystemWeight>
