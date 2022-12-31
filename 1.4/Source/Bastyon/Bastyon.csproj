@@ -57,6 +57,8 @@
     <Compile Include="Hediffs\Hediff_SunLightDamage.cs" />
     <Compile Include="Settings\BastyonRaidSettings.cs" />
     <Compile Include="SubEffecters\SubEffecter_ConstantCircleEmote.cs" />
+    <Compile Include="ThingComps\CompProps\CompProperties_PawnFlecks.cs" />
+    <Compile Include="ThingComps\Comp_PawnFlecks.cs" />
     <Compile Include="ThingComps\CompProps\CompProperties_PawnStateVisuals.cs" />
     <Compile Include="ThingComps\Comp_PawnStateVisuals.cs" />
     <Compile Include="ThingComps\CompProps\CompProperties_ExtraPawnGraphics.cs" />

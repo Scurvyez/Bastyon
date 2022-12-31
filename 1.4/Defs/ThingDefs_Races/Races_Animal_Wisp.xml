@@ -18,6 +18,15 @@
         </statBases>
         <comps>
             <li Class="AnimalBehaviours.CompProperties_Floating"></li>
+            <li Class="Bastyon.CompProperties_PawnFlecks">
+                <fleck>Bast_ColoredPulse</fleck>
+                <offset>(0, 0, 0)</offset>
+                <scale>0.55~1.35</scale>
+                <burstCount>1</burstCount>
+                <staggeredTimings>true</staggeredTimings>
+                <staggeredTimingInt>30</staggeredTimingInt>
+                <randomizedTimingRange>1~30</randomizedTimingRange>
+            </li>
             <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
                 <graphicsExtra>
                     <li>
