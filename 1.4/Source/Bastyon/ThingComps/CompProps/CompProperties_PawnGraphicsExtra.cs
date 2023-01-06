@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace Bastyon
 {
-    public class CompProperties_ExtraPawnGraphics : CompProperties
+    public class CompProperties_PawnGraphicsExtra : CompProperties
     {
         public List<GraphicData> graphicsExtra = null;
         public List<GraphicData> graphicsExtraFemale = null;
@@ -22,9 +22,9 @@ namespace Bastyon
 
         public GameConditionDef gameCondition = null;
 
-        public CompProperties_ExtraPawnGraphics()
+        public CompProperties_PawnGraphicsExtra()
         {
-            compClass = typeof(Comp_ExtraPawnGraphics);
+            compClass = typeof(Comp_PawnGraphicsExtra);
         }
     }
 }

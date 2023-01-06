@@ -20,7 +20,7 @@
                 </hediffsToRemove>
                 <tickInterval>2000</tickInterval>
             </li>
-            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+            <li Class="Bastyon.CompProperties_PawnGraphicsExtra">
                 <graphicsExtra>
                     <!-- BLUE ETERNAL FLAME -->
                     <li>

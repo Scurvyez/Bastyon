@@ -22,7 +22,7 @@
                 <hediffname>Bast_NoPain</hediffname>
                 <hediffseverity>1</hediffseverity>
             </li>
-            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+            <li Class="Bastyon.CompProperties_PawnGraphicsExtra">
                 <graphicsExtra>
                     <!-- HEAD -->
                     <li>

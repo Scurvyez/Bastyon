@@ -33,7 +33,7 @@
                     <li>ArrowHighVelocity</li>
                 </startWickOnDamageTaken>
             </li>
-            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+            <li Class="Bastyon.CompProperties_PawnGraphicsExtra">
                 <graphicsExtra>
                     <!-- BODY: MALE -->
                     <li>

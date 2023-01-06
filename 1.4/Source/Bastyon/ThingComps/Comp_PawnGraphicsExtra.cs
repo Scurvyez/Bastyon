@@ -11,9 +11,9 @@ using UnityEngine;
 
 namespace Bastyon
 {
-    public class Comp_ExtraPawnGraphics : ThingComp
+    public class Comp_PawnGraphicsExtra : ThingComp
     {
-        public CompProperties_ExtraPawnGraphics Props => (CompProperties_ExtraPawnGraphics)props;
+        public CompProperties_PawnGraphicsExtra Props => (CompProperties_PawnGraphicsExtra)props;
         
         private bool OnlyShowDuringGameCondition()
         {

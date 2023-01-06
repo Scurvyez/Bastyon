@@ -56,7 +56,7 @@
                 <distance>4~10</distance>
                 <warpEffect>true</warpEffect>
             </li>
-            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+            <li Class="Bastyon.CompProperties_PawnGraphicsExtra">
                 <graphicsExtra>
                     <!-- WHOLE BODY EFFECT: MALE -->
                     <li>

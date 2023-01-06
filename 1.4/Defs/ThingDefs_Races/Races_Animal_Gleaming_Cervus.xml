@@ -58,7 +58,7 @@
                 <radius>1</radius>
                 <feedCauser>false</feedCauser>
             </li>
-            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+            <li Class="Bastyon.CompProperties_PawnGraphicsExtra">
                 <gameCondition>Aurora</gameCondition>
                 <!-- MALE -->
                 <graphicsGameCondition>

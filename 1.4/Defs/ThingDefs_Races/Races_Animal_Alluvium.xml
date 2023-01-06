@@ -36,7 +36,7 @@
                     <li>Mud</li>
                 </acceptedTerrains>
             </li>
-            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+            <li Class="Bastyon.CompProperties_PawnGraphicsExtra">
                 <graphicsExtra>
                     <!-- INNER BODY PARTS -->
                     <li>

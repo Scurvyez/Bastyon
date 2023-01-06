@@ -55,7 +55,7 @@
 					<max>8</max>
 				</eggCountRange>
 			</li>
-			<li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+			<li Class="Bastyon.CompProperties_PawnGraphicsExtra">
                 <graphicsExtra>
                     <li>
                         <texPath>Things/Pawn/Animal/Bast_Gray_Terror/Overlays/Bast_Gray_Terror_Layer1</texPath>

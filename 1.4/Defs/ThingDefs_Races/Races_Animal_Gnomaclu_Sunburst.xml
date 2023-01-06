@@ -34,7 +34,7 @@
                 <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
                 <explosionEffect>ExtinguisherExplosion</explosionEffect>
             </li>
-            <li Class="Bastyon.CompProperties_ExtraPawnGraphics">
+            <li Class="Bastyon.CompProperties_PawnGraphicsExtra">
                 <graphicsExtra>
                     <!-- BODY: MALE -->
                     <li>
