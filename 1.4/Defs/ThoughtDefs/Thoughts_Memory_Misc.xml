@@ -55,4 +55,21 @@
         </stages>
     </ThoughtDef>
 
+    <!--==================== Undying Optimism ====================-->
+
+    <ThoughtDef>
+        <defName>Bast_Hope</defName>
+        <icon>Things/Mote/ThoughtSymbol/Bast_Undying_Optimism</icon>
+        <showBubble>true</showBubble>
+        <durationDays>4</durationDays>
+        <stackLimit>2</stackLimit>
+        <stages>
+            <li>
+                <label>undying optimism</label>
+                <description>{PAWN_nameDef} feels slightly more hopeful after witnessing the fleeting spectral beauty of a wisp.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
 </Defs>

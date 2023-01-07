@@ -36,7 +36,7 @@
     <FleckDef ParentName="FleckBase">
         <defName>Bast_CircularLinePulse</defName>
         <graphicData>
-            <texPath>Other/ForceField</texPath>
+            <texPath>Other/BlurredCircle</texPath>
             <shaderType>TransparentPostLight</shaderType>
             <color>(1.0, 0.0, 0.27)</color>
         </graphicData>

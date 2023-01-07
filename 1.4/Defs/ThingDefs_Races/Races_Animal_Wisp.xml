@@ -18,6 +18,11 @@
         </statBases>
         <comps>
             <li Class="AnimalBehaviours.CompProperties_Floating"></li>
+            <li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
+                <radius>6</radius>
+                <tickInterval>30000</tickInterval>
+                <thoughtDef>Bast_Hope</thoughtDef>
+            </li>
             <li Class="Bastyon.CompProperties_PawnFlecks">
                 <fleck>Bast_CircularLinePulse</fleck>
                 <offset>(0, 0, 0)</offset>
@@ -207,15 +212,15 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>3.5</minAge>
-                    <soundWounded>Pawn_Spelopede_Pain</soundWounded>
-                    <soundDeath>Pawn_Spelopede_Death</soundDeath>
-                    <soundCall>Pawn_Spelopede_Call</soundCall>
-                    <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+                    <soundWounded>Pawn_Spelopede_Pain</soundWounded> <!-- MAKE NEW ONE -->
+                    <soundDeath>Pawn_Spelopede_Death</soundDeath> <!-- MAKE NEW ONE -->
+                    <soundCall>Pawn_Spelopede_Call</soundCall> <!-- MAKE NEW ONE -->
+                    <soundAngry>Pawn_Spelopede_Angry</soundAngry> <!-- MAKE NEW ONE -->
                 </li>
             </lifeStageAges>
-            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn> <!-- MAKE NEW ONE -->
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding> <!-- MAKE NEW ONE -->
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss> <!-- MAKE NEW ONE -->
         </race>
         <tradeTags>
             <li>AnimalUncommon</li>
