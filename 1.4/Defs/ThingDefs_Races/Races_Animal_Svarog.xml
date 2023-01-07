@@ -25,7 +25,7 @@
                 <accuracyTouch>1</accuracyTouch>
                 <accuracyShort>1</accuracyShort>
                 <accuracyMedium>.85</accuracyMedium>
-                <accuracyLong>.75</accuracyLong>
+                <accuracyLong>.45</accuracyLong>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bast_SvarogFireStream</defaultProjectile>
                 <warmupTime>4</warmupTime>
@@ -48,7 +48,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Svarog/Body/Bast_Svarog_Body</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>1</_distortionScale>
                             <_distortionIntensity>0.065</_distortionIntensity>
@@ -63,7 +63,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Svarog/RightFist/Bast_Svarog_RightFist</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>2</_distortionScale>
                             <_distortionIntensity>0.058</_distortionIntensity>
@@ -78,7 +78,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Svarog/LeftFist/Bast_Svarog_LeftFist</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>2</_distortionScale>
                             <_distortionIntensity>0.056</_distortionIntensity>
@@ -95,7 +95,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Svarog/Body/Bast_Svarog_Body</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>1</_distortionScale>
                             <_distortionIntensity>0.065</_distortionIntensity>
@@ -110,7 +110,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Svarog/RightFist/Bast_Svarog_RightFist</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>2</_distortionScale>
                             <_distortionIntensity>0.058</_distortionIntensity>
@@ -125,7 +125,7 @@
                         <texPath>Things/Pawn/Animal/Bast_Svarog/LeftFist/Bast_Svarog_LeftFist</texPath>
 					    <graphicClass>Graphic_Multi</graphicClass>
                         <shaderType>MoteGlowDistorted</shaderType>
-                        <drawOffset>(0.0, 2.0, 0.0)</drawOffset>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
                         <shaderParameters>
                             <_distortionScale>2</_distortionScale>
                             <_distortionIntensity>0.056</_distortionIntensity>
@@ -136,6 +136,22 @@
                         </damageData>
                     </li>
                 </graphicsExtraFemale>
+                <graphicsSleeping>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Svarog/Body/Bast_Svarog_Sleeping</texPath>
+					    <graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>1</_distortionScale>
+                            <_distortionIntensity>0.025</_distortionIntensity>
+                            <_DistortionTex>/Other/Ripples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsSleeping>
             </li>
         </comps>
         <tools>

@@ -19,8 +19,7 @@
                         <li Class="GiddyUpCore.CompProperties_Overlay">
                             <overlayFront>
                                 <graphicDataMale>
-                                    <texPath>
-                                        Things/Pawn/Animal/Overlays/Bast_ScireMale_overlay_south</texPath>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_ScireMale_overlay_south</texPath>
                                     <graphicClass>Graphic_Single</graphicClass>
                                     <drawSize>4.0</drawSize>
                                     <drawRotated>false</drawRotated>
@@ -28,8 +27,7 @@
                                 </graphicDataMale>
                                 <offsetMale>(0,1,0,0)</offsetMale>
                                 <graphicDataFemale>
-                                    <texPath>
-                                        Things/Pawn/Animal/Overlays/Bast_ScireFemale_overlay_south</texPath>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_ScireFemale_overlay_south</texPath>
                                     <graphicClass>Graphic_Single</graphicClass>
                                     <drawSize>3.0</drawSize>
                                     <drawRotated>false</drawRotated>
@@ -47,8 +45,7 @@
                                 </graphicDataMale>
                                 <offsetMale>(0,1,0,0)</offsetMale>
                                 <graphicDataFemale>
-                                    <texPath>
-                                        Things/Pawn/Animal/Overlays/Bast_ScireFemale_overlay_east</texPath>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_ScireFemale_overlay_east</texPath>
                                     <graphicClass>Graphic_Single</graphicClass>
                                     <drawSize>3.0</drawSize>
                                     <drawRotated>false</drawRotated>
@@ -148,8 +145,7 @@
                         <li Class="GiddyUpCore.CompProperties_Overlay">
                             <overlayFront>
                                 <graphicDataDefault>
-                                    <texPath>
-                                        Things/Pawn/Animal/Overlays/Bast_Ethereal_Lion_overlay_south</texPath>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Ethereal_Lion_overlay_south</texPath>
                                     <graphicClass>Graphic_Single</graphicClass>
                                     <drawSize>3.1</drawSize>
                                     <drawRotated>false</drawRotated>
@@ -157,6 +153,52 @@
                                 </graphicDataDefault>
                                 <offsetDefault>(0,1,0,0)</offsetDefault>
                             </overlayFront>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Gleaming Cervus Overlays ====================-->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Gleaming_Cervus"]/comps</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CompProperties_Overlay">
+                            <overlayFront>
+                                <graphicDataMale>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Gleaming_CervusMale_overlay_south</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>4.0</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataMale>
+                                <offsetMale>(0,1,0,0)</offsetMale>
+                                <graphicDataFemale>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Gleaming_CervusFemale_overlay_south</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.0</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataFemale>
+                                <offsetFemale>(0,1,0,0)</offsetFemale>
+                            </overlayFront>
+                            <overlaySide>
+                                <graphicDataMale>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Gleaming_CervusMale_overlay_east</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>4.0</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataMale>
+                                <offsetMale>(0,1,0,0)</offsetMale>
+                                <graphicDataFemale>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Gleaming_CervusFemale_overlay_east</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.0</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataFemale>
+                                <offsetFemale>(0,1,0,0)</offsetFemale>
+                            </overlaySide>
                         </li>
                     </value>
                 </li>

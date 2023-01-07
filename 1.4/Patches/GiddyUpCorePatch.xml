@@ -95,6 +95,20 @@
                     </value>
                 </li>
 
+                <!--==================== Gleaming Cervus Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Gleaming_Cervus"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.DrawingOffsetPatch">
+                            <northOffsetCSV>0,0,-0.5</northOffsetCSV>
+                            <southOffsetCSV>0,0,0.1</southOffsetCSV>
+                            <eastOffsetCSV>-0.1,0,0</eastOffsetCSV>
+                            <westOffsetCSV>0.1,0,0</westOffsetCSV>
+                        </li>
+                    </value>
+                </li>
+
 
                 <!--==================== CORE: Faction Restrictions ====================-->
                 <!--==================== OutlanderCivil Mount Restrictions ====================-->
@@ -106,8 +120,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>
-                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok,Bast_Gleaming_Cervus</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -122,8 +135,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>
-                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok,Bast_Gleaming_Cervus</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -138,8 +150,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>
-                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok,Bast_Gleaming_Cervus</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -154,8 +165,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>
-                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok,Bast_Gleaming_Cervus</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -170,8 +180,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>
-                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok,Bast_Gleaming_Cervus</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -186,8 +195,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>
-                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok,Bast_Gleaming_Cervus</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -202,8 +210,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>
-                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok,Bast_Gleaming_Cervus</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>
@@ -218,8 +225,7 @@
                             <mountChance>30</mountChance>
                             <wildAnimalWeight>100</wildAnimalWeight>
                             <nonWildAnimalWeight>0</nonWildAnimalWeight>
-                            <allowedWildAnimalsCSV>
-                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedWildAnimalsCSV>Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok,Bast_Gleaming_Cervus</allowedWildAnimalsCSV>
                             <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
                         </li>
                     </value>

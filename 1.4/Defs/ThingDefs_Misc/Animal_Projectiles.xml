@@ -176,9 +176,9 @@
 
 	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>Bast_SvarogFireStream</defName>
-		<label> blazing fire</label>
+		<label>blazing fire</label>
 		<thingClass>VFECore.FlamethrowProjectile</thingClass>
-		<drawOffscreen>true</drawOffscreen>
+		<drawOffscreen>false</drawOffscreen>
 		<lifeTimeDuration>20</lifeTimeDuration>
 		<widthScaleFactor>0.75</widthScaleFactor>
 		<heightScaleFactor>1</heightScaleFactor>
@@ -210,7 +210,7 @@
 		<defName>Bast_BastyonPlasmaStream</defName>
 		<label>scorching plasma</label>
 		<thingClass>VFECore.BastyonBaseExpandingProjectile</thingClass>
-		<drawOffscreen>true</drawOffscreen>
+		<drawOffscreen>false</drawOffscreen>
 		<lifeTimeDuration>8</lifeTimeDuration>
 		<widthScaleFactor>0.50</widthScaleFactor>
 		<heightScaleFactor>1</heightScaleFactor>
@@ -242,7 +242,7 @@
 		<defName>Bast_SnippingSnailAcidStream</defName>
 		<label>acid stream</label>
 		<thingClass>VFECore.BastyonBaseExpandingProjectile</thingClass>
-		<drawOffscreen>true</drawOffscreen>
+		<drawOffscreen>false</drawOffscreen>
 		<lifeTimeDuration>12</lifeTimeDuration>
 		<widthScaleFactor>0.50</widthScaleFactor>
 		<heightScaleFactor>1</heightScaleFactor>
