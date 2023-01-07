@@ -43,7 +43,7 @@
             </li>
             <li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
                 <radius>10</radius>
-                <tickInterval>500</tickInterval>
+                <tickInterval>15000</tickInterval>
                 <thoughtDef>Bast_Undying_Optimism</thoughtDef>
             </li>
         </comps>

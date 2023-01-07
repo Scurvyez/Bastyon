@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Giddy-up! Core</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+
+            <operations>
+
+                <!--==================== CORE: Rider Offsets ====================-->
+                <!--==================== Scire Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Scire"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.DrawingOffsetPatch">
+                            <northOffsetCSV>0,0,-0.5</northOffsetCSV>
+                            <southOffsetCSV>0,0,0.1</southOffsetCSV>
+                            <eastOffsetCSV>-0.1,0,0</eastOffsetCSV>
+                            <westOffsetCSV>0.1,0,0</westOffsetCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Bastyon Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Bastyon"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.DrawingOffsetPatch">
+                            <northOffsetCSV>0,0,-0.5</northOffsetCSV>
+                            <southOffsetCSV>0,0,0.1</southOffsetCSV>
+                            <eastOffsetCSV>-0.2,0,0</eastOffsetCSV>
+                            <westOffsetCSV>0.2,0,0</westOffsetCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Blazing Felidae Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Blazing_Felidae"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.DrawingOffsetPatch">
+                            <northOffsetCSV>0,0,-0.5</northOffsetCSV>
+                            <southOffsetCSV>0,0,-0.34</southOffsetCSV>
+                            <eastOffsetCSV>0.0,0,0</eastOffsetCSV>
+                            <westOffsetCSV>0.0,0,0</westOffsetCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Ceratok Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Ceratok"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.DrawingOffsetPatch">
+                            <northOffsetCSV>0,0,-0.5</northOffsetCSV>
+                            <southOffsetCSV>0,0,-0.2</southOffsetCSV>
+                            <eastOffsetCSV>-0.7,0,-0.4</eastOffsetCSV>
+                            <westOffsetCSV>0.7,0,-0.4</westOffsetCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Ethereal Lion Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.DrawingOffsetPatch">
+                            <northOffsetCSV>0,0,-0.5</northOffsetCSV>
+                            <southOffsetCSV>0,0,-0.3</southOffsetCSV>
+                            <eastOffsetCSV>0.2,-0.1,0</eastOffsetCSV>
+                            <westOffsetCSV>-0.2,-0.1,0</westOffsetCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Soul Eater Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Soul_Eater"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.DrawingOffsetPatch">
+                            <northOffsetCSV>0,0,-0.5</northOffsetCSV>
+                            <southOffsetCSV>0,0,-0.2</southOffsetCSV>
+                            <eastOffsetCSV>-0.2,0,-0.2</eastOffsetCSV>
+                            <westOffsetCSV>0.2,0,-0.2</westOffsetCSV>
+                        </li>
+                    </value>
+                </li>
+
+
+                <!--==================== CORE: Faction Restrictions ====================-->
+                <!--==================== OutlanderCivil Mount Restrictions ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/FactionDef[ defName = "OutlanderCivil"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.FactionRestrictionsPatch">
+                            <mountChance>30</mountChance>
+                            <wildAnimalWeight>100</wildAnimalWeight>
+                            <nonWildAnimalWeight>0</nonWildAnimalWeight>
+                            <allowedWildAnimalsCSV>
+                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== OutlanderRough Mount Restrictions ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/FactionDef[ defName = "OutlanderRough"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.FactionRestrictionsPatch">
+                            <mountChance>30</mountChance>
+                            <wildAnimalWeight>100</wildAnimalWeight>
+                            <nonWildAnimalWeight>0</nonWildAnimalWeight>
+                            <allowedWildAnimalsCSV>
+                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== TribeCivil Mount Restrictions ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/FactionDef[ defName = "TribeCivil"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.FactionRestrictionsPatch">
+                            <mountChance>30</mountChance>
+                            <wildAnimalWeight>100</wildAnimalWeight>
+                            <nonWildAnimalWeight>0</nonWildAnimalWeight>
+                            <allowedWildAnimalsCSV>
+                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== TribeRough Mount Restrictions ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/FactionDef[ defName = "TribeRough"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.FactionRestrictionsPatch">
+                            <mountChance>30</mountChance>
+                            <wildAnimalWeight>100</wildAnimalWeight>
+                            <nonWildAnimalWeight>0</nonWildAnimalWeight>
+                            <allowedWildAnimalsCSV>
+                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== TribeSavage Mount Restrictions ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/FactionDef[ defName = "TribeSavage"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.FactionRestrictionsPatch">
+                            <mountChance>30</mountChance>
+                            <wildAnimalWeight>100</wildAnimalWeight>
+                            <nonWildAnimalWeight>0</nonWildAnimalWeight>
+                            <allowedWildAnimalsCSV>
+                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Pirate Mount Restrictions ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/FactionDef[ defName = "Pirate"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.FactionRestrictionsPatch">
+                            <mountChance>30</mountChance>
+                            <wildAnimalWeight>100</wildAnimalWeight>
+                            <nonWildAnimalWeight>0</nonWildAnimalWeight>
+                            <allowedWildAnimalsCSV>
+                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== PlayerColony Mount Restrictions ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/FactionDef[ defName = "PlayerColony"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.FactionRestrictionsPatch">
+                            <mountChance>30</mountChance>
+                            <wildAnimalWeight>100</wildAnimalWeight>
+                            <nonWildAnimalWeight>0</nonWildAnimalWeight>
+                            <allowedWildAnimalsCSV>
+                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== PlayerTribe Mount Restrictions ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/FactionDef[ defName = "PlayerTribe"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.FactionRestrictionsPatch">
+                            <mountChance>30</mountChance>
+                            <wildAnimalWeight>100</wildAnimalWeight>
+                            <nonWildAnimalWeight>0</nonWildAnimalWeight>
+                            <allowedWildAnimalsCSV>
+                                Bast_Bastyon,Bast_Ethereal_Lion,Bast_Scire,Bast_Ceratok</allowedWildAnimalsCSV>
+                            <allowedNonWildAnimalsCSV>""</allowedNonWildAnimalsCSV>
+                        </li>
+                    </value>
+                </li>
+
+            </operations>
+
+        </match>
+
+    </Operation>
+
+</Patch>

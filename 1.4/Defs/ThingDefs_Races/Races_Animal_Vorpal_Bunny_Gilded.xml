@@ -36,7 +36,7 @@
             </li>
             <li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
                 <radius>15</radius>
-                <tickInterval>500</tickInterval>
+                <tickInterval>10000</tickInterval>
                 <thoughtDef>Bast_Golden_Tranquility</thoughtDef>
             </li>
             <li Class="AnimalBehaviours.CompProperties_LightSustenance"></li>

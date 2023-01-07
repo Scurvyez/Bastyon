@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Giddy-up! Battle Mounts</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+
+
+                <!--==================== BATTLE MOUNTS: Overlays ====================-->
+                <!--==================== Scire Overlays ====================-->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Scire"]/comps</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CompProperties_Overlay">
+                            <overlayFront>
+                                <graphicDataMale>
+                                    <texPath>
+                                        Things/Pawn/Animal/Overlays/Bast_ScireMale_overlay_south</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>4.0</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataMale>
+                                <offsetMale>(0,1,0,0)</offsetMale>
+                                <graphicDataFemale>
+                                    <texPath>
+                                        Things/Pawn/Animal/Overlays/Bast_ScireFemale_overlay_south</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.0</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataFemale>
+                                <offsetFemale>(0,1,0,0)</offsetFemale>
+                            </overlayFront>
+                            <overlaySide>
+                                <graphicDataMale>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_ScireMale_overlay_east</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>4.0</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataMale>
+                                <offsetMale>(0,1,0,0)</offsetMale>
+                                <graphicDataFemale>
+                                    <texPath>
+                                        Things/Pawn/Animal/Overlays/Bast_ScireFemale_overlay_east</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.0</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataFemale>
+                                <offsetFemale>(0,1,0,0)</offsetFemale>
+                            </overlaySide>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Bastyon Overlays ====================-->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Bastyon"]/comps</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CompProperties_Overlay">
+                            <overlayFront>
+                                <graphicDataDefault>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Bastyon_overlay_south</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.1</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>MetaOverlay</shaderType>
+                                </graphicDataDefault>
+                                <offsetMale>(0,1,0,0)</offsetMale>
+                            </overlayFront>
+                            <overlaySide>
+                                <graphicDataDefault>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Bastyon_overlay_east</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.1</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>MetaOverlay</shaderType>
+                                </graphicDataDefault>
+                                <offsetMale>(0,1,0,0)</offsetMale>
+                            </overlaySide>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Blazing Felidae Overlays ====================-->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Blazing_Felidae"]/comps</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CompProperties_Overlay">
+                            <overlayFront>
+                                <graphicDataDefault>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Blazing_Felidae_overlay_south</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.1</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataDefault>
+                                <offsetMale>(0,1,0,0)</offsetMale>
+                            </overlayFront>
+                            <overlaySide>
+                                <graphicDataDefault>
+                                    <texPath>Things/Pawn/Animal/Overlays/Bast_Blazing_Felidae_overlay_east</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.1</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>Cutout</shaderType>
+                                </graphicDataDefault>
+                                <offsetMale>(0,1,0,0)</offsetMale>
+                            </overlaySide>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Ceratok Overlays ====================-->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Ceratok"]/comps</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CompProperties_Overlay">
+                            <overlayFront>
+                                <graphicDataDefault>
+                                    <texPath>Things/Pawn/Animal/Bast_Ceratok/Bast_Ceratok_south</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.7</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>MetaOverlay</shaderType>
+                                </graphicDataDefault>
+                                <offsetDefault>(0,1,0,0)</offsetDefault>
+                            </overlayFront>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Ethereal Lion Overlays ====================-->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion"]/comps</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CompProperties_Overlay">
+                            <overlayFront>
+                                <graphicDataDefault>
+                                    <texPath>
+                                        Things/Pawn/Animal/Overlays/Bast_Ethereal_Lion_overlay_south</texPath>
+                                    <graphicClass>Graphic_Single</graphicClass>
+                                    <drawSize>3.1</drawSize>
+                                    <drawRotated>false</drawRotated>
+                                    <shaderType>MetaOverlay</shaderType>
+                                </graphicDataDefault>
+                                <offsetDefault>(0,1,0,0)</offsetDefault>
+                            </overlayFront>
+                        </li>
+                    </value>
+                </li>
+
+
+                <!--==================== BATTLE MOUNTS: Stat Offsets ====================-->
+                <!--==================== Scire Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Scire"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CustomStatsPatch">
+                            <speedModifier>3.0</speedModifier>
+                            <armorModifier>7.5</armorModifier>
+                            <useMetalArmor>false</useMetalArmor>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Bastyon Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Bastyon"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CustomStatsPatch">
+                            <speedModifier>1.75</speedModifier>
+                            <armorModifier>12.0</armorModifier>
+                            <useMetalArmor>false</useMetalArmor>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Blazing Felidae Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Blazing_Felidae"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CustomStatsPatch">
+                            <speedModifier>2.75</speedModifier>
+                            <armorModifier>10.15</armorModifier>
+                            <useMetalArmor>false</useMetalArmor>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Ceratok Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Ceratok"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CustomStatsPatch">
+                            <speedModifier>0.85</speedModifier>
+                            <armorModifier>17.5</armorModifier>
+                            <useMetalArmor>true</useMetalArmor>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Ethereal Lion Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Ethereal_Lion"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CustomStatsPatch">
+                            <speedModifier>1.75</speedModifier>
+                            <armorModifier>12.0</armorModifier>
+                            <useMetalArmor>false</useMetalArmor>
+                        </li>
+                    </value>
+                </li>
+
+                <!--==================== Soul Eater Offsets ====================-->
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Bast_Soul_Eater"]</xpath>
+                    <value>
+                        <li Class="GiddyUpCore.CustomStatsPatch">
+                            <speedModifier>4.2</speedModifier>
+                            <armorModifier>5.55</armorModifier>
+                            <useMetalArmor>false</useMetalArmor>
+                        </li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
