@@ -80,7 +80,6 @@ namespace Bastyon
                 Vector2 drawSize = pawnKind.lifeStages[parentPawn.ageTracker.CurLifeStageIndex].bodyGraphicData.Graphic.drawSize;
                 Vector3 drawPos = parent.DrawPos;
 
-
                 if (Props.graphicsExtra != null && (IsMale() || IsAsexual()))
                 {
                     for (int i = 0; i < Props.graphicsExtra.Count; i++)

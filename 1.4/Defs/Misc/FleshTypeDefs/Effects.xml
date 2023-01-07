@@ -32,7 +32,6 @@
         </randomGraphics>
     </FleckDef>
 
-    <!--=============== Broadshield Projector ==============-->
     <FleckDef ParentName="FleckBase">
         <defName>Bast_CircularLinePulse</defName>
         <graphicData>
