@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- <ThingDef ParentName="BuildingBase">
+        <defName>Bast_BlankThingWithBlankTexture</defName>
+        <label>printer interaction cell icon</label>
+        <description>this had to be a full def... so yeah, here it is</description>
+        <graphicData>
+            <texPath>Blank/BlankTex</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef> -->
+
+</Defs>

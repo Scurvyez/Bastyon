@@ -158,23 +158,42 @@ namespace Bastyon
                     }
                 }
 
-                else
+                /*else if (!parentPawn.Awake())
                 {
-                    if (Props.graphicsSleeping != null)
+                    if (Props.graphicsSleepingMale != null || Props.graphicsSleepingFemale != null)
                     {
-                        for (int i = 0; i < Props.graphicsSleeping.Count; i++)
+                        if (IsMale() || IsAsexual())
                         {
-                            Props.graphicsSleeping[i].Graphic.drawSize = drawSize;
+                            for (int i = 0; i < Props.graphicsSleepingMale.Count; i++)
+                            {
+                                Props.graphicsSleepingMale[i].Graphic.drawSize = drawSize;
 
-                            Props.graphicsSleeping[i].Graphic.Draw(
-                                (
-                                drawPos + Props.graphicsSleeping[i].drawOffset),
-                                rotation,
-                                parent
-                                );
+                                Props.graphicsSleepingMale[i].Graphic.Draw(
+                                    (
+                                    drawPos + Props.graphicsSleepingMale[i].drawOffset),
+                                    rotation,
+                                    parent
+                                    );
+                            }
+                        }
+                        else
+                        {
+                            for (int i = 0; i < Props.graphicsSleepingFemale.Count; i++)
+                            {
+                                Props.graphicsSleepingFemale[i].Graphic.drawSize = drawSize;
+
+                                Props.graphicsSleepingFemale[i].Graphic.Draw(
+                                    (
+                                    drawPos + Props.graphicsSleepingFemale[i].drawOffset),
+                                    rotation,
+                                    parent
+                                    );
+                            }
                         }
                     }
-                }
+
+                    parentPawn.DefaultGraphic.DrawFromDef(drawPos, rotation, BastDefOf.Bast_BlankThingWithBlankTexture);
+                }*/
             }
         }
     }

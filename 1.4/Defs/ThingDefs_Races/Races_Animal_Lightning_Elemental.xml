@@ -91,7 +91,7 @@
                         </damageData>
                     </li>
                 </graphicsExtraFemale>
-                <graphicsSleeping>
+                <!-- <graphicsSleepingMale>
                     <li>
                         <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Lightning_Elemental_Sleeping</texPath>
 					    <graphicClass>Graphic_Single</graphicClass>
@@ -106,7 +106,23 @@
                             <enabled>false</enabled>
                         </damageData>
                     </li>
-                </graphicsSleeping>
+                </graphicsSleepingMale>
+                <graphicsSleepingFemale>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Lightning_Elemental/Bast_Lightning_Elemental_Sleeping</texPath>
+					    <graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>MoteGlowDistorted</shaderType>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
+                        <shaderParameters>
+                            <_distortionScale>-0.5</_distortionScale>
+                            <_distortionIntensity>0.027</_distortionIntensity>
+                            <_DistortionTex>/Other/CircularRipples</_DistortionTex>
+                        </shaderParameters>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsSleepingFemale> -->
             </li>
         </comps>
         <verbs>

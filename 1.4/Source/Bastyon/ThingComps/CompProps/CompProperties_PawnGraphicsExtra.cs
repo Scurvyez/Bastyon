@@ -15,9 +15,10 @@ namespace Bastyon
         public List<GraphicData> graphicsExtra = null;
         public List<GraphicData> graphicsExtraFemale = null;
         public List<GraphicData> graphicsAttacking = null;
-        public List<GraphicData> graphicsOnTerrain = null;
+        //public List<GraphicData> graphicsOnTerrain = null;
         public List<GraphicData> graphicsGameCondition = null;
-        public List<GraphicData> graphicsSleeping = null;
+        //public List<GraphicData> graphicsSleepingMale = null;
+        //public List<GraphicData> graphicsSleepingFemale = null;
 
         public bool femalesHaveSeparateGraphics = false;
 

@@ -131,6 +131,28 @@
                         </damageData>
                     </li>
                 </graphicsExtraFemale>
+                <!-- <graphicsSleepingMale>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Sleeping/Bast_Gleaming_CervusMale_sleeping</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>CutoutComplex</shaderType>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsSleepingMale>
+                <graphicsSleepingFemale>
+                    <li>
+                        <texPath>Things/Pawn/Animal/Bast_Gleaming_Cervus/Sleeping/Bast_Gleaming_CervusFemale_sleeping</texPath>
+					    <graphicClass>Graphic_Multi</graphicClass>
+                        <shaderType>CutoutComplex</shaderType>
+                        <drawOffset>(0.0, 1.1, 0.0)</drawOffset>
+                        <damageData>
+                            <enabled>false</enabled>
+                        </damageData>
+                    </li>
+                </graphicsSleepingFemale> -->
             </li>
         </comps>
         <tools>
