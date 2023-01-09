@@ -11,6 +11,7 @@
             <MoveSpeed>5.0</MoveSpeed>
             <MarketValue>700</MarketValue>
             <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+            <CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
         </statBases>
         <comps>
             <li Class="AnimalBehaviours.CompProperties_DigPeriodically">

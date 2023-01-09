@@ -10,9 +10,9 @@
 
     <Bast_Alluvium_Jelly>Alluvium Jelly Production</Bast_Alluvium_Jelly>
     <Chemfuel>Chemfuel Production</Chemfuel>
-    
+
     <!-- Animal Stats -->
-	
+
 	<Bast_PrimaryRole>Primary Role</Bast_PrimaryRole>
 	<Bast_SecondaryRole>Secondary Role</Bast_SecondaryRole>
     <Bast_TertiaryRole>Tertiary Role</Bast_TertiaryRole>
@@ -56,7 +56,7 @@
     <Bast_Glower>Glower</Bast_Glower>
 
     <!-- Role Descriptions -->
-	
+
 	<Bast_FloaterDesc>This animal floats above the ground, ignoring all movement penalties.</Bast_FloaterDesc>
     <Bast_WarperDesc>This animal will sporadically teleport short distances.</Bast_WarperDesc>
     <Bast_BoomerDesc>This animal explodes on death.</Bast_BoomerDesc>
